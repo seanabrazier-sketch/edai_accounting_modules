@@ -11,8 +11,24 @@ class SalesTax(object):
             raise RuntimeError('State {} is not found in the SALES_TAX_DF!'.format(state))
         return float(SALES_TAX_DF.loc[state]['Combined S&L Rate'].replace('%', ''))/100
 
+    @staticmethod
+    def state_rate(state: str) -> float:
+        if state not in SALES_TAX_DF.index:
+            raise RuntimeError('State {} is not found in the SALES_TAX_DF!'.format(state))
+        return float(SALES_TAX_DF.loc[state]['State Tax Rate'].replace('%', ''))/100
+
+    @staticmethod
+    def avg_local_rate(state: str) -> float:
+        if state not in SALES_TAX_DF.index:
+            raise RuntimeError('State {} is not found in the SALES_TAX_DF!'.format(state))
+        return float(SALES_TAX_DF.loc[state]['Avg. Local Tax Rate'].replace('%', ''))/100
+
 
 if __name__=='__main__':
     print(SALES_TAX_DF.head(5))
     print(SalesTax.combined_rate('Oregon'))
     print(SalesTax.combined_rate('California'))
+    print(SalesTax.avg_local_rate('Oregon'))
+    print(SalesTax.avg_local_rate('California'))
+    print(SalesTax.state_rate('Oregon'))
+    print(SalesTax.state_rate('California'))

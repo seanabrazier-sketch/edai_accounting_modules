@@ -1,4 +1,5 @@
-from fiscal_benefits.state_model import state_model
+from fiscal_benefits.fb_model import model
+
 
 inputs_basic = {
     'IRS Sector': 'Warehousing and storage',
@@ -30,19 +31,10 @@ inputs_miscellaneous = {
 }
 
 
-output_columns = [
-    'Category',
-    'Sub-category',
-    'State, 10-year NPV',
-    'Local, 10-year NPV'
-]
-
-
-state_npv_dict, state_values_dict = state_model(
-    inputs_basic,
-    inputs_adjustable,
-    inputs_miscellaneous
+output_df, total_state, total_local = model(
+    inputs_basic=inputs_basic,
+    inputs_adjustable=inputs_adjustable,
+    inputs_miscellaneous=inputs_miscellaneous
 )
 
-print(state_npv_dict)
-print(state_values_dict)
+print(output_df.values.tolist())

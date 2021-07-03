@@ -17,13 +17,21 @@ class PropertyType(Enum):
     Commercial = "Commercial"
 
 
+class RuralOrCity(Enum):
+    Rural = "Rural"
+    City = "City"
+
+
 class PropertyTax(object):
     def __init__(self, state: str):
         self.state = state
         self.df = PROPERTY_TAX_DF[PROPERTY_TAX_DF.State==self.state]
 
-    def tax_rate(self, property_type: PropertyType) -> float:
-        return self.df[self.df.Type==property_type.value]['Tax Rate 1M'].mean()
+    def tax_rate(self, property_type: PropertyType, rural_or_city: RuralOrCity = None) -> float:
+        if rural_or_city is None:
+            return self.df[self.df.Type==property_type.value]['Tax Rate 1M'].mean()
+        else:
+            return self.df[(self.df.Type == property_type.value)&(self.df.RuralOrCity == rural_or_city.value)]['Tax Rate 1M'].mean()
 
 
 if __name__ == '__main__':
@@ -31,3 +39,7 @@ if __name__ == '__main__':
         print('State: {}'.format(state))
         print(PropertyTax(state).tax_rate(PropertyType.Commercial))
         print(PropertyTax(state).tax_rate(PropertyType.Industrial))
+        print(PropertyTax(state).tax_rate(PropertyType.Commercial, RuralOrCity.City))
+        print(PropertyTax(state).tax_rate(PropertyType.Industrial, RuralOrCity.City))
+        print(PropertyTax(state).tax_rate(PropertyType.Commercial, RuralOrCity.Rural))
+        print(PropertyTax(state).tax_rate(PropertyType.Industrial, RuralOrCity.Rural))

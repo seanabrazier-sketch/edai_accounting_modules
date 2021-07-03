@@ -1,207 +1,207 @@
-﻿Type,State,City,Tax Rate 100k,Tax Rate 1M,Tax Rate 25M
-Commercial,Alabama,Birmingham,1.45%,1.45%,1.45%
-Commercial,Alaska,Anchorage,1.21%,1.46%,1.49%
-Commercial,Arizona,Phoenix,2.08%,2.14%,2.57%
-Commercial,Arkansas,Little Rock,1.40%,1.40%,1.40%
-Commercial,California,Los Angeles,1.17%,1.17%,1.17%
-Commercial,Colorado,Denver,2.22%,2.22%,2.22%
-Commercial,Connecticut,Bridgeport,3.30%,3.30%,3.30%
-Commercial,DC,Washington,1.26%,1.26%,1.93%
-Commercial,Delaware,Wilmington,1.06%,1.06%,1.06%
-Commercial,Florida,Jacksonville,1.37%,1.62%,1.65%
-Commercial,Georgia,Atlanta,1.51%,1.51%,1.51%
-Commercial,Hawaii,Honolulu,1.02%,1.02%,1.02%
-Commercial,Idaho,Boise,1.08%,1.20%,1.31%
-Commercial,Illinois,Aurora*,3.01%,3.01%,3.01%
-Commercial,Illinois,Chicago,3.51%,3.51%,3.51%
-Commercial,Indiana,Indianapolis,2.91%,2.91%,2.91%
-Commercial,Iowa,Des Moines,2.30%,3.02%,3.27%
-Commercial,Kansas,Wichita,2.56%,2.56%,2.56%
-Commercial,Kentucky,Louisville,1.36%,1.36%,1.36%
-Commercial,Louisiana,New Orleans,2.14%,2.14%,2.14%
-Commercial,Maine,Portland,2.02%,2.02%,2.02%
-Commercial,Maryland,Baltimore,2.80%,2.80%,2.80%
-Commercial,Massachusetts,Boston,1.77%,1.77%,1.77%
-Commercial,Michigan,Detroit,3.77%,3.77%,3.77%
-Commercial,Minnesota,Minneapolis,1.73%,2.77%,2.92%
-Commercial,Mississippi,Jackson,2.67%,2.67%,2.67%
-Commercial,Missouri,Kansas City,2.82%,2.82%,2.82%
-Commercial,Montana,Billings,0.98%,1.06%,1.15%
-Commercial,Nebraska,Omaha,1.89%,2.06%,2.07%
-Commercial,Nevada,Las Vegas,1.12%,1.12%,1.12%
-Commercial,New Hampshire,Manchester,1.69%,1.69%,1.69%
-Commercial,New Jersey,Newark,2.52%,2.52%,2.52%
-Commercial,New Mexico,Albuquerque,1.44%,1.44%,1.44%
-Commercial,New York,Buffalo*,2.18%,2.18%,2.18%
-Commercial,New York,New York City,1.32%,1.32%,1.32%
-Commercial,North Carolina,Charlotte,0.95%,0.95%,0.95%
-Commercial,North Dakota,Fargo,1.08%,1.08%,1.08%
-Commercial,Ohio,Columbus,1.93%,1.93%,1.93%
-Commercial,Oklahoma,Oklahoma City,1.36%,1.36%,1.36%
-Commercial,Oregon,Portland,2.46%,2.46%,2.46%
-Commercial,Pennsylvania,Philadelphia,1.14%,1.97%,2.13%
-Commercial,Rhode Island,Providence,3.61%,3.61%,3.61%
-Commercial,South Carolina,Charleston,1.86%,1.86%,1.86%
-Commercial,South Dakota,Sioux Falls,1.24%,1.24%,1.24%
-Commercial,Tennessee,Nashville,1.05%,1.05%,1.05%
-Commercial,Texas,Houston,2.29%,2.29%,2.29%
-Commercial,Utah,Salt Lake City,1.27%,1.27%,1.27%
-Commercial,Vermont,Burlington,2.54%,2.54%,2.54%
-Commercial,Virginia,Virginia Beach,0.99%,0.99%,0.99%
-Commercial,Washington,Seattle,0.77%,0.77%,0.77%
-Commercial,West Virginia,Charleston,1.85%,1.85%,1.85%
-Commercial,Wisconsin,Milwaukee,2.53%,2.58%,2.59%
-Commercial,Wyoming,Cheyenne,0.69%,0.69%,0.69%
-Commercial,Alabama,Monroeville,0.90%,0.90%,0.90%
-Commercial,Alaska,Ketchikan,0.92%,1.09%,1.11%
-Commercial,Arizona,Safford,1.33%,1.38%,1.69%
-Commercial,Arkansas,Pocahontas,0.83%,0.83%,0.83%
-Commercial,California,Yreka,1.06%,1.06%,1.06%
-Commercial,Colorado,Walsenburg,2.30%,2.30%,2.30%
-Commercial,Connecticut,Litchfield,2.14%,2.14%,2.14%
-Commercial,Delaware,Georgetown,0.48%,0.48%,0.48%
-Commercial,Florida,Moore Haven,1.81%,2.13%,2.18%
-Commercial,Georgia,Fitzgerald,1.69%,1.69%,1.69%
-Commercial,Hawaii,Kauai,0.57%,0.57%,0.57%
-Commercial,Idaho,Saint Anthony,1.12%,1.25%,1.37%
-Commercial,Illinois,Galena,2.13%,2.13%,2.13%
-Commercial,Indiana,North Vernon,2.90%,2.90%,2.90%
-Commercial,Iowa,Hampton,1.41%,2.13%,2.39%
-Commercial,Kansas,Iola,5.10%,5.10%,5.10%
-Commercial,Kentucky,Morehead,1.35%,1.35%,1.35%
-Commercial,Louisiana,Natchitoches,1.40%,1.40%,1.40%
-Commercial,Maine,Rockland,2.48%,2.48%,2.48%
-Commercial,Maryland,Denton,2.06%,2.06%,2.06%
-Commercial,Massachusetts,Adams,2.07%,2.07%,2.07%
-Commercial,Michigan,Manistique,2.87%,2.87%,2.87%
-Commercial,Minnesota,Glencoe,1.71%,2.70%,2.86%
-Commercial,Mississippi,Philadelphia,2.07%,2.07%,2.07%
-Commercial,Missouri,Boonville,2.08%,2.08%,2.08%
-Commercial,Montana,Glasgow,1.20%,1.30%,1.40%
-Commercial,Nebraska,Sidney,2.13%,2.32%,2.33%
-Commercial,Nevada,Fallon,1.29%,1.29%,1.29%
-Commercial,New Hampshire,Lancaster,2.09%,2.09%,2.09%
-Commercial,New Jersey,Maurice River Township,2.33%,2.33%,2.33%
-Commercial,New Mexico,Santa Rosa,1.03%,1.03%,1.03%
-Commercial,New York,Warsaw,3.00%,3.00%,3.00%
-Commercial,North Carolina,Edenton,1.11%,1.11%,1.11%
-Commercial,North Dakota,Devils Lake,1.19%,1.19%,1.19%
-Commercial,Ohio,Bryan,1.65%,1.65%,1.65%
-Commercial,Oklahoma,Mangum,0.84%,0.84%,0.84%
-Commercial,Oregon,Tillamook,1.16%,1.16%,1.16%
-Commercial,Pennsylvania,Ridgway,1.96%,1.96%,1.96%
-Commercial,Rhode Island,Hopkinton,2.13%,2.13%,2.13%
-Commercial,South Carolina,Mullins,2.90%,2.90%,2.90%
-Commercial,South Dakota,Vermillion,1.77%,1.77%,1.77%
-Commercial,Tennessee,Savannah,1.06%,1.06%,1.06%
-Commercial,Texas,Fort Stockton,2.00%,2.00%,2.00%
-Commercial,Utah,Richfield,1.26%,1.26%,1.26%
-Commercial,Vermont,Hartford,2.15%,2.15%,2.15%
-Commercial,Virginia,Wise,0.88%,0.88%,0.88%
-Commercial,Washington,Okanogan,1.15%,1.15%,1.15%
-Commercial,West Virginia,Elkins,1.04%,1.04%,1.04%
-Commercial,Wisconsin,Rice Lake,2.25%,2.30%,2.31%
-Commercial,Wyoming,Worland,0.73%,0.73%,0.73%
-Industrial,Alabama,Birmingham,1.18%,1.18%,1.18%
-Industrial,Alaska,Anchorage,1.38%,1.53%,1.55%
-Industrial,Arizona,Phoenix,1.25%,1.90%,2.16%
-Industrial,Arkansas,Little Rock,1.40%,1.40%,1.40%
-Industrial,California,Los Angeles,0.94%,0.94%,0.94%
-Industrial,Colorado,Denver,1.78%,1.78%,1.78%
-Industrial,Connecticut,Bridgeport,1.79%,1.79%,1.79%
-Industrial,DC,Washington,0.76%,1.39%,1.84%
-Industrial,Delaware,Wilmington,0.64%,0.64%,0.64%
-Industrial,Florida,Jacksonville,1.12%,1.31%,1.33%
-Industrial,Georgia,Atlanta,1.40%,1.40%,1.40%
-Industrial,Hawaii,Honolulu,0.60%,0.60%,0.60%
-Industrial,Idaho,Boise,0.65%,0.99%,1.06%
-Industrial,Illinois,Aurora*,1.81%,1.81%,1.81%
-Industrial,Illinois,Chicago,1.98%,1.98%,1.98%
-Industrial,Indiana,Indianapolis,2.37%,2.37%,2.37%
-Industrial,Iowa,Des Moines,1.36%,1.80%,1.95%
-Industrial,Kansas,Wichita,1.39%,1.39%,1.39%
-Industrial,Kentucky,Louisville,0.77%,0.77%,0.77%
-Industrial,Louisiana,New Orleans,2.19%,2.19%,2.19%
-Industrial,Maine,Portland,1.10%,1.10%,1.10%
-Industrial,Maryland,Baltimore,1.40%,1.40%,1.40%
-Industrial,Massachusetts,Boston,1.06%,1.06%,1.06%
-Industrial,Michigan,Detroit,1.91%,2.22%,2.22%
-Industrial,Minnesota,Minneapolis,1.05%,1.67%,1.76%
-Industrial,Mississippi,Jackson,2.75%,2.75%,2.75%
-Industrial,Missouri,Kansas City,2.24%,2.24%,2.24%
-Industrial,Montana,Billings,0.59%,0.84%,1.19%
-Industrial,Nebraska,Omaha,1.58%,1.68%,1.70%
-Industrial,Nevada,Las Vegas,0.90%,0.90%,0.90%
-Industrial,New Hampshire,Manchester,1.02%,1.02%,1.02%
-Industrial,New Jersey,Newark,1.51%,1.51%,1.51%
-Industrial,New Mexico,Albuquerque,1.18%,1.18%,1.18%
-Industrial,New York,Buffalo*,1.31%,1.31%,1.31%
-Industrial,New York,New York City,0.58%,0.58%,0.58%
-Industrial,North Carolina,Charlotte,0.77%,0.77%,0.77%
-Industrial,North Dakota,Dakota,0.65%,0.65%,0.65%
-Industrial,Ohio,Columbus,1.17%,1.17%,1.17%
-Industrial,Oklahoma,Oklahoma City,1.47%,1.47%,1.47%
-Industrial,Oregon,Portland,1.97%,1.97%,1.97%
-Industrial,Pennsylvania,Philadelphia,0.69%,1.18%,1.28%
-Industrial,Rhode Island,Providence,1.89%,1.89%,1.89%
-Industrial,South Carolina,Charleston,2.39%,2.39%,2.39%
-Industrial,South Dakota,Sioux Falls,0.74%,0.74%,0.74%
-Industrial,Tennessee,Nashville,1.01%,1.01%,1.01%
-Industrial,Texas,Houston,2.29%,2.29%,2.29%
-Industrial,Utah,Salt Lake City,1.02%,1.02%,1.02%
-Industrial,Vermont,Burlington,1.73%,1.73%,1.73%
-Industrial,Virginia,Virginia Beach,0.51%,0.51%,0.51%
-Industrial,Washington,Seattle,0.62%,0.62%,0.62%
-Industrial,West Virginia,Charleston,1.85%,1.85%,1.85%
-Industrial,Wisconsin,Milwaukee,1.39%,1.42%,1.42%
-Industrial,Wyoming,Cheyenne,0.66%,0.66%,0.66%
-Industrial,Alabama,Monroeville,0.71%,0.71%,0.71%
-Industrial,Alaska,Ketchikan,0.75%,0.89%,0.90%
-Industrial,Arizona,Safford,0.80%,1.27%,1.45%
-Industrial,Arkansas,Pocahontas,0.82%,0.82%,0.82%
-Industrial,California,Yreka,0.85%,0.85%,0.85%
-Industrial,Colorado,Walsenburg,1.84%,1.84%,1.84%
-Industrial,Connecticut,Litchfield,1.19%,1.19%,1.19%
-Industrial,Delaware,Georgetown,0.29%,0.29%,0.29%
-Industrial,Florida,Moore Haven,1.47%,1.72%,1.75%
-Industrial,Georgia,Fitzgerald,1.51%,1.51%,1.51%
-Industrial,Hawaii,Kauai,0.38%,0.38%,0.38%
-Industrial,Idaho,Saint Anthony,0.67%,1.05%,1.12%
-Industrial,Illinois,Galena,1.28%,1.28%,1.28%
-Industrial,Indiana,North Vernon,2.34%,2.34%,2.34%
-Industrial,Iowa,Hampton,0.85%,1.28%,1.43%
-Industrial,Kansas,Iola,2.81%,2.81%,2.81%
-Industrial,Kentucky,Morehead,0.77%,0.77%,0.77%
-Industrial,Louisiana,Natchitoches,1.43%,1.43%,1.43%
-Industrial,Maine,Rockland,1.27%,1.27%,1.27%
-Industrial,Maryland,Denton,1.04%,1.04%,1.04%
-Industrial,Massachusetts,Adams,1.25%,1.25%,1.25%
-Industrial,Michigan,Manistique,1.58%,1.76%,1.76%
-Industrial,Minnesota,Glencoe,1.10%,1.74%,1.83%
-Industrial,Mississippi,Philadelphia,2.07%,2.07%,2.07%
-Industrial,Missouri,Boonville,1.70%,1.70%,1.70%
-Industrial,Montana,Glasgow,0.72%,1.02%,1.44%
-Industrial,Nebraska,Sidney,1.76%,1.87%,1.89%
-Industrial,Nevada,Fallon,1.03%,1.03%,1.03%
-Industrial,New Hampshire,Lancaster,1.26%,1.26%,1.26%
-Industrial,New Jersey,Maurice River Township,1.40%,1.40%,1.40%
-Industrial,New Mexico,Santa Rosa,0.84%,0.84%,0.84%
-Industrial,New York,Warsaw,1.80%,1.80%,1.80%
-Industrial,North Carolina,Edenton,0.91%,0.91%,0.91%
-Industrial,North Dakota,Devils Lake,0.72%,0.72%,0.72%
-Industrial,Ohio,Bryan,1.23%,1.23%,1.23%
-Industrial,Oklahoma,Mangum,0.97%,0.97%,0.97%
-Industrial,Oregon,Tillamook,0.93%,0.93%,0.93%
-Industrial,Pennsylvania,Ridgway,1.18%,1.18%,1.18%
-Industrial,Rhode Island,Hopkinton,1.18%,1.18%,1.18%
-Industrial,South Carolina,Mullins,3.77%,3.77%,3.77%
-Industrial,South Dakota,Vermillion,1.06%,1.06%,1.06%
-Industrial,Tennessee,Savannah,0.97%,0.97%,0.97%
-Industrial,Texas,Fort Stockton,2.44%,2.44%,2.44%
-Industrial,Utah,Richfield,1.01%,1.01%,1.01%
-Industrial,Vermont,Hartford,1.31%,1.31%,1.31%
-Industrial,Virginia,Wise,0.80%,0.80%,0.80%
-Industrial,Washington,Okanogan,0.93%,0.93%,0.93%
-Industrial,West Virginia,Elkins,1.06%,1.06%,1.06%
-Industrial,Wisconsin,Rice Lake,1.23%,1.27%,1.27%
-Industrial,Wyoming,Worland,0.73%,0.73%,0.73%
+﻿Type,RuralOrCity,State,City,Tax Rate 100k,Tax Rate 1M,Tax Rate 25M
+Commercial,City,Alabama,Birmingham,1.45%,1.45%,1.45%
+Commercial,City,Alaska,Anchorage,1.21%,1.46%,1.49%
+Commercial,City,Arizona,Phoenix,2.08%,2.14%,2.57%
+Commercial,City,Arkansas,Little Rock,1.40%,1.40%,1.40%
+Commercial,City,California,Los Angeles,1.17%,1.17%,1.17%
+Commercial,City,Colorado,Denver,2.22%,2.22%,2.22%
+Commercial,City,Connecticut,Bridgeport,3.30%,3.30%,3.30%
+Commercial,City,DC,Washington,1.26%,1.26%,1.93%
+Commercial,City,Delaware,Wilmington,1.06%,1.06%,1.06%
+Commercial,City,Florida,Jacksonville,1.37%,1.62%,1.65%
+Commercial,City,Georgia,Atlanta,1.51%,1.51%,1.51%
+Commercial,City,Hawaii,Honolulu,1.02%,1.02%,1.02%
+Commercial,City,Idaho,Boise,1.08%,1.20%,1.31%
+Commercial,City,Illinois,Aurora*,3.01%,3.01%,3.01%
+Commercial,City,Illinois,Chicago,3.51%,3.51%,3.51%
+Commercial,City,Indiana,Indianapolis,2.91%,2.91%,2.91%
+Commercial,City,Iowa,Des Moines,2.30%,3.02%,3.27%
+Commercial,City,Kansas,Wichita,2.56%,2.56%,2.56%
+Commercial,City,Kentucky,Louisville,1.36%,1.36%,1.36%
+Commercial,City,Louisiana,New Orleans,2.14%,2.14%,2.14%
+Commercial,City,Maine,Portland,2.02%,2.02%,2.02%
+Commercial,City,Maryland,Baltimore,2.80%,2.80%,2.80%
+Commercial,City,Massachusetts,Boston,1.77%,1.77%,1.77%
+Commercial,City,Michigan,Detroit,3.77%,3.77%,3.77%
+Commercial,City,Minnesota,Minneapolis,1.73%,2.77%,2.92%
+Commercial,City,Mississippi,Jackson,2.67%,2.67%,2.67%
+Commercial,City,Missouri,Kansas City,2.82%,2.82%,2.82%
+Commercial,City,Montana,Billings,0.98%,1.06%,1.15%
+Commercial,City,Nebraska,Omaha,1.89%,2.06%,2.07%
+Commercial,City,Nevada,Las Vegas,1.12%,1.12%,1.12%
+Commercial,City,New Hampshire,Manchester,1.69%,1.69%,1.69%
+Commercial,City,New Jersey,Newark,2.52%,2.52%,2.52%
+Commercial,City,New Mexico,Albuquerque,1.44%,1.44%,1.44%
+Commercial,City,New York,Buffalo*,2.18%,2.18%,2.18%
+Commercial,City,New York,New York City,1.32%,1.32%,1.32%
+Commercial,City,North Carolina,Charlotte,0.95%,0.95%,0.95%
+Commercial,City,North Dakota,Fargo,1.08%,1.08%,1.08%
+Commercial,City,Ohio,Columbus,1.93%,1.93%,1.93%
+Commercial,City,Oklahoma,Oklahoma City,1.36%,1.36%,1.36%
+Commercial,City,Oregon,Portland,2.46%,2.46%,2.46%
+Commercial,City,Pennsylvania,Philadelphia,1.14%,1.97%,2.13%
+Commercial,City,Rhode Island,Providence,3.61%,3.61%,3.61%
+Commercial,City,South Carolina,Charleston,1.86%,1.86%,1.86%
+Commercial,City,South Dakota,Sioux Falls,1.24%,1.24%,1.24%
+Commercial,City,Tennessee,Nashville,1.05%,1.05%,1.05%
+Commercial,City,Texas,Houston,2.29%,2.29%,2.29%
+Commercial,City,Utah,Salt Lake City,1.27%,1.27%,1.27%
+Commercial,City,Vermont,Burlington,2.54%,2.54%,2.54%
+Commercial,City,Virginia,Virginia Beach,0.99%,0.99%,0.99%
+Commercial,City,Washington,Seattle,0.77%,0.77%,0.77%
+Commercial,City,West Virginia,Charleston,1.85%,1.85%,1.85%
+Commercial,City,Wisconsin,Milwaukee,2.53%,2.58%,2.59%
+Commercial,City,Wyoming,Cheyenne,0.69%,0.69%,0.69%
+Commercial,Rural,Alabama,Monroeville,0.90%,0.90%,0.90%
+Commercial,Rural,Alaska,Ketchikan,0.92%,1.09%,1.11%
+Commercial,Rural,Arizona,Safford,1.33%,1.38%,1.69%
+Commercial,Rural,Arkansas,Pocahontas,0.83%,0.83%,0.83%
+Commercial,Rural,California,Yreka,1.06%,1.06%,1.06%
+Commercial,Rural,Colorado,Walsenburg,2.30%,2.30%,2.30%
+Commercial,Rural,Connecticut,Litchfield,2.14%,2.14%,2.14%
+Commercial,Rural,Delaware,Georgetown,0.48%,0.48%,0.48%
+Commercial,Rural,Florida,Moore Haven,1.81%,2.13%,2.18%
+Commercial,Rural,Georgia,Fitzgerald,1.69%,1.69%,1.69%
+Commercial,Rural,Hawaii,Kauai,0.57%,0.57%,0.57%
+Commercial,Rural,Idaho,Saint Anthony,1.12%,1.25%,1.37%
+Commercial,Rural,Illinois,Galena,2.13%,2.13%,2.13%
+Commercial,Rural,Indiana,North Vernon,2.90%,2.90%,2.90%
+Commercial,Rural,Iowa,Hampton,1.41%,2.13%,2.39%
+Commercial,Rural,Kansas,Iola,5.10%,5.10%,5.10%
+Commercial,Rural,Kentucky,Morehead,1.35%,1.35%,1.35%
+Commercial,Rural,Louisiana,Natchitoches,1.40%,1.40%,1.40%
+Commercial,Rural,Maine,Rockland,2.48%,2.48%,2.48%
+Commercial,Rural,Maryland,Denton,2.06%,2.06%,2.06%
+Commercial,Rural,Massachusetts,Adams,2.07%,2.07%,2.07%
+Commercial,Rural,Michigan,Manistique,2.87%,2.87%,2.87%
+Commercial,Rural,Minnesota,Glencoe,1.71%,2.70%,2.86%
+Commercial,Rural,Mississippi,Philadelphia,2.07%,2.07%,2.07%
+Commercial,Rural,Missouri,Boonville,2.08%,2.08%,2.08%
+Commercial,Rural,Montana,Glasgow,1.20%,1.30%,1.40%
+Commercial,Rural,Nebraska,Sidney,2.13%,2.32%,2.33%
+Commercial,Rural,Nevada,Fallon,1.29%,1.29%,1.29%
+Commercial,Rural,New Hampshire,Lancaster,2.09%,2.09%,2.09%
+Commercial,Rural,New Jersey,Maurice River Township,2.33%,2.33%,2.33%
+Commercial,Rural,New Mexico,Santa Rosa,1.03%,1.03%,1.03%
+Commercial,Rural,New York,Warsaw,3.00%,3.00%,3.00%
+Commercial,Rural,North Carolina,Edenton,1.11%,1.11%,1.11%
+Commercial,Rural,North Dakota,Devils Lake,1.19%,1.19%,1.19%
+Commercial,Rural,Ohio,Bryan,1.65%,1.65%,1.65%
+Commercial,Rural,Oklahoma,Mangum,0.84%,0.84%,0.84%
+Commercial,Rural,Oregon,Tillamook,1.16%,1.16%,1.16%
+Commercial,Rural,Pennsylvania,Ridgway,1.96%,1.96%,1.96%
+Commercial,Rural,Rhode Island,Hopkinton,2.13%,2.13%,2.13%
+Commercial,Rural,South Carolina,Mullins,2.90%,2.90%,2.90%
+Commercial,Rural,South Dakota,Vermillion,1.77%,1.77%,1.77%
+Commercial,Rural,Tennessee,Savannah,1.06%,1.06%,1.06%
+Commercial,Rural,Texas,Fort Stockton,2.00%,2.00%,2.00%
+Commercial,Rural,Utah,Richfield,1.26%,1.26%,1.26%
+Commercial,Rural,Vermont,Hartford,2.15%,2.15%,2.15%
+Commercial,Rural,Virginia,Wise,0.88%,0.88%,0.88%
+Commercial,Rural,Washington,Okanogan,1.15%,1.15%,1.15%
+Commercial,Rural,West Virginia,Elkins,1.04%,1.04%,1.04%
+Commercial,Rural,Wisconsin,Rice Lake,2.25%,2.30%,2.31%
+Commercial,Rural,Wyoming,Worland,0.73%,0.73%,0.73%
+Industrial,City,Alabama,Birmingham,1.18%,1.18%,1.18%
+Industrial,City,Alaska,Anchorage,1.38%,1.53%,1.55%
+Industrial,City,Arizona,Phoenix,1.25%,1.90%,2.16%
+Industrial,City,Arkansas,Little Rock,1.40%,1.40%,1.40%
+Industrial,City,California,Los Angeles,0.94%,0.94%,0.94%
+Industrial,City,Colorado,Denver,1.78%,1.78%,1.78%
+Industrial,City,Connecticut,Bridgeport,1.79%,1.79%,1.79%
+Industrial,City,DC,Washington,0.76%,1.39%,1.84%
+Industrial,City,Delaware,Wilmington,0.64%,0.64%,0.64%
+Industrial,City,Florida,Jacksonville,1.12%,1.31%,1.33%
+Industrial,City,Georgia,Atlanta,1.40%,1.40%,1.40%
+Industrial,City,Hawaii,Honolulu,0.60%,0.60%,0.60%
+Industrial,City,Idaho,Boise,0.65%,0.99%,1.06%
+Industrial,City,Illinois,Aurora*,1.81%,1.81%,1.81%
+Industrial,City,Illinois,Chicago,1.98%,1.98%,1.98%
+Industrial,City,Indiana,Indianapolis,2.37%,2.37%,2.37%
+Industrial,City,Iowa,Des Moines,1.36%,1.80%,1.95%
+Industrial,City,Kansas,Wichita,1.39%,1.39%,1.39%
+Industrial,City,Kentucky,Louisville,0.77%,0.77%,0.77%
+Industrial,City,Louisiana,New Orleans,2.19%,2.19%,2.19%
+Industrial,City,Maine,Portland,1.10%,1.10%,1.10%
+Industrial,City,Maryland,Baltimore,1.40%,1.40%,1.40%
+Industrial,City,Massachusetts,Boston,1.06%,1.06%,1.06%
+Industrial,City,Michigan,Detroit,1.91%,2.22%,2.22%
+Industrial,City,Minnesota,Minneapolis,1.05%,1.67%,1.76%
+Industrial,City,Mississippi,Jackson,2.75%,2.75%,2.75%
+Industrial,City,Missouri,Kansas City,2.24%,2.24%,2.24%
+Industrial,City,Montana,Billings,0.59%,0.84%,1.19%
+Industrial,City,Nebraska,Omaha,1.58%,1.68%,1.70%
+Industrial,City,Nevada,Las Vegas,0.90%,0.90%,0.90%
+Industrial,City,New Hampshire,Manchester,1.02%,1.02%,1.02%
+Industrial,City,New Jersey,Newark,1.51%,1.51%,1.51%
+Industrial,City,New Mexico,Albuquerque,1.18%,1.18%,1.18%
+Industrial,City,New York,Buffalo*,1.31%,1.31%,1.31%
+Industrial,City,New York,New York City,0.58%,0.58%,0.58%
+Industrial,City,North Carolina,Charlotte,0.77%,0.77%,0.77%
+Industrial,City,North Dakota,Dakota,0.65%,0.65%,0.65%
+Industrial,City,Ohio,Columbus,1.17%,1.17%,1.17%
+Industrial,City,Oklahoma,Oklahoma City,1.47%,1.47%,1.47%
+Industrial,City,Oregon,Portland,1.97%,1.97%,1.97%
+Industrial,City,Pennsylvania,Philadelphia,0.69%,1.18%,1.28%
+Industrial,City,Rhode Island,Providence,1.89%,1.89%,1.89%
+Industrial,City,South Carolina,Charleston,2.39%,2.39%,2.39%
+Industrial,City,South Dakota,Sioux Falls,0.74%,0.74%,0.74%
+Industrial,City,Tennessee,Nashville,1.01%,1.01%,1.01%
+Industrial,City,Texas,Houston,2.29%,2.29%,2.29%
+Industrial,City,Utah,Salt Lake City,1.02%,1.02%,1.02%
+Industrial,City,Vermont,Burlington,1.73%,1.73%,1.73%
+Industrial,City,Virginia,Virginia Beach,0.51%,0.51%,0.51%
+Industrial,City,Washington,Seattle,0.62%,0.62%,0.62%
+Industrial,City,West Virginia,Charleston,1.85%,1.85%,1.85%
+Industrial,City,Wisconsin,Milwaukee,1.39%,1.42%,1.42%
+Industrial,City,Wyoming,Cheyenne,0.66%,0.66%,0.66%
+Industrial,Rural,Alabama,Monroeville,0.71%,0.71%,0.71%
+Industrial,Rural,Alaska,Ketchikan,0.75%,0.89%,0.90%
+Industrial,Rural,Arizona,Safford,0.80%,1.27%,1.45%
+Industrial,Rural,Arkansas,Pocahontas,0.82%,0.82%,0.82%
+Industrial,Rural,California,Yreka,0.85%,0.85%,0.85%
+Industrial,Rural,Colorado,Walsenburg,1.84%,1.84%,1.84%
+Industrial,Rural,Connecticut,Litchfield,1.19%,1.19%,1.19%
+Industrial,Rural,Delaware,Georgetown,0.29%,0.29%,0.29%
+Industrial,Rural,Florida,Moore Haven,1.47%,1.72%,1.75%
+Industrial,Rural,Georgia,Fitzgerald,1.51%,1.51%,1.51%
+Industrial,Rural,Hawaii,Kauai,0.38%,0.38%,0.38%
+Industrial,Rural,Idaho,Saint Anthony,0.67%,1.05%,1.12%
+Industrial,Rural,Illinois,Galena,1.28%,1.28%,1.28%
+Industrial,Rural,Indiana,North Vernon,2.34%,2.34%,2.34%
+Industrial,Rural,Iowa,Hampton,0.85%,1.28%,1.43%
+Industrial,Rural,Kansas,Iola,2.81%,2.81%,2.81%
+Industrial,Rural,Kentucky,Morehead,0.77%,0.77%,0.77%
+Industrial,Rural,Louisiana,Natchitoches,1.43%,1.43%,1.43%
+Industrial,Rural,Maine,Rockland,1.27%,1.27%,1.27%
+Industrial,Rural,Maryland,Denton,1.04%,1.04%,1.04%
+Industrial,Rural,Massachusetts,Adams,1.25%,1.25%,1.25%
+Industrial,Rural,Michigan,Manistique,1.58%,1.76%,1.76%
+Industrial,Rural,Minnesota,Glencoe,1.10%,1.74%,1.83%
+Industrial,Rural,Mississippi,Philadelphia,2.07%,2.07%,2.07%
+Industrial,Rural,Missouri,Boonville,1.70%,1.70%,1.70%
+Industrial,Rural,Montana,Glasgow,0.72%,1.02%,1.44%
+Industrial,Rural,Nebraska,Sidney,1.76%,1.87%,1.89%
+Industrial,Rural,Nevada,Fallon,1.03%,1.03%,1.03%
+Industrial,Rural,New Hampshire,Lancaster,1.26%,1.26%,1.26%
+Industrial,Rural,New Jersey,Maurice River Township,1.40%,1.40%,1.40%
+Industrial,Rural,New Mexico,Santa Rosa,0.84%,0.84%,0.84%
+Industrial,Rural,New York,Warsaw,1.80%,1.80%,1.80%
+Industrial,Rural,North Carolina,Edenton,0.91%,0.91%,0.91%
+Industrial,Rural,North Dakota,Devils Lake,0.72%,0.72%,0.72%
+Industrial,Rural,Ohio,Bryan,1.23%,1.23%,1.23%
+Industrial,Rural,Oklahoma,Mangum,0.97%,0.97%,0.97%
+Industrial,Rural,Oregon,Tillamook,0.93%,0.93%,0.93%
+Industrial,Rural,Pennsylvania,Ridgway,1.18%,1.18%,1.18%
+Industrial,Rural,Rhode Island,Hopkinton,1.18%,1.18%,1.18%
+Industrial,Rural,South Carolina,Mullins,3.77%,3.77%,3.77%
+Industrial,Rural,South Dakota,Vermillion,1.06%,1.06%,1.06%
+Industrial,Rural,Tennessee,Savannah,0.97%,0.97%,0.97%
+Industrial,Rural,Texas,Fort Stockton,2.44%,2.44%,2.44%
+Industrial,Rural,Utah,Richfield,1.01%,1.01%,1.01%
+Industrial,Rural,Vermont,Hartford,1.31%,1.31%,1.31%
+Industrial,Rural,Virginia,Wise,0.80%,0.80%,0.80%
+Industrial,Rural,Washington,Okanogan,0.93%,0.93%,0.93%
+Industrial,Rural,West Virginia,Elkins,1.06%,1.06%,1.06%
+Industrial,Rural,Wisconsin,Rice Lake,1.23%,1.27%,1.27%
+Industrial,Rural,Wyoming,Worland,0.73%,0.73%,0.73%
