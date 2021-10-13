@@ -37,4 +37,5 @@ output_df, total_state, total_local = model(
     inputs_miscellaneous=inputs_miscellaneous
 )
 
-print(output_df.values.tolist())
+output_df.to_csv('sample_output.csv')
+print(output_df)

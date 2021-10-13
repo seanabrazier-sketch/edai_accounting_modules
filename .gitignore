@@ -1,3 +1,5 @@
+sql_data_cache/
 .idea/
+**/__pycache__/**
 **.pyc
-**/__pycache/
+.env

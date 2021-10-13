@@ -1,0 +1,295 @@
+Alabama_Jobs Act Incentives: Jobs
+Alabama_Jobs Act Incentives: Investment
+Alabama_Sales tax exemptions
+Alabama_Property tax abatements
+Alabama_Enterprise Zone credit/exemption
+Arizona_Quality Jobs Tax Credit
+Arizona_Qualified Facility Tax Credit
+Arizona_Research and Development Nonrefundable Income Tax Credit
+Arizona_Research and Development Refundable Tax Credit
+Arizona_Arizona Competes Fund
+Arizona_Sales Tax Exemptions for manufacturing
+Arizona_Computer Data Center Tax Exemption
+Arizona_Arizona Job Training Program
+Arkansas_Advantage Arkansas (Income Tax Credit)
+Arkansas_ArkPlus (income tax credit)
+Arkansas_Targeted ArkPlus
+Arkansas_Research and Development Tax Credit
+Arkansas_Tax Back
+Arkansas_Targeted business incentives
+Arkansas_Create Rebate (Cash Rebate)
+Arkansas_Governor’s Quick Action Closing Fund
+California_California Competes Tax Credit (“Cal Competes”)
+California_New Employment Credit (NEC) (not integrated)
+California_California Research and Development Tax Credit
+California_Manufacturing and R&D Partial Sales and Use Tax Exemption
+Colorado_Job Growth Incentive Tax Credit (JGITC)
+Colorado_Enterprise Zone Tax Credits
+Colorado_Strategic Fund Incentive
+Colorado_Colorado First and Existing Industry Customized Job Training Grant Programs
+Colorado_Sales and use tax refund for manufacturing
+Connecticut_Urban and Industrial Sites Reinvestment (URA) Tax Credit Program
+Connecticut_Research and Development Tax Credit
+Connecticut_Sales and use tax exemptions
+Connecticut_Property tax exemptions for MME
+Connecticut_Enterprise Zone
+Delaware_New Economy Jobs Tax Credit
+Delaware_Strategic Fund
+Delaware_New Business Facility Corporate Income Credit (Blue Collar Jobs Act)
+Delaware_Business and Occupational Gross Receipts Tax Reduction
+Delaware_Business Finder's Fee Tax Credit
+Delaware_Workforce Training Fund
+Delaware_Research and Development Tax Credit
+Florida_Qualified Target Industry Tax Refund (QTI)
+Florida_Capital Investment Tax Credit (CITC)
+Florida_Quick Response Training (QRT)
+Florida_Sales tax exemption for M&E
+Georgia_Quality Jobs Tax Credit
+Georgia_Job Creation Tax Credit
+Georgia_Investment Tax Credit
+Georgia_Mega Project Tax Credit
+Georgia_Research and Development Tax Credit
+Georgia_Sales tax exemptions
+Georgia_Quick Start Employee Training
+Idaho_Idaho Tax Reimbursement Incentive
+Idaho_Idaho Business Advantage
+Idaho_R&D Tax Credit
+Idaho_Idaho Opportunity Fund (not integrated)
+Idaho_Workforce Development Training Fund: Employer Grants
+Idaho_$100,000 Personal Property Tax Exemption
+Idaho_Sales & use tax exemption
+Idaho_Data Center sales tax exemption
+Idaho_Non-retail facilities property tax exemption
+Idaho_Large Business Property Tax Cap
+Idaho_Large employer property tax cap
+Illinois_Economic Development for a Growing Economy (EDGE)
+Illinois_Blue Collar Jobs Act (Beginning Jan 1st, 2021)
+Illinois_High Impact Business Program (HIB)
+Illinois_Enterprise Zone Program
+Illinois_Large Business Development Program (LBDP)
+Illinois_Employer Training Investment Program (ETIP)
+Illinois_Data Center Tax Exemption
+Illinois_Property Tax Exemptions
+Indiana_Data Center Gross Retail and Use Tax Exemption
+Indiana_Research and Development tax incentives
+Indiana_Headquarters Relocation Tax Credit (HQRTC)
+Indiana_Hoosier Business Investment Tax Credit Program (HBI)
+Indiana_Economic Development for a Growing Economy Program (EDGE)
+Indiana_Skills Enhancement Fund (SEF)
+Iowa_Economic Development Set-Aside (EDSA)
+Iowa_High Quality Jobs Program
+Iowa_Targeted Jobs Withholding Tax Credit
+Iowa_Research Activities Credit
+Iowa_New Jobs Tax Credit
+Kansas_Promoting Employment Across Kansas (PEAK)
+Kansas_High Performance Incentive Program (HPIP)
+Kansas_Research & Development Tax Credit
+Kentucky_Kentucky Business Investment (KBI) Program
+Kentucky_Kentucky Enterprise Initiative Act (KEIA)
+Kentucky_Grant-in-Aid program
+Kentucky_Kentucky Reinvestment Act (KRA)
+Louisiana_Quality Jobs (QJ) program
+Louisiana_Research and Development Tax Credit
+Louisiana_Enterprise Zone
+Louisiana_Industrial Tax Exemption
+Louisiana_Sales Tax Exemption on Manufacturing Machinery & Equipment
+Louisiana_Sales Tax Exemption on Business Utilities
+Louisiana_FastStart Job Training Assistance Program
+Maine_Employment Tax Increment Financing Program (ETIF)
+Maine_Pine Tree Development Zone Program (PTDZ)
+Maine_Major Business Headquarters Expansion Program (MBHQ)
+Maine_Research expense tax credit
+Maine_Sales tax exemptions
+Maine_Business Equipment Tax Exemption (BETE)
+Maryland_Job Creation Tax Credit (JCTC)
+Maryland_Research and Development Tax Credit
+Maryland_Maryland Economic Development Assistance Authority and Fund (MEDAAF)
+Maryland_Economic Development Opportunities Fund (Sunny Day)
+Maryland_Enterprise Zone
+Massachusetts_Sales & Use Tax Exemptions
+Massachusetts_Property Tax Incentives
+Massachusetts_Massachusetts Investment Tax Credit (ITC)
+Massachusetts_The Economic Development Incentive Program (EDIP)
+Massachusetts_Massachusetts Life Sciences Initiative (not included)
+Massachusetts_Research and Development Tax Credit
+Michigan_Michigan Business Development Program (MBDP)
+Michigan_Border County Incentives
+Michigan_Sales tax exemptions
+Michigan_State Education Tax Abatement
+Michigan_Industrial Property Tax Abatement
+Michigan_State Essential Services Assessment Exemption Program
+Michigan_Michigan Works! (not included)
+Minnesota_Research and Development Tax Credit
+Minnesota_Minnesota Job Creation Fund (MJCF)
+Minnesota_Border Cities Enterprise Zone Program
+Minnesota_Data Centers
+Minnesota_Sales and Use Tax Exemptions
+Minnesota_Greater Minnesota Job Expansion Program
+Minnesota_Minnesota Job Training Incentive Program (JTIP)
+Mississippi_Advantage Jobs Incentive Program
+Mississippi_Jobs Tax Credit
+Mississippi_National or Regional Headquarters Tax Credit
+Mississippi_Research and Development Skills Tax Credit
+Mississippi_Manufacturing Investment Tax Credit
+Mississippi_Growth and Prosperity (GAP) Program
+Mississippi_Sales and Use Tax Exemption for Construction or Expansion
+Mississippi_Sales and Use Tax Exemption for Data Center enterprises
+Mississippi_Property tax abatements
+Missouri_Missouri Works
+Missouri_Business Facility Headquarters Tax Credit Program
+Missouri_Missouri One Start
+Missouri_Data Center Sales and Utility Tax Exemption
+Missouri_Sales Tax Exemption for Manufacturers
+Montana_Big Sky Economic Development Trust Fund
+Montana_New or Expanding Industry Wage Credit
+Montana_New or Expanding Industries property tax abatement
+Montana_New Industrial Property or R&D Tax Abatement
+Montana_Empowerment Zone Tax Credit
+Montana_Enterprise Data Center Class 17 Property Tax
+Montana_The Primary Sector Workforce Training Grant
+Nebraska_Nebraska Advantage – Research and Development Credit
+Nebraska_Nebraska Customized Job Training Program
+Nebraska_Nebraska Advantage
+Nevada_Catalyst Fund
+Nevada_Silver State Works
+Nevada_Nevada Tax Abatements
+New Hampshire_Economic Revitalization Zone Tax Credits (ERZ Tax Credit) Program
+New Hampshire_Research and Development Tax Credit
+New Hampshire_Coos County Job Creation Tax Credit
+New Jersey_Grow New Jersey
+New Jersey_Urban Enterprise Zone (UEZ) Sales Tax Exemption
+New Mexico_High Wage Jobs Tax Credit
+New Mexico_Rural Jobs Tax Credit
+New Mexico_Investment Tax Credit for Manufacturers
+New Mexico_Job Training Incentive Program (JTIP)
+New York_Business Expansion & Retention Grants
+New York_Excelsior Jobs Program
+New York_Investment Tax Credit (ITC)
+New York_Employment Incentive Credit (EIC)
+New York_Employee Training Incentive Program
+New York_Manufacturer's Real Property Tax Credit
+New York_Sales Tax Exemptions
+North Carolina_Job Development Investment Grant (JDIG)
+North Carolina_One North Carolina Fund (One NC)
+North Carolina_Customized Training Program
+North Carolina_Sales tax exemptions
+North Carolina_Data center sales tax exemptions
+North Dakota_Research Expense Credit
+North Dakota_Workforce Recruitment Credit
+North Dakota_Renaissance Zones
+North Dakota_Sales and Use Tax Exemptions
+North Dakota_Property Tax Exemptions
+North Dakota_Income Tax Exemptions
+Ohio_Job Creation Tax Credit (JCTC)
+Ohio_Research & Development Investment Tax Credit
+Ohio_JobsOhio Economic Development Grant
+Ohio_JobsOhio Research & Development (R&D) Center Grant
+Ohio_Enterprise Zone
+Ohio_Sales & Use Tax Exemption
+Ohio_Data Center Tax Abatement
+Oklahoma_Oklahoma Quality Jobs Program
+Oklahoma_Small Employer Quality Jobs Program
+Oklahoma_The 21st Century Oklahoma Quality Jobs Program
+Oklahoma_Oklahoma Quick Action Closing Fund
+Oklahoma_Insurance Premium Tax Credit
+Oklahoma_Investment / New Jobs Income Tax Credit
+Oklahoma_Quality Jobs + Investment Tax Credit
+Oklahoma_Sales & Use Tax Exemptions/refunds
+Oklahoma_Ad valorem tax exemptions
+Oklahoma_Opportunity and Enterprise Zones
+Oregon_Business Expansion Program (BEP)
+Oregon_Governors’ Strategic Reserve Fund
+Oregon_Strategic Investment Program (SIP) Property Tax Abatement
+Oregon_Enterprise Zones
+Oregon_Oregon Investment Advantage
+Pennsylvania_Job Creation Tax Credit (JCTC)
+Pennsylvania_Manufacturing Tax Credit
+Pennsylvania_Research and Development Tax Credit
+Pennsylvania_Qualified Manufacturing Innovation and Reinvestment Deduction
+Pennsylvania_Pennsylvania First Program (PA First)
+Pennsylvania_Redevelopment Assistance Capital Program (RACP)
+Pennsylvania_Keystone Opportunity Zone (KOZ)
+Pennsylvania_Keystone Innovation Zone (KOIZ)
+Pennsylvania_Computer Data Center Equipment Incentive Program
+Rhode Island_Manufacturers' property tax exemption
+Rhode Island_Qualified Jobs Incentive Tax Credit
+Rhode Island_Anchor Institution Tax Credit (expired 2019)
+Rhode Island_First Wave Closing Fund (not on Commerce RI website)
+Rhode Island_Investment Tax Credit
+Rhode Island_High Performance Manufacturing Investment Tax Credit
+Rhode Island_High Performance Non-Manufacturing Investment Tax Credit
+Rhode Island_New Employment Tax Incentive
+Rhode Island_Job Training Tax Credit
+Rhode Island_Research and development elective deduction
+Rhode Island_Research and development property credit
+Rhode Island_Research and development expense credit
+Rhode Island_Sales and Use Tax Exemptions
+South Carolina_Jobs Tax Credit
+South Carolina_Corporate Headquarters Tax Credit
+South Carolina_Enhanced Corporate Headquarters Tax Credit
+South Carolina_Investment Tax Credit
+South Carolina_Research and Development Tax Credit
+South Carolina_Corporate Income Tax Moratorium
+South Carolina_Job Development Credit (or Job Development Credit)
+South Carolina_Sales tax exemptions
+South Carolina_Data centers sales tax exemption
+South Carolina_Property tax exemptions and abatements
+South Dakota_South Dakota Jobs Grant Program
+South Dakota_Reinvestment Payment Program
+South Dakota_South Dakota Workforce Development Program
+South Dakota_FYI. Businesses not subject to following taxes
+Tennessee_FastTrack Infrastructure, job training assistance, and economic development grants
+Tennessee_Job Tax Credit
+Tennessee_Enhanced Job Tax Credit
+Tennessee_Industrial Machinery Tax Credit
+Tennessee_Sales tax exemptions
+Texas_Texas Enterprise Fund (TEF)
+Texas_Enterprise Zones
+Texas_Data Center Sales Tax Exemption
+Texas_Sales Tax Exemption with Manufacturing
+Texas_Texas Research & Development Tax Credit
+Texas_Texas Economic Development Act (Chapter 313)
+Utah_Economic Development Tax Increment Finance Tax Credit (EDTIF)
+Utah_Research Activities Credits
+Utah_Industrial Assistance Fund (IAF)
+Utah_Enterprise Zone Tax Credits
+Utah_Sales & Use Tax Exemptions
+Vermont_Research and Development Tax Credit
+Vermont_Vermont Employment Growth Incentive (VEGI)
+Virginia_Enterprise Zone Job Creation Grant
+Virginia_Enterprise Zone Real Property Investment Grant
+Virginia_Sales tax exemptions
+Virginia_Data center retail sales & use tax exemption
+Virginia_Major R&D Expenses Tax Credit
+Virginia_Refundable R&D Expense Tax Credit
+Virginia_Major Business Facility Job Tax Credit
+Virginia_Commonwealth’s Opportunity Fund (COF)
+Virginia_Virginia Investment Partnership Grant (VIP)
+Virginia_Major Eligible Employer Grant (MEE)
+Virginia_New Company Incentive
+Virginia_Virginia Economic Development Incentive Grant (VEDIG)
+Virginia_Virginia Jobs Investment Program - Virginia New Jobs Program (VJIP)
+Virginia_Virginia Talent Accelerator Program
+Washington_Sales and Use Tax Exemptions
+Washington_Governor’s Strategic Reserve Fund (GSRF)
+Washington_Work Start
+Washington_Rural County/CEZ Sales and Use/Public Utility Tax Exemption
+Washington_Rural County/CEZ Business and Occupation (B&O) Tax Credits
+West Virginia_Economic Opportunity Tax Credit for Corporate Headquarters Relocation
+West Virginia_Economic Opportunity Tax Credit
+West Virginia_Economic Opportunity Tax Credit for Job Creation
+West Virginia_Manufacturing Investment Tax Credit
+West Virginia_Manufacturing Property Tax Adjustment Credit
+West Virginia_Sales & Use Tax Exemption
+West Virginia_High Technology Valuation Act (Data Centers)
+West Virginia_Governor’s Guaranteed Work Force Program
+West Virginia_Five for Ten Program - Manufacturing
+Wisconsin_Nonrefundable Research Credit
+Wisconsin_Business Development Tax Credit (BTC) Program
+Wisconsin_Enterprise Zone Jobs Tax Credit
+Wisconsin_Development Opportunity Zone
+Wisconsin_Workforce Training Grants
+Wisconsin_Sales and use tax exemptions
+Wisconsin_Property tax exemptions
+Wyoming_Manufacturing Sales Tax Exemption
+Wyoming_Data Center Sales Tax Exemption
