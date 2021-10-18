@@ -8,9 +8,16 @@ from accounting.sector_shares import get_cost_of_goods_sold, get_other_above_the
 from accounting.states import STATES
 from accounting.profit_and_loss import PNL
 
+
+DEBUG = True
+
 # TODO pull from DB
 federal_income_tax = 0.1323
 federal_minimum_wage = 7.25
+
+inputs_county_overrides = {
+
+}
 
 inputs_basic = {
     'Sector': 'Computer and electronic product manufacturing',
@@ -60,15 +67,30 @@ census_acs_unemp_state_df[POPULATION_16_YEARS_AND_OVER] = census_acs_unemp_state
 total_population = census_acs_unemp_state_df[POPULATION_16_YEARS_AND_OVER].sum()
 
 unemployment_rate_table_code = census_acs_unemp_state_headings_df.loc['Percent Estimate!!EMPLOYMENT STATUS!!Population 16 years and over!!In labor force!!Civilian labor force!!Unemployed']['Table code']
+
 state_to_unemployment_rate = {
     state: float(census_acs_unemp_state_df.loc[state][unemployment_rate_table_code])/100
     for state in STATES
+}
+
+county_to_unemployment_rate = {
+    county: float(special_localities_df.loc[county]['Unemployment, 2019']) / 100
+    for county in special_localities_df[special_localities_df['Unemployment, 2019']!=''].index.values.tolist()
 }
 
 state_to_per_capita_income = {
     state: float(bls_per_capita_income_df.loc[state]['2018'].replace(',','').replace('$', '').strip())
     for state in STATES
 }
+
+county_to_per_capita_income = {}
+for county in bls_per_capita_income_df[bls_per_capita_income_df['2018'] != ''].index.values.tolist():
+    v = bls_per_capita_income_df.loc[county]['2018']
+    if isinstance(v, pd.Series):
+        v = float(v.apply(lambda x: float(x.replace(',', '').replace('$', '').strip())).mean())
+    else:
+        v = float(v.replace(',', '').replace('$', '').strip())
+    county_to_per_capita_income[county] = v
 
 state_to_poverty_rate = {
     state: float(census_poverty_state_df.loc[state]['PovPct_All Ages'])
@@ -174,6 +196,12 @@ prevailing_wages_state = {
     for state in STATES
 }
 
+prevailing_wages_county = {
+    county: float(bls_wages_county_df.loc[county]['Annual wages (52 weeks)'])
+    for county in bls_wages_county_df.index.values.tolist()
+}
+
+
 # Project level inputs
 project_level_inputs = {
     'Attraction or Expansion?': 'Relocation' if inputs_basic['Project Type'] == 'New' else 'Expansion',
@@ -196,7 +224,7 @@ project_level_inputs = {
         state: census_susb_state_df.loc[state, promised_jobs_range, rollup_irs_sector]['Avg. implied sales'].astype(float).sum()
         for state in STATES
     },
-    'Prevailing wages (BLS QCEW annual wages, March 2020)': prevailing_wages_state,
+    'Prevailing wages': prevailing_wages_state,
     'Equivalent payroll': {
         state: prevailing_wages_state[state] * promised_jobs
         for state in STATES
@@ -219,9 +247,14 @@ all_inputs = {
     'project_level_inputs': project_level_inputs,
     # State socioeconomic factors
     'state_to_unemployment_rate': state_to_unemployment_rate,
+    'county_to_unemployment_rate': county_to_unemployment_rate,
     'state_to_per_capita_income': state_to_per_capita_income,
+    'county_to_per_capita_income': county_to_per_capita_income,
     'state_to_prevailing_wages': prevailing_wages_state,
+    'county_to_prevailing_wages': prevailing_wages_county,
     'state_to_poverty_rate': state_to_poverty_rate,
+    'county_overrides': inputs_county_overrides,
+    'workforce_programs_ipj_map': workforce_programs_ipj_map
 }
 
 print(json.dumps(project_level_inputs, indent=4))
@@ -276,7 +309,9 @@ for state, programs in incentive_programs_by_state.items():
             )
             eligible = incentive.estimated_eligibility()
             print(f'\tEligibility for {program}: {eligible}')
-            if eligible:
+            if eligible or DEBUG:
                 print(f'\t\tEstimated Incentives: {incentive.estimated_incentives()}')
-        except:
+        except ModuleNotFoundError:
             print(f'\tNo python file found for {program}')
+        except Exception as e:
+            print(f'\tError: {e}')
