@@ -1,5 +1,6 @@
 from accounting.incentives import *
 from util.capex import PersonalProperty
+from accounting.data_store import ne_advantage_sectors_df
 
 
 class IncentiveProgram(IncentiveProgramBase):
@@ -33,10 +34,23 @@ class IncentiveProgram(IncentiveProgramBase):
         print('ratio: {}'.format(promised_wages / prevailing_wages_state))
         print('age multiple: {}'.format(self.wage_multiple))
 
+        # Tiers
+        tiers = ['Type of sector', 'Tier One', 'Tier Two regular',
+                 'Tier Two Data center', 'Tier Three', 'Tier Four', 'Tier Five',
+                 'Tier Six small', 'Tier Six large', 'Rural Level One',
+                 'Rural Level Two']
 
+        high_level_category = kwargs['project_level_inputs']['High-level category']
+        eligible_tiers = []
+        for tier in tiers:
+            if high_level_category in ne_advantage_sectors_df[tier].values.tolist():
+                eligible_tiers.append(tier)
+
+        self.eligible_tiers = eligible_tiers
+        print('eligible_tiers: {}'.format(eligible_tiers))
 
     def estimated_eligibility(self) -> bool:
-        return True
+        return len(self.eligible_tiers) > 0
 
     def estimated_incentives(self) -> List[float]:
         # Todo

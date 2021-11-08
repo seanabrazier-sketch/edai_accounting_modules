@@ -206,6 +206,7 @@ prevailing_wages_county = {
 project_level_inputs = {
     'Attraction or Expansion?': 'Relocation' if inputs_basic['Project Type'] == 'New' else 'Expansion',
     'IRS Sector': inputs_basic['Sector'],
+    'Project type': inputs_basic['Project Type'],
     'High-level category': high_level_category,
     'Project category': inputs_basic['Function'],
     'Rollup IRS sector': rollup_irs_sector,
@@ -254,7 +255,8 @@ all_inputs = {
     'county_to_prevailing_wages': prevailing_wages_county,
     'state_to_poverty_rate': state_to_poverty_rate,
     'county_overrides': inputs_county_overrides,
-    'workforce_programs_ipj_map': workforce_programs_ipj_map
+    'workforce_programs_ipj_map': workforce_programs_ipj_map,
+    'state_to_manual_share_of_sales': state_to_manual_share_of_sales,
 }
 
 print(json.dumps(project_level_inputs, indent=4))
