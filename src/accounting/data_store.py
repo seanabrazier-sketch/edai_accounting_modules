@@ -108,6 +108,9 @@ state_ui_rates_df = load("20210904_State UI Rates", columns=['Geography', 'Per F
 state_ui_rates_df.set_index('Geography', inplace=True)
 state_ui_rates_df['Per FTE UI payment ($)'] = state_ui_rates_df['Per FTE UI payment ($)'].apply(lambda x: float(x.replace('$', '').replace(',', '')))
 
+ne_advantage_sectors_df = load("20210904_NE Advantage Sectors")
+
+
 engine.dispose()
 
 
