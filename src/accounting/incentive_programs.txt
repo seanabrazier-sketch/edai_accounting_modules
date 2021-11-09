@@ -97,7 +97,7 @@ Louisiana_Sales Tax Exemption on Business Utilities
 Louisiana_FastStart Job Training Assistance Program
 Maine_Employment Tax Increment Financing Program (ETIF)
 Maine_Pine Tree Development Zone Program (PTDZ)
-Maine_Major Business Headquarters Expansion Program (MBHQ)
+Maine_MajorBusiness Headquarters Expansion Program (MBHQ)
 Maine_Research expense tax credit
 Maine_Sales tax exemptions
 Maine_Business Equipment Tax Exemption (BETE)

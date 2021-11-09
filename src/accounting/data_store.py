@@ -111,7 +111,7 @@ state_ui_rates_df['Per FTE UI payment ($)'] = state_ui_rates_df['Per FTE UI paym
 engine.dispose()
 
 
-with open(os.path.join(os.path.dirname(__file__), 'incentive_programs.txt'), 'r') as f:
+with open(os.path.join(os.path.dirname(__file__), 'incentive_programs.txt'), 'r',encoding="utf8") as f:
     incentive_programs_list = f.read().strip().splitlines()
 
 incentive_programs_by_state = {}

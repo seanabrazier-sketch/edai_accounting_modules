@@ -14,7 +14,7 @@ class IncentiveProgram(IncentiveProgramBase):
 
     def estimated_eligibility(self) -> bool:
         if self.project_level_inputs['High-level category'] == 'Manufacturing' \
-                or self.project_level_inputs['Project category'] == 'R&D Center':
+                or self.project_level_inputs['Project category'] >= 'R&D Center':
             return True
         else:
             return False
