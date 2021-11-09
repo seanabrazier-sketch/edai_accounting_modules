@@ -256,6 +256,8 @@ all_inputs = {
     'state_to_poverty_rate': state_to_poverty_rate,
     'county_overrides': inputs_county_overrides,
     'workforce_programs_ipj_map': workforce_programs_ipj_map,
+    'discretionary_incentives_groups': discretionary_incentives_groups,
+    'sales_apportionment_df': sales_apportionment_df
     'state_to_manual_share_of_sales': state_to_manual_share_of_sales,
 }
 
