@@ -1,0 +1,30 @@
+from accounting.incentives import *
+from accounting.data_store import *
+
+
+class IncentiveProgram(IncentiveProgramBase):
+    def __init__(self, **kwargs):
+        self.county = kwargs['county_overrides'].get('South Carolina')
+        self.pnl_inputs = kwargs['pnl_inputs']
+        self.project_level_inputs = kwargs['project_level_inputs']
+        self.bls_wages = kwargs['state_to_prevailing_wages']['South Carolina']
+        self.min_capex = 50000000
+        self.state_local_sales_tax = self.pnl_inputs['state_local_sales_tax_rate']
+        self.pnl = kwargs['pnl']
+
+
+    def estimated_eligibility(self) -> bool:
+        if ((self.project_level_inputs['IRS Sector'] == 'Data processing, hosting, and related services') +
+            (self.project_level_inputs['Promised jobs'] >= 25) +
+            (self.project_level_inputs['Promised capital investment'] >= self.min_capex) +
+            (self.project_level_inputs['Promised wages'] >= 1.5 * self.bls_wages)) == 4:
+            return True
+        else:
+            return False
+
+    def estimated_incentives(self) -> List[float]:
+        incentives = [0.0]
+        for i in range(1, 11):
+            incentives.append(self.pnl.npv_dicts['Annual capital expenditures'][i] * self.state_local_sales_tax)
+
+        return incentives
