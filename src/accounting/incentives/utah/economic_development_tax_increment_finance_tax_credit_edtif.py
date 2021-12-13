@@ -11,7 +11,9 @@ class IncentiveProgram(IncentiveProgramBase):
         self.irs_sector = self.project_level_inputs['IRS Sector'].lower()
         self.special_localities = special_localities_df['Zone Type 1']['Beaver County, UT']
         self.wages_share = 1.1
-        self.bls_wages = kwargs['state_to_prevailing_wages']['Utah']
+        self.prevailing_wages_state = kwargs['state_to_prevailing_wages']['Utah']
+        # Default to state value
+        self.bls_wages = kwargs['county_to_prevailing_wages'].get(self.county, self.prevailing_wages_state)
         self.utah_sector = ''
         self.state_revenue = .30
         self.rd_spending = self.pnl_inputs['research_and_development_rate']

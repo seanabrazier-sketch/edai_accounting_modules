@@ -17,7 +17,9 @@ class IncentiveProgram(IncentiveProgramBase):
         self.state_ui_tax_amount = self.pnl_inputs['state_ui_tax_amount']
         self.project_level_inputs = kwargs['project_level_inputs']
         self.special_localities = special_localities_df['Zone Type 2']['Anderson County, SC']
-        self.bls_wages = kwargs['state_to_prevailing_wages']['South Carolina']
+        self.prevailing_wages_state = kwargs['state_to_prevailing_wages']['South Carolina']
+        # Default to state value
+        self.bls_wages = kwargs['county_to_prevailing_wages'].get(self.county, self.prevailing_wages_state)
         self.irs_sector = self.project_level_inputs['IRS Sector'].lower()
         self.cogs = irs_is_statements_df.groupby(['number'])[self.irs_sector].sum()[
                         46] / \

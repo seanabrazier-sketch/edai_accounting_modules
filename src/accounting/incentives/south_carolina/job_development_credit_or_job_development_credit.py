@@ -7,7 +7,9 @@ class IncentiveProgram(IncentiveProgramBase):
         self.county = kwargs['county_overrides'].get('South Carolina')
         self.pnl_inputs = kwargs['pnl_inputs']
         self.project_level_inputs = kwargs['project_level_inputs']
-        self.bls_wages = kwargs['state_to_prevailing_wages']['South Carolina']
+        self.prevailing_wages_state = kwargs['state_to_prevailing_wages']['South Carolina']
+        # Default to state value
+        self.bls_wages = kwargs['county_to_prevailing_wages'].get(self.county, self.prevailing_wages_state)
         self.heath_benefit = 'Yes'
         self.misc_requirements = 'Yes'
         self.withholding_amt = ((self.project_level_inputs['Promised wages'] - 13110) * .07) + 493.06

@@ -8,7 +8,9 @@ class IncentiveProgram(IncentiveProgramBase):
         self.county = kwargs['county_overrides'].get('Texas')
         self.pnl_inputs = kwargs['pnl_inputs']
         self.project_level_inputs = kwargs['project_level_inputs']
-        self.bls_wages = kwargs['state_to_prevailing_wages']['Texas']
+        self.prevailing_wages_state = kwargs['state_to_prevailing_wages']['Texas']
+        # Default to state value
+        self.bls_wages = kwargs['county_to_prevailing_wages'].get(self.county, self.prevailing_wages_state)
         self.min_county_wages = 1.1
         # just hardcode this for now until you find data:
         self.min_county_capex = 28886501

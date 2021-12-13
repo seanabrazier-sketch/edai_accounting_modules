@@ -8,7 +8,9 @@ class IncentiveProgram(IncentiveProgramBase):
         self.county = kwargs['county_overrides'].get('Tennessee')
         self.pnl_inputs = kwargs['pnl_inputs']
         self.project_level_inputs = kwargs['project_level_inputs']
-        self.bls_wages = kwargs['state_to_prevailing_wages']['Tennessee']
+        self.prevailing_wages_state = kwargs['state_to_prevailing_wages']['Tennessee']
+        # Default to state value
+        self.bls_wages = kwargs['county_to_prevailing_wages'].get(self.county, self.prevailing_wages_state)
         self.discretionary_incentives_group = kwargs['discretionary_incentives_groups'].median('Incentive per job')
         self.median_ipj = \
             self.discretionary_incentives_group['Incentive per job']['Tennessee FastTrack Economic Development Grant']

@@ -40,6 +40,9 @@ naics_master_crosswalk_df = load("20210904_2017 NAICS master crosswalk")
 naics_master_crosswalk_df = naics_master_crosswalk_df[pd.notnull(naics_master_crosswalk_df['Sectors_Census industry earnings'])]
 naics_master_crosswalk_df.set_index('Sector_Rollup IRS', inplace=True)
 
+#Flagging for Evan to see. I don't seem to have access to certain csv's
+#using local csv for 20210904_State-specific sectors.csv
+
 census_industry_crosswalk_df = load("20210904_Census Industry crosswalk")
 census_industry_crosswalk_df = census_industry_crosswalk_df[pd.notnull(census_industry_crosswalk_df['Rollup IRS sector'])]
 census_industry_crosswalk_df.set_index('Rollup IRS sector', inplace=True)

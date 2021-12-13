@@ -26,7 +26,7 @@ class IncentiveProgram(IncentiveProgramBase):
 
         incentives = [0.0, output]
         for j in range(1, 10):
-            if len(incentives[1:]) + 1 >= 4:
+            if len(incentives[2:]) + 1 >= 4:
                 incentives.append(0)
             else:
                 incentives.append(output)

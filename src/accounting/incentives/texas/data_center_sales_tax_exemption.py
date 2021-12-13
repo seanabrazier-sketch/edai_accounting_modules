@@ -10,7 +10,9 @@ class IncentiveProgram(IncentiveProgramBase):
         self.project_level_inputs = kwargs['project_level_inputs']
         self.min_sq_ft = 'Yes'
         self.min_jobs = 20
-        self.bls_wages = kwargs['state_to_prevailing_wages']['Texas']
+        self.prevailing_wages_state = kwargs['state_to_prevailing_wages']['Texas']
+        # Default to state value
+        self.bls_wages = kwargs['county_to_prevailing_wages'].get(self.county, self.prevailing_wages_state)
         self.min_county_wages = 1.2
         self.min_cap_investment = 200000000
         self.state_local_sales_tax = self.pnl_inputs['state_local_sales_tax_rate']

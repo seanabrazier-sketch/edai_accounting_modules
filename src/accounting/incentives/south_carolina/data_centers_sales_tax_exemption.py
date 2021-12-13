@@ -7,7 +7,10 @@ class IncentiveProgram(IncentiveProgramBase):
         self.county = kwargs['county_overrides'].get('South Carolina')
         self.pnl_inputs = kwargs['pnl_inputs']
         self.project_level_inputs = kwargs['project_level_inputs']
-        self.bls_wages = kwargs['state_to_prevailing_wages']['South Carolina']
+        self.prevailing_wages_state = kwargs['state_to_prevailing_wages']['South Carolina']
+        # Default to state value
+        self.prevailing_wages_county = kwargs['county_to_prevailing_wages'].get(self.county, self.prevailing_wages_state)
+        self.bls_wages = min(self.prevailing_wages_state, self.prevailing_wages_county)
         self.min_capex = 50000000
         self.state_local_sales_tax = self.pnl_inputs['state_local_sales_tax_rate']
         self.pnl = kwargs['pnl']
