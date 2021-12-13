@@ -5,7 +5,9 @@ from accounting.data_store import *
 class IncentiveProgram(IncentiveProgramBase):
     def __init__(self, **kwargs):
         self.county = kwargs['county_overrides'].get('Virginia')
-        self.bls_wages = kwargs['state_to_prevailing_wages']['Virginia']
+        self.prevailing_wages_state = kwargs['state_to_prevailing_wages']['Virginia']
+        # Default to state value
+        self.bls_wages = kwargs['county_to_prevailing_wages'].get(self.county, self.prevailing_wages_state)
         self.pnl_inputs = kwargs['pnl_inputs']
         self.project_level_inputs = kwargs['project_level_inputs']
         self.irs_sector = self.project_level_inputs['IRS Sector'].lower()

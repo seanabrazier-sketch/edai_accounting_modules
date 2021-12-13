@@ -98,7 +98,7 @@ class IncentiveProgram(IncentiveProgramBase):
 
         incentives = []
         for i in nums7:
-            if len(incentives[1:]) + 1 >= 10:
+            if len(incentives[2:]) + 1 >= 10:
                 incentives.append(0)
             else:
                 incentives.append(i)

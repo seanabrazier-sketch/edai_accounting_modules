@@ -8,7 +8,6 @@ class IncentiveProgram(IncentiveProgramBase):
         self.county = kwargs['county_overrides'].get('Rhode Island')
         self.pnl_inputs = kwargs['pnl_inputs']
         self.project_level_inputs = kwargs['project_level_inputs']
-        self.bls_wages = kwargs['state_to_prevailing_wages']['Rhode Island']
         self.rhode_island_high_performance = 'High performance'
         self.capex = kwargs['capex']
 
