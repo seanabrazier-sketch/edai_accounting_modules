@@ -261,7 +261,7 @@ all_inputs = {
     'state_to_manual_share_of_sales': state_to_manual_share_of_sales,
 }
 
-print(json.dumps(project_level_inputs, indent=4))
+#print(json.dumps(project_level_inputs, indent=4))
 
 for state, programs in incentive_programs_by_state.items():
     print('State: {}'.format(state))
