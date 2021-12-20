@@ -7,6 +7,7 @@ from util.personal_income_tax import PersonalIncomeTax
 from accounting.sector_shares import get_cost_of_goods_sold, get_other_above_the_line_costs, get_salaries_and_wages
 from accounting.states import STATES
 from accounting.profit_and_loss import PNL
+from accounting.carry_forward import IncentiveCategory, IncentiveType, INCENTIVE_TYPE_TO_CATEGORY_MAPPING
 
 
 DEBUG = True
@@ -61,6 +62,16 @@ inputs_capex_schedule = {
     'Automatic capex': commercial_or_industrial,
     'Capex breakout': 'Automatic capex'
 }
+
+# Carry forward start
+incentive_programs_types = {
+    k: IncentiveType.from_str(v) for k, v in incentive_programs_types.items()
+}
+incentive_programs_categories = {
+    k: INCENTIVE_TYPE_TO_CATEGORY_MAPPING[v] for k, v in incentive_programs_types.items()
+}
+
+print(incentive_programs_categories)
 
 # Sales apportionment calcs
 census_acs_unemp_state_df[POPULATION_16_YEARS_AND_OVER] = census_acs_unemp_state_df[POPULATION_16_YEARS_AND_OVER].astype(float)
