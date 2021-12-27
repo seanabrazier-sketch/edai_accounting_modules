@@ -120,6 +120,14 @@ engine.dispose()
 with open(os.path.join(os.path.dirname(__file__), 'incentive_programs.txt'), 'r',encoding="utf8") as f:
     incentive_programs_list = f.read().strip().splitlines()
 
+with open(os.path.join(os.path.dirname(__file__), 'incentive_programs_types.txt'), 'r',encoding="utf8") as f:
+    incentive_programs_types_list = f.read().strip().splitlines()
+
+
+incentive_programs_types = {
+    incentive_programs_list[i]: incentive_programs_types_list[i]
+    for i in range(len(incentive_programs_list))
+}
 incentive_programs_by_state = {}
 for p in incentive_programs_list:
     state = p.split('_', 1)[0]
@@ -127,3 +135,7 @@ for p in incentive_programs_list:
     if state not in incentive_programs_by_state:
         incentive_programs_by_state[state] = []
     incentive_programs_by_state[state].append(program)
+
+
+#print(incentive_programs_types)
+#print(list(set(incentive_programs_types_list)))

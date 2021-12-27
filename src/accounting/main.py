@@ -5,8 +5,9 @@ from accounting.eligibility_calculator import get_incentive_program
 from util.capex import capex_report, IndustryType
 from util.personal_income_tax import PersonalIncomeTax
 from accounting.sector_shares import get_cost_of_goods_sold, get_other_above_the_line_costs, get_salaries_and_wages
-from accounting.states import STATES
+from accounting.states import STATES, abbrev_us_state
 from accounting.profit_and_loss import PNL
+from accounting.carry_forward import IncentiveCategory, IncentiveType, INCENTIVE_TYPE_TO_CATEGORY_MAPPING
 
 
 DEBUG = True
@@ -62,6 +63,16 @@ inputs_capex_schedule = {
     'Capex breakout': 'Automatic capex'
 }
 
+# Carry forward start
+incentive_programs_types = {
+    k: IncentiveType.from_str(v) for k, v in incentive_programs_types.items()
+}
+incentive_programs_categories = {
+    k: INCENTIVE_TYPE_TO_CATEGORY_MAPPING[v] for k, v in incentive_programs_types.items()
+}
+
+print(incentive_programs_categories)
+
 # Sales apportionment calcs
 census_acs_unemp_state_df[POPULATION_16_YEARS_AND_OVER] = census_acs_unemp_state_df[POPULATION_16_YEARS_AND_OVER].astype(float)
 total_population = census_acs_unemp_state_df[POPULATION_16_YEARS_AND_OVER].sum()
@@ -76,6 +87,18 @@ state_to_unemployment_rate = {
 county_to_unemployment_rate = {
     county: float(special_localities_df.loc[county]['Unemployment, 2019']) / 100
     for county in special_localities_df[special_localities_df['Unemployment, 2019']!=''].index.values.tolist()
+}
+
+
+def format_county(county: str) -> str:
+    state = county.split(',')[-1].strip()
+    state_full = abbrev_us_state[state]
+    return county.replace(state, state_full)
+
+
+county_to_unemployment_rate = {
+    format_county(k): v
+    for k, v in county_to_unemployment_rate.items()
 }
 
 state_to_per_capita_income = {
@@ -261,6 +284,9 @@ all_inputs = {
     'state_to_manual_share_of_sales': state_to_manual_share_of_sales,
 }
 
+#print(json.dumps(county_to_per_capita_income, indent=4))
+#print(json.dumps(prevailing_wages_county, indent=4))
+#print(json.dumps(county_to_unemployment_rate, indent=4))
 #print(json.dumps(project_level_inputs, indent=4))
 
 for state, programs in incentive_programs_by_state.items():
