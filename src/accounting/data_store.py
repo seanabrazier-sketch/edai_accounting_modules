@@ -1,16 +1,23 @@
+#import
 from util import data_loader
 from sqlalchemy import create_engine
-from dotenv import load_dotenv
 import pandas as pd
+
 import os
-
-load_dotenv()  # take environment variables from .env.
-engine = create_engine(os.environ['DATABASE_URL'])
+from dotenv import load_dotenv, find_dotenv
 
 
-def load(table, **kwargs):
-    return data_loader.load_from_sql_or_get_from_cache(engine, table, True, **kwargs)
+load_dotenv()
+engine=create_engine(os.environ['DATABASE_URL'])
 
+
+
+
+def load(table,**kwargs):
+    # this load function is going to return yoi with the datafra,e aas well as pasting the data you just get into cache. This purposefully will avoid double counting on getting data
+
+
+    return data_loader.load_from_sql_or_get_from_cache(engine,table,True,**kwargs)
 sales_apportionment_df = load("20210904_Sales appportionment")
 sales_apportionment_df.set_index('State', inplace=True, drop=True)
 
@@ -34,6 +41,7 @@ discretionary_incentives_df['Incentive per job'] = discretionary_incentives_df['
 discretionary_incentives_df['Incentive per job'] = discretionary_incentives_df['Incentive per job'].astype(float)
 
 grant_estimates_misc_df = load("20210904_Grant estimates misc sources 1")
+
 grant_estimates_misc_df.set_index('Grant', inplace=True)
 
 naics_master_crosswalk_df = load("20210904_2017 NAICS master crosswalk")
@@ -74,6 +82,7 @@ irs_sector_shares_df.set_index('Sub-category', inplace=True)
 
 irs_is_statements_df = load("20210904_IRS I-S Statements")
 
+
 nsf_rd_spending_df = load("20210916_NSF - R&D spending")
 nsf_rd_spending_df['IRS corporation categories'] = nsf_rd_spending_df['IRS corporation categories'].apply(lambda x: x.strip().replace('  ', ' '))
 nsf_rd_spending_df.set_index('IRS corporation categories', inplace=True)
@@ -107,20 +116,41 @@ prop_taxes_df['Industrial'] = prop_taxes_df['Industrial tax rate, $1M, avg. urba
 state_ui_rates_df = load("20210904_State UI Rates", columns=['Geography', 'Per FTE UI payment ($)'])
 state_ui_rates_df.set_index('Geography', inplace=True)
 state_ui_rates_df['Per FTE UI payment ($)'] = state_ui_rates_df['Per FTE UI payment ($)'].apply(lambda x: float(x.replace('$', '').replace(',', '')))
-
+state_specific_sector=load("20210904_State-specific sectors")
 ne_advantage_sectors_df = load("20210904_NE Advantage Sectors")
-
-
 engine.dispose()
+
 
 
 with open(os.path.join(os.path.dirname(__file__), 'incentive_programs.txt'), 'r',encoding="utf8") as f:
     incentive_programs_list = f.read().strip().splitlines()
 
+
+
 incentive_programs_by_state = {}
+
+
 for p in incentive_programs_list:
+    # we are going to split and get the value of of each state
+    # then we are going to create a json array to store state the state values as well as program list
+
     state = p.split('_', 1)[0]
+    # get the state name
+
     program = p.split('_', 1)[1]
+    #get the program name
+
     if state not in incentive_programs_by_state:
+        # this means that if state is not in inenctive programs by state
+        # so this is a json value
+        # which means it will sotre the state as key value
+
         incentive_programs_by_state[state] = []
+        # so now if there is no state in the key value
+        # then create a empty array of that state
+
+
+    # so now we are going to append the program to the array with the json key of state.
+
     incentive_programs_by_state[state].append(program)
+

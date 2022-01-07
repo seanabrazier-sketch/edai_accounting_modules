@@ -2,11 +2,13 @@ from accounting.data_store import *
 from accounting.acs_codes import POPULATION_16_YEARS_AND_OVER
 import json
 from accounting.eligibility_calculator import get_incentive_program
-from util.capex import capex_report, IndustryType
+from util.capex import capex_report, IndustryType,RealProperty
+
 from util.personal_income_tax import PersonalIncomeTax
 from accounting.sector_shares import get_cost_of_goods_sold, get_other_above_the_line_costs, get_salaries_and_wages
 from accounting.states import STATES
 from accounting.profit_and_loss import PNL
+
 
 
 DEBUG = True
@@ -19,6 +21,9 @@ inputs_county_overrides = {
 
 }
 
+
+# these are the inputs in the inputs page the user inputs
+
 inputs_basic = {
     'Sector': 'Computer and electronic product manufacturing',
     'Function': 'Capital-intensive manufacturer',
@@ -27,6 +32,10 @@ inputs_basic = {
     'Promised wages': 119000,
     'Project Type': 'New'
 }
+
+
+
+
 
 inputs_adjustable = {
     'P&L Salary state adjuster (on/off)': 'IRS_AdjByState',
@@ -53,8 +62,29 @@ inputs_workforce_programs = {
 commercial_or_industrial = ('Commercial'
                         if inputs_basic['Function'] in ['Corporate headquarters', 'Call center']
                         else 'Industrial')
+# this variable above will define wheather it is commercial or industrial
+# if the input basic is  corporate headquartes or call center then it is commer cial
+# else this will define as industrial
+# this variblae will be used in the inputs custom capex schedule
+
+
+
+
 
 industry_type = IndustryType.COMMERCIAL if commercial_or_industrial == 'Commercial' else IndustryType.INDUSTRIAL
+
+# from capex report we can set the variable of industry_type
+# industryType is a enum class
+# class IndustryType(Enum):
+#     INDUSTRIAL='Industrial'
+#     DISTRIBUTION_CENTER='Distribution Center'
+#     DATA_CENTER='Data Center'
+#     COMMERCIAL='Commercial'
+#
+
+
+
+
 
 inputs_capex_schedule = {
     'Total capex': inputs_basic['Promised capital investment'],
@@ -62,30 +92,92 @@ inputs_capex_schedule = {
     'Capex breakout': 'Automatic capex'
 }
 
+
 # Sales apportionment calcs
+# this is aswell in the user inout
+# this is a big data frame in the portion home sales apportionment
+
 census_acs_unemp_state_df[POPULATION_16_YEARS_AND_OVER] = census_acs_unemp_state_df[POPULATION_16_YEARS_AND_OVER].astype(float)
+
+#where is this census_acs
+# this census_acs_ is in the data_loader.py
+# this census_acs_unemp_state_df is in a big table in excel sheet census acs
+# check it out
+
+
+
+
+
 total_population = census_acs_unemp_state_df[POPULATION_16_YEARS_AND_OVER].sum()
 
+# getting the total population from the big data Frame
+
+
+
+
 unemployment_rate_table_code = census_acs_unemp_state_headings_df.loc['Percent Estimate!!EMPLOYMENT STATUS!!Population 16 years and over!!In labor force!!Civilian labor force!!Unemployed']['Table code']
+# similarly we can get the census_acs_unemp_state_headeings_df from the data_loader
+# this census_acs_unemp_state_headings provide all the name of the table
+# what this means is we are comparing the index full name attacting out all information from percen ..... and get the code
+
+
+
+
+
+
+
 
 state_to_unemployment_rate = {
     state: float(census_acs_unemp_state_df.loc[state][unemployment_rate_table_code])/100
     for state in STATES
 }
 
+# what this simply means is that we are going to create a json variable where we search for the unemployment rate of different state and we only want the unemployment rate from each state, next we divide that rate from 100
+
+
+
+
 county_to_unemployment_rate = {
     county: float(special_localities_df.loc[county]['Unemployment, 2019']) / 100
     for county in special_localities_df[special_localities_df['Unemployment, 2019']!=''].index.values.tolist()
 }
+
+
+# similarly as above, we are going to select the county name form the data frame, getting information on unemployment , 2019 then we are going divide that by 100
+# the table here is different from table above
+
+# this is the special_localities table
+
+
+
+
+
+
 
 state_to_per_capita_income = {
     state: float(bls_per_capita_income_df.loc[state]['2018'].replace(',','').replace('$', '').strip())
     for state in STATES
 }
 
+
+
+# this varibale calculate the percapital income from the bls_talbe
+# we are goingto replace, and $ and
+
+#
 county_to_per_capita_income = {}
+# now we want to create county_to_per_capita_income
+
 for county in bls_per_capita_income_df[bls_per_capita_income_df['2018'] != ''].index.values.tolist():
+
+    #first we tell the data frame to getting rid of all the blank values in the frame
+    # after that we are going to index that county and make it to a list
+    # so now we are looping the the county list
+
     v = bls_per_capita_income_df.loc[county]['2018']
+
+    # this v is actually the income
+
     if isinstance(v, pd.Series):
         v = float(v.apply(lambda x: float(x.replace(',', '').replace('$', '').strip())).mean())
     else:
@@ -97,20 +189,54 @@ state_to_poverty_rate = {
     for state in STATES
 }
 
+
 sales_apportionment_df['Population 16+ Years'] = [census_acs_unemp_state_df.loc[s][POPULATION_16_YEARS_AND_OVER] for s in sales_apportionment_df.index.values]
+
+
 sales_apportionment_df['Share'] = sales_apportionment_df['Population 16+ Years'].apply(lambda x: x/total_population)
+#we are going to get the input of home state sales apportionment
+
+
 
 inputs_home_state_sales_apportionment['Total 16+ population'] = total_population
 inputs_home_state_sales_apportionment['Population share'] = sales_apportionment_df.loc[inputs_home_state_sales_apportionment['Home state']]['Share']
+
+
 inputs_home_state_sales_apportionment['Home state population'] = sales_apportionment_df.loc[inputs_home_state_sales_apportionment['Home state']]['Population 16+ Years']
-inputs_home_state_sales_apportionment['Remainder'] = \
-    1.0 - inputs_home_state_sales_apportionment['Home state sales share']
+
+
+inputs_home_state_sales_apportionment['Remainder'] =1.0 - inputs_home_state_sales_apportionment['Home state sales share']
+
+# to calculate the manual share of sales
+# the formula is going to be
+# if state_name =="homestate" then the result is going to be home state sales share
+# else the result is going to be the value of non-home state share of population multiply for the remainder
+# so how do we calculate the non-home state share
+# the non-home state share of population is as foloow
+# if state name is == to home state then we just going to put the homstate value because it is equal to the home state sales share
+# if not then we use the population of each individual state/ (total population- home state population
+
+
+
+## this perhaps is not the formula for state_to_manual_share_of_sales
+# in the sales apportionment sheet there are two options for the est home state sales
+# we are going to fix this problem by multiplying by the remainder
 
 state_to_manual_share_of_sales = {
     state: inputs_home_state_sales_apportionment['Home state sales share'] if state == inputs_home_state_sales_apportionment['Home state'] \
-    else sales_apportionment_df.loc[state]['Population 16+ Years']/(total_population-inputs_home_state_sales_apportionment['Home state population'])
+    else (sales_apportionment_df.loc[state]['Population 16+ Years']/(total_population-inputs_home_state_sales_apportionment['Home state population'])*inputs_home_state_sales_apportionment['Remainder'])
     for state in sales_apportionment_df.index.values.tolist()
 }
+
+
+
+# this  variable above concludes the information non-home- state share of population
+
+
+
+
+# where is this aproach_to_weights
+
 
 approach_to_weights = {
     'Evenly weighted three factors': (0.33, 0.33, 0.33),
@@ -121,29 +247,65 @@ approach_to_weights = {
     'Custom apportionment (Single in 2022; assumed 2022)': (1.0, 0, 0),
     'Single factor apportionment (sales) but may vay by industry': (0.5, 0.25, 0.25)
 }
+
+
 sales_apportionment_df['Sales'] = sales_apportionment_df['Approach used'].apply(lambda x: approach_to_weights[x][0])
 sales_apportionment_df['Payroll'] = sales_apportionment_df['Approach used'].apply(lambda x: approach_to_weights[x][1])
-sales_apportionment_df['Property'] = sales_apportionment_df['Approach used'].apply(lambda x: approach_to_weights[x][2])
+
+
+sales_apportionment_df['Property']=sales_apportionment_df['Approach used'].apply(lambda x: approach_to_weights[x][2])
+
+
+
+#stop right here
+# est home state sales having two options to choose from
+# 1 is that it is just going to be = to the population share
+# the second ooption is that itis going to be = to the user input manual share of sales
+# this manual shares of sales = non home state shares of population*remainder
+# we can use ESt.Home State Sales to calculate the tax incidence
+# but this perhaps needs to be adjusted to correct formula
+
 
 sales_apportionment_df['Est. home state sales'] = sales_apportionment_df['Share'].copy()
 tax_incidence = []
+
+# the index is the state
+
 for state in sales_apportionment_df.index.tolist():
     r = sales_apportionment_df.loc[state]
     tax_incidence.append(
+        # This is perhaps wrong formula and need to adjust
+
         r['Sales'] * state_to_manual_share_of_sales[state] +
         r['Payroll'] * 1.0 +
-        r['Property'] * 1.0
-    )
+        r['Property'] * 1.0)
 sales_apportionment_df['Tax incidence (Portion of sales to be taxed)'] = tax_incidence
 
 # Incentives calcs
+# we using groupby to calculate the mean, median and predicted of each group in the discretionary sheet
+# This would be an easy way to calculated it
+# this will be later used to calculate the discretionary informtion in user tab
+
 discretionary_incentives_groups = discretionary_incentives_df[['Program', 'Incentive per job']].groupby('Program')
 
+
 # Workforce programs
+#you just convert this into json variable
+
+#we need to add in predicted IPJ
+# discretionary_incentives_groups_median=discretionary_incentives_groups.median()
+# discretionary_incentives_groups_average=discretionary_incentives_groups.average()
+
 workforce_programs_ipj_map = {
     program: float(grant_estimates_misc_df.loc[program]['Amount'])
     for program in grant_estimates_misc_df.index.values.tolist()
 }
+
+
+#we will comback to this later
+# so we have promised jobs_range
+# need to look up where this is going to be used
+
 
 promised_jobs = inputs_basic['Promised jobs']
 if promised_jobs < 5:
@@ -159,9 +321,20 @@ elif promised_jobs < 500:
 else:
     promised_jobs_range = '09: 500+'
 
+
+# these inputs is actually from the master incentive models just to find the input in
+
+# just attracting names
+
 high_level_category = irs_sector_shares_df.loc[inputs_basic['Sector']]['Category']
+
 rollup_irs_sector = nsf_rd_spending_df.loc[inputs_basic['Sector']]['Rollup IRS sector']
+
+
 census_industry_earnings_name = census_industry_crosswalk_df.loc[rollup_irs_sector]['Geographic Area Name']
+
+
+
 
 # PNL Inputs
 manual_rd_share_of_sales = float(nsf_rd_spending_df.loc[inputs_basic['Sector']]['Manual R&D share of sales'])/100
@@ -201,6 +374,7 @@ prevailing_wages_county = {
     for county in bls_wages_county_df.index.values.tolist()
 }
 
+# at the end all of that information is going to be in the IRS SEctor
 
 # Project level inputs
 project_level_inputs = {
@@ -215,66 +389,147 @@ project_level_inputs = {
     'Promised capital investment': inputs_basic['Promised capital investment'],
     'Promised wages': inputs_basic['Promised wages'],
     'P&L Salary state adjuster (on/off)': inputs_adjustable['P&L Salary state adjuster (on/off)'],
-    'Wages as share of total compensation (manuf. vs. services)': \
-    0.664 if high_level_category == 'Manufacturing' else 0.707,
+    'Wages as share of total compensation (manuf. vs. services)': 0.664 if high_level_category == 'Manufacturing' else 0.707,
     'Census industry earnings name': census_industry_earnings_name,
     'Industry median earnings (Census)': 'Commercial' if inputs_basic['Function'] in ['Corporate headquarters', 'Call center'] else 'Industrial',
     'Calculated estimated sales based on national data': avg_implied_sales,
     'Estimated sales based on national data (currently used; estimate or manual input)': inputs_adjustable['Estimated sales based on national data'],
+    'Prevailing wages county': prevailing_wages_county,
+
+    # this missing the based line n/a
+
     'Estimated sales based on state data (not used)': {
         state: census_susb_state_df.loc[state, promised_jobs_range, rollup_irs_sector]['Avg. implied sales'].astype(float).sum()
         for state in STATES
     },
     'Prevailing wages': prevailing_wages_state,
+    #this equipvalent payroll missing the base line argument
+
     'Equivalent payroll': {
         state: prevailing_wages_state[state] * promised_jobs
         for state in STATES
     },
+    # there you go the based
+
     'Equivalent payroll (BASE)': inputs_basic['Promised wages'] * promised_jobs,
     'Federal minimum wage': federal_minimum_wage,
+
+    #checking up this function
+
     'State personal income tax': {
         state: PersonalIncomeTax(inputs_basic['Promised wages'], state).tax_rate()
         for state in STATES
     },
+    #discount rate given
+
     'Discount rate': inputs_adjustable['Discount rate'],
+
     'Inflation (employment cost index)': inputs_adjustable['Inflation'],
 }
 
 # Capex
+# capex report is a class method
+# capex report is in the capex math
+
 capex = capex_report(inputs_capex_schedule['Total capex'])
+# print(capex.amount(property_type=RealProperty.CONSTRUCTION_MATERIAL,industry_type=industry_type))
+# zone calculation
+zone_type_1={
+    county:special_localities_df.loc[county]['Zone Type 1']
+    for county in special_localities_df.index.values.tolist()
+}
+
+
+zone_type_2={
+    county:special_localities_df.loc[county]['Zone Type 2']
+    for county in special_localities_df.index.values.tolist()
+}
+
+zone_type_3={
+    county: special_localities_df.loc[county]['Zone Type 3']
+    for county in special_localities_df.index.values.tolist()
+
+}
+
+# county_drop_down_list_input,
+# this will be on the front end
+
+county_drop_down_list=["Catron County, NM"]
+
+
 
 all_inputs = {
     'capex': capex,
     'project_level_inputs': project_level_inputs,
-    # State socioeconomic factors
+# State socioeconomic factors
     'state_to_unemployment_rate': state_to_unemployment_rate,
-    'county_to_unemployment_rate': county_to_unemployment_rate,
-    'state_to_per_capita_income': state_to_per_capita_income,
-    'county_to_per_capita_income': county_to_per_capita_income,
-    'state_to_prevailing_wages': prevailing_wages_state,
-    'county_to_prevailing_wages': prevailing_wages_county,
     'state_to_poverty_rate': state_to_poverty_rate,
+    'state_to_per_capita_income': state_to_per_capita_income,
+
+    'state_to_prevailing_wages': prevailing_wages_state,
+#County socioeconomic factors
+    ## missing county poverty, need to bring this up to Sean
+
+    'county_to_prevailing_wages': prevailing_wages_county,
+    'county_to_unemployment_rate': county_to_unemployment_rate,
+#county_overides is an empty json variable
+
     'county_overrides': inputs_county_overrides,
+    'county_to_per_capita_income': county_to_per_capita_income,
+
     'workforce_programs_ipj_map': workforce_programs_ipj_map,
     'discretionary_incentives_groups': discretionary_incentives_groups,
-    'sales_apportionment_df': sales_apportionment_df
+    'sales_apportionment_df': sales_apportionment_df,
     'state_to_manual_share_of_sales': state_to_manual_share_of_sales,
+    'county_drop_down_list': county_drop_down_list,
+# elgibility
+    'zone_type_1':zone_type_1,
+    'zone_type_2':zone_type_2,
+    'zone_type_3':zone_type_3,
+## User Input
+
 }
 
-print(json.dumps(project_level_inputs, indent=4))
+
+
+# this is missing in the field. This will be hard coded at beginning but this will be coded to look up for value later on
+
+total_equipment_share_of_sales=0.25
+
+
+# this is just dumping all inputs into json file
+
+# print(json.dumps(project_level_inputs, indent=4))
 
 for state, programs in incentive_programs_by_state.items():
+    # print out state and programs name
+
     print('State: {}'.format(state))
     property_tax_rate = prop_taxes_df.loc[state][commercial_or_industrial]
+    # this will get the prop_tax rate of each state depends on commercial or industrial
+
     gross_receipts_tax_rate = tax_foundation_corp_gross_receipts_df.loc[state]['Rate to use']
+    # if the property _tax_rate is not float
+    # which means that if it returns an array then we want to take average of that array
+
+
     if not isinstance(property_tax_rate, float):
         # Take average
         property_tax_rate_values = property_tax_rate.values.tolist()
         property_tax_rate = float(sum(property_tax_rate_values))/len(property_tax_rate_values)
+
     if not isinstance(gross_receipts_tax_rate, float):
         # Take average
+        # similar to gross_receipts_tax_rate
+
         gross_receipts_tax_rate_values = gross_receipts_tax_rate.values.tolist()
         gross_receipts_tax_rate = float(sum(gross_receipts_tax_rate_values))/len(gross_receipts_tax_rate_values)
+    ## profit and loss statement in the master incentive tab
+
+
+    # pass argument to pnl inoputs
+    #every input here is passed as a state level
+    # remember to fix the capex with industry type
 
     pnl_inputs = dict(
         capex=capex,
@@ -294,8 +549,11 @@ for state, programs in incentive_programs_by_state.items():
         property_tax_rate=property_tax_rate,
         num_jobs=promised_jobs,
         discount_rate=inputs_adjustable['Discount rate'],
-        industry_type=industry_type
+        industry_type=industry_type,
+        total_equipment_share_of_sales=total_equipment_share_of_sales
     )
+
+
     pnl = PNL(**pnl_inputs)
 
     #print(json.dumps(dict(pnl.npv_dicts), indent=4))
@@ -304,8 +562,13 @@ for state, programs in incentive_programs_by_state.items():
     #print('Net profitability: {}'.format(pnl.net_profitability))
     all_inputs['pnl'] = pnl
     all_inputs['pnl_inputs'] = pnl_inputs
+
     for program in programs:
+        # now for program for each particular state
+        # we are going to look for those module using get_incentive_program
+
         try:
+
             incentive = get_incentive_program(
                 state,
                 program,
@@ -319,3 +582,5 @@ for state, programs in incentive_programs_by_state.items():
             print(f'\tNo python file found for {program}')
         except Exception as e:
             print(f'\tError: {e}')
+
+
