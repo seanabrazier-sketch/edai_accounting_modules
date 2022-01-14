@@ -7,7 +7,7 @@ from util.personal_income_tax import PersonalIncomeTax
 from accounting.sector_shares import get_cost_of_goods_sold, get_other_above_the_line_costs, get_salaries_and_wages
 from accounting.states import STATES, abbrev_us_state
 from accounting.profit_and_loss import PNL
-from accounting.carry_forward import IncentiveCategory, IncentiveType, INCENTIVE_TYPE_TO_CATEGORY_MAPPING
+from accounting.carry_forward import compute_carry_forward_math, IncentiveCategory, IncentiveType, INCENTIVE_TYPE_TO_CATEGORY_MAPPING
 
 
 DEBUG = True
@@ -70,8 +70,6 @@ incentive_programs_types = {
 incentive_programs_categories = {
     k: INCENTIVE_TYPE_TO_CATEGORY_MAPPING[v] for k, v in incentive_programs_types.items()
 }
-
-print(incentive_programs_categories)
 
 # Sales apportionment calcs
 census_acs_unemp_state_df[POPULATION_16_YEARS_AND_OVER] = census_acs_unemp_state_df[POPULATION_16_YEARS_AND_OVER].astype(float)
@@ -289,18 +287,19 @@ all_inputs = {
 #print(json.dumps(county_to_unemployment_rate, indent=4))
 #print(json.dumps(project_level_inputs, indent=4))
 
-for state, programs in incentive_programs_by_state.items():
-    print('State: {}'.format(state))
+alabama_npv_dicts = None
+all_inputs_per_state = {}
+for state in incentive_programs_by_state.keys():
     property_tax_rate = prop_taxes_df.loc[state][commercial_or_industrial]
     gross_receipts_tax_rate = tax_foundation_corp_gross_receipts_df.loc[state]['Rate to use']
     if not isinstance(property_tax_rate, float):
         # Take average
         property_tax_rate_values = property_tax_rate.values.tolist()
-        property_tax_rate = float(sum(property_tax_rate_values))/len(property_tax_rate_values)
+        property_tax_rate = float(sum(property_tax_rate_values)) / len(property_tax_rate_values)
     if not isinstance(gross_receipts_tax_rate, float):
         # Take average
         gross_receipts_tax_rate_values = gross_receipts_tax_rate.values.tolist()
-        gross_receipts_tax_rate = float(sum(gross_receipts_tax_rate_values))/len(gross_receipts_tax_rate_values)
+        gross_receipts_tax_rate = float(sum(gross_receipts_tax_rate_values)) / len(gross_receipts_tax_rate_values)
 
     pnl_inputs = dict(
         capex=capex,
@@ -323,14 +322,26 @@ for state, programs in incentive_programs_by_state.items():
         industry_type=industry_type
     )
     pnl = PNL(**pnl_inputs)
-
-    #print(json.dumps(dict(pnl.npv_dicts), indent=4))
-    #print('NPV Sales: {}'.format(pnl.npv_sales))
-    #print('NPV Net profit: {}'.format(pnl.npv_net_profit))
-    #print('Net profitability: {}'.format(pnl.net_profitability))
+    if state == 'Alabama':
+        alabama_npv_dicts = pnl.npv_dicts
+    #if state != 'California':
+    #    continue
+    # print(json.dumps(dict(pnl.npv_dicts), indent=4))
+    # print('NPV Sales: {}'.format(pnl.npv_sales))
+    # print('NPV Net profit: {}'.format(pnl.npv_net_profit))
+    # print('Net profitability: {}'.format(pnl.net_profitability))
     all_inputs['pnl'] = pnl
     all_inputs['pnl_inputs'] = pnl_inputs
+    all_inputs_per_state[state] = all_inputs
+
+for state, programs in incentive_programs_by_state.items():
+    print('State: {}'.format(state))
+    all_inputs = all_inputs_per_state[state].copy()
+    all_inputs['all_inputs_per_state'] = all_inputs_per_state
+    remaining_tax_liability = None
     for program in programs:
+        #if state != 'California' and program != 'Manufacturing and R&D Partial Sales and Use Tax Exemption':
+        #    continue
         try:
             incentive = get_incentive_program(
                 state,
@@ -340,8 +351,21 @@ for state, programs in incentive_programs_by_state.items():
             eligible = incentive.estimated_eligibility()
             print(f'\tEligibility for {program}: {eligible}')
             if eligible or DEBUG:
-                print(f'\t\tEstimated Incentives: {incentive.estimated_incentives()}')
+                estimated_incentives = incentive.estimated_incentives()
+                print(f'\t\tEstimated Incentives: {estimated_incentives}')
+                incentive_type = incentive_programs_types[f'{state}_{program}']
+                incentive_category = INCENTIVE_TYPE_TO_CATEGORY_MAPPING[incentive_type]
+                print(f'\t\tIncentive Type: {incentive_type.value}')
+                print(f'\t\tTax liability before: {remaining_tax_liability}')
+                remaining_tax_liability = compute_carry_forward_math(all_inputs['pnl'].npv_dicts,
+                                                                     #alabama_npv_dicts,
+                                                                     remaining_tax_liability or estimated_incentives,
+                                                                     incentive_category)
+                print(f'\t\tTax liability after: {remaining_tax_liability}')
+
         except ModuleNotFoundError:
             print(f'\tNo python file found for {program}')
         except Exception as e:
+            import traceback
+            print(traceback.format_exc())
             print(f'\tError: {e}')
