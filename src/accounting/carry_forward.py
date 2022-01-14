@@ -33,6 +33,15 @@ class IncentiveCategory(Enum):
     CARRYFORWARD_MATH = 'Carryforward math'
     NO_CARRYFORWARD = 'No carryforward'
 
+    @staticmethod
+    def from_str(string: str):
+        if string == IncentiveCategory.PASSTHROUGH.value:
+            return IncentiveCategory.PASSTHROUGH
+        elif string == IncentiveCategory.CARRYFORWARD_MATH.value:
+            return IncentiveCategory.CARRYFORWARD_MATH
+        elif string == IncentiveCategory.NO_CARRYFORWARD.value:
+            return IncentiveCategory.NO_CARRYFORWARD
+
 
 INCENTIVE_TYPE_TO_CATEGORY_MAPPING = {
     IncentiveType.NOT_APPLICABLE: IncentiveCategory.NO_CARRYFORWARD,
@@ -44,3 +53,70 @@ INCENTIVE_TYPE_TO_CATEGORY_MAPPING = {
     IncentiveType.CREDIT_NO_CARRYFORWARD: IncentiveCategory.NO_CARRYFORWARD,
 }
 
+
+RELEVANT_STATE_TAX_LIABILITY_MAP = {
+    'State corporate income tax': True,
+    'State UI tax': True,
+    'State/local sales tax': True,
+    'Gross receipts tax': True,
+    'Property tax': False,
+    'Personal income tax': False,
+}
+
+
+default_personal_income_tax = [0.0, 75_000.0]
+for i in range(9):
+    default_personal_income_tax.append(default_personal_income_tax[-1] * 0.02)
+
+
+#def compute_carry_forward_math(npv_dicts, alabama_npv_dicts, sticker_amounts, incentive_category):
+def compute_carry_forward_math(npv_dicts, sticker_amounts, incentive_category):
+    if 'Personal income tax' not in npv_dicts:
+        npv_dicts['Personal income tax'] = default_personal_income_tax
+
+    relevant_tax_liabilities = []
+    amounts_to_carryforward = []
+    remaining_tax_liabilities = []
+    applicable_incentives = []
+    adjusted_incentives = []
+    for i in range(11):
+        #if i == 0:
+        npv_dicts_to_use = npv_dicts
+        #else:
+        #    npv_dicts_to_use = alabama_npv_dicts
+        relevant_tax_liability = sum([
+            npv_dicts_to_use[k][i] for k, v in RELEVANT_STATE_TAX_LIABILITY_MAP.items()
+            if v
+        ])
+        relevant_tax_liabilities.append(relevant_tax_liability)
+        if i < 2:
+            applicable_incentive_amount = sticker_amounts[i]
+        else:
+            applicable_incentive_amount = sticker_amounts[i] + amounts_to_carryforward[i-1]
+        adjusted_incentive_to_take = (
+            applicable_incentive_amount
+            if incentive_category == IncentiveCategory.PASSTHROUGH
+            else min([relevant_tax_liability, applicable_incentive_amount])
+        )
+        amount_to_carryforward = 0
+        if i > 0:
+            amount_to_carryforward = (
+                0 if incentive_category == IncentiveCategory.NO_CARRYFORWARD
+                else max([0, applicable_incentive_amount - adjusted_incentive_to_take])
+            )
+        remaining_tax_liability = (
+            relevant_tax_liability
+            if incentive_category == IncentiveCategory.PASSTHROUGH
+            else relevant_tax_liability - adjusted_incentive_to_take
+        )
+        applicable_incentives.append(applicable_incentive_amount)
+        adjusted_incentives.append(adjusted_incentive_to_take)
+        amounts_to_carryforward.append(amount_to_carryforward)
+        remaining_tax_liabilities.append(remaining_tax_liability)
+
+    print(f'relevant_tax_liabilities: {relevant_tax_liabilities}')
+    print(f'applicable_incentives: {applicable_incentives}')
+    print(f'adjusted_incentives: {adjusted_incentives}')
+    print(f'amounts_to_carryforward: {amounts_to_carryforward}')
+    print(f'remaining_tax_liabilities: {remaining_tax_liabilities}')
+    return remaining_tax_liabilities
