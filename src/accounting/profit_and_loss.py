@@ -93,10 +93,13 @@ class PNL(object):
                 npv_dicts['Net profitability'].append(None)
                 npv_dicts['Annual capital expenditures option 1'].append(None)
                 npv_dicts['Annual capital expenditures option 2'].append(None)
-
-
-
-
+                npv_dicts['Annual capital expenditures'].append(None)
+                npv_dicts['R&D tax credit calculations step 0'].append(0.0)
+                npv_dicts['R&D tax credit calculations step 1'].append(0.0)
+                npv_dicts['R&D tax credit calculations step 2'].append(0.0)
+                npv_dicts['R&D tax credit calculations step 3'].append(0.0)
+                npv_dicts['R&D tax credit calculations step 4'].append(0.0)
+                npv_dicts['Total federal R&D tax credit'].append(0.0)
             else:
 
                 depreciation_building=-construction_material/depreciation_building_years
@@ -150,7 +153,22 @@ class PNL(object):
                 ))
                 npv_dicts['Net profitability'].append(npv_dicts['Net profit'][-1] / npv_dicts['Sales'][-1])
 
-            self.npv_dicts=npv_dicts
-            self.npv_sales = npv(discount_rate, amounts=npv_dicts['Sales'])
-            self.npv_net_profit = npv(discount_rate, amounts=npv_dicts['Net profit'])
-            self.net_profitability = self.npv_net_profit / self.npv_sales
+                if i <= 3:
+                    npv_dicts['R&D tax credit calculations step 0'].append(npv_dicts['Research & development'][-1] * 0.06)
+                    npv_dicts['R&D tax credit calculations step 1'].append(0.0)
+                    npv_dicts['R&D tax credit calculations step 2'].append(0.0)
+                    npv_dicts['R&D tax credit calculations step 3'].append(0.0)
+                    npv_dicts['R&D tax credit calculations step 4'].append(0.0)
+                else:
+                    avg = sum(npv_dicts['Research & development'][-4:-1])/3
+                    npv_dicts['R&D tax credit calculations step 0'].append(0.0)
+                    npv_dicts['R&D tax credit calculations step 1'].append(avg)
+                    npv_dicts['R&D tax credit calculations step 2'].append(avg * 0.5)
+                    npv_dicts['R&D tax credit calculations step 3'].append(npv_dicts['Research & development'][-1]-npv_dicts['R&D tax credit calculations step 2'][-1])
+                    npv_dicts['R&D tax credit calculations step 4'].append(npv_dicts['R&D tax credit calculations step 3'][-1] * 0.14)
+                npv_dicts['Total federal R&D tax credit'].append(npv_dicts['R&D tax credit calculations step 0'][-1]+npv_dicts['R&D tax credit calculations step 4'][-1])
+
+        self.npv_dicts = npv_dicts
+        self.npv_sales = npv(discount_rate, amounts=npv_dicts['Sales'])
+        self.npv_net_profit = npv(discount_rate, amounts=npv_dicts['Net profit'])
+        self.net_profitability = self.npv_net_profit / self.npv_sales

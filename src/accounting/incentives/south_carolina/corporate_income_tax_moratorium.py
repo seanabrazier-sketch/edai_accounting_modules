@@ -4,42 +4,27 @@ from accounting.data_store import *
 
 class IncentiveProgram(IncentiveProgramBase):
     def __init__(self, **kwargs):
-        self.county = kwargs['county_overrides'].get('Virginia')
-        self.prevailing_wages_state = kwargs['state_to_prevailing_wages']['Virginia']
-        # Default to state value
-        self.bls_wages = kwargs['county_to_prevailing_wages'].get(self.county, self.prevailing_wages_state)
+        self.county = kwargs['county_overrides'].get('South Carolina')
         self.pnl_inputs = kwargs['pnl_inputs']
         self.project_level_inputs = kwargs['project_level_inputs']
-        self.irs_sector = self.project_level_inputs['IRS Sector'].lower()
+        self.multiple_state_rate = 2
+        self.corp_tax = self.pnl_inputs['state_corporate_income_tax_rate']
         self.sales_apportionment_df = self.pnl_inputs['state_corporate_income_tax_apportionment']
-        self.no_employment_before_2018 = "Yes"
-        self.corp_tax = kwargs['pnl_inputs']['state_corporate_income_tax_rate']
-        self.min_locality_wage = self.bls_wages * 1.5
-        self.grant_per_job = 2000
-        self.special_localities = [special_localities_df['Zone Type 1']['Accomack County, VA'],
-                                   special_localities_df['Zone Type 2']['Accomack County, VA'],
-                                   special_localities_df['Zone Type 3']['Accomack County, VA']]
-        self.min_cap_investment = 5000000
-        self.min_jobs1 = 10
-        self.min_jobs2 = 50
-        self.high_level_categories = ['Manufacturing', 'Transportation and warehousing', 'Information',
-                                      'Finance and insurance', 'Professional, scientific, and technical services',
-                                      'Management of companies (holding companies)']
+        self.unemp_rate = float(special_localities_df['UnempRate']['Anderson County, SC'])
+        self.unemp_rate_state = kwargs['state_to_unemployment_rate']['South Carolina']
+        self.irs_sector = self.project_level_inputs['IRS Sector'].lower()
         self.cogs = irs_is_statements_df.groupby(['number'])[self.irs_sector].sum()[
                         46] / \
                     irs_is_statements_df.groupby(['number'])[self.irs_sector].sum()[33]
         self.sales_data = self.project_level_inputs[
             'Estimated sales based on national data (currently used; estimate or manual input)']
         self.rd_spending = self.pnl_inputs['research_and_development_rate']
-
         self.salaries_wages = \
             irs_is_statements_df.groupby(['number'])[self.irs_sector].sum()[48] / \
             irs_is_statements_df.groupby(['number'])[
                 self.irs_sector].sum()[33]
 
-        self.adjuster = \
-            census_acs_earn_state_df['B24031_006E']['Virginia'] / census_acs_earn_state_df['B24031_006E'][
-                'United States']
+        self.adjuster = self.pnl_inputs['salaries_and_wages_adjuster']
 
         self.above_line_costs = ((irs_is_statements_df.groupby(['number'])[
                                       self.irs_sector].sum()[47] /
@@ -52,17 +37,9 @@ class IncentiveProgram(IncentiveProgramBase):
                                       self.irs_sector].sum()[33])) - self.rd_spending
 
     def estimated_eligibility(self) -> bool:
-        if (self.no_employment_before_2018 == "Yes") \
-                + (self.project_level_inputs['Promised wages'] >= self.min_locality_wage) \
-                + (sum(True for i in self.high_level_categories if
-                       self.project_level_inputs['High-level category'] in i) > 0) \
-                + ((self.project_level_inputs['Promised capital investment'] >= self.min_cap_investment and
-                    self.project_level_inputs['Promised jobs'] >= self.min_jobs1) or
-                   (self.project_level_inputs['Promised jobs'] >= self.min_jobs2)) \
-                + (
-                sum(True for i in self.special_localities if 'Qualified locality' in i) > 0) \
-                == 5:
-            return True  # this brings true because you hardcoded the county in special localities
+        if (self.project_level_inputs['Promised jobs'] >= 100 or self.project_level_inputs['Promised jobs'] >= 200) and \
+                self.unemp_rate >= (self.unemp_rate_state * self.multiple_state_rate):
+            return True
         else:
             return False
 
@@ -108,28 +85,8 @@ class IncentiveProgram(IncentiveProgramBase):
         for i, j, k, l in zip(nums3, nums4, nums5, nums6):
             income_subject_tax.append(i - (j + k + l))
 
-        nums7 = []
-        for i in income_subject_tax:
-            nums7.append(i * self.corp_tax * self.sales_apportionment_df)
-
-        if (self.no_employment_before_2018 == "Yes") \
-                + (self.project_level_inputs['Promised wages'] >= self.min_locality_wage) \
-                + (sum(True for i in self.high_level_categories if
-                       self.project_level_inputs['High-level category'] in i) > 0) \
-                + ((self.project_level_inputs['Promised capital investment'] >= self.min_cap_investment and
-                    self.project_level_inputs['Promised jobs'] >= self.min_jobs1) or
-                   (self.project_level_inputs['Promised jobs'] >= self.min_jobs2)) \
-                + (
-                sum(True for i in self.special_localities if 'Qualified locality' in i) > 0) \
-                == 5:
-            # I am making it zero instead of the comment because the output needs to match,
-            # Can fix this when figure out what to do with county level data (special localities)
-            nums8 = [0] * 11  # self.grant_per_job * self.project_level_inputs['Promised jobs'])
-        else:
-            nums8 = [0] * 11
-
         incentives = []
-        for i, j in zip(nums7, nums8):
-            incentives.append(i + j)
+        for i in income_subject_tax:
+            incentives.append(self.corp_tax * (i * self.sales_apportionment_df))
 
         return incentives

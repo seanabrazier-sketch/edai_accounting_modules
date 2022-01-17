@@ -6,8 +6,9 @@ from util.capex import capex_report, IndustryType,RealProperty
 
 from util.personal_income_tax import PersonalIncomeTax
 from accounting.sector_shares import get_cost_of_goods_sold, get_other_above_the_line_costs, get_salaries_and_wages
-from accounting.states import STATES
+from accounting.states import STATES, abbrev_us_state
 from accounting.profit_and_loss import PNL
+from accounting.carry_forward import compute_carry_forward_math, IncentiveCategory, IncentiveType, INCENTIVE_TYPE_TO_CATEGORY_MAPPING
 
 
 
@@ -92,6 +93,13 @@ inputs_capex_schedule = {
     'Capex breakout': 'Automatic capex'
 }
 
+# Carry forward start
+incentive_programs_types = {
+    k: IncentiveType.from_str(v) for k, v in incentive_programs_types.items()
+}
+incentive_programs_categories = {
+    k: INCENTIVE_TYPE_TO_CATEGORY_MAPPING[v] for k, v in incentive_programs_types.items()
+}
 
 # Sales apportionment calcs
 # this is aswell in the user inout
@@ -143,16 +151,16 @@ county_to_unemployment_rate = {
 }
 
 
-# similarly as above, we are going to select the county name form the data frame, getting information on unemployment , 2019 then we are going divide that by 100
-# the table here is different from table above
-
-# this is the special_localities table
-
-
+def format_county(county: str) -> str:
+    state = county.split(',')[-1].strip()
+    state_full = abbrev_us_state[state]
+    return county.replace(state, state_full)
 
 
-
-
+county_to_unemployment_rate = {
+    format_county(k): v
+    for k, v in county_to_unemployment_rate.items()
+}
 
 state_to_per_capita_income = {
     state: float(bls_per_capita_income_df.loc[state]['2018'].replace(',','').replace('$', '').strip())
@@ -490,21 +498,11 @@ all_inputs = {
 
 }
 
-
-
 # this is missing in the field. This will be hard coded at beginning but this will be coded to look up for value later on
-
 total_equipment_share_of_sales=0.25
 
-
-# this is just dumping all inputs into json file
-
-# print(json.dumps(project_level_inputs, indent=4))
-
-for state, programs in incentive_programs_by_state.items():
-    # print out state and programs name
-
-    print('State: {}'.format(state))
+all_inputs_per_state = {}
+for state in incentive_programs_by_state.keys():
     property_tax_rate = prop_taxes_df.loc[state][commercial_or_industrial]
     # this will get the prop_tax rate of each state depends on commercial or industrial
 
@@ -516,20 +514,13 @@ for state, programs in incentive_programs_by_state.items():
     if not isinstance(property_tax_rate, float):
         # Take average
         property_tax_rate_values = property_tax_rate.values.tolist()
-        property_tax_rate = float(sum(property_tax_rate_values))/len(property_tax_rate_values)
-
+        property_tax_rate = float(sum(property_tax_rate_values)) / len(property_tax_rate_values)
     if not isinstance(gross_receipts_tax_rate, float):
         # Take average
         # similar to gross_receipts_tax_rate
 
         gross_receipts_tax_rate_values = gross_receipts_tax_rate.values.tolist()
-        gross_receipts_tax_rate = float(sum(gross_receipts_tax_rate_values))/len(gross_receipts_tax_rate_values)
-    ## profit and loss statement in the master incentive tab
-
-
-    # pass argument to pnl inoputs
-    #every input here is passed as a state level
-    # remember to fix the capex with industry type
+        gross_receipts_tax_rate = float(sum(gross_receipts_tax_rate_values)) / len(gross_receipts_tax_rate_values)
 
     pnl_inputs = dict(
         capex=capex,
@@ -555,18 +546,26 @@ for state, programs in incentive_programs_by_state.items():
 
 
     pnl = PNL(**pnl_inputs)
-
-    #print(json.dumps(dict(pnl.npv_dicts), indent=4))
-    #print('NPV Sales: {}'.format(pnl.npv_sales))
-    #print('NPV Net profit: {}'.format(pnl.npv_net_profit))
-    #print('Net profitability: {}'.format(pnl.net_profitability))
+    if state == 'Alabama':
+        alabama_npv_dicts = pnl.npv_dicts
+    #if state != 'California':
+    #    continue
+    # print(json.dumps(dict(pnl.npv_dicts), indent=4))
+    # print('NPV Sales: {}'.format(pnl.npv_sales))
+    # print('NPV Net profit: {}'.format(pnl.npv_net_profit))
+    # print('Net profitability: {}'.format(pnl.net_profitability))
     all_inputs['pnl'] = pnl
     all_inputs['pnl_inputs'] = pnl_inputs
+    all_inputs_per_state[state] = all_inputs
 
+for state, programs in incentive_programs_by_state.items():
+    print('State: {}'.format(state))
+    all_inputs = all_inputs_per_state[state].copy()
+    all_inputs['all_inputs_per_state'] = all_inputs_per_state
+    remaining_tax_liability = None
     for program in programs:
-        # now for program for each particular state
-        # we are going to look for those module using get_incentive_program
-
+        #if state != 'California' and program != 'Manufacturing and R&D Partial Sales and Use Tax Exemption':
+        #    continue
         try:
 
             incentive = get_incentive_program(
@@ -577,10 +576,23 @@ for state, programs in incentive_programs_by_state.items():
             eligible = incentive.estimated_eligibility()
             print(f'\tEligibility for {program}: {eligible}')
             if eligible or DEBUG:
-                print(f'\t\tEstimated Incentives: {incentive.estimated_incentives()}')
+                estimated_incentives = incentive.estimated_incentives()
+                print(f'\t\tEstimated Incentives: {estimated_incentives}')
+                incentive_type = incentive_programs_types[f'{state}_{program}']
+                incentive_category = INCENTIVE_TYPE_TO_CATEGORY_MAPPING[incentive_type]
+                print(f'\t\tIncentive Type: {incentive_type.value}')
+                print(f'\t\tTax liability before: {remaining_tax_liability}')
+                remaining_tax_liability = compute_carry_forward_math(all_inputs['pnl'].npv_dicts,
+                                                                     #alabama_npv_dicts,
+                                                                     remaining_tax_liability or estimated_incentives,
+                                                                     incentive_category)
+                print(f'\t\tTax liability after: {remaining_tax_liability}')
+
         except ModuleNotFoundError:
             print(f'\tNo python file found for {program}')
         except Exception as e:
+            import traceback
+            print(traceback.format_exc())
             print(f'\tError: {e}')
 
 
