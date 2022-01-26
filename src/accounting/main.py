@@ -558,6 +558,8 @@ for state in incentive_programs_by_state.keys():
     all_inputs['pnl_inputs'] = pnl_inputs
     all_inputs_per_state[state] = all_inputs
 
+not_found = []
+errors = []
 for state, programs in incentive_programs_by_state.items():
     print('State: {}'.format(state))
     all_inputs = all_inputs_per_state[state].copy()
@@ -577,22 +579,42 @@ for state, programs in incentive_programs_by_state.items():
             print(f'\tEligibility for {program}: {eligible}')
             if eligible or DEBUG:
                 estimated_incentives = incentive.estimated_incentives()
-                print(f'\t\tEstimated Incentives: {estimated_incentives}')
-                incentive_type = incentive_programs_types[f'{state}_{program}']
-                incentive_category = INCENTIVE_TYPE_TO_CATEGORY_MAPPING[incentive_type]
-                print(f'\t\tIncentive Type: {incentive_type.value}')
-                print(f'\t\tTax liability before: {remaining_tax_liability}')
-                remaining_tax_liability = compute_carry_forward_math(all_inputs['pnl'].npv_dicts,
-                                                                     #alabama_npv_dicts,
-                                                                     remaining_tax_liability or estimated_incentives,
-                                                                     incentive_category)
-                print(f'\t\tTax liability after: {remaining_tax_liability}')
+                if not isinstance(estimated_incentives, list):
+                    estimated_incentives = estimated_incentives['value']
+                if len(estimated_incentives) != 11:
+                    errors.append({
+                        'name': f'{state}: {program}',
+                        'error': f'Estimated incentives list was not length 11'
+                    })
+                    print(f'\t\tEstimated Incentives: {estimated_incentives}')
+                    print('\t\tNOT LENGTH 11!!!')
+                else:
+                    print(f'\t\tEstimated Incentives: {estimated_incentives}')
+                    incentive_type = incentive_programs_types[f'{state}_{program}']
+                    incentive_category = INCENTIVE_TYPE_TO_CATEGORY_MAPPING[incentive_type]
+                    print(f'\t\tIncentive Type: {incentive_type.value}')
+                    print(f'\t\tTax liability before: {remaining_tax_liability}')
+                    remaining_tax_liability = compute_carry_forward_math(all_inputs['pnl'].npv_dicts,
+                                                                         #alabama_npv_dicts,
+                                                                         remaining_tax_liability or estimated_incentives,
+                                                                         incentive_category)
+                    print(f'\t\tTax liability after: {remaining_tax_liability}')
 
         except ModuleNotFoundError:
             print(f'\tNo python file found for {program}')
+            not_found.append(f'{state}: {program}')
         except Exception as e:
             import traceback
-            print(traceback.format_exc())
+            exc = traceback.format_exc()
+            errors.append({
+                'name': f'{state}: {program}',
+                'error': str(e)
+            })
+            print(exc)
             print(f'\tError: {e}')
+            #raise
 
-
+print(f'Not found ({len(not_found)}:')
+print(json.dumps(not_found, indent=4))
+print(f'Errors ({len(errors)}):')
+print(json.dumps(errors, indent=4))
