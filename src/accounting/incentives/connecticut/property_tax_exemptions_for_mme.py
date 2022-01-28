@@ -31,7 +31,7 @@ class IncentiveProgram(IncentiveProgramBase):
     def estimated_incentives(self) -> List[float]:
         from util.npv import excel_npv
         self.discount_rate = self.project_level_inputs["Discount rate"]
-        year = 6
+        year = 5
         final_value = self.final_return_info
         npv_value = []
         string_name = []
@@ -48,36 +48,36 @@ class IncentiveProgram(IncentiveProgramBase):
                         array_value.append("Base")
                         continue
 
-                    if k > year:
+                    if k > year + start_year:
                         array_value.append(0)
                     else:
 
                         array_value.append(final_value[i][k])
 
-                value = excel_npv(self.discount_rate, final_value[i][start_year:year + start_year])
+                value = excel_npv(self.discount_rate, final_value[i][start_year:year + 1 + start_year])
                 final_value[i] = array_value
                 npv_value.append(value)
         final_value["NPV_Name"] = string_name
         final_value["NPV_Value"] = npv_value
 
         return final_value
-    def final_return(self):
-        high_level_category=self.project_level_inputs["High-level category"]
-        bol="Yes" if high_level_category=="Manufacturing" else "No"
-        machinery=self.capex.amount(industry_type=self.pnl_input["industry_type"],property_type=PersonalProperty.MACHINERY_AND_EQUIPMENT)
-        property_tax=self.pnl_input["property_tax_rate"]
-        year =5
-        df_dict=defaultdict(list)
 
-        for i in range(year+1):
-            df_dict["year"].append(i)
-            if bol=="No":
-                df_dict["value"].append(0)
+    def final_return(self):
+        high_level_category = self.project_level_inputs['High-level category']
+        bol = 'Yes' if high_level_category == 'Manufacturing' else 'No'
+        machinery = self.capex.amount(industry_type=(self.pnl_input['industry_type']),
+                                      property_type=(PersonalProperty.MACHINERY_AND_EQUIPMENT))
+        property_tax = self.pnl_input['property_tax_rate']
+        year = 10
+        df_dict = defaultdict(list)
+        for i in range(year + 1):
+            df_dict['year'].append(i)
+            if bol == 'No':
+                df_dict['value'].append(0)
+            elif i == 0:
+                df_dict['value'].append(0)
             else:
-                if i ==0:
-                    df_dict["value"].append(0)
-                else:
-                    df_dict["value"].append(machinery*property_tax)
-        self.main_bol=bol
+                df_dict['value'].append(machinery * property_tax)
+
+        self.main_bol = bol
         return df_dict
-            

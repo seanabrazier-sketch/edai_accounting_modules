@@ -59,7 +59,7 @@ class IncentiveProgram(IncentiveProgramBase):
     def estimated_incentives(self)->List[float]:
         from util.npv import excel_npv
         self.discount_rate = self.project_level_inputs["Discount rate"]
-        year = 11
+        year = 10
         final_value = self.final_return_info
         npv_value = []
         string_name = []
@@ -76,21 +76,45 @@ class IncentiveProgram(IncentiveProgramBase):
                         array_value.append("Base")
                         continue
 
-                    if k > year:
+                    if k > year + start_year:
                         array_value.append(0)
                     else:
 
                         array_value.append(final_value[i][k])
 
-                value = excel_npv(self.discount_rate, final_value[i][start_year:year + start_year])
+                value = excel_npv(self.discount_rate, final_value[i][start_year:year + 1 + start_year])
                 final_value[i] = array_value
                 npv_value.append(value)
         final_value["NPV_Name"] = string_name
         final_value["NPV_Value"] = npv_value
 
         return final_value
-    def final_return(self):
-        sum_array=[i+j+k for i,j,k in zip(self.state_corporate_income_tax,self.state_ui_tax,self.state_local_sale_tax)]
-        sum_val=(self.construction+self.land+self.machine)*0.5
-        ## comback later at row N1822
 
+    def final_return(self):
+        sum_array = [i + j + k for i, j, k in
+                     zip(self.state_corporate_income_tax, self.state_ui_tax, self.state_local_sale_tax)]
+
+        sum_array[0] = 0
+        sum_val = (self.construction + self.land + self.machine) * 0.5
+        val2 = sum_val - sum_array[1] if sum_val > sum_array[1] else 0
+        array2 = []
+        for i in range(11):
+            if i == 0:
+                array2.append(val2)
+            else:
+                array2.append(array2[-1] - sum_array[i] if array2[-1] > 0 else 0)
+
+        main_array = []
+        for i in range(11):
+            if i == 0:
+                main_array.append(0)
+            elif i == 1:
+                main_array.append(sum_array[i] if sum_val > sum_array[i] else sum_val)
+            else:
+                main_array.append(sum_array[i] if array2[(i - 1)] > 0 else 0)
+
+        df_dict = defaultdict(list)
+        df_dict['year'] = self.default_year
+        df_dict['value'] = main_array
+        self.main_bol = 'Yes'
+        return df_dict

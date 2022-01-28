@@ -11,9 +11,7 @@ class IncentiveProgram(IncentiveProgramBase):
         self.min_cap_investment = 150000000
         self.min_jobs1 = 50
         self.min_jobs2 = 25
-        self.prevailing_wages_state = kwargs['state_to_prevailing_wages']['Virginia']
-        # Default to state value
-        self.bls_wages = kwargs['county_to_prevailing_wages'].get(self.county, self.prevailing_wages_state)
+        self.bls_wages = kwargs['state_to_prevailing_wages']['Virginia']
         self.min_locality_wage = self.bls_wages * 1.5
         self.special_localities = [special_localities_df['Zone Type 1']['Accomack County, VA'],
                                    special_localities_df['Zone Type 2']['Accomack County, VA'],

@@ -5,13 +5,11 @@ from accounting.data_store import *
 class IncentiveProgram(IncentiveProgramBase):
     def __init__(self, **kwargs):
         self.county = kwargs['county_overrides'].get('Virginia')
-        self.prevailing_wages_state = kwargs['state_to_prevailing_wages']['Virginia']
-        # Default to state value
-        self.bls_wages = kwargs['county_to_prevailing_wages'].get(self.county, self.prevailing_wages_state)
+        self.bls_wages = kwargs['state_to_prevailing_wages']['Virginia']
         self.pnl_inputs = kwargs['pnl_inputs']
         self.project_level_inputs = kwargs['project_level_inputs']
-        self.irs_sector = self.project_level_inputs['IRS Sector'].lower()
-        self.sales_apportionment_df = self.pnl_inputs['state_corporate_income_tax_apportionment']
+        self.sales_apportionment_df = kwargs['sales_apportionment_df']['Tax incidence (Portion of sales to be taxed)'][
+            'Virginia']
         self.no_employment_before_2018 = "Yes"
         self.corp_tax = kwargs['pnl_inputs']['state_corporate_income_tax_rate']
         self.min_locality_wage = self.bls_wages * 1.5
@@ -25,31 +23,31 @@ class IncentiveProgram(IncentiveProgramBase):
         self.high_level_categories = ['Manufacturing', 'Transportation and warehousing', 'Information',
                                       'Finance and insurance', 'Professional, scientific, and technical services',
                                       'Management of companies (holding companies)']
-        self.cogs = irs_is_statements_df.groupby(['number'])[self.irs_sector].sum()[
+        self.cogs = irs_is_statements_df.groupby(['number'])['computer and electronic product manufacturing'].sum()[
                         46] / \
-                    irs_is_statements_df.groupby(['number'])[self.irs_sector].sum()[33]
+                    irs_is_statements_df.groupby(['number'])['computer and electronic product manufacturing'].sum()[33]
         self.sales_data = self.project_level_inputs[
             'Estimated sales based on national data (currently used; estimate or manual input)']
         self.rd_spending = self.pnl_inputs['research_and_development_rate']
 
         self.salaries_wages = \
-            irs_is_statements_df.groupby(['number'])[self.irs_sector].sum()[48] / \
+            irs_is_statements_df.groupby(['number'])['computer and electronic product manufacturing'].sum()[48] / \
             irs_is_statements_df.groupby(['number'])[
-                self.irs_sector].sum()[33]
+                'computer and electronic product manufacturing'].sum()[33]
 
         self.adjuster = \
             census_acs_earn_state_df['B24031_006E']['Virginia'] / census_acs_earn_state_df['B24031_006E'][
                 'United States']
 
         self.above_line_costs = ((irs_is_statements_df.groupby(['number'])[
-                                      self.irs_sector].sum()[47] /
+                                      'computer and electronic product manufacturing'].sum()[47] /
                                   irs_is_statements_df.groupby(['number'])[
-                                      self.irs_sector].sum()[33])
+                                      'computer and electronic product manufacturing'].sum()[33])
                                  +
                                  (irs_is_statements_df.groupby(['number'])[
-                                      self.irs_sector].sum()[50] /
+                                      'computer and electronic product manufacturing'].sum()[50] /
                                   irs_is_statements_df.groupby(['number'])[
-                                      self.irs_sector].sum()[33])) - self.rd_spending
+                                      'computer and electronic product manufacturing'].sum()[33])) - self.rd_spending
 
     def estimated_eligibility(self) -> bool:
         if (self.no_employment_before_2018 == "Yes") \

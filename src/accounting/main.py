@@ -1,3 +1,7 @@
+import sys
+import os
+back_path=os.path.normpath(os.getcwd() + os.sep + os.pardir)
+sys.path.append(back_path)
 from accounting.data_store import *
 from accounting.acs_codes import POPULATION_16_YEARS_AND_OVER
 import json

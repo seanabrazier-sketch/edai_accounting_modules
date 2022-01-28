@@ -50,18 +50,18 @@ class IncentiveProgram(IncentiveProgramBase):
                         array_value.append("Base")
                         continue
 
-                    if k > year:
+                    if k > year + start_year:
                         array_value.append(0)
                     else:
 
                         array_value.append(final_value[i][k])
 
-                value = excel_npv(self.discount_rate, final_value[i][start_year:year + start_year])
+                value = excel_npv(self.discount_rate, final_value[i][start_year:year + 1 + start_year])
                 final_value[i] = array_value
                 npv_value.append(value)
         final_value["NPV_Name"] = string_name
         final_value["NPV_Value"] = npv_value
-
+        print(f"final val{final_value}")
         return final_value
 
     def get_county_name(self):
@@ -103,7 +103,7 @@ class IncentiveProgram(IncentiveProgramBase):
         county_poverty=None
         if isinstance(self.county,str):
 
-            county_poverty=list_of_special_localities["Poverty"][self.county]
+            county_poverty=list_of_special_localities()["Poverty"][self.county]
         else:
             county_poverty=0
         #check if county exists
@@ -180,7 +180,7 @@ class IncentiveProgram(IncentiveProgramBase):
                 main_array.append(0)
             else:
                 main_array.append(sum([benefit_real_array[i],benefit_corporate_array[i]]))
-        df_dict["final_value"]=main_array
+        df_dict["value"]=main_array
         self.main_bol=main_bol
         return df_dict
 

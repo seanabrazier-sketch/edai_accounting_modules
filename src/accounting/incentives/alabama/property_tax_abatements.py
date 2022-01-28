@@ -20,7 +20,7 @@ class IncentiveProgram(IncentiveProgramBase):
     def estimated_incentives(self) -> List[float]:
         from util.npv import excel_npv
         self.discount_rate = self.project_level_inputs["Discount rate"]
-        year = 10
+        year = 9
         final_value = self.final_return_info
         npv_value = []
         string_name = []
@@ -43,7 +43,7 @@ class IncentiveProgram(IncentiveProgramBase):
 
                         array_value.append(final_value[i][k])
 
-                value = excel_npv(self.discount_rate, final_value[i][start_year:year + start_year])
+                value = excel_npv(self.discount_rate, final_value[i][start_year:year+1 + start_year])
                 final_value[i] = array_value
                 npv_value.append(value)
 

@@ -15,256 +15,94 @@ from util.connecticut_config import  enterprise
 from accounting.incentives.maine.employment_tax_increment_financing_program_etif import IncentiveProgram as subclass
 
 class IncentiveProgram(IncentiveProgramBase):
-    def __init__(self, **kwargs):        
-        self.county = kwargs['county_overrides'].get('Nebraska')
-
-        self.promised_wages = kwargs['project_level_inputs']['Promised wages']
-        self.promised_jobs = kwargs['project_level_inputs']['Promised jobs']
-        self.promised_capital_investment = kwargs['project_level_inputs']['Promised capital investment']
-
-        self.prevailing_wages_state = kwargs['state_to_prevailing_wages']['Nebraska']
-        # Default to state value
-        self.prevailing_wages_county = kwargs['county_to_prevailing_wages'].get(self.county, self.prevailing_wages_state)
-
-        # Wages Tier One through Five
-        if self.promised_wages / self.prevailing_wages_state <= 0.75:
-            self.wage_multiple = 0.03
-        elif self.promised_wages / self.prevailing_wages_state < 1.0:
-            self.wage_multiple = 0.04
-        elif self.promised_wages / self.prevailing_wages_state < 1.25:
-            self.wage_multiple = 0.05
-        else:
-            self.wage_multiple = 0.06
-
-        # Wage Tier Six
-        self.new_employee_job_credit = 0.10
-        share_of_county_avg_wage = 2.0 * self.prevailing_wages_county
-        share_of_ne_avg_wage = 1.5 * self.prevailing_wages_state
-        self.share_of_avg_wage_to_use = max([share_of_county_avg_wage, share_of_ne_avg_wage])
-
-        # Tiers
-        tiers = ['Tier One', 'Tier Two regular',
-                 'Tier Two Data center', 'Tier Three', 'Tier Four', 'Tier Five',
-                 'Tier Six small', 'Tier Six large', 'Rural Level One',
-                 'Rural Level Two']
-
-        tier_mapping = {
-            'Tier One': ['Manufacturing'],
-            'Tier Two regular': [
-                'Manufacturing',
-                'Distribution',
-                'Transportation',
-                'Storage/warehousing',
-                'Telecommunications',
-                'Data processing',
-                'Financial services',
-                'Insurance'
-            ],
-            'Tier Two Data center': ['Data processing'],
-            'Tier Three': [
-                'Manufacturing',
-                'Distribution',
-                'Transportation',
-                'Storage/warehousing',
-                'Telecommunications',
-                'Data processing',
-                'Financial services',
-                'Insurance'
-            ],
-            'Tier Four': [
-                'Manufacturing',
-                'Distribution',
-                'Transportation',
-                'Storage/warehousing',
-                'Telecommunications',
-                'Data processing',
-                'Financial services',
-                'Insurance'
-            ],
-            'Tier Five': [
-                'Manufacturing',
-                'Distribution',
-                'Transportation',
-                'Storage/warehousing',
-                'Telecommunications',
-                'Data processing',
-                'Financial services',
-                'Insurance'
-            ],
-            'Tier Six small': [],
-            'Tier Six large': [],
-            'Rural Level One': [
-                'Manufacturing',
-                'Distribution',
-                'Transportation',
-                'Storage/warehousing',
-                'Telecommunications',
-                'Data processing',
-                'Financial services',
-                'Insurance'
-            ],
-            'Rural Level Two': [
-                'Manufacturing',
-                'Distribution',
-                'Transportation',
-                'Storage/warehousing',
-                'Telecommunications',
-                'Data processing',
-                'Financial services',
-                'Insurance'
-            ]
-        }
-
-        high_level_category = kwargs['project_level_inputs']['High-level category']
-        rollup_irs_sector = kwargs['project_level_inputs']['Rollup IRS sector']
-        project_category = kwargs['project_level_inputs']['Project category']
-
-        eligible_tiers = []
-        self.eligibility = []
-        for tier in tiers:
-            if (tier not in ['Tier Two Data center', 'Tier Six small', 'Tier Six large'] and project_category in ['R&D center', 'Corporate headquarters']) or \
-                    high_level_category in tier_mapping[tier]:
-                eligible_tiers.append(tier)
-                self.eligibility.append(True)
-            else:
-                self.eligibility.append(False)
-
-        self.eligible_tiers = eligible_tiers
-        self.sales_tax_rate = kwargs['pnl_inputs']['state_local_sales_tax_rate']
+    def __init__(self, **kwargs):
+        self.project_level_inputs = kwargs['project_level_inputs']
+        # self.sub_class=subclass(**kwargs)
         self.capex = kwargs['capex']
-        self.industry_type = kwargs['pnl_inputs']['industry_type']
-        self.property_tax_rate = kwargs['pnl_inputs']['property_tax_rate']
+        self.all_input=kwargs
+        self.zone_type_1 = kwargs['zone_type_1']
+        self.zone_type_2 = kwargs['zone_type_2']
+        self.zone_type_3 = kwargs['zone_type_3']
+        self.get_zone = self.get_zone()
+        self.pnl_input = kwargs["pnl_inputs"]
+        self.npv_dicts = kwargs['pnl'].npv_dicts
+        self.default_year = [i for i in range(11)]
+        self.construction = self.capex.amount(industry_type=self.pnl_input["industry_type"],
+                                         property_type=RealProperty.CONSTRUCTION_MATERIAL)
 
-    def estimated_eligibility(self) -> bool:
-        return len(self.eligible_tiers) > 0
+        self.machine = self.capex.amount(industry_type=self.pnl_input["industry_type"],
+                                    property_type=PersonalProperty.MACHINERY_AND_EQUIPMENT)
+        self.fix = self.capex.amount(industry_type=self.pnl_input["industry_type"], property_type=PersonalProperty.FIXTURES)
+        self.land=self.capex.amount(industry_type=self.pnl_input["industry_type"], property_type=RealProperty.LAND)
 
-    def estimated_incentives(self) -> List[float]:
-        incentives = [0.0]
 
-        for i in range(10):
-            investment_credits = [0.0]
-            wage = [0.0]
-            sales_tax_refund_onetime = [0.0]
-            sales_tax_refund_ongoing = [0.0]
-            other = [0.0]
-            if i < 6 and self.eligibility[0]:
-                # 1
-                ic_percent = 0.03
-                st_ot_percent = 0.5
-                investment_credits.append(self.promised_capital_investment * ic_percent)
-                wage.append(self.promised_wages * self.promised_jobs * self.wage_multiple)
-                if i < 1:
-                    sales_tax_refund_onetime.append(
-                        self.sales_tax_rate
-                        * self.capex.amount(RealProperty.CONSTRUCTION_MATERIAL, self.industry_type)
-                        * st_ot_percent
-                    )
-            if i < 7 and self.eligibility[1]:
-                # 2
-                ic_percent = 0.1
-                st_ot_percent = 1.0
-                investment_credits.append(self.promised_capital_investment * ic_percent)
-                wage.append(self.promised_wages * self.promised_jobs * self.wage_multiple)
-                personal_property = self.capex.amount(PersonalProperty.MACHINERY_AND_EQUIPMENT, self.industry_type) \
-                    + self.capex.amount(PersonalProperty.FIXTURES, self.industry_type)
-                other.append(self.property_tax_rate * personal_property)
-                if i < 1:
-                    sales_tax_refund_onetime.append(
-                        self.sales_tax_rate
-                        * self.capex.amount(RealProperty.CONSTRUCTION_MATERIAL, self.industry_type)
-                        * st_ot_percent
-                    )
-            if i < 7 and self.eligibility[2]:
-                # 3
-                ic_percent = 0.1
-                st_ot_percent = 1.0
-                investment_credits.append(self.promised_capital_investment * ic_percent)
-                wage.append(self.promised_wages * self.promised_jobs * self.wage_multiple)
-                personal_property = self.capex.amount(PersonalProperty.MACHINERY_AND_EQUIPMENT, self.industry_type) \
-                    + self.capex.amount(PersonalProperty.FIXTURES, self.industry_type)
-                other.append(self.property_tax_rate * personal_property)
-                if i < 1:
-                    sales_tax_refund_onetime.append(
-                        self.sales_tax_rate
-                        * self.capex.amount(RealProperty.CONSTRUCTION_MATERIAL, self.industry_type)
-                        * st_ot_percent
-                    )
-            if i < 6 and self.eligibility[3]:
-                # 4
-                wage.append(self.promised_wages * self.promised_jobs * self.wage_multiple)
-            if i < 7 and self.eligibility[4]:
-                # 5
-                ic_percent = 0.1
-                st_ot_percent = 1.0
-                investment_credits.append(self.promised_capital_investment * ic_percent)
-                wage.append(self.promised_wages * self.promised_jobs * self.wage_multiple)
-                personal_property = self.capex.amount(PersonalProperty.MACHINERY_AND_EQUIPMENT, self.industry_type) \
-                    + self.capex.amount(PersonalProperty.FIXTURES, self.industry_type)
-                other.append(self.property_tax_rate * personal_property)
-                if i < 1:
-                    sales_tax_refund_onetime.append(
-                        self.sales_tax_rate
-                        * self.capex.amount(RealProperty.CONSTRUCTION_MATERIAL, self.industry_type)
-                        * st_ot_percent
-                    )
-            if i < 7 and self.eligibility[5]:
-                # 6
-                st_ot_percent = 1.0
-                personal_property = self.capex.amount(PersonalProperty.MACHINERY_AND_EQUIPMENT, self.industry_type) \
-                    + self.capex.amount(PersonalProperty.FIXTURES, self.industry_type)
-                other.append(self.property_tax_rate * personal_property)
-                if i < 1:
-                    sales_tax_refund_onetime.append(
-                        self.sales_tax_rate
-                        * self.capex.amount(RealProperty.CONSTRUCTION_MATERIAL, self.industry_type)
-                        * st_ot_percent
-                    )
-            if i < 10 and self.eligibility[6]:
-                # 7
-                ic_percent = 0.15
-                st_ot_percent = 1.0
-                investment_credits.append(self.promised_capital_investment * ic_percent)
-                wage.append(self.promised_wages * self.promised_jobs * self.wage_multiple)
-                personal_property = self.capex.amount(PersonalProperty.MACHINERY_AND_EQUIPMENT, self.industry_type) \
-                    + self.capex.amount(PersonalProperty.FIXTURES, self.industry_type)
-                other.append(self.property_tax_rate * personal_property)
-                if i < 1:
-                    sales_tax_refund_onetime.append(
-                        self.sales_tax_rate
-                        * self.capex.amount(RealProperty.CONSTRUCTION_MATERIAL, self.industry_type)
-                        * st_ot_percent
-                    )
-            if i < 10 and self.eligibility[7]:
-                # 8
-                ic_percent = 0.15
-                st_ot_percent = 1.0
-                investment_credits.append(self.promised_capital_investment * ic_percent)
-                wage.append(self.promised_wages * self.promised_jobs * self.wage_multiple)
-                personal_property = self.capex.amount(PersonalProperty.MACHINERY_AND_EQUIPMENT, self.industry_type) \
-                    + self.capex.amount(PersonalProperty.FIXTURES, self.industry_type)
-                other.append(self.property_tax_rate * personal_property)
-                if i < 1:
-                    sales_tax_refund_onetime.append(
-                        self.sales_tax_rate
-                        * self.capex.amount(RealProperty.CONSTRUCTION_MATERIAL, self.industry_type)
-                        * st_ot_percent
-                    )
-            if i < 1 and self.eligibility[8]:
-                # 9
-                investment_credits.append(self.promised_capital_investment * (2_570.0/50_000.0))
-                wage.append(self.promised_jobs * 3_000.0)
-                personal_property = self.capex.amount(PersonalProperty.MACHINERY_AND_EQUIPMENT, self.industry_type) \
-                    + self.capex.amount(PersonalProperty.FIXTURES, self.industry_type)
-                other.append(self.property_tax_rate * personal_property)
-            if i < 1 and self.eligibility[9]:
-                # 10
-                investment_credits.append(self.promised_capital_investment * (2_570.0/50_000.0))
-                wage.append(self.promised_jobs * 3_000.0)
-            incentives.append(
-                max(investment_credits)
-                + max(wage)
-                + max(sales_tax_refund_onetime)
-                + max(sales_tax_refund_ongoing)
-                + max(other)
-            )
-        return incentives
+        self.high_level=self.project_level_inputs["High-level category"]
+        self.irs=self.project_level_inputs["IRS Sector"]
+        self.project_category=self.project_level_inputs["Project category"]
+        self.promised_jobs=self.project_level_inputs["Promised jobs"]
+        self.promised_wage=self.project_level_inputs["Promised wages"]
+        self.promised_cap=self.project_level_inputs["Promised capital investment"]
+        self.federal_minimum_wage=self.project_level_inputs["Federal minimum wage"]
+        self.equipvalent_payroll_base=self.project_level_inputs["Equivalent payroll (BASE)"]
+        self.discount_rate=self.project_level_inputs["Discount rate"]
+        self.county=self.get_county_name()
+        self.state_local_sale_tax_rate=self.pnl_input["state_local_sales_tax_rate"]
+        self.rd=self.npv_dicts["Research & development"]
+        self.total_real_and_personal_prop=self.construction+self.machine+self.fix
+        self.total_personal_prop=self.fix  + self.machine
+        self.property_tax_rate=self.pnl_input["property_tax_rate"]
+        self.property_tax = self.npv_dicts["Property tax"]
+        self.annual_exp=self.npv_dicts["Annual capital expenditures option 2"]
+        self.annual_exp[0]=0
+        self.attraction=self.project_level_inputs["Attraction or Expansion?"]
+        self.state_corporate_income_tax = self.npv_dicts["State corporate income tax"]
+        self.prevailing_wage_county=self.project_level_inputs["Prevailing wages county"]
+        self.prevailing_state=self.project_level_inputs["Prevailing wages"]
+        self.final_return_info=self.final_return()
+
+    def estimated_eligibility(self)->bool:
+        if self.main_bol=="Yes":
+            return True
+        else:
+            return False
+
+    def estimated_incentives(self)->List[float]:
+        return self.final_return_info
+
+
+
+    def get_zone(self):
+        try:
+            self.zone_type_1 = self.zone_type_1[self.county]
+        except:
+            self.zone_type_1 = "-"
+        try:
+            self.zone_type_2 = self.zone_type_2[self.county]
+        except:
+            self.zone_type_2 = "-"
+        try:
+            self.zone_type_3 = self.zone_type_3[self.county]
+        except:
+            self.zone_type_3 = "-"
+
+    def get_county_name(self):
+        county = []
+        county_list = self.all_input['county_drop_down_list']
+
+        for i in county_list:
+            try:
+                index = i.index(", AL")
+                county.append(i)
+                break
+            except:
+                pass
+
+        if len(county) > 0:
+            county = county[0]
+        else:
+            county
+
+        return county
+
+    def final_return(self):
+        return "Already done"

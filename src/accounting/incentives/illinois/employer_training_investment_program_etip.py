@@ -34,7 +34,7 @@ class IncentiveProgram(IncentiveProgramBase):
     def estimated_incentives(self)->List[float]:
         from util.npv import excel_npv
         self.discount_rate = self.project_level_inputs["Discount rate"]
-        year = 1
+        year = 0
         final_value = self.final_return_info
         npv_value = []
         string_name = []
@@ -51,13 +51,13 @@ class IncentiveProgram(IncentiveProgramBase):
                         array_value.append("Base")
                         continue
 
-                    if k > year:
+                    if k > year + start_year:
                         array_value.append(0)
                     else:
 
                         array_value.append(final_value[i][k])
 
-                value = excel_npv(self.discount_rate, final_value[i][start_year:year + start_year])
+                value = excel_npv(self.discount_rate, final_value[i][start_year:year + 1 + start_year])
                 final_value[i] = array_value
                 npv_value.append(value)
         final_value["NPV_Name"] = string_name
@@ -82,14 +82,14 @@ class IncentiveProgram(IncentiveProgramBase):
         main_bol=requirement_bol
         self.main_bol=main_bol
         main_array=[]
-        year=[0,1]
-        for i in range(2):
+
+        for i in range(11):
             if main_bol=="Yes":
                 if i ==0:
-                    main_array.append(0)
-                else:
                     main_array.append(promised_job*0.5*program)
+                else:
+                    main_array.append(0)
         df_dict=defaultdict(list)
         df_dict["value"]=main_array
-        df_dict["year"]=year
+        df_dict["year"]=[i for i in range(11)]
         return  df_dict

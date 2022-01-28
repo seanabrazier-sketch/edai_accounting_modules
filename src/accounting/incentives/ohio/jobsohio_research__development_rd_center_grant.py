@@ -68,7 +68,7 @@ class IncentiveProgram(IncentiveProgramBase):
             return False
 
     def estimated_incentives(self)->List[float]:
-        year=6
+        year=5
         final_value = self.final_return_info
         npv_value = []
         string_name = []
@@ -84,13 +84,13 @@ class IncentiveProgram(IncentiveProgramBase):
                         array_value.append("Base")
                         continue
 
-                    if k > year:
+                    if k > year + start_year:
                         array_value.append(0)
                     else:
 
                         array_value.append(final_value[i][k])
 
-                value = excel_npv(self.discount_rate, final_value[i][start_year:year + start_year])
+                value = excel_npv(self.discount_rate, final_value[i][start_year:year + 1 + start_year])
                 final_value[i] = array_value
                 npv_value.append(value)
         final_value["NPV_Name"] = string_name
@@ -101,17 +101,17 @@ class IncentiveProgram(IncentiveProgramBase):
     def get_zone(self):
 
         try:
-            zone_type_1 = list_of_special_localities["Zone Type 1"]
+            zone_type_1 = list_of_special_localities()["Zone Type 1"]
             self.zone_type_1 = zone_type_1[self.county]
         except:
             self.zone_type_1 = "-"
         try:
-            zone_type_2 = list_of_special_localities["Zone Type 2"]
+            zone_type_2 = list_of_special_localities()["Zone Type 2"]
             self.zone_type_2 = zone_type_2[self.county]
         except:
             self.zone_type_2 = "-"
         try:
-            zone_type_3 = list_of_special_localities["Zone Type 3"]
+            zone_type_3 = list_of_special_localities()["Zone Type 3"]
             self.zone_type_3 = zone_type_3[self.county]
         except:
             self.zone_type_3 = "-"

@@ -60,7 +60,7 @@ class IncentiveProgram(IncentiveProgramBase):
 
     def estimated_incentives(self)->List[float]:
         from util.npv import excel_npv
-        year = self.choose_year+1
+        year = self.choose_year
         final_value = self.final_return_info
         npv_value = []
         string_name = []
@@ -77,13 +77,13 @@ class IncentiveProgram(IncentiveProgramBase):
                         array_value.append("Base")
                         continue
 
-                    if k > year:
+                    if k > year + start_year:
                         array_value.append(0)
                     else:
 
                         array_value.append(final_value[i][k])
 
-                value = excel_npv(self.discount_rate, final_value[i][start_year:year + start_year])
+                value = excel_npv(self.discount_rate, final_value[i][start_year:year + 1 + start_year])
                 final_value[i] = array_value
                 npv_value.append(value)
         final_value["NPV_Name"] = string_name
@@ -92,21 +92,22 @@ class IncentiveProgram(IncentiveProgramBase):
     def get_zone(self):
 
         try:
-            zone_type_1 = list_of_special_localities["Zone Type 1"]
+            zone_type_1 = list_of_special_localities()["Zone Type 1"]
             self.zone_type_1 = zone_type_1[self.county]
             if len(self.zone_type_1)==0:
                 self.zone_type_1="-"
         except:
             self.zone_type_1 = "-"
         try:
-            zone_type_2 = list_of_special_localities["Zone Type 2"]
+            zone_type_2 = list_of_special_localities()["Zone Type 2"]
             self.zone_type_2 = zone_type_2[self.county]
             if len(self.zone_type_2)==0:
                 self.zone_type_2="-"
         except:
             self.zone_type_2 = "-"
         try:
-            zone_type_3 = list_of_special_localities["Zone Type 3"]
+            zone_type_3 = list_of_special_localities()["Zone Type 3"]
+
             self.zone_type_3 = zone_type_3[self.county]
             if len(self.zone_type_3)==0:
                 self.zone_type_3="-"
@@ -139,78 +140,74 @@ class IncentiveProgram(IncentiveProgramBase):
         return county
 
     def final_return(self):
-        prevailing_county=None
-        if isinstance(self.county,str):
-            prevailing_county=self.project_level_inputs["Prevailing wages county"][self.county.replace("MO","Missouri")]
+        prevailing_county = None
+        if isinstance(self.county, str):
+            prevailing_county = self.project_level_inputs['Prevailing wages county'][self.county.replace('MO', 'Missouri')]
         else:
-            prevailing_county=self.project_level_inputs["Prevailing wages"]["Missouri"]
+            prevailing_county = self.project_level_inputs['Prevailing wages']['Missouri']
+        requirement_bol_array = [
+         'Yes' if (self.promised_jobs >= 2 and self.promised_cap >= 100000 and self.promised_wage >= prevailing_county and self.zone_type_3 == 'Enhanced Enterprise Zone') else 'No',
+         'Yes' if (self.promised_jobs >= 2 and self.promised_cap >= 100000 and self.promised_wage >= prevailing_county and self.zone_type_3 == 'Rural') else 'No',
+         'No',
+         'No',
+         'No',
+         'No',
+         'No',
+         'No',
+         'No']
 
-
-        requirement_bol_array=[
-            "Yes" if (self.promised_jobs>=2 and self.promised_cap>=100000 and self.promised_wage>=prevailing_county and self.zone_type_3=="Enhanced Enterprise Zone") else "No",
-            "Yes" if (
-                        self.promised_jobs >= 2 and self.promised_cap >= 100000 and self.promised_wage >= prevailing_county and self.zone_type_3 == "Rural") else "No",
-            "No",
-            "No",
-            "No",
-            "No",
-            "No",
-            "No",
-            "No"
-        ]
-
-        value= discretionary_incentives_df
-        value.index=discretionary_incentives_df["Region/state"].tolist()
-
-        value=discretionary_incentives_df["Incentive per job"]["Missouri"].median()
-
-        array_value=[
-            self.promised_jobs*self.promised_wage*0.054,
-            self.promised_jobs * self.promised_wage * 0.054,
-            self.promised_jobs * self.promised_wage * 0.054,
-            self.promised_jobs * self.promised_wage * 0.06,
-            self.promised_jobs * self.promised_wage * 0.07,
-            self.promised_jobs*value,
-            self.promised_jobs * self.promised_wage * 0.054,
-            "tbh",
-            self.promised_jobs * self.promised_wage * 0.054,
-        ]
-        choose_value=None
+        value = discretionary_incentives_df
+        value.index = discretionary_incentives_df['Region/state'].tolist()
+        value = discretionary_incentives_df['Incentive per job']['Missouri'].median()
+        array_value = [
+         self.promised_jobs * self.promised_wage * 0.054,
+         self.promised_jobs * self.promised_wage * 0.054,
+         self.promised_jobs * self.promised_wage * 0.054,
+         self.promised_jobs * self.promised_wage * 0.06,
+         self.promised_jobs * self.promised_wage * 0.07,
+         self.promised_jobs * value,
+         self.promised_jobs * self.promised_wage * 0.054,
+         'tbh',
+         self.promised_jobs * self.promised_wage * 0.054]
+        choose_value = None
         try:
-            choose_value=choose_with_condition("max","Yes",requirement_bol_array,array_value)
+            choose_value = choose_with_condition('max', 'Yes', requirement_bol_array, array_value)
         except:
-            choose_value=0
-        index=None
+            choose_value = 0
+
+        index = None
         try:
-            array_value.index(choose_value)
-        except:
-            index="Not found"
-        array_year=[5,5,5,5,5,1,10,0,15]
-        choose_year=None
-        minimum_job_val=[2,2,10,100,100,100,50,"n/a",10]
-        minimim_val=None
-        try:
-            minimum_val=minimum_job_val[index]
+            index=array_value.index(choose_value)
 
         except:
-            minimum_val="n/a"
+            index = 'Not found'
 
-        if minimim_val=="n/a":
-            self.main_bol="No"
+        array_year = [
+         5, 5, 5, 5, 5, 1, 10, 0, 15]
+        choose_year = None
+        minimum_job_val = [2, 2, 10, 100, 100, 100, 50, 'n/a', 10]
+        minimim_val = None
+        try:
+            minimum_val = minimum_job_val[index]
+        except:
+            minimum_val = 'n/a'
+
+        if minimim_val == 'n/a':
+            self.main_bol = 'No'
         else:
-            self.main_bol="Yes"
+            self.main_bol = 'Yes'
         try:
-            choose_year=array_year[index]
+            choose_year = array_year[index]
         except:
-            choose_year=0
+            choose_year = 0
 
-        if self.main_bol=="Yes":
-                main_array=[choose_value for i in range(choose_year+1)]
-                main_array[0]=0
+        if self.main_bol == 'Yes':
+            main_array = [choose_value for i in range(11)]
+            main_array[0] = 0
         else:
-            main_array=[0 for i in range(11)]
-        df_dict=defaultdict(list)
-        df_dict["year"]=self.default_year
-        df_dict["value"]=main_array
-        self.choose_year=choose_year
+            main_array = [0 for i in range(11)]
+        df_dict = defaultdict(list)
+        df_dict['year'] = self.default_year
+        df_dict['value'] = main_array
+        self.choose_year = choose_year
         return df_dict
