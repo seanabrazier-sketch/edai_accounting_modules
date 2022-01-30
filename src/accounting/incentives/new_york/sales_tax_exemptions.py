@@ -2,7 +2,7 @@ import datetime
 
 from accounting.incentives import *
 import numpy
-from accounting.incentives.alabama.jobs_act_incentives_jobs import IncentiveProgram as jobs
+# from accounting.incentives.alabama.jobs_act_incentives_jobs import IncentiveProgram as jobs
 from collections import defaultdict
 from util.npv import npv
 from util.necessary import *
@@ -11,8 +11,8 @@ from collections import defaultdict
 from accounting.data_store import *
 from datetime import date
 from util.georgia_config import *
-from util.connecticut_config import enterprise
 
+from accounting.incentives.georgia.sales_tax_exemptions import IncentiveProgram as sub_class
 
 class IncentiveProgram(IncentiveProgramBase):
     def __init__(self, **kwargs):
@@ -20,6 +20,10 @@ class IncentiveProgram(IncentiveProgramBase):
 
         self.capex = kwargs['capex']
         self.all_input = kwargs
+
+        self.sub_class_val=sub_class(**kwargs["all_inputs_per_state"]["Georgia"])
+
+
         self.county = self.get_county_name()
         self.get_zone = self.get_zone()
         self.pnl_input = kwargs["pnl_inputs"]
@@ -154,11 +158,10 @@ class IncentiveProgram(IncentiveProgramBase):
         main_array=[self.state_local_sale_tax_rate*i for i in self.annual_exp]
         df_dict=defaultdict(list)
 
-        sub_val=sub_array[0]
+        sub_val=self.sub_class_val.sub_val[0]
 
 
         main_array[0]=sub_val*self.state_local_sale_tax_rate
-
 
         df_dict["year"]=self.default_year
         df_dict["value"]=main_array

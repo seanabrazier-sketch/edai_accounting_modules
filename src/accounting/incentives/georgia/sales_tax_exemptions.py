@@ -125,11 +125,8 @@ class IncentiveProgram(IncentiveProgramBase):
                 else:
                     df_dict["value"].append(anual_expenditure[i]*state_local_sales_tax_rate)
         self.main_bol=main_bol
-        path = georgia_config.__file__
-        file = open(path, "w")
 
-        file.write("sub_array={}".format(df_dict["value"]))
-        file.close()
-
+        ## for inheritance
+        self.sub_val=df_dict["value"]
 
         return df_dict

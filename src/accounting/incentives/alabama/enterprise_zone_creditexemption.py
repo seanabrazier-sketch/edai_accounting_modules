@@ -157,7 +157,7 @@ class IncentiveProgram(IncentiveProgramBase):
         return_val="Yes" if count>0 else "No"
         return return_val
     def final_return(self):
-        print(self.all_input["all_inputs_per_state"])
+
         year=10
         def_dict=defaultdict(list)
 

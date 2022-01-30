@@ -8,7 +8,6 @@ from util.capex import PersonalProperty,RealProperty, IndustryType
 from collections import defaultdict
 from accounting.data_store import *
 
-from util.connecticut_config import  enterprise
 class IncentiveProgram(IncentiveProgramBase):
     def __init__(self, **kwargs):
         self.project_level_inputs = kwargs['project_level_inputs']

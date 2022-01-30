@@ -11,7 +11,6 @@ from collections import defaultdict
 from accounting.data_store import *
 from datetime import date
 
-from util.connecticut_config import  enterprise
 from accounting.incentives.maine.employment_tax_increment_financing_program_etif import IncentiveProgram as subclass
 
 class IncentiveProgram(IncentiveProgramBase):

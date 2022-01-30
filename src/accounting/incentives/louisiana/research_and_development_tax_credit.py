@@ -8,7 +8,6 @@ from util.capex import PersonalProperty,RealProperty, IndustryType
 from collections import defaultdict
 from accounting.data_store import *
 
-from util.connecticut_config import  enterprise
 from accounting.incentives.louisiana.industrial_tax_exemption import  IncentiveProgram as sub_class1
 from accounting.incentives.louisiana.sales_tax_exemption_on_manufacturing_machinery__equipment import  IncentiveProgram as sub_class2
 

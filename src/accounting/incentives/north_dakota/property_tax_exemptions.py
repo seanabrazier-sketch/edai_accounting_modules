@@ -2,7 +2,7 @@ import datetime
 
 from accounting.incentives import *
 import numpy
-from accounting.incentives.alabama.jobs_act_incentives_jobs import IncentiveProgram as jobs
+
 from collections import defaultdict
 from util.npv import npv
 from util.necessary import *
@@ -11,7 +11,6 @@ from collections import defaultdict
 from accounting.data_store import *
 from datetime import date
 
-from util.connecticut_config import  enterprise
 from accounting.incentives.maine.employment_tax_increment_financing_program_etif import IncentiveProgram as subclass
 
 class IncentiveProgram(IncentiveProgramBase):
@@ -147,7 +146,8 @@ class IncentiveProgram(IncentiveProgramBase):
             "Yes" if self.high_level=="Information" else "No",
             "Yes" if self.high_level=="Finance and Insurance" else 'No'
         ]
-        self.main_bol="Yes" if main_bol_array.count('Yes')>0     else "No"
+
+        self.main_bol="Yes" if main_bol_array.count('Yes')>0 else "No"
 
         if self.main_bol=="Yes":
             main_array=[i for i in self.property_tax]

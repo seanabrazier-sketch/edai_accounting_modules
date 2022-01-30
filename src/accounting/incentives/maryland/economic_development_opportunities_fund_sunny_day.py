@@ -11,7 +11,6 @@ from collections import defaultdict
 from accounting.data_store import *
 from datetime import date
 
-from util.connecticut_config import  enterprise
 
 
 class IncentiveProgram(IncentiveProgramBase):

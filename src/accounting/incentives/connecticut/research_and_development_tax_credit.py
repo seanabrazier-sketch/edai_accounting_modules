@@ -6,7 +6,7 @@ from accounting.incentives.alabama.jobs_act_incentives_jobs import IncentiveProg
 from collections import defaultdict
 from util.npv import npv
 from util.capex import PersonalProperty,RealProperty, IndustryType
-from util import connecticut_config
+
 from collections import defaultdict
 class IncentiveProgram(IncentiveProgramBase):
     def __init__(self, **kwargs):
@@ -70,11 +70,11 @@ class IncentiveProgram(IncentiveProgramBase):
         sales = self.npv_dicts['Sales']
         default_array = [
          'Yes', 'Yes', 'Yes', 'not modeled']
-        self.enterprise = default_array
-        path = connecticut_config.__file__
-        file = open(path, 'w')
-        file.write('enterprise={}'.format(self.enterprise))
-        file.close()
+        # self.enterprise = default_array
+        # path = connecticut_config.__file__
+        # file = open(path, 'w')
+        # file.write('enterprise={}'.format(self.enterprise))
+        # file.close()
         research_and_development = self.npv_dicts['Research & development']
         year = 10
         return_lookup = ['<$50M', '$50M-$100M', '$101M-$200M', '>$200M']

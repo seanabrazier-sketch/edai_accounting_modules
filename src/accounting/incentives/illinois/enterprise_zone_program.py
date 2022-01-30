@@ -9,7 +9,7 @@ from util.capex import PersonalProperty, RealProperty, IndustryType
 from collections import defaultdict
 from accounting.data_store import *
 from datetime import date
-from util.connecticut_config import enterprise
+
 import accounting.incentives.maine.employment_tax_increment_financing_program_etif as subclass
 
 class IncentiveProgram(IncentiveProgramBase):

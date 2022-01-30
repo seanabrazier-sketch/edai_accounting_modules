@@ -8,7 +8,7 @@ from util.capex import PersonalProperty,RealProperty, IndustryType
 from collections import defaultdict
 from accounting.data_store import *
 
-from util.connecticut_config import  enterprise
+
 class IncentiveProgram(IncentiveProgramBase):
     def __init__(self, **kwargs):
         self.project_level_inputs = kwargs['project_level_inputs']
@@ -68,6 +68,8 @@ class IncentiveProgram(IncentiveProgramBase):
     def final_return(self):
 
         #necessary variables
+        enterprise= [
+         'Yes', 'Yes', 'Yes', 'not modeled']
         promised_wage=self.project_level_inputs["Promised wages"]
         promised_jobs=self.project_level_inputs["Promised jobs"]
         program=self.all_input["workforce_programs_ipj_map"]["Job training grant"]
