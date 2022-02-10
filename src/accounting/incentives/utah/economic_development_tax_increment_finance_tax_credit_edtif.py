@@ -116,4 +116,4 @@ class IncentiveProgram(IncentiveProgramBase):
         for i in nums11:
             incentives.append(i * self.state_revenue)
 
-        return incentives
+        return [0] + incentives

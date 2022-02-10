@@ -1,9 +1,6 @@
 from accounting.incentives import *
 from accounting.data_store import *
 
-state_specific_sectors_df = pd.read_csv("C:/Users/ferre/Downloads/20210904_State-specific sectors.csv")
-state_specific_sectors_df.set_index("Seq. No.", inplace=True)
-
 
 class IncentiveProgram(IncentiveProgramBase):
     def __init__(self, **kwargs):
@@ -23,7 +20,7 @@ class IncentiveProgram(IncentiveProgramBase):
             = state_specific_sectors_df['IRS Returns of active corporations'].str.replace(" +", " ")
         row = state_specific_sectors_df[state_specific_sectors_df['IRS Returns of active corporations']
                                         == self.project_level_inputs['IRS Sector']]
-        if not row["QJ qualifying industries"].values:
+        if 'QJ qualifying industries' not in row:
             self.state_specific = "No"
         else:
             self.state_specific = "Yes"

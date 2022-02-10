@@ -34,7 +34,6 @@ class IncentiveProgram(IncentiveProgramBase):
         self.fix = self.capex.amount(industry_type=self.pnl_input["industry_type"], property_type=PersonalProperty.FIXTURES)
         self.land=self.capex.amount(industry_type=self.pnl_input["industry_type"], property_type=RealProperty.LAND)
 
-
         self.high_level=self.project_level_inputs["High-level category"]
         self.irs=self.project_level_inputs["IRS Sector"]
         self.project_category=self.project_level_inputs["Project category"]

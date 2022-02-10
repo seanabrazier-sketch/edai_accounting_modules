@@ -1,7 +1,3 @@
-import sys
-import os
-back_path=os.path.normpath(os.getcwd() + os.sep + os.pardir)
-sys.path.append(back_path)
 from accounting.data_store import *
 from accounting.acs_codes import POPULATION_16_YEARS_AND_OVER
 import json
@@ -564,6 +560,7 @@ for state in incentive_programs_by_state.keys():
 
 not_found = []
 errors = []
+data = []
 for state, programs in incentive_programs_by_state.items():
     print('State: {}'.format(state))
     all_inputs = all_inputs_per_state[state].copy()
@@ -581,6 +578,7 @@ for state, programs in incentive_programs_by_state.items():
             )
             eligible = incentive.estimated_eligibility()
             print(f'\tEligibility for {program}: {eligible}')
+            estimated_incentives = [0] * 11
             if eligible or DEBUG:
                 estimated_incentives = incentive.estimated_incentives()
                 if not isinstance(estimated_incentives, list):
@@ -588,7 +586,8 @@ for state, programs in incentive_programs_by_state.items():
                 if len(estimated_incentives) != 11:
                     errors.append({
                         'name': f'{state}: {program}',
-                        'error': f'Estimated incentives list was not length 11'
+                        'error': f'Estimated incentives list was not length 11: {len(estimated_incentives)}',
+                        'incentives': estimated_incentives
                     })
                     print(f'\t\tEstimated Incentives: {estimated_incentives}')
                     print('\t\tNOT LENGTH 11!!!')
@@ -603,6 +602,13 @@ for state, programs in incentive_programs_by_state.items():
                                                                          remaining_tax_liability or estimated_incentives,
                                                                          incentive_category)
                     print(f'\t\tTax liability after: {remaining_tax_liability}')
+            data.append({
+                'state': state,
+                'program': program,
+                'eligibility': eligible,
+                'estimated_incentives': estimated_incentives,
+                'remaining_tax_liability': remaining_tax_liability
+            })
 
         except ModuleNotFoundError:
             print(f'\tNo python file found for {program}')
@@ -618,7 +624,9 @@ for state, programs in incentive_programs_by_state.items():
             print(f'\tError: {e}')
             #raise
 
-print(f'Not found ({len(not_found)}:')
+print(f'Not found ({len(not_found)}):')
 print(json.dumps(not_found, indent=4))
 print(f'Errors ({len(errors)}):')
 print(json.dumps(errors, indent=4))
+data = pd.DataFrame(data=data)
+print(data.head())

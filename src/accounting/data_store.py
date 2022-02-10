@@ -1,18 +1,11 @@
-## for sys.path
-
-import sys
-import os
-back_path=os.path.normpath(os.getcwd() + os.sep + os.pardir)
-sys.path.append(back_path)
-
 from util import data_loader
 from sqlalchemy import create_engine
 import pandas as pd, os
 from dotenv import load_dotenv, find_dotenv
 from util.data_loader import load_cache_csv
 load_dotenv()
-os.environ['DATABASE_URL'] = 'postgresql://etl1:mcAqwY73m70mcZERze@milky-way.cdoxxd0fa0vq.us-east-1.rds.amazonaws.com:17685/parsed_data'
 engine = create_engine(os.environ['DATABASE_URL'])
+
 
 def load(table, **kwargs):
     return (data_loader.load_from_sql_or_get_from_cache)(engine, table, True, **kwargs)
@@ -113,7 +106,11 @@ prop_taxes_df['Industrial'] = prop_taxes_df['Industrial tax rate, $1M, avg. urba
 state_ui_rates_df = load("20210904_State UI Rates", columns=['Geography', 'Per FTE UI payment ($)'])
 state_ui_rates_df.set_index('Geography', inplace=True)
 state_ui_rates_df['Per FTE UI payment ($)'] = state_ui_rates_df['Per FTE UI payment ($)'].apply(lambda x: float(x.replace('$', '').replace(',', '')))
-state_specific_sector=load("20210904_State-specific sectors")
+state_specific_sector=load("20210904_State-specific sectors", columns=["AL Property tax", "IRS Returns of active corporations", 'QJ qualifying industries', 'IRS Returns of active corporations'])
+
+state_specific_sectors_df = state_specific_sector.copy()
+#state_specific_sectors_df.set_index("Seq. No.", inplace=True)
+
 ne_advantage_sectors_df = load("20210904_NE Advantage Sectors")
 engine.dispose()
 
