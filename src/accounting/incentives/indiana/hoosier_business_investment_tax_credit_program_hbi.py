@@ -8,7 +8,7 @@ from util.capex import PersonalProperty,RealProperty, IndustryType
 from collections import defaultdict
 from accounting.data_store import *
 
-from util.connecticut_config import  enterprise
+
 class IncentiveProgram(IncentiveProgramBase):
     def __init__(self, **kwargs):
         self.project_level_inputs = kwargs['project_level_inputs']
@@ -76,13 +76,13 @@ class IncentiveProgram(IncentiveProgramBase):
                         array_value.append("Base")
                         continue
 
-                    if k > year:
+                    if k > year + start_year:
                         array_value.append(0)
                     else:
 
                         array_value.append(final_value[i][k])
 
-                value = excel_npv(self.discount_rate, final_value[i][start_year:year + start_year])
+                value = excel_npv(self.discount_rate, final_value[i][start_year:year + 1 + start_year])
                 final_value[i] = array_value
                 npv_value.append(value)
         final_value["NPV_Name"] = string_name
@@ -97,22 +97,42 @@ class IncentiveProgram(IncentiveProgramBase):
         self.main_bol="Yes"
         df.index=discretionary_incentives_df["Region/state"].tolist()
 
-        # wd_sector=df["W&D sector?"]["Indiana"].tolist()
-        # inc=df["Inc/capex"]["Indiana"].tolist()
-        # average_arr=[]
-        # for i in range(len(wd_sector)):
-        #     if wd_sector[i]==0:
-        #         average_arr.append(inc[i])
-        # average_val=sum(average_arr)/len(average_arr)
+        wd_sector=df["W&D sector?"]["Indiana"].tolist()
+        inc=df["Inc/capex"]["Indiana"].tolist()
+        industry_activities=df["Industry activities"]["Indiana"]
+        average_arr=[]
+
+        for i in range(len(wd_sector)-1):
+            try:
+                value=float(wd_sector[i])
+                if value==0:
+                    average_arr.append(float(inc[i]))
+            except:
+                pass
+
+
+        average_val=sum(average_arr)/len(average_arr)
         # not yet embed
         #default now
-        default_val=0.106
+        default_val=average_val
         eligible_capex=self.machine*default_val if self.main_bol=="Yes" else 0
         # eligible_capex=self.machine*average_val if self.main_bol=="Yes" else 0
         array1=[]
         sum_val=self.construction+self.machine
         eligible_capex2=sum_val*default_val if self.main_bol=="Yes" else 0
-        default_val2=0.041
+
+        average_arr2=[]
+        for i in range(len(industry_activities) - 1):
+            try:
+
+                if industry_activities[i] == "Warehousing and Distribution":
+                    average_arr2.append(float(inc[i]))
+            except:
+                pass
+
+        average_val2=sum(average_arr2)/len(average_arr2)
+        default_val2=average_val2
+
         logistic_array=[]
         for i in range(11):
             if self.main_bol=="Yes":

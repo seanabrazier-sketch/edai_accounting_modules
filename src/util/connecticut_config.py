@@ -1,1 +1,0 @@
-enterprise=['Yes', 'Yes', 'Yes', 'not modeled']

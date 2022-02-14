@@ -30,7 +30,7 @@ class IncentiveProgram(IncentiveProgramBase):
     def estimated_incentives(self) -> List[float]:
         from util.npv import excel_npv
         self.discount_rate = self.project_level_inputs["Discount rate"]
-        year = 6
+        year = 10
         final_value = self.final_return_info
         npv_value = []
         string_name = []
@@ -47,13 +47,13 @@ class IncentiveProgram(IncentiveProgramBase):
                         array_value.append("Base")
                         continue
 
-                    if k>year:
+                    if k>year+start_year:
                         array_value.append(0)
                     else:
 
                         array_value.append(final_value[i][k])
 
-                value = excel_npv(self.discount_rate, final_value[i][start_year:year + start_year])
+                value = excel_npv(self.discount_rate, final_value[i][start_year:year+1 + start_year])
                 final_value[i] = array_value
                 npv_value.append(value)
 
@@ -89,21 +89,22 @@ class IncentiveProgram(IncentiveProgramBase):
     def get_zone(self):
 
         try:
-            zone_type_1 = list_of_special_localities["Zone Type 1"]
+            zone_type_1 = list_of_special_localities()["Zone Type 1"]
+
             self.zone_type_1 = zone_type_1[self.county]
             if len(self.zone_type_1) == 0:
                 self.zone_type_1 = "-"
         except:
             self.zone_type_1 = "-"
         try:
-            zone_type_2 = list_of_special_localities["Zone Type 2"]
+            zone_type_2 = list_of_special_localities()["Zone Type 2"]
             self.zone_type_2 = zone_type_2[self.county]
             if len(self.zone_type_2) == 0:
                 self.zone_type_2 = "-"
         except:
             self.zone_type_2 = "-"
         try:
-            zone_type_3 = list_of_special_localities["Zone Type 3"]
+            zone_type_3 = list_of_special_localities()["Zone Type 3"]
             self.zone_type_3 = zone_type_3[self.county]
             if len(self.zone_type_3) == 0:
                 self.zone_type_3 = "-"
@@ -157,7 +158,7 @@ class IncentiveProgram(IncentiveProgramBase):
         return return_val
     def final_return(self):
 
-        year=5
+        year=10
         def_dict=defaultdict(list)
 
         for i in range(year+1):
@@ -171,7 +172,7 @@ class IncentiveProgram(IncentiveProgramBase):
                 def_dict['Benefits'].append(0)
 
 
-        for i in range(year+1):
+        for i in range(11):
             def_dict["year"].append(i)
             if self.enterprise_zone_info=="No":
                 def_dict["Sales and use tax on qualifying purchases during construction"].append(0)
@@ -188,14 +189,21 @@ class IncentiveProgram(IncentiveProgramBase):
                     sum_val=def_dict['Sales and use tax on qualifying purchases during construction'][-1]+def_dict['Income tax credit'][-1]+def_dict['Business priviledge tax'][-1]+def_dict['Benefits'][i]
                     def_dict['In Enterprise Zone'].append(sum_val)
                 else:
-                    def_dict['Income tax credit'].append(self.npv_dicts['State corporate income tax'][i])
+                    if i <6:
+                        def_dict['Income tax credit'].append(self.npv_dicts['State corporate income tax'][i])
+                    else:
+                        def_dict['Income tax credit'].append(0)
                     def_dict['Business priviledge tax'].append(0)
                     def_dict['Sales and use tax on qualifying purchases during construction'].append(0)
                     sum_val = def_dict['Sales and use tax on qualifying purchases during construction'][-1] + \
                               def_dict['Income tax credit'][-1] + def_dict['Business priviledge tax'][-1] + \
                               def_dict['Benefits'][i]
                     def_dict['In Enterprise Zone'].append(sum_val)
+        df_dict=defaultdict(list)
+
+        df_dict["year"]=[0 for i in range(11)]
+        df_dict["value"]=def_dict["In Enterprise Zone"]
         self.main_bol=self.enterprise_zone_info
 
-        return def_dict
+        return df_dict
 

@@ -38,6 +38,8 @@ class IncentiveProgram(IncentiveProgramBase):
             else:
                 incentives2.append(output2)
 
-        incentives = [incentives] + [incentives2]
+        ret = []
+        for i in range(11):
+            ret.append(incentives[i]+incentives2[i])
 
-        return incentives
+        return ret

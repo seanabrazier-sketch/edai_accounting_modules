@@ -11,8 +11,8 @@ class IncentiveProgram(IncentiveProgramBase):
         self.special_localities = [special_localities_df['Zone Type 1']['Accomack County, VA'],
                                    special_localities_df['Zone Type 2']['Accomack County, VA'],
                                    special_localities_df['Zone Type 3']['Accomack County, VA']]
-        self.county_unemployment_rate = kwargs['county_to_unemployment_rate']['Brunswick County, VA']
         self.state_to_unemployment_rate = kwargs['state_to_unemployment_rate']['Virginia']
+        self.county_unemployment_rate = kwargs['county_to_unemployment_rate'].get('Brunswick County, VA', self.state_to_unemployment_rate)
         self.locality_unemploy_rate = 1.5
         self.hua_threshold = 1.5
         self.wages_table = [12.69, 14.50]

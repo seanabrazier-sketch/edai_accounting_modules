@@ -11,7 +11,6 @@ from collections import defaultdict
 from accounting.data_store import *
 from datetime import date
 
-from util.connecticut_config import  enterprise
 from accounting.incentives.maine.employment_tax_increment_financing_program_etif import IncentiveProgram as subclass
 
 class IncentiveProgram(IncentiveProgramBase):
@@ -34,7 +33,6 @@ class IncentiveProgram(IncentiveProgramBase):
                                     property_type=PersonalProperty.MACHINERY_AND_EQUIPMENT)
         self.fix = self.capex.amount(industry_type=self.pnl_input["industry_type"], property_type=PersonalProperty.FIXTURES)
         self.land=self.capex.amount(industry_type=self.pnl_input["industry_type"], property_type=RealProperty.LAND)
-
 
         self.high_level=self.project_level_inputs["High-level category"]
         self.irs=self.project_level_inputs["IRS Sector"]

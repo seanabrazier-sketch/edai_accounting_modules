@@ -32,7 +32,7 @@ class IncentiveProgram(IncentiveProgramBase):
     def estimated_incentives(self)->List[float]:
         from util.npv import excel_npv
         self.discount_rate = self.project_level_inputs["Discount rate"]
-        year = 11
+        year = 10
         final_value = self.final_return_info
         npv_value = []
         string_name = []
@@ -49,13 +49,13 @@ class IncentiveProgram(IncentiveProgramBase):
                         array_value.append("Base")
                         continue
 
-                    if k > year:
+                    if k > year + start_year:
                         array_value.append(0)
                     else:
 
                         array_value.append(final_value[i][k])
 
-                value = excel_npv(self.discount_rate, final_value[i][start_year:year + start_year])
+                value = excel_npv(self.discount_rate, final_value[i][start_year:year + 1 + start_year])
                 final_value[i] = array_value
                 npv_value.append(value)
         final_value["NPV_Name"] = string_name
@@ -65,27 +65,22 @@ class IncentiveProgram(IncentiveProgramBase):
 
 
     def final_return(self):
-        ##necessary variables
-        promised_wage=self.project_level_inputs["Promised wages"]
-        program=self.all_input["workforce_programs_ipj_map"]["Job training grant"]
-        promised_job=self.project_level_inputs["Promised jobs"]
-        ## requirement
-        requirement_bol_array=[
-            "Yes" if promised_wage/2080 >12 else "No",
-            "Yes" if promised_wage>=45240 else "No",
-            "Yes"
-        ]
-
-        # maintab
-        main_bol="Yes" if requirement_bol_array.count("Yes")==3 else "No"
-        main_array=[0]
-        if main_bol=="Yes":
-            main_array.append(promised_job*program)
+        promised_wage = self.project_level_inputs['Promised wages']
+        program = self.all_input['workforce_programs_ipj_map']['Job training grant']
+        promised_job = self.project_level_inputs['Promised jobs']
+        requirement_bol_array = [
+         'Yes' if promised_wage / 2080 > 12 else 'No',
+         'Yes' if promised_wage >= 45240 else 'No',
+         'Yes']
+        main_bol = 'Yes' if requirement_bol_array.count('Yes') == 3 else 'No'
+        if main_bol == 'Yes':
+            main_array = [promised_job * program for i in range(11)]
         else:
-            main_array.append(0)
-        df_dict=defaultdict(list)
-        year=[i for i in range(2)]
-        df_dict["year"]=year
-        df_dict["value"]=main_array
-        self.main_bol=main_bol
-        return  df_dict
+            main_array = [0 for i in range(11)]
+        main_array[0] = 0
+        df_dict = defaultdict(list)
+        year = [i for i in range(11)]
+        df_dict['year'] = year
+        df_dict['value'] = main_array
+        self.main_bol = main_bol
+        return df_dict

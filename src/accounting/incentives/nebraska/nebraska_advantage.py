@@ -1,21 +1,9 @@
-import datetime
-
 from accounting.incentives import *
-import numpy
-from accounting.incentives.alabama.jobs_act_incentives_jobs import IncentiveProgram as jobs
-from collections import defaultdict
-from util.npv import npv
-from util.necessary import *
 from util.capex import PersonalProperty,RealProperty, IndustryType
-from collections import defaultdict
-from accounting.data_store import *
-from datetime import date
 
-from util.connecticut_config import  enterprise
-from accounting.incentives.maine.employment_tax_increment_financing_program_etif import IncentiveProgram as subclass
 
 class IncentiveProgram(IncentiveProgramBase):
-    def __init__(self, **kwargs):        
+    def __init__(self, **kwargs):
         self.county = kwargs['county_overrides'].get('Nebraska')
 
         self.promised_wages = kwargs['project_level_inputs']['Promised wages']

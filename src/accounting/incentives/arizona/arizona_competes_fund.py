@@ -26,7 +26,7 @@ class IncentiveProgram(IncentiveProgramBase):
     def estimated_incentives(self) -> List[float]:
         from util.npv import excel_npv
         self.discount_rate = self.project_level_inputs["Discount rate"]
-        year = 1
+        year = 0
         final_value = self.final_return_info
         npv_value = []
         string_name = []
@@ -43,13 +43,13 @@ class IncentiveProgram(IncentiveProgramBase):
                         array_value.append("Base")
                         continue
 
-                    if k > year:
+                    if k > year + start_year:
                         array_value.append(0)
                     else:
 
                         array_value.append(final_value[i][k])
 
-                value = excel_npv(self.discount_rate, final_value[i][start_year:year + start_year])
+                value = excel_npv(self.discount_rate, final_value[i][start_year:year + 1 + start_year])
                 final_value[i] = array_value
                 npv_value.append(value)
 
@@ -58,36 +58,28 @@ class IncentiveProgram(IncentiveProgramBase):
 
         return final_value
     def final_return(self):
-        median=self.all_input['discretionary_incentives_groups'].median()
-        median_val=median["Incentive per job"]["Arizona Competes Fund"]
-
-        #g14
-        #High-level category G8
-        #Promised wages 14
-        #G9 Project category
-        promised_wage=self.project_level_inputs['Promised wages']
-        high_level_category=self.project_level_inputs["High-level category"]
-        project_category=self.project_level_inputs["Project category"]
-        array=["Yes" if high_level_category=="Manufacturing" else "No","Yes" if project_category=="R&D Center" else "No", "Yes" if project_category=="Corporate headquarters" else "No","Yes" if project_category=="Distribution center" else "No","No"]
-        count_yes=array.count("Yes")
-        sector_is_industry="Yes" if count_yes>0 else "No"
-        require_health_insurance="Yes"
-        county_wages="Yes" if promised_wage>=57356 else "No"
-        array_count=[sector_is_industry,require_health_insurance,county_wages]
-        array_count_yes=array_count.count("Yes")
-        bol="Yes" if  array_count_yes ==3 else "No"
-        df_dict=defaultdict(list)
-        year=1
-        promised_jobs=self.project_level_inputs["Promised jobs"]
-        for i in range(year+1):
-            df_dict["year"].append(i)
-            if bol=="No":
-                df_dict["value"].append(0)
+        median = self.all_input['discretionary_incentives_groups'].median()
+        median_val = median['Incentive per job']['Arizona Competes Fund']
+        promised_wage = self.project_level_inputs['Promised wages']
+        high_level_category = self.project_level_inputs['High-level category']
+        project_category = self.project_level_inputs['Project category']
+        array = ['Yes' if high_level_category == 'Manufacturing' else 'No', 'Yes' if project_category == 'R&D Center' else 'No', 'Yes' if project_category == 'Corporate headquarters' else 'No', 'Yes' if project_category == 'Distribution center' else 'No', 'No']
+        count_yes = array.count('Yes')
+        sector_is_industry = 'Yes' if count_yes > 0 else 'No'
+        require_health_insurance = 'Yes'
+        county_wages = 'Yes' if promised_wage >= 57356 else 'No'
+        array_count = [sector_is_industry, require_health_insurance, county_wages]
+        array_count_yes = array_count.count('Yes')
+        bol = 'Yes' if array_count_yes == 3 else 'No'
+        df_dict = defaultdict(list)
+        year = 10
+        promised_jobs = self.project_level_inputs['Promised jobs']
+        for i in range(year + 1):
+            df_dict['year'].append(i)
+            if bol == 'No':
+                df_dict['value'].append(0)
             else:
-                if i==0:
-                    df_dict["value"].append(0)
-                else:
-                    df_dict["value"].append(promised_jobs*median_val)
-        self.main_bol=bol
+                df_dict['value'].append(promised_jobs * median_val)
 
+        self.main_bol = bol
         return df_dict
