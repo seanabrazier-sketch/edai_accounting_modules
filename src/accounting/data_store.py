@@ -112,6 +112,10 @@ state_specific_sectors_df = state_specific_sector.copy()
 #state_specific_sectors_df.set_index("Seq. No.", inplace=True)
 
 ne_advantage_sectors_df = load("20210904_NE Advantage Sectors")
+
+descriptions_df = load("20220211_Program Descriptions")
+descriptions_df.set_index(keys=['State', 'Program'], inplace=True)
+
 engine.dispose()
 
 

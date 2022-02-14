@@ -3,3 +3,4 @@ sql_data_cache/
 **/__pycache__/**
 **.pyc
 .env
+outputs/
