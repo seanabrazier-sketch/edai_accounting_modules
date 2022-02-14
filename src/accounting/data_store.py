@@ -52,8 +52,10 @@ census_susb_national_df = load('20210904_Census SUSB National')
 census_susb_national_df['ENTERPRISE EMPLOYMENT SIZE'] = census_susb_national_df['ENTERPRISE EMPLOYMENT SIZE'].apply(lambda x: x.strip().replace('  ', ' '))
 indiv_income_taxes_df = load('20210904_Tax Found - Indiv Income Taxes')
 indiv_income_taxes_df.set_index(['State', 'Brackets'], inplace=True)
-census_acs_industrial_heading = load_cache_csv('20210904_Census ACS 2018_Industry Earni_Heading legend')
-census_asc_industrial_earning = load_cache_csv('20210904_Census ACS 2018_Industry Earni')
+
+census_acs_industrial_heading = load('20210904_Census ACS 2018_Industry Earni_Heading legend')
+census_asc_industrial_earning = load('20210904_Census ACS 2018_Industry Earni')
+
 irs_sector_shares_df = load('20210904_IRS Sector Shares')
 irs_sector_shares_df['Sub-category'] = irs_sector_shares_df['Sub-category'].apply(lambda x: x.strip().replace('  ', ' '))
 irs_sector_shares_df.set_index('Sub-category', inplace=True)
