@@ -19,7 +19,7 @@ federal_income_tax = 0.1323
 federal_minimum_wage = 7.25
 
 inputs_county_overrides = {
-
+    'Oregon': 'Multnomah County'
 }
 
 
@@ -563,11 +563,13 @@ not_found = []
 errors = []
 program_outputs = []
 state_outputs = []
+state_by_incentives_type_outputs = []
 for state, programs in incentive_programs_by_state.items():
     print('State: {}'.format(state))
     all_inputs = all_inputs_per_state[state].copy()
     all_inputs['all_inputs_per_state'] = all_inputs_per_state
     remaining_tax_liability = None
+    program_outputs_for_state = []
     for program in programs:
         #if state != 'California' and program != 'Manufacturing and R&D Partial Sales and Use Tax Exemption':
         #    continue
@@ -582,6 +584,8 @@ for state, programs in incentive_programs_by_state.items():
             print(f'\tEligibility for {program}: {eligible}')
             estimated_incentives = [0] * 11
             npv = None
+            incentive_type = incentive_programs_types[f'{state}_{program}']
+            incentive_category = INCENTIVE_TYPE_TO_CATEGORY_MAPPING[incentive_type]
             if eligible or DEBUG:
                 estimated_incentives = incentive.estimated_incentives()
                 if not isinstance(estimated_incentives, list):
@@ -596,9 +600,6 @@ for state, programs in incentive_programs_by_state.items():
                     print('\t\tNOT LENGTH 11!!!')
                 else:
                     print(f'\t\tEstimated Incentives: {estimated_incentives}')
-                    incentive_type = incentive_programs_types[f'{state}_{program}']
-                    incentive_category = INCENTIVE_TYPE_TO_CATEGORY_MAPPING[incentive_type]
-
                     print(f'\t\tIncentive Type: {incentive_type.value}')
                     print(f'\t\tTax liability before: {remaining_tax_liability}')
                     remaining_tax_liability = compute_carry_forward_math(all_inputs['pnl'].npv_dicts,
@@ -610,10 +611,12 @@ for state, programs in incentive_programs_by_state.items():
                         npv = excel_npv(discount_rate, estimated_incentives)
                     except Exception as e:
                         print(f'\t\tError calculting npv!!')
-            program_outputs.append({
+            program_outputs_for_state.append({
                 'state': state,
                 'program': program,
                 'eligibility': eligible,
+                'incentives_type': incentive_type.value,
+                'incentives_category': incentive_category.value,
                 #'estimated_incentives': estimated_incentives,
                 'estimated_incentives_npv': npv,
                 #'remaining_tax_liability': remaining_tax_liability
@@ -632,6 +635,23 @@ for state, programs in incentive_programs_by_state.items():
             print(exc)
             print(f'\tError: {e}')
             #raise
+    program_outputs.extend(program_outputs_for_state)
+
+    state_program_df = pd.DataFrame(program_outputs_for_state)
+    state_program_grouped_by_incentive_df = state_program_df.groupby(by=['incentives_type']).sum()
+    state_result = {
+        'state': state,
+    }
+    total = 0.0
+    for group in IncentiveType:
+        try:
+            value = state_program_grouped_by_incentive_df.loc[group.value]['estimated_incentives_npv']
+        except:
+            value = 0
+        state_result[group.value] = value
+        total += value
+        state_result['total'] = total
+    state_by_incentives_type_outputs.append(state_result)
     state_outputs.append({
         'state': state,
         #'remaining_tax_liability': remaining_tax_liability,
@@ -653,4 +673,6 @@ program_output_df = pd.DataFrame(data=program_outputs)
 program_output_df = program_output_df.merge(descriptions_df, how='left', right_index=True, left_on=['state', 'program'])
 program_output_df.to_csv(os.path.join('outputs', 'program_level.csv'))
 
-print(program_output_df.head())
+state_by_incentives_type_outputs_df = pd.DataFrame(data=state_by_incentives_type_outputs)
+#state_by_incentives_type_outputs_df = state_by_incentives_type_outputs_df.merge(descriptions_df, how='left', right_index=True, left_on=['state', 'program'])
+state_by_incentives_type_outputs_df.to_csv(os.path.join('outputs', 'state_level_by_incentives_type.csv'))
