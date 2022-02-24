@@ -28,9 +28,9 @@ inputs_county_overrides = {
 inputs_basic = {
     'Sector': 'Computer and electronic product manufacturing',
     'Function': 'Capital-intensive manufacturer',
-    'Promised jobs': 2061,
-    'Promised capital investment': 380000000,
-    'Promised wages': 119000,
+    'Promised jobs': 25,
+    'Promised capital investment': 5000000,
+    'Promised wages': 75000,
     'Project Type': 'New'
 }
 
@@ -323,9 +323,9 @@ elif promised_jobs < 10:
 elif promised_jobs < 20:
     promised_jobs_range = '04: 10-19'
 elif promised_jobs < 100:
-    promised_jobs_range = '05: 20-99'
+    promised_jobs_range = '06: 20-99'
 elif promised_jobs < 500:
-    promised_jobs_range = '06: 100-499'
+    promised_jobs_range = '07: 100-499'
 else:
     promised_jobs_range = '09: 500+'
 
