@@ -158,7 +158,6 @@ class IncentiveProgram(IncentiveProgramBase):
 
         main_array=[min([10000,program*0.5])*self.promised_jobs for i in range(11)]
         main_array[0]=0
-        print(main_array)
         df_dict=defaultdict(list)
         df_dict["year"]=self.default_year
         df_dict["value"]=main_array

@@ -3,7 +3,7 @@
 
 from collections import defaultdict
 from util.capex import CapexReport, IndustryType, RealProperty, PersonalProperty
-from util.npv import npv
+from util.npv import excel_npv
 ## PNL inherit the CapexReport
 npv_dicts = defaultdict(lambda: [])
 
@@ -127,8 +127,6 @@ class PNL(object):
 
                 npv_dicts['Annual capital expenditures'].append(npv_dicts['Annual capital expenditures option 2'][-1])
 
-
-
                 npv_dicts['Cost of goods sold'].append(npv_dicts['Sales'][-1]*costs_of_goods_sold_rate)
                 npv_dicts['Gross profit'].append(npv_dicts['Sales'][-1]-npv_dicts['Cost of goods sold'][-1])
                 npv_dicts['State/local sales tax'].append(state_local_sales_tax_rate)
@@ -169,6 +167,6 @@ class PNL(object):
                 npv_dicts['Total federal R&D tax credit'].append(npv_dicts['R&D tax credit calculations step 0'][-1]+npv_dicts['R&D tax credit calculations step 4'][-1])
 
         self.npv_dicts = npv_dicts
-        self.npv_sales = npv(discount_rate, amounts=npv_dicts['Sales'])
-        self.npv_net_profit = npv(discount_rate, amounts=npv_dicts['Net profit'])
+        self.npv_sales = excel_npv(discount_rate, amounts=npv_dicts['Sales'])
+        self.npv_net_profit = excel_npv(discount_rate, amounts=npv_dicts['Net profit'])
         self.net_profitability = self.npv_net_profit / self.npv_sales

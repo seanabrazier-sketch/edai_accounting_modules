@@ -61,7 +61,6 @@ class IncentiveProgram(IncentiveProgramBase):
                 npv_value.append(value)
         final_value["NPV_Name"] = string_name
         final_value["NPV_Value"] = npv_value
-        print(f"final val{final_value}")
         return final_value
 
     def get_county_name(self):

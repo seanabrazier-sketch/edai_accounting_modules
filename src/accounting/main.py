@@ -10,6 +10,7 @@ from accounting.states import STATES, abbrev_us_state
 from accounting.profit_and_loss import PNL
 from accounting.carry_forward import compute_carry_forward_math, IncentiveCategory, IncentiveType, INCENTIVE_TYPE_TO_CATEGORY_MAPPING
 from util.npv import excel_npv
+import numpy as np
 
 
 DEBUG = True
@@ -28,9 +29,9 @@ inputs_county_overrides = {
 inputs_basic = {
     'Sector': 'Computer and electronic product manufacturing',
     'Function': 'Capital-intensive manufacturer',
-    'Promised jobs': 25,
-    'Promised capital investment': 5000000,
-    'Promised wages': 75000,
+    'Promised jobs': 2061,
+    'Promised capital investment': 380000000,
+    'Promised wages': 119000,
     'Project Type': 'New'
 }
 
@@ -59,6 +60,7 @@ inputs_discretionary_incentives_amounts = {
 inputs_workforce_programs = {
     'Incentives per job (IPJ) figure to use': 'Calculated IPJ'
 }
+
 
 commercial_or_industrial = ('Commercial'
                         if inputs_basic['Function'] in ['Corporate headquarters', 'Call center']
@@ -464,8 +466,6 @@ zone_type_3={
 
 county_drop_down_list=["Catron County, NM"]
 
-
-
 all_inputs = {
     'capex': capex,
     'project_level_inputs': project_level_inputs,
@@ -497,6 +497,22 @@ all_inputs = {
 ## User Input
 
 }
+
+
+def incentive_aggregator(yearly_incentives: list) -> list:
+    ret = [0.0] * 11
+    for incentives in yearly_incentives:
+        if incentives is not None:
+            for i in range(11):
+                print(incentives)
+                if len(incentives) > i:
+                    try:
+                        x = float(incentives[i])
+                        ret[i] += x
+                    except:
+                        pass
+    return ret
+
 
 # this is missing in the field. This will be hard coded at beginning but this will be coded to look up for value later on
 total_equipment_share_of_sales=0.25
@@ -545,25 +561,18 @@ for state in incentive_programs_by_state.keys():
         total_equipment_share_of_sales=total_equipment_share_of_sales
     )
 
-
     pnl = PNL(**pnl_inputs)
-    if state == 'Alabama':
-        alabama_npv_dicts = pnl.npv_dicts
-    #if state != 'California':
-    #    continue
-    # print(json.dumps(dict(pnl.npv_dicts), indent=4))
-    # print('NPV Sales: {}'.format(pnl.npv_sales))
-    # print('NPV Net profit: {}'.format(pnl.npv_net_profit))
-    # print('Net profitability: {}'.format(pnl.net_profitability))
-    all_inputs['pnl'] = pnl
-    all_inputs['pnl_inputs'] = pnl_inputs
-    all_inputs_per_state[state] = all_inputs
+    _all_inputs = all_inputs.copy()
+    _all_inputs['pnl'] = pnl
+    _all_inputs['pnl_inputs'] = pnl_inputs
+    all_inputs_per_state[state] = _all_inputs
 
 not_found = []
 errors = []
 program_outputs = []
 state_outputs = []
 state_by_incentives_type_outputs = []
+state_overall_outputs = []
 for state, programs in incentive_programs_by_state.items():
     print('State: {}'.format(state))
     all_inputs = all_inputs_per_state[state].copy()
@@ -603,7 +612,6 @@ for state, programs in incentive_programs_by_state.items():
                     print(f'\t\tIncentive Type: {incentive_type.value}')
                     print(f'\t\tTax liability before: {remaining_tax_liability}')
                     remaining_tax_liability = compute_carry_forward_math(all_inputs['pnl'].npv_dicts,
-                                                                         #alabama_npv_dicts,
                                                                          remaining_tax_liability or estimated_incentives,
                                                                          incentive_category)
                     print(f'\t\tTax liability after: {remaining_tax_liability}')
@@ -617,7 +625,7 @@ for state, programs in incentive_programs_by_state.items():
                 'eligibility': eligible,
                 'incentives_type': incentive_type.value,
                 'incentives_category': incentive_category.value,
-                #'estimated_incentives': estimated_incentives,
+                'estimated_incentives': estimated_incentives,
                 'estimated_incentives_npv': npv,
                 #'remaining_tax_liability': remaining_tax_liability
             })
@@ -650,13 +658,50 @@ for state, programs in incentive_programs_by_state.items():
             value = 0
         state_result[group.value] = value
         total += value
-        state_result['total'] = total
+
+    state_result['total'] = total
     state_by_incentives_type_outputs.append(state_result)
+
     state_outputs.append({
         'state': state,
-        #'remaining_tax_liability': remaining_tax_liability,
+        'remaining_tax_liability': remaining_tax_liability,
         'remaining_tax_liability_npv': excel_npv(discount_rate, remaining_tax_liability)
     })
+
+    total_incentives_by_year = incentive_aggregator(state_program_df['estimated_incentives'].values.tolist())
+    total_incentives_npv = excel_npv(discount_rate, total_incentives_by_year)
+
+    # Profitability post incentives
+    pnl = all_inputs['pnl']
+    incentive_adjusted_net_profit_by_year = []
+    incentive_adjusted_with_cf_net_profit_by_year = []
+    cf_incentives = []
+    for i in range(11):
+        if remaining_tax_liability is not None and len(remaining_tax_liability) > i:
+            cf = remaining_tax_liability[i]
+        else:
+            cf = 0.0
+        incentive_adjusted_with_cf_net_profit_by_year.append(pnl.npv_dicts['Net profit'][i] + cf)
+        cf_incentives.append(cf)
+        incentive_adjusted_net_profit_by_year.append(pnl.npv_dicts['Net profit'][i] + total_incentives_by_year[i])
+    incentive_adjusted_net_profit_npv = excel_npv(discount_rate, incentive_adjusted_net_profit_by_year)
+    incentive_adjusted_with_cf_net_profit_npv = excel_npv(discount_rate, incentive_adjusted_net_profit_by_year)
+    cf_npv = excel_npv(discount_rate, cf_incentives)
+    npv_sales = pnl.npv_sales
+    print('sales: {}'.format(npv_sales))
+    print('net profit: {}'.format(pnl.npv_net_profit))
+    state_overall_outputs.append({
+        'state': state,
+        'Profitability EBIx': pnl.net_profitability,
+        'Profitability post-total eligible incentives, sticker price': incentive_adjusted_net_profit_npv / npv_sales,
+        'Profitability post total eligible incentives, including carryforward math': incentive_adjusted_with_cf_net_profit_npv / npv_sales,
+        'NPV of EBIx': pnl.npv_net_profit,
+        'NPV of Incentives': excel_npv(discount_rate, total_incentives_by_year),
+        'NPV of Incentives-adjusted profitability': incentive_adjusted_net_profit_npv,
+        'NPV of Total eligible incentives, including carryforward math': cf_npv,
+        'NPV of Location-specific, post-incentives NPV, including carryforward math': incentive_adjusted_with_cf_net_profit_npv
+    })
+
 
 print(f'Not found ({len(not_found)}):')
 print(json.dumps(not_found, indent=4))
@@ -674,5 +719,7 @@ program_output_df = program_output_df.merge(descriptions_df, how='left', right_i
 program_output_df.to_csv(os.path.join('outputs', 'program_level.csv'))
 
 state_by_incentives_type_outputs_df = pd.DataFrame(data=state_by_incentives_type_outputs)
-#state_by_incentives_type_outputs_df = state_by_incentives_type_outputs_df.merge(descriptions_df, how='left', right_index=True, left_on=['state', 'program'])
 state_by_incentives_type_outputs_df.to_csv(os.path.join('outputs', 'state_level_by_incentives_type.csv'))
+
+state_overall_outputs_df = pd.DataFrame(data=state_overall_outputs)
+state_overall_outputs_df.to_csv(os.path.join('outputs', 'state_level_overall.csv'))
