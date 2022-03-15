@@ -684,13 +684,14 @@ for state, programs in incentive_programs_by_state.items():
         incentive_adjusted_with_cf_net_profit_by_year.append(pnl.npv_dicts['Net profit'][i] + cf)
         cf_incentives.append(cf)
         incentive_adjusted_net_profit_by_year.append(pnl.npv_dicts['Net profit'][i] + total_incentives_by_year[i])
+
     incentive_adjusted_net_profit_npv = excel_npv(discount_rate, incentive_adjusted_net_profit_by_year)
     incentive_adjusted_with_cf_net_profit_npv = excel_npv(discount_rate, incentive_adjusted_net_profit_by_year)
     cf_npv = excel_npv(discount_rate, cf_incentives)
     npv_sales = pnl.npv_sales
     print('sales: {}'.format(npv_sales))
     print('net profit: {}'.format(pnl.npv_net_profit))
-    state_overall_outputs.append({
+    r = {
         'state': state,
         'Profitability EBIx': pnl.net_profitability,
         'Profitability post-total eligible incentives, sticker price': incentive_adjusted_net_profit_npv / npv_sales,
@@ -700,7 +701,11 @@ for state, programs in incentive_programs_by_state.items():
         'NPV of Incentives-adjusted profitability': incentive_adjusted_net_profit_npv,
         'NPV of Total eligible incentives, including carryforward math': cf_npv,
         'NPV of Location-specific, post-incentives NPV, including carryforward math': incentive_adjusted_with_cf_net_profit_npv
-    })
+    }
+    for k, v in dict(pnl.npv_dicts).items():
+        if v is not None and len(v) > 2:
+            r[f'{k}, Year 1'] = v[1]
+    state_overall_outputs.append(r)
 
 
 print(f'Not found ({len(not_found)}):')
