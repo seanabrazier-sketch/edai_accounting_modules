@@ -1,0 +1,418 @@
+[
+  {
+    "state_abb": "AL",
+    "state": "Alabama",
+    "water_monthly_20ccf": 232.95,
+    "water_monthly_1337ccf": 6674.52,
+    "sewer_monthly_20ccf": 323.4,
+    "sewer_monthly_1337ccf": 17445.203
+  },
+  {
+    "state_abb": "AK",
+    "state": "Alaska",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "AZ",
+    "state": "Arizona",
+    "water_monthly_20ccf": 124.5066667,
+    "water_monthly_1337ccf": 5286.875,
+    "sewer_monthly_20ccf": 84.90966667,
+    "sewer_monthly_1337ccf": 4268.7185
+  },
+  {
+    "state_abb": "AR",
+    "state": "Arkansas",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "CA",
+    "state": "California",
+    "water_monthly_20ccf": 192.5385714,
+    "water_monthly_1337ccf": 5783.887857,
+    "sewer_monthly_20ccf": 232.4274286,
+    "sewer_monthly_1337ccf": 4590.670643
+  },
+  {
+    "state_abb": "CO",
+    "state": "Colorado",
+    "water_monthly_20ccf": 117.9033333,
+    "water_monthly_1337ccf": 3643.576667,
+    "sewer_monthly_20ccf": 123.96,
+    "sewer_monthly_1337ccf": 3717.334333
+  },
+  {
+    "state_abb": "CT",
+    "state": "Connecticut",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "DE",
+    "state": "Delaware",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "FL",
+    "state": "Florida",
+    "water_monthly_20ccf": 102.30125,
+    "water_monthly_1337ccf": 4306.47625,
+    "sewer_monthly_20ccf": 214.836875,
+    "sewer_monthly_1337ccf": 9385.485
+  },
+  {
+    "state_abb": "GA",
+    "state": "Georgia",
+    "water_monthly_20ccf": 116.56,
+    "water_monthly_1337ccf": 8229.28,
+    "sewer_monthly_20ccf": 296.36,
+    "sewer_monthly_1337ccf": 20960.09
+  },
+  {
+    "state_abb": "HI",
+    "state": "Hawaii",
+    "water_monthly_20ccf": 125.45,
+    "water_monthly_1337ccf": 5663,
+    "sewer_monthly_20ccf": 149.593,
+    "sewer_monthly_1337ccf": 4893.245
+  },
+  {
+    "state_abb": "ID",
+    "state": "Idaho",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "IL",
+    "state": "Illinois",
+    "water_monthly_20ccf": 68.07,
+    "water_monthly_1337ccf": 4550,
+    "sewer_monthly_20ccf": 68.068,
+    "sewer_monthly_1337ccf": 4550
+  },
+  {
+    "state_abb": "IN",
+    "state": "Indiana",
+    "water_monthly_20ccf": 162.865,
+    "water_monthly_1337ccf": 3446.785,
+    "sewer_monthly_20ccf": 219.9635,
+    "sewer_monthly_1337ccf": 7238.237
+  },
+  {
+    "state_abb": "IA",
+    "state": "Iowa",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "KS",
+    "state": "Kansas",
+    "water_monthly_20ccf": 75.82,
+    "water_monthly_1337ccf": 3095.26,
+    "sewer_monthly_20ccf": 91.976,
+    "sewer_monthly_1337ccf": 4546.05
+  },
+  {
+    "state_abb": "KY",
+    "state": "Kentucky",
+    "water_monthly_20ccf": 190.31,
+    "water_monthly_1337ccf": 6247.39,
+    "sewer_monthly_20ccf": 203.5995,
+    "sewer_monthly_1337ccf": 11248.9865
+  },
+  {
+    "state_abb": "LA",
+    "state": "Louisiana",
+    "water_monthly_20ccf": 142.555,
+    "water_monthly_1337ccf": 4886.485,
+    "sewer_monthly_20ccf": 187.117,
+    "sewer_monthly_1337ccf": 8079.712
+  },
+  {
+    "state_abb": "ME",
+    "state": "Maine",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "MD",
+    "state": "Maryland",
+    "water_monthly_20ccf": 303.16,
+    "water_monthly_1337ccf": 6745.53,
+    "sewer_monthly_20ccf": 393.81,
+    "sewer_monthly_1337ccf": 14913.959
+  },
+  {
+    "state_abb": "MA",
+    "state": "Massachusetts",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "MI",
+    "state": "Michigan",
+    "water_monthly_20ccf": 109.63,
+    "water_monthly_1337ccf": 5000.165,
+    "sewer_monthly_20ccf": 164.505,
+    "sewer_monthly_1337ccf": 7144.4575
+  },
+  {
+    "state_abb": "MN",
+    "state": "Minnesota",
+    "water_monthly_20ccf": 148.485,
+    "water_monthly_1337ccf": 5970.245,
+    "sewer_monthly_20ccf": 138.325,
+    "sewer_monthly_1337ccf": 6877.9935
+  },
+  {
+    "state_abb": "MS",
+    "state": "Mississippi",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "MO",
+    "state": "Missouri",
+    "water_monthly_20ccf": 133.36,
+    "water_monthly_1337ccf": 4570.065,
+    "sewer_monthly_20ccf": 233.565,
+    "sewer_monthly_1337ccf": 13435.471
+  },
+  {
+    "state_abb": "MT",
+    "state": "Montana",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "NE",
+    "state": "Nebraska",
+    "water_monthly_20ccf": 122.71,
+    "water_monthly_1337ccf": 3338.565,
+    "sewer_monthly_20ccf": 77.35,
+    "sewer_monthly_1337ccf": 3652.601
+  },
+  {
+    "state_abb": "NV",
+    "state": "Nevada",
+    "water_monthly_20ccf": 97.035,
+    "water_monthly_1337ccf": 3046.6775,
+    "sewer_monthly_20ccf": 86.80575,
+    "sewer_monthly_1337ccf": 5492.2125
+  },
+  {
+    "state_abb": "NH",
+    "state": "New Hampshire",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "NJ",
+    "state": "New Jersey",
+    "water_monthly_20ccf": 80.46,
+    "water_monthly_1337ccf": 5195.22,
+    "sewer_monthly_20ccf": 86.895,
+    "sewer_monthly_1337ccf": 5505.932
+  },
+  {
+    "state_abb": "NM",
+    "state": "New Mexico",
+    "water_monthly_20ccf": 174.92,
+    "water_monthly_1337ccf": 4065.46,
+    "sewer_monthly_20ccf": 101.07,
+    "sewer_monthly_1337ccf": 3288.573
+  },
+  {
+    "state_abb": "NY",
+    "state": "New York",
+    "water_monthly_20ccf": 131.1533333,
+    "water_monthly_1337ccf": 4430.72,
+    "sewer_monthly_20ccf": 87.45766667,
+    "sewer_monthly_1337ccf": 4417.912333
+  },
+  {
+    "state_abb": "NC",
+    "state": "North Carolina",
+    "water_monthly_20ccf": 129.188,
+    "water_monthly_1337ccf": 5669.722,
+    "sewer_monthly_20ccf": 172.1158,
+    "sewer_monthly_1337ccf": 6854.3726
+  },
+  {
+    "state_abb": "ND",
+    "state": "North Dakota",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "OH",
+    "state": "Ohio",
+    "water_monthly_20ccf": 96.44,
+    "water_monthly_1337ccf": 19062.916,
+    "sewer_monthly_20ccf": 221.332,
+    "sewer_monthly_1337ccf": 10727.4496
+  },
+  {
+    "state_abb": "OK",
+    "state": "Oklahoma",
+    "water_monthly_20ccf": 129.545,
+    "water_monthly_1337ccf": 5130.23,
+    "sewer_monthly_20ccf": 149.256,
+    "sewer_monthly_1337ccf": 7890.881
+  },
+  {
+    "state_abb": "OR",
+    "state": "Oregon",
+    "water_monthly_20ccf": 142.24,
+    "water_monthly_1337ccf": 5649.22,
+    "sewer_monthly_20ccf": 211.775,
+    "sewer_monthly_1337ccf": 11991.431
+  },
+  {
+    "state_abb": "PA",
+    "state": "Pennsylvania",
+    "water_monthly_20ccf": 223.895,
+    "water_monthly_1337ccf": 8940.505,
+    "sewer_monthly_20ccf": 93.44,
+    "sewer_monthly_1337ccf": 4938.103
+  },
+  {
+    "state_abb": "RI",
+    "state": "Rhode Island",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "SC",
+    "state": "South Carolina",
+    "water_monthly_20ccf": 83.59,
+    "water_monthly_1337ccf": 3836.93,
+    "sewer_monthly_20ccf": 102.25,
+    "sewer_monthly_1337ccf": 6007.78
+  },
+  {
+    "state_abb": "SD",
+    "state": "South Dakota",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "TN",
+    "state": "Tennessee",
+    "water_monthly_20ccf": 116.0133333,
+    "water_monthly_1337ccf": 3826.556667,
+    "sewer_monthly_20ccf": 210.939,
+    "sewer_monthly_1337ccf": 8443.155
+  },
+  {
+    "state_abb": "TX",
+    "state": "Texas",
+    "water_monthly_20ccf": 161.3772727,
+    "water_monthly_1337ccf": 6155.307545,
+    "sewer_monthly_20ccf": 138.7194545,
+    "sewer_monthly_1337ccf": 6041.187545
+  },
+  {
+    "state_abb": "UT",
+    "state": "Utah",
+    "water_monthly_20ccf": 92.99,
+    "water_monthly_1337ccf": 4084.26,
+    "sewer_monthly_20ccf": 85.2,
+    "sewer_monthly_1337ccf": 4918.217
+  },
+  {
+    "state_abb": "VT",
+    "state": "Vermont",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "VA",
+    "state": "Virginia",
+    "water_monthly_20ccf": 151.085,
+    "water_monthly_1337ccf": 6120.17,
+    "sewer_monthly_20ccf": 208.375,
+    "sewer_monthly_1337ccf": 6152.767
+  },
+  {
+    "state_abb": "WA",
+    "state": "Washington",
+    "water_monthly_20ccf": 140.9225,
+    "water_monthly_1337ccf": 4518.79,
+    "sewer_monthly_20ccf": 169.3225,
+    "sewer_monthly_1337ccf": 10823.0305
+  },
+  {
+    "state_abb": "WV",
+    "state": "West Virginia",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "WI",
+    "state": "Wisconsin",
+    "water_monthly_20ccf": 109.86,
+    "water_monthly_1337ccf": 4487.1,
+    "sewer_monthly_20ccf": 109.0675,
+    "sewer_monthly_1337ccf": 4040.057
+  },
+  {
+    "state_abb": "WY",
+    "state": "Wyoming",
+    "water_monthly_20ccf": null,
+    "water_monthly_1337ccf": null,
+    "sewer_monthly_20ccf": null,
+    "sewer_monthly_1337ccf": null
+  },
+  {
+    "state_abb": "DC",
+    "state": "District of Columbia",
+    "water_monthly_20ccf": 130.74,
+    "water_monthly_1337ccf": 8265.64,
+    "sewer_monthly_20ccf": 240.25,
+    "sewer_monthly_1337ccf": 15068.526
+  },
+  {
+    "state_abb": "US",
+    "state": "US",
+    "water_monthly_20ccf": 137.0773312,
+    "water_monthly_1337ccf": 5585.986191,
+    "sewer_monthly_20ccf": 167.0010777,
+    "sewer_monthly_1337ccf": 7927.935325
+  }
+]

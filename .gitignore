@@ -1,6 +1,11 @@
+venv/
 sql_data_cache/
 .idea/
 **/__pycache__/**
 **.pyc
 .env
 outputs/
+*.xlsm
+scraper/bls_scraper.log
+reports/
+test.ipynb

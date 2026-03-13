@@ -1,0 +1,65 @@
+[
+  {
+    "Tax Type": "B&O / Gross Receipts Tax",
+    "Seattle": "Yes (City + State)",
+    "Bellevue": "Yes (City + State)",
+    "Austin": "No city B&O; State franchise (margin) tax",
+    "Washington, D.C.": "Yes (Corporate & Unincorporated Franchise Taxes \u2013 gross receipts based)",
+    "San Francisco": "Yes (Gross Receipts Tax + Commercial Rents GRT + Prop C Homelessness GRT)",
+    "San Jos\u00e9": "No (only headcount tax; state corporate income tax applies)"
+  },
+  {
+    "Tax Type": "Payroll Expense Tax",
+    "Seattle": "Yes (JumpStart city payroll tax on high-salary employees)",
+    "Bellevue": "No",
+    "Austin": "No",
+    "Washington, D.C.": "Yes (Paid Family Leave payroll tax \u2013 employer-paid)",
+    "San Francisco": "Yes (Administrative Office Tax + Prop C Overpaid Executive Tax)",
+    "San Jos\u00e9": "No"
+  },
+  {
+    "Tax Type": "Corporate Income Tax",
+    "Seattle": "No",
+    "Bellevue": "No",
+    "Austin": "No city income tax; state franchise tax applies",
+    "Washington, D.C.": "Yes (Corporate Franchise Tax)",
+    "San Francisco": "Yes (California corporate income tax \u2014 state level)",
+    "San Jos\u00e9": "Yes (California corporate income tax \u2014 state level)"
+  },
+  {
+    "Tax Type": "Commercial Property Tax",
+    "Seattle": "Yes (local levies)",
+    "Bellevue": "Yes (local levies)",
+    "Austin": "Yes (Texas property tax)",
+    "Washington, D.C.": "Yes (D.C.-administered property tax)",
+    "San Francisco": "Yes (Prop 13 secured property tax + parcel taxes)",
+    "San Jos\u00e9": "Yes (Prop 13 secured property tax + parcel taxes)"
+  },
+  {
+    "Tax Type": "Business Personal Property Tax",
+    "Seattle": "Yes (WA State)",
+    "Bellevue": "Yes (WA State)",
+    "Austin": "Yes (Texas)",
+    "Washington, D.C.": "Yes (D.C.)",
+    "San Francisco": "Yes (California)",
+    "San Jos\u00e9": "Yes (California)"
+  },
+  {
+    "Tax Type": "Paid Family & Medical Leave (PFML)",
+    "Seattle": "Yes (WA \u2014 employer + employee split)",
+    "Bellevue": "Yes (WA)",
+    "Austin": "No",
+    "Washington, D.C.": "Yes (D.C. \u2014 employer-only payroll tax)",
+    "San Francisco": "Yes (California \u2013 via SDI/PFL withholding)",
+    "San Jos\u00e9": "Yes (California \u2013 via SDI/PFL withholding)"
+  },
+  {
+    "Tax Type": "Unemployment Insurance (UI)",
+    "Seattle": "Yes (State)",
+    "Bellevue": "Yes (State)",
+    "Austin": "Yes (State)",
+    "Washington, D.C.": "Yes (D.C.)",
+    "San Francisco": "Yes (State)",
+    "San Jos\u00e9": "Yes (State)"
+  }
+]

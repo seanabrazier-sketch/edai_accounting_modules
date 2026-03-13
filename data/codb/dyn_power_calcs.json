@@ -1,0 +1,1002 @@
+[
+  {
+    "index": 1.0,
+    "city_state": "Houston, Texas",
+    "emsi_area": "Houston-The Woodlands-Sugar Land, TX Metro Area",
+    "population": 3179436.0,
+    "utility": "CenterPoint Energy Houston Electric",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 2.0,
+    "city_state": "Chicago, Illinois",
+    "emsi_area": "Chicago-Naperville-Elgin, IL-IN-WI Metro Area",
+    "population": 2686269.0,
+    "utility": "Commonwealth Edison Company",
+    "elec_annual_office_40kw": 1114.0,
+    "elec_annual_manuf_75kw": 4525.0,
+    "elec_annual_dist_1000kw": 21894.0
+  },
+  {
+    "index": 3.0,
+    "city_state": "Los Angeles, California",
+    "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area",
+    "population": 2402988.0,
+    "utility": "Los Angeles Department of Water and Power",
+    "elec_annual_office_40kw": 1905.0,
+    "elec_annual_manuf_75kw": 7963.0,
+    "elec_annual_dist_1000kw": 39881.0
+  },
+  {
+    "index": 4.0,
+    "city_state": "San Antonio, Texas",
+    "emsi_area": "San Antonio-New Braunfels, TX Metro Area",
+    "population": 1887122.0,
+    "utility": "San Antonio City Public Service Board",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 5.0,
+    "city_state": "Miami, Florida",
+    "emsi_area": "Miami-Fort Lauderdale-Pompano Beach, FL Metro Area",
+    "population": 1818590.0,
+    "utility": "Florida Power & Light Company",
+    "elec_annual_office_40kw": 977.0,
+    "elec_annual_manuf_75kw": 3342.0,
+    "elec_annual_dist_1000kw": 22838.0
+  },
+  {
+    "index": 6.0,
+    "city_state": "Las Vegas, Nevada",
+    "emsi_area": "Las Vegas-Henderson-Paradise, NV Metro Area",
+    "population": 1627755.0,
+    "utility": "Nevada Power Company",
+    "elec_annual_office_40kw": 981.0,
+    "elec_annual_manuf_75kw": 3749.0,
+    "elec_annual_dist_1000kw": 20750.0
+  },
+  {
+    "index": 7.0,
+    "city_state": "New York, New York",
+    "emsi_area": "New York-Newark-Jersey City, NY-NJ-PA Metro Area",
+    "population": 1593015.0,
+    "utility": "Consolidated Edison Company of New York, Inc.",
+    "elec_annual_office_40kw": 2057.0,
+    "elec_annual_manuf_75kw": 6051.0,
+    "elec_annual_dist_1000kw": 39128.0
+  },
+  {
+    "index": 8.0,
+    "city_state": "Philadelphia, Pennsylvania",
+    "emsi_area": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD Metro Area",
+    "population": 1573316.0,
+    "utility": "PECO Energy Company",
+    "elec_annual_office_40kw": 988.0,
+    "elec_annual_manuf_75kw": 3663.0,
+    "elec_annual_dist_1000kw": 18724.0
+  },
+  {
+    "index": 9.0,
+    "city_state": "Phoenix, Arizona",
+    "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area",
+    "population": 1512021.0,
+    "utility": "Arizona Public Service Company",
+    "elec_annual_office_40kw": 1454.0,
+    "elec_annual_manuf_75kw": 4225.0,
+    "elec_annual_dist_1000kw": 27167.0
+  },
+  {
+    "index": 10.0,
+    "city_state": "Dallas, Texas",
+    "emsi_area": "Dallas-Fort Worth-Arlington, TX Metro Area",
+    "population": 1375592.0,
+    "utility": "Oncor Electric Delivery",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 11.0,
+    "city_state": "San Diego, California",
+    "emsi_area": "San Diego-Chula Vista-Carlsbad, CA Metro Area",
+    "population": 1299248.0,
+    "utility": "San Diego Gas & Electric Company",
+    "elec_annual_office_40kw": 3129.0,
+    "elec_annual_manuf_75kw": 8931.0,
+    "elec_annual_dist_1000kw": 67676.0
+  },
+  {
+    "index": 12.0,
+    "city_state": "Austin, Texas",
+    "emsi_area": "Austin-Round Rock-Georgetown, TX Metro Area",
+    "population": 1160429.0,
+    "utility": "Austin Electric Department",
+    "elec_annual_office_40kw": 1122.0,
+    "elec_annual_manuf_75kw": 3980.0,
+    "elec_annual_dist_1000kw": 22441.0
+  },
+  {
+    "index": 13.0,
+    "city_state": "Denver, Colorado",
+    "emsi_area": "Denver-Aurora-Lakewood, CO Metro Area",
+    "population": 1153286.0,
+    "utility": "Public Service Company of Colorado",
+    "elec_annual_office_40kw": 1244.0,
+    "elec_annual_manuf_75kw": 3421.0,
+    "elec_annual_dist_1000kw": 25421.0
+  },
+  {
+    "index": 14.0,
+    "city_state": "Minneapolis, Minnesota",
+    "emsi_area": "Minneapolis-St. Paul-Bloomington, MN-WI Metro Area",
+    "population": 1132678.0,
+    "utility": "Northern States Power Company",
+    "elec_annual_office_40kw": 1253.0,
+    "elec_annual_manuf_75kw": 4115.0,
+    "elec_annual_dist_1000kw": 26696.0
+  },
+  {
+    "index": 15.0,
+    "city_state": "Orlando, Florida",
+    "emsi_area": "Orlando-Kissimmee-Sanford, FL Metro Area",
+    "population": 1015249.0,
+    "utility": "Orlando Utilities Commission",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 16.0,
+    "city_state": "San Jose, California",
+    "emsi_area": "San Jose-Sunnyvale-Santa Clara, CA Metro Area",
+    "population": 1004311.0,
+    "utility": "Pacific Gas & Electric Company",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 17.0,
+    "city_state": "Fort Worth, Texas",
+    "emsi_area": "Dallas-Fort Worth-Arlington, TX Metro Area",
+    "population": 999899.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 18.0,
+    "city_state": "Seattle, Washington",
+    "emsi_area": "Seattle-Tacoma-Bellevue, WA Metro Area",
+    "population": 992062.0,
+    "utility": "Seattle City Light",
+    "elec_annual_office_40kw": 1053.0,
+    "elec_annual_manuf_75kw": 4318.0,
+    "elec_annual_dist_1000kw": 24510.0
+  },
+  {
+    "index": 19.0,
+    "city_state": "Indianapolis, Indiana",
+    "emsi_area": "Indianapolis-Carmel-Anderson, IN Metro Area",
+    "population": 954695.0,
+    "utility": "Indianapolis Power & Light Company",
+    "elec_annual_office_40kw": 993.0,
+    "elec_annual_manuf_75kw": 3431.0,
+    "elec_annual_dist_1000kw": 28358.0
+  },
+  {
+    "index": 20.0,
+    "city_state": "Charlotte, North Carolina",
+    "emsi_area": "Charlotte-Concord-Gastonia, NC-SC Metro Area",
+    "population": 945715.0,
+    "utility": "Duke Energy Carolinas",
+    "elec_annual_office_40kw": 875.0,
+    "elec_annual_manuf_75kw": 3057.0,
+    "elec_annual_dist_1000kw": 17350.0
+  },
+  {
+    "index": 21.0,
+    "city_state": "Atlanta, Georgia",
+    "emsi_area": "Atlanta-Sandy Springs-Alpharetta, GA Metro Area",
+    "population": 944730.0,
+    "utility": "Georgia Power Company",
+    "elec_annual_office_40kw": 1504.0,
+    "elec_annual_manuf_75kw": 3952.0,
+    "elec_annual_dist_1000kw": 33303.0
+  },
+  {
+    "index": 22.0,
+    "city_state": "Portland, Oregon",
+    "emsi_area": "Portland-Vancouver-Hillsboro, OR-WA Metro Area",
+    "population": 927728.0,
+    "utility": "Portland General Electric",
+    "elec_annual_office_40kw": 1056.0,
+    "elec_annual_manuf_75kw": 4210.0,
+    "elec_annual_dist_1000kw": 18701.0
+  },
+  {
+    "index": 23.0,
+    "city_state": "Tucson, Arizona",
+    "emsi_area": "Tucson, AZ Metro Area",
+    "population": 907505.0,
+    "utility": "Tucson Electric Power Company",
+    "elec_annual_office_40kw": 1445.0,
+    "elec_annual_manuf_75kw": 6177.0,
+    "elec_annual_dist_1000kw": 30501.0
+  },
+  {
+    "index": 24.0,
+    "city_state": "St. Louis, Missouri",
+    "emsi_area": "St. Louis, MO-IL Metro Area",
+    "population": 898759.0,
+    "utility": "Ameren Missouri",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 25.0,
+    "city_state": "Jacksonville, Florida",
+    "emsi_area": "Jacksonville, FL Metro Area",
+    "population": 888039.0,
+    "utility": "Jacksonville Electric Authority",
+    "elec_annual_office_40kw": 1217.0,
+    "elec_annual_manuf_75kw": 5000.0,
+    "elec_annual_dist_1000kw": 29491.0
+  },
+  {
+    "index": 26.0,
+    "city_state": "Columbus, Ohio",
+    "emsi_area": "Columbus, OH Metro Area",
+    "population": 883677.0,
+    "utility": "AEP-Columbus Southern Power",
+    "elec_annual_office_40kw": 1045.0,
+    "elec_annual_manuf_75kw": 3816.0,
+    "elec_annual_dist_1000kw": 21744.0
+  },
+  {
+    "index": 27.0,
+    "city_state": "San Francisco, California",
+    "emsi_area": "San Francisco-Oakland-Berkeley, CA Metro Area",
+    "population": 853834.0,
+    "utility": "Pacific Gas & Electric Company",
+    "elec_annual_office_40kw": 2440.0,
+    "elec_annual_manuf_75kw": 9479.0,
+    "elec_annual_dist_1000kw": 56066.0
+  },
+  {
+    "index": 28.0,
+    "city_state": "Tampa, Florida",
+    "emsi_area": "Tampa-St. Petersburg-Clearwater, FL Metro Area",
+    "population": 832600.0,
+    "utility": "Tampa Electric Company",
+    "elec_annual_office_40kw": 905.0,
+    "elec_annual_manuf_75kw": 3224.0,
+    "elec_annual_dist_1000kw": 19401.0
+  },
+  {
+    "index": 29.0,
+    "city_state": "Sacramento, California",
+    "emsi_area": "Sacramento-Roseville-Folsom, CA Metro Area",
+    "population": 829721.0,
+    "utility": "Sacramento Municipal Utility District",
+    "elec_annual_office_40kw": 1532.0,
+    "elec_annual_manuf_75kw": 6559.0,
+    "elec_annual_dist_1000kw": 25483.0
+  },
+  {
+    "index": 30.0,
+    "city_state": "Fort Lauderdale, Florida",
+    "emsi_area": "Miami-Fort Lauderdale-Pompano Beach, FL Metro Area",
+    "population": 826820.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 31.0,
+    "city_state": "St. Paul, Minnesota",
+    "emsi_area": "Minneapolis-St. Paul-Bloomington, MN-WI Metro Area",
+    "population": 822685.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 32.0,
+    "city_state": "Milwaukee, Wisconsin",
+    "emsi_area": "Milwaukee-Waukesha, WI Metro Area",
+    "population": 802613.0,
+    "utility": "We Energies",
+    "elec_annual_office_40kw": 1288.0,
+    "elec_annual_manuf_75kw": 4216.0,
+    "elec_annual_dist_1000kw": 28738.0
+  },
+  {
+    "index": 33.0,
+    "city_state": "Cincinnati, Ohio",
+    "emsi_area": "Cincinnati, OH-KY-IN Metro Area",
+    "population": 789877.0,
+    "utility": "Duke Energy Ohio",
+    "elec_annual_office_40kw": 1056.0,
+    "elec_annual_manuf_75kw": 3632.0,
+    "elec_annual_dist_1000kw": 22208.0
+  },
+  {
+    "index": 34.0,
+    "city_state": "El Paso, Texas",
+    "emsi_area": "El Paso, TX Metro Area",
+    "population": 776658.0,
+    "utility": "El Paso Electric Company",
+    "elec_annual_office_40kw": 1000.0,
+    "elec_annual_manuf_75kw": 2866.0,
+    "elec_annual_dist_1000kw": 23181.0
+  },
+  {
+    "index": 35.0,
+    "city_state": "Cleveland, Ohio",
+    "emsi_area": "Cleveland-Elyria, OH Metro Area",
+    "population": 739996.0,
+    "utility": "Cleveland Electric Illuminating Company",
+    "elec_annual_office_40kw": 1248.0,
+    "elec_annual_manuf_75kw": 4175.0,
+    "elec_annual_dist_1000kw": 18443.0
+  },
+  {
+    "index": 36.0,
+    "city_state": "Louisville, Kentucky",
+    "emsi_area": "Louisville/Jefferson County, KY-IN Metro Area",
+    "population": 727112.0,
+    "utility": "Louisville Gas & Electric Company",
+    "elec_annual_office_40kw": 1140.0,
+    "elec_annual_manuf_75kw": 3544.0,
+    "elec_annual_dist_1000kw": 29385.0
+  },
+  {
+    "index": 37.0,
+    "city_state": "Washington, District of Columbia",
+    "emsi_area": "Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area",
+    "population": 693712.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 38.0,
+    "city_state": "Pittsburgh, Pennsylvania",
+    "emsi_area": "Pittsburgh, PA Metro Area",
+    "population": 686123.0,
+    "utility": "Duquesne Light Company",
+    "elec_annual_office_40kw": 1100.0,
+    "elec_annual_manuf_75kw": 4390.0,
+    "elec_annual_dist_1000kw": 23620.0
+  },
+  {
+    "index": 39.0,
+    "city_state": "Memphis, Tennessee",
+    "emsi_area": "Memphis, TN-MS-AR Metro Area",
+    "population": 682341.0,
+    "utility": "Memphis Light, Gas & Water Division",
+    "elec_annual_office_40kw": 1011.0,
+    "elec_annual_manuf_75kw": 4178.0,
+    "elec_annual_dist_1000kw": 25798.0
+  },
+  {
+    "index": 40.0,
+    "city_state": "Oklahoma City, Oklahoma",
+    "emsi_area": "Oklahoma City, OK Metro Area",
+    "population": 660022.0,
+    "utility": "OG&E Electric Services",
+    "elec_annual_office_40kw": 887.0,
+    "elec_annual_manuf_75kw": 2800.0,
+    "elec_annual_dist_1000kw": 14361.0
+  },
+  {
+    "index": 41.0,
+    "city_state": "Albuquerque, New Mexico",
+    "emsi_area": "Albuquerque, NM Metro Area",
+    "population": 638824.0,
+    "utility": "PNM",
+    "elec_annual_office_40kw": 1287.0,
+    "elec_annual_manuf_75kw": 4979.0,
+    "elec_annual_dist_1000kw": 29471.0
+  },
+  {
+    "index": 42.0,
+    "city_state": "Salt Lake City, Utah",
+    "emsi_area": "Salt Lake City, UT Metro Area",
+    "population": 635430.0,
+    "utility": "PacifiCorp",
+    "elec_annual_office_40kw": 1093.0,
+    "elec_annual_manuf_75kw": 3140.0,
+    "elec_annual_dist_1000kw": 24686.0
+  },
+  {
+    "index": 43.0,
+    "city_state": "Detroit, Michigan",
+    "emsi_area": "Detroit-Warren-Dearborn, MI Metro Area",
+    "population": 629787.0,
+    "utility": "Detroit Edison Company",
+    "elec_annual_office_40kw": 1250.0,
+    "elec_annual_manuf_75kw": 3620.0,
+    "elec_annual_dist_1000kw": 24129.0
+  },
+  {
+    "index": 44.0,
+    "city_state": "Fresno, California",
+    "emsi_area": "Fresno, CA Metro Area",
+    "population": 613336.0,
+    "utility": "Pacific Gas & Electric Company",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 45.0,
+    "city_state": "Colorado Springs, Colorado",
+    "emsi_area": "Colorado Springs, CO Metro Area",
+    "population": 597940.0,
+    "utility": "Colorado Springs Department of Utilities",
+    "elec_annual_office_40kw": 923.0,
+    "elec_annual_manuf_75kw": 2943.0,
+    "elec_annual_dist_1000kw": 26978.0
+  },
+  {
+    "index": 46.0,
+    "city_state": "Kansas City, Missouri",
+    "emsi_area": "Kansas City, MO-KS Metro Area",
+    "population": 592395.0,
+    "utility": "Kansas City Power & Light Company",
+    "elec_annual_office_40kw": 1290.0,
+    "elec_annual_manuf_75kw": 4238.0,
+    "elec_annual_dist_1000kw": 34571.0
+  },
+  {
+    "index": 47.0,
+    "city_state": "Raleigh, North Carolina",
+    "emsi_area": "Raleigh-Cary, NC Metro Area",
+    "population": 567853.0,
+    "utility": "Duke Energy Progress",
+    "elec_annual_office_40kw": 950.0,
+    "elec_annual_manuf_75kw": 3840.0,
+    "elec_annual_dist_1000kw": 26041.0
+  },
+  {
+    "index": 48.0,
+    "city_state": "Bakersfield, California",
+    "emsi_area": "Bakersfield, CA Metro Area",
+    "population": 566115.0,
+    "utility": "Pacific Gas & Electric Company",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 49.0,
+    "city_state": "Mesa, Arizona",
+    "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area",
+    "population": 565691.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": 1031.0,
+    "elec_annual_manuf_75kw": 3566.0,
+    "elec_annual_dist_1000kw": 16948.0
+  },
+  {
+    "index": 50.0,
+    "city_state": "Baltimore, Maryland",
+    "emsi_area": "Baltimore-Columbia-Towson, MD Metro Area",
+    "population": 565490.0,
+    "utility": "Baltimore Gas & Electric Company",
+    "elec_annual_office_40kw": 1334.0,
+    "elec_annual_manuf_75kw": 4761.0,
+    "elec_annual_dist_1000kw": 21240.0
+  },
+  {
+    "index": 51.0,
+    "city_state": "Buffalo, New York",
+    "emsi_area": "Buffalo-Cheektowaga, NY Metro Area",
+    "population": 562539.0,
+    "utility": "Niagara Mohawk Power Company",
+    "elec_annual_office_40kw": 899.0,
+    "elec_annual_manuf_75kw": 2771.0,
+    "elec_annual_dist_1000kw": 17906.0
+  },
+  {
+    "index": 52.0,
+    "city_state": "Omaha, Nebraska",
+    "emsi_area": "Omaha-Council Bluffs, NE-IA Metro Area",
+    "population": 560344.0,
+    "utility": "Omaha Public Power District",
+    "elec_annual_office_40kw": 736.0,
+    "elec_annual_manuf_75kw": 3131.0,
+    "elec_annual_dist_1000kw": 19851.0
+  },
+  {
+    "index": 53.0,
+    "city_state": "Birmingham, Alabama",
+    "emsi_area": "Birmingham-Hoover, AL Metro Area",
+    "population": 474486.0,
+    "utility": "Alabama Power Company",
+    "elec_annual_office_40kw": 1493.0,
+    "elec_annual_manuf_75kw": 5918.0,
+    "elec_annual_dist_1000kw": 18820.0
+  },
+  {
+    "index": 54.0,
+    "city_state": "Nashville, Tennessee",
+    "emsi_area": "Nashville-Davidson--Murfreesboro--Franklin, TN Metro Area",
+    "population": 473948.0,
+    "utility": "Nashville Electric Service",
+    "elec_annual_office_40kw": 1190.0,
+    "elec_annual_manuf_75kw": 4011.0,
+    "elec_annual_dist_1000kw": 28806.0
+  },
+  {
+    "index": 55.0,
+    "city_state": "Long Beach, California",
+    "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area",
+    "population": 471343.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 56.0,
+    "city_state": "Rochester, New York",
+    "emsi_area": "Rochester, NY Metro Area",
+    "population": 468928.0,
+    "utility": "Rochester Gas & Electric Corporation",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 57.0,
+    "city_state": "Riverside, California",
+    "emsi_area": "Riverside-San Bernardino-Ontario, CA Metro Area",
+    "population": 456810.0,
+    "utility": "Riverside Public Utilities",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 58.0,
+    "city_state": "Virginia Beach, Virginia",
+    "emsi_area": "Virginia Beach-Norfolk-Newport News, VA-NC Metro Area",
+    "population": 444028.0,
+    "utility": "Dominion Virginia Power",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 59.0,
+    "city_state": "Aurora, Colorado",
+    "emsi_area": "Denver-Aurora-Lakewood, CO Metro Area",
+    "population": 429890.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 60.0,
+    "city_state": "Knoxville, Tennessee",
+    "emsi_area": "Knoxville, TN Metro Area",
+    "population": 426787.0,
+    "utility": "Tennessee Valley Authority",
+    "elec_annual_office_40kw": 1137.0,
+    "elec_annual_manuf_75kw": 4656.0,
+    "elec_annual_dist_1000kw": 27558.0
+  },
+  {
+    "index": 61.0,
+    "city_state": "Wichita, Kansas",
+    "emsi_area": "Wichita, KS Metro Area",
+    "population": 421520.0,
+    "utility": "Westar Energy/KG&E",
+    "elec_annual_office_40kw": 980.0,
+    "elec_annual_manuf_75kw": 4604.0,
+    "elec_annual_dist_1000kw": 27572.0
+  },
+  {
+    "index": 62.0,
+    "city_state": "Arlington, Texas",
+    "emsi_area": "Dallas-Fort Worth-Arlington, TX Metro Area",
+    "population": 420394.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 63.0,
+    "city_state": "New Orleans, Louisiana",
+    "emsi_area": "New Orleans-Metairie, LA Metro Area",
+    "population": 414860.0,
+    "utility": "Entergy New Orleans",
+    "elec_annual_office_40kw": 1081.0,
+    "elec_annual_manuf_75kw": 4274.0,
+    "elec_annual_dist_1000kw": 22103.0
+  },
+  {
+    "index": 64.0,
+    "city_state": "Tulsa, Oklahoma",
+    "emsi_area": "Tulsa, OK Metro Area",
+    "population": 409057.0,
+    "utility": "Public Service Company of Oklahoma",
+    "elec_annual_office_40kw": 900.0,
+    "elec_annual_manuf_75kw": 3307.0,
+    "elec_annual_dist_1000kw": 15438.0
+  },
+  {
+    "index": 65.0,
+    "city_state": "Oakland, California",
+    "emsi_area": "San Francisco-Oakland-Berkeley, CA Metro Area",
+    "population": 401799.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 66.0,
+    "city_state": "Honolulu, Hawaii",
+    "emsi_area": "Urban Honolulu, HI Metro Area",
+    "population": 398030.0,
+    "utility": "Hawaiian Electric Company",
+    "elec_annual_office_40kw": 2926.0,
+    "elec_annual_manuf_75kw": 12516.0,
+    "elec_annual_dist_1000kw": 67724.0
+  },
+  {
+    "index": 67.0,
+    "city_state": "Richmond, Virginia",
+    "emsi_area": "Richmond, VA Metro Area",
+    "population": 387263.0,
+    "utility": "Dominion Virginia Power",
+    "elec_annual_office_40kw": 1082.0,
+    "elec_annual_manuf_75kw": 3130.0,
+    "elec_annual_dist_1000kw": 24663.0
+  },
+  {
+    "index": 68.0,
+    "city_state": "Stockton, California",
+    "emsi_area": "Stockton, CA Metro Area",
+    "population": 384943.0,
+    "utility": "Pacific Gas & Electric Company",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 69.0,
+    "city_state": "Grand Rapids, Michigan",
+    "emsi_area": "Grand Rapids-Kentwood, MI Metro Area",
+    "population": 370984.0,
+    "utility": "Consumers Energy Company",
+    "elec_annual_office_40kw": 1584.0,
+    "elec_annual_manuf_75kw": 3721.0,
+    "elec_annual_dist_1000kw": 24983.0
+  },
+  {
+    "index": 70.0,
+    "city_state": "Spokane, Washington",
+    "emsi_area": "Spokane-Spokane Valley, WA Metro Area",
+    "population": 370214.0,
+    "utility": "Modern Electric Water Company",
+    "elec_annual_office_40kw": 1299.0,
+    "elec_annual_manuf_75kw": 4657.0,
+    "elec_annual_dist_1000kw": 22651.0
+  },
+  {
+    "index": 71.0,
+    "city_state": "Tacoma, Washington",
+    "emsi_area": "Seattle-Tacoma-Bellevue, WA Metro Area",
+    "population": 362807.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": 818.0,
+    "elec_annual_manuf_75kw": 3076.0,
+    "elec_annual_dist_1000kw": 17971.0
+  },
+  {
+    "index": 72.0,
+    "city_state": "Baton Rouge, Louisiana",
+    "emsi_area": "Baton Rouge, LA Metro Area",
+    "population": 360478.0,
+    "utility": "Entergy Gulf States",
+    "elec_annual_office_40kw": 863.0,
+    "elec_annual_manuf_75kw": 3221.0,
+    "elec_annual_dist_1000kw": 16886.0
+  },
+  {
+    "index": 73.0,
+    "city_state": "Plano, Texas",
+    "emsi_area": "Dallas-Fort Worth-Arlington, TX Metro Area",
+    "population": 356692.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 74.0,
+    "city_state": "Anaheim, California",
+    "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area",
+    "population": 356199.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 75.0,
+    "city_state": "Hialeah, Florida",
+    "emsi_area": "Miami-Fort Lauderdale-Pompano Beach, FL Metro Area",
+    "population": 355608.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 76.0,
+    "city_state": "St. Petersburg, Florida",
+    "emsi_area": "Tampa-St. Petersburg-Clearwater, FL Metro Area",
+    "population": 351484.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 77.0,
+    "city_state": "Columbia, South Carolina",
+    "emsi_area": "Columbia, SC Metro Area",
+    "population": 346225.0,
+    "utility": "South Carolina Electric & Gas Company",
+    "elec_annual_office_40kw": 1130.0,
+    "elec_annual_manuf_75kw": 3915.0,
+    "elec_annual_dist_1000kw": 23030.0
+  },
+  {
+    "index": 78.0,
+    "city_state": "Vancouver, Washington",
+    "emsi_area": "Portland-Vancouver-Hillsboro, OR-WA Metro Area",
+    "population": 344398.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 79.0,
+    "city_state": "Santa Ana, California",
+    "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area",
+    "population": 340151.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 80.0,
+    "city_state": "Greensboro, North Carolina",
+    "emsi_area": "Greensboro-High Point, NC Metro Area",
+    "population": 328939.0,
+    "utility": "Duke Energy Carolinas",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 81.0,
+    "city_state": "Fort Wayne, Indiana",
+    "emsi_area": "Fort Wayne, IN Metro Area",
+    "population": 327653.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 82.0,
+    "city_state": "Henderson, Nevada",
+    "emsi_area": "Las Vegas-Henderson-Paradise, NV Metro Area",
+    "population": 324262.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 83.0,
+    "city_state": "Glendale, Arizona",
+    "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area",
+    "population": 320009.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 84.0,
+    "city_state": "Scottsdale, Arizona",
+    "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area",
+    "population": 317476.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 85.0,
+    "city_state": "Lexington-Fayette, Kentucky",
+    "emsi_area": "Lexington-Fayette, KY Metro Area",
+    "population": 316054.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 86.0,
+    "city_state": "Madison, Wisconsin",
+    "emsi_area": "Madison, WI Metro Area",
+    "population": 311677.0,
+    "utility": "Madison Gas & Electric Company",
+    "elec_annual_office_40kw": 1439.0,
+    "elec_annual_manuf_75kw": 4696.0,
+    "elec_annual_dist_1000kw": 29117.0
+  },
+  {
+    "index": 87.0,
+    "city_state": "Corpus Christi, Texas",
+    "emsi_area": "Corpus Christi, TX Metro Area",
+    "population": 311227.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 88.0,
+    "city_state": "Durham, North Carolina",
+    "emsi_area": "Durham-Chapel Hill, NC Metro Area",
+    "population": 310780.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 89.0,
+    "city_state": "Toledo, Ohio",
+    "emsi_area": "Toledo, OH Metro Area",
+    "population": 309074.0,
+    "utility": "Toledo Edison Company",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 90.0,
+    "city_state": "Reno, Nevada",
+    "emsi_area": "Reno, NV Metro Area",
+    "population": 305970.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": 901.0,
+    "elec_annual_manuf_75kw": 3386.0,
+    "elec_annual_dist_1000kw": 22005.0
+  },
+  {
+    "index": 91.0,
+    "city_state": "Lincoln, Nebraska",
+    "emsi_area": "Lincoln, NE Metro Area",
+    "population": 297969.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": 774.0,
+    "elec_annual_manuf_75kw": 2635.0,
+    "elec_annual_dist_1000kw": 25802.0
+  },
+  {
+    "index": 92.0,
+    "city_state": "Tallahassee, Florida",
+    "emsi_area": "Tallahassee, FL Metro Area",
+    "population": 287421.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 93.0,
+    "city_state": "Chandler, Arizona",
+    "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area",
+    "population": 286529.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 94.0,
+    "city_state": "Lubbock, Texas",
+    "emsi_area": "Lubbock, TX Metro Area",
+    "population": 280574.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 95.0,
+    "city_state": "Akron, Ohio",
+    "emsi_area": "Akron, OH Metro Area",
+    "population": 278154.0,
+    "utility": "Ohio Edison Company",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 96.0,
+    "city_state": "Irvine, California",
+    "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area",
+    "population": 277577.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 97.0,
+    "city_state": "Newark, New Jersey",
+    "emsi_area": "New York-Newark-Jersey City, NY-NJ-PA Metro Area",
+    "population": 277419.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": 1452.0,
+    "elec_annual_manuf_75kw": 4923.0,
+    "elec_annual_dist_1000kw": 33380.0
+  },
+  {
+    "index": 98.0,
+    "city_state": "Salem, Oregon",
+    "emsi_area": "Salem, OR Metro Area",
+    "population": 276827.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 99.0,
+    "city_state": "Jersey City, New Jersey",
+    "emsi_area": "New York-Newark-Jersey City, NY-NJ-PA Metro Area",
+    "population": 274802.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  },
+  {
+    "index": 100.0,
+    "city_state": "Laredo, Texas",
+    "emsi_area": "Laredo, TX Metro Area",
+    "population": 272379.0,
+    "utility": "#N/A",
+    "elec_annual_office_40kw": null,
+    "elec_annual_manuf_75kw": null,
+    "elec_annual_dist_1000kw": null
+  }
+]

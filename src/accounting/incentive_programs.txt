@@ -41,6 +41,7 @@ Delaware_Business Finder's Fee Tax Credit
 Delaware_Workforce Training Fund
 Delaware_Research and Development Tax Credit
 Florida_Qualified Target Industry Tax Refund (QTI)
+Maine_Sales tax exemptions
 Florida_Capital Investment Tax Credit (CITC)
 Florida_Quick Response Training (QRT)
 Florida_Sales tax exemption for M&E
@@ -71,6 +72,7 @@ Illinois_Employer Training Investment Program (ETIP)
 Illinois_Data Center Tax Exemption
 Illinois_Property Tax Exemptions
 Indiana_Data Center Gross Retail and Use Tax Exemption
+Maine_Business Equipment Tax Exemption (BETE)
 Indiana_Research and Development tax incentives
 Indiana_Headquarters Relocation Tax Credit (HQRTC)
 Indiana_Hoosier Business Investment Tax Credit Program (HBI)
@@ -85,6 +87,7 @@ Kansas_Promoting Employment Across Kansas (PEAK)
 Kansas_High Performance Incentive Program (HPIP)
 Kansas_Research & Development Tax Credit
 Kentucky_Kentucky Business Investment (KBI) Program
+Nevada_Catalyst Fund
 Kentucky_Kentucky Enterprise Initiative Act (KEIA)
 Kentucky_Grant-in-Aid program
 Kentucky_Kentucky Reinvestment Act (KRA)
@@ -97,10 +100,8 @@ Louisiana_Sales Tax Exemption on Business Utilities
 Louisiana_FastStart Job Training Assistance Program
 Maine_Employment Tax Increment Financing Program (ETIF)
 Maine_Pine Tree Development Zone Program (PTDZ)
-Maine_MajorBusiness Headquarters Expansion Program (MBHQ)
+Maine_Major Business Headquarters Expansion Program (MBHQ)
 Maine_Research expense tax credit
-Maine_Sales tax exemptions
-Maine_Business Equipment Tax Exemption (BETE)
 Maryland_Job Creation Tax Credit (JCTC)
 Maryland_Research and Development Tax Credit
 Maryland_Maryland Economic Development Assistance Authority and Fund (MEDAAF)
@@ -150,7 +151,6 @@ Montana_The Primary Sector Workforce Training Grant
 Nebraska_Nebraska Advantage – Research and Development Credit
 Nebraska_Nebraska Customized Job Training Program
 Nebraska_Nebraska Advantage
-Nevada_Catalyst Fund
 Nevada_Silver State Works
 Nevada_Nevada Tax Abatements
 New Hampshire_Economic Revitalization Zone Tax Credits (ERZ Tax Credit) Program
@@ -183,6 +183,7 @@ North Dakota_Income Tax Exemptions
 Ohio_Job Creation Tax Credit (JCTC)
 Ohio_Research & Development Investment Tax Credit
 Ohio_JobsOhio Economic Development Grant
+Oregon_Strategic Investment Program (SIP) Property Tax Abatement
 Ohio_JobsOhio Research & Development (R&D) Center Grant
 Ohio_Enterprise Zone
 Ohio_Sales & Use Tax Exemption
@@ -199,7 +200,6 @@ Oklahoma_Ad valorem tax exemptions
 Oklahoma_Opportunity and Enterprise Zones
 Oregon_Business Expansion Program (BEP)
 Oregon_Governors’ Strategic Reserve Fund
-Oregon_Strategic Investment Program (SIP) Property Tax Abatement
 Oregon_Enterprise Zones
 Oregon_Oregon Investment Advantage
 Pennsylvania_Job Creation Tax Credit (JCTC)

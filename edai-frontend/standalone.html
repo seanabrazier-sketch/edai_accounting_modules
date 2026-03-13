@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EDai — Location Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── TOKENS ── */
+:root{--green:#2D6A2D;--green-mid:#3D8B3D;--green-light:#E8F5E8;--green-pale:#F4FAF4;--amber:#B7770D;--amber-light:#FEF9E7;--blue:#1A5C9E;--blue-lt:#EAF2FB;--red:#B94040;--red-lt:#FDEAEA;--dark:#141A14;--mid:#3A4A3A;--muted:#7A8A7A;--border:#D4E0D4;--bg:#F2F6F2;--white:#FFFFFF;--shadow:0 1px 3px rgba(20,40,20,0.07),0 4px 14px rgba(20,40,20,0.05)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'IBM Plex Sans',sans-serif;background:var(--bg);color:var(--dark);min-height:100vh;-webkit-font-smoothing:antialiased}
+
+/* ── INTAKE ── */
+.intake-page{min-height:100vh;display:flex;flex-direction:column}
+.intake-header{background:var(--white);border-bottom:1px solid var(--border);padding:0 48px;height:60px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-mark{width:28px;height:28px;background:var(--green);border-radius:6px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:16px;height:16px}
+.logo-text{font-family:'Playfair Display',serif;font-size:16px;font-weight:600;color:var(--dark)}
+.logo-sub{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-left:4px}
+.header-badge{font-size:11px;font-weight:500;color:var(--green);background:var(--green-light);padding:4px 10px;border-radius:20px}
+.intake-main{flex:1;display:grid;grid-template-columns:1fr 480px 1fr;padding:48px 0 80px;align-items:start}
+.form-container{grid-column:2;display:flex;flex-direction:column}
+.form-header{margin-bottom:32px}
+.form-eyebrow{font-size:11px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px}
+.form-title{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:var(--dark);line-height:1.2;letter-spacing:-.5px;margin-bottom:10px}
+.form-subtitle{font-size:14px;color:var(--muted);line-height:1.6}
+.card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:28px;box-shadow:var(--shadow);margin-bottom:16px}
+.card-label{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.step-num{width:20px;height:20px;background:var(--green-light);color:var(--green);border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.archetype-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.arch-btn{border:1.5px solid var(--border);background:var(--white);border-radius:10px;padding:16px 12px;cursor:pointer;text-align:center;transition:all .18s;position:relative;overflow:hidden;font-family:inherit}
+.arch-btn:hover{border-color:var(--green-mid);background:var(--green-pale);transform:translateY(-1px);box-shadow:0 4px 12px rgba(45,106,45,.1)}
+.arch-btn.selected{border-color:var(--green);background:var(--green-light);box-shadow:0 0 0 3px rgba(45,106,45,.12)}
+.arch-btn.selected::after{content:'✓';position:absolute;top:8px;right:8px;width:16px;height:16px;background:var(--green);color:white;border-radius:50%;font-size:9px;display:flex;align-items:center;justify-content:center;font-weight:700}
+.arch-icon{font-size:24px;margin-bottom:8px;display:block}
+.arch-name{font-size:13px;font-weight:600;color:var(--dark);display:block;margin-bottom:3px}
+.arch-desc{font-size:11px;color:var(--muted);line-height:1.4}
+.input-group{margin-bottom:16px}
+.input-group:last-child{margin-bottom:0}
+.input-label{font-size:13px;font-weight:600;color:var(--mid);margin-bottom:6px;display:flex;align-items:center;justify-content:space-between}
+.input-hint{font-size:11px;font-weight:400;color:var(--muted)}
+.input-wrapper{position:relative}
+.input-prefix{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:14px;color:var(--muted);font-family:'IBM Plex Mono',monospace;pointer-events:none}
+.input-suffix{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:12px;color:var(--muted);font-family:'IBM Plex Mono',monospace;pointer-events:none}
+input[type=number],input[type=text]{width:100%;height:44px;border:1.5px solid var(--border);border-radius:8px;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;color:var(--dark);background:var(--white);padding:0 44px 0 14px;transition:border-color .15s,box-shadow .15s;-moz-appearance:textfield}
+input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}
+input.has-prefix{padding-left:28px}
+input:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(45,106,45,.1)}
+.derived-hint{font-size:11px;color:var(--green);margin-top:5px;font-family:'IBM Plex Mono',monospace;min-height:16px}
+.derived-preview{background:var(--green-pale);border:1px solid var(--border);border-radius:10px;padding:16px 20px;margin-bottom:16px;display:none}
+.derived-preview.show{display:block}
+.derived-title{font-size:11px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.derived-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.derived-val{font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:500;color:var(--dark);display:block}
+.derived-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:2px;display:block}
+.role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.role-btn{border:1.5px solid var(--border);background:var(--white);border-radius:10px;padding:14px 10px;cursor:pointer;text-align:left;transition:all .18s;font-family:inherit}
+.role-btn:hover{border-color:var(--green-mid);background:var(--green-pale)}
+.role-btn.selected{border-color:var(--green);background:var(--green-light);box-shadow:0 0 0 3px rgba(45,106,45,.12)}
+.role-name{font-size:12px;font-weight:600;color:var(--dark);display:block;margin-bottom:3px}
+.role-desc{font-size:11px;color:var(--muted);line-height:1.4}
+.submit-btn{width:100%;height:52px;background:var(--green);color:white;border:none;border-radius:10px;font-family:'IBM Plex Sans',sans-serif;font-size:15px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;letter-spacing:.2px;margin-top:4px}
+.submit-btn:hover:not(:disabled){background:#245224;transform:translateY(-1px);box-shadow:0 6px 20px rgba(45,106,45,.3)}
+.submit-btn:disabled{background:#9CB89C;cursor:not-allowed}
+.footer-note{text-align:center;font-size:11px;color:var(--muted);margin-top:16px;line-height:1.6}
+.footer-note a{color:var(--green);text-decoration:none}
+
+/* ── LOADING ── */
+.loading-screen{min-height:100vh;display:none;flex-direction:column;align-items:center;justify-content:center;gap:32px}
+.loading-screen.show{display:flex}
+.loading-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--dark)}
+.loading-sub{font-size:13px;color:var(--muted)}
+.engines-list{display:flex;flex-direction:column;gap:12px;width:400px}
+.engine-row{display:flex;align-items:center;gap:12px}
+.engine-icon{font-size:16px;width:24px;text-align:center}
+.engine-name{font-size:13px;color:var(--mid);flex:1}
+.eng-bar{flex:1;height:5px;background:var(--green-light);border-radius:3px;overflow:hidden}
+.eng-bar-fill{height:100%;background:var(--green);border-radius:3px;width:0%;transition:width .4s ease}
+.eng-status{font-size:11px;width:60px;text-align:right;color:var(--muted)}
+.eng-status.running{color:var(--amber)}
+.eng-status.done{color:var(--green)}
+
+/* ── DASHBOARD ── */
+.dashboard{display:none}
+.dashboard.show{display:block}
+.topbar{background:var(--white);border-bottom:1px solid var(--border);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:100}
+.topbar-meta{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:16px}
+.topbar-chip{background:var(--green-light);color:var(--green);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:600}
+.topbar-btn{background:none;border:1.5px solid var(--border);border-radius:7px;padding:6px 14px;font-size:12px;font-weight:500;color:var(--mid);cursor:pointer;font-family:inherit;transition:all .15s}
+.topbar-btn:hover{border-color:var(--green);color:var(--green)}
+.app-layout{display:grid;grid-template-columns:260px 1fr;min-height:calc(100vh - 56px)}
+.sidebar{background:var(--white);border-right:1px solid var(--border);padding:20px 0;position:sticky;top:56px;height:calc(100vh - 56px);overflow-y:auto;display:flex;flex-direction:column}
+.sidebar-section{padding:0 16px;margin-bottom:24px}
+.sidebar-label{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:10px;padding:0 4px}
+.project-card{background:var(--green-pale);border:1px solid var(--border);border-radius:10px;padding:14px;margin-bottom:16px}
+.project-type{font-size:11px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.project-stat{display:flex;justify-content:space-between;margin-bottom:4px}
+.project-stat-label{font-size:11px;color:var(--muted)}
+.project-stat-val{font-size:11px;font-weight:600;color:var(--dark);font-family:'IBM Plex Mono',monospace}
+.nav-item{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:8px;cursor:pointer;transition:all .15s;margin-bottom:2px;font-size:13px;font-weight:500;color:var(--mid);border:none;background:none;width:100%;text-align:left;font-family:inherit}
+.nav-item:hover{background:var(--green-pale);color:var(--dark)}
+.nav-item.active{background:var(--green-light);color:var(--green);font-weight:600}
+.nav-icon{width:18px;text-align:center;font-size:14px;flex-shrink:0}
+.nav-badge{margin-left:auto;background:var(--green);color:white;border-radius:10px;padding:1px 7px;font-size:10px;font-weight:700}
+.nav-sep{border-top:1px solid var(--border);margin:8px 0;padding-top:4px}
+.shortlist-section{padding:0 16px;margin-top:auto;padding-bottom:16px}
+.city-chip{display:flex;align-items:center;justify-content:space-between;background:var(--white);border:1.5px solid var(--border);border-radius:8px;padding:7px 10px;margin-bottom:6px;cursor:pointer;transition:all .15s}
+.city-chip.active{border-color:var(--green);background:var(--green-light)}
+.city-name{font-size:12px;font-weight:600;color:var(--dark)}
+.city-margin{font-size:11px;font-family:'IBM Plex Mono',monospace;color:var(--green);font-weight:500}
+
+/* ── CONTENT / PANELS ── */
+.content{padding:24px 28px;overflow-y:auto}
+.panel{display:none}
+.panel.active{display:block;animation:fadeUp .25s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.panel-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--dark);margin-bottom:4px}
+.panel-subtitle{font-size:13px;color:var(--muted);line-height:1.5;margin-bottom:20px}
+.thesis-bar{background:var(--amber-light);border:1px solid #F0D898;border-left:4px solid var(--amber);border-radius:0 8px 8px 0;padding:10px 14px;margin-bottom:20px;font-size:12px;color:var(--amber);line-height:1.5}
+.metric-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px}
+.metric-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:16px;box-shadow:var(--shadow)}
+.metric-label{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
+.metric-val{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--dark);margin-bottom:2px}
+.metric-sub{font-size:11px;color:var(--muted)}
+.metric-card.highlight{background:var(--green-light);border-color:var(--green)}
+.metric-card.highlight .metric-val{color:var(--green)}
+.section-title{font-size:12px;font-weight:700;color:var(--dark);text-transform:uppercase;letter-spacing:.8px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.section-title::after{content:'';flex:1;height:1px;background:var(--border)}
+.error-state{background:var(--red-lt);border:1px solid #E8B0B0;border-radius:10px;padding:20px 24px;margin-bottom:16px}
+.error-title{font-size:13px;font-weight:600;color:var(--red);margin-bottom:4px}
+.error-msg{font-size:12px;color:#8A5050}
+.vintage-note{font-size:10px;color:var(--muted);text-align:center;margin-top:16px;padding-bottom:24px}
+
+/* ── BAR CHART ── */
+.rank-chart-wrap{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:22px 24px;box-shadow:var(--shadow);margin-bottom:20px}
+.chart-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.chart-title{font-size:13px;font-weight:600;color:var(--dark)}
+.chart-legend{display:flex;align-items:center;gap:16px;font-size:11px;color:var(--muted)}
+.legend-item{display:flex;align-items:center;gap:5px}
+.legend-dot{width:8px;height:8px;border-radius:50%}
+.bc-row{display:flex;align-items:center;gap:10px;margin-bottom:5px}
+.bc-label{width:130px;font-size:11px;color:var(--mid);text-align:right;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bc-label.top{color:var(--green);font-weight:600}
+.bc-track{flex:1;height:22px;background:#F0F5F0;border-radius:4px;overflow:visible;position:relative}
+.bc-fill{height:100%;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:7px}
+.bc-fill.top{background:var(--green)}
+.bc-fill.dim{background:#B8CCB8;opacity:.45}
+.bc-val{font-family:'IBM Plex Mono',monospace;font-size:10px;color:white;font-weight:500}
+.bc-avg-line{position:absolute;top:-3px;bottom:-3px;width:1.5px;background:var(--amber);z-index:2}
+.bc-avg-label{position:absolute;top:-18px;font-size:9px;color:var(--amber);font-weight:600;white-space:nowrap;transform:translateX(-50%)}
+.divider-row{border-top:1px dashed var(--border);margin:8px 0 8px 140px;font-size:10px;color:var(--muted);padding-top:4px}
+
+/* ── INCENTIVES ── */
+.inc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.inc-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px;box-shadow:var(--shadow)}
+.inc-city-hdr{font-size:13px;font-weight:700;color:var(--dark);margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+.inc-total{font-size:12px;font-weight:600;color:var(--green);background:var(--green-light);padding:3px 9px;border-radius:20px;font-family:'IBM Plex Mono',monospace}
+.inc-prog{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid #EEF4EE}
+.inc-prog:last-of-type{border-bottom:none}
+.badge{font-size:9px;font-weight:600;padding:2px 7px;border-radius:10px;flex-shrink:0;margin-top:1px;text-transform:uppercase;letter-spacing:.3px}
+.badge.credit{background:#E8F5E8;color:#2D6A2D}
+.badge.grant{background:#EAF2FB;color:#1A5C9E}
+.badge.training{background:#FEF9E7;color:#B7770D}
+.badge.loan{background:#F0EAF8;color:#6B3FA0}
+.inc-name{font-size:11px;font-weight:600;color:var(--dark);margin-bottom:2px}
+.inc-est{font-size:11px;font-family:'IBM Plex Mono',monospace;color:var(--green);font-weight:500}
+.inc-note{font-size:10px;color:var(--muted)}
+
+/* ── ECON ── */
+.impact-wrap{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:20px;box-shadow:var(--shadow);margin-bottom:16px}
+.impact-row{display:grid;grid-template-columns:200px repeat(3,1fr);border-bottom:1px solid #EEF4EE}
+.impact-row:last-child{border-bottom:none}
+.impact-row.hdr{border-bottom:2px solid var(--border)}
+.ic{padding:10px 12px;font-size:12px;font-family:'IBM Plex Mono',monospace;color:var(--dark);text-align:right}
+.ic.lbl{font-family:'IBM Plex Sans',sans-serif;color:var(--mid);font-size:12px;font-weight:500;text-align:left}
+.ic.col-h{font-family:'IBM Plex Sans',sans-serif;font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;text-align:right;padding:8px 12px}
+.ic.col-h:first-child{text-align:left}
+.ic.tot{font-weight:700;color:var(--green)}
+.ic.sub{color:var(--mid);font-size:11px}
+.mult-badge{display:inline-block;background:var(--green-light);color:var(--green);border-radius:6px;padding:2px 7px;font-size:10px;font-weight:600;margin-left:6px;font-family:'IBM Plex Sans',sans-serif}
+
+/* ── FISCAL ── */
+.fiscal-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px;box-shadow:var(--shadow);margin-bottom:16px}
+.fiscal-city{font-size:13px;font-weight:700;color:var(--dark);margin-bottom:14px}
+.fiscal-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid #EEF4EE}
+.fiscal-row:last-of-type{border-bottom:none}
+.fiscal-row-lbl{font-size:11px;color:var(--mid)}
+.fiscal-row-val{font-size:12px;font-family:'IBM Plex Mono',monospace;color:var(--dark);font-weight:500}
+.fiscal-total{display:flex;justify-content:space-between;align-items:center;margin-top:10px;padding-top:10px;border-top:2px solid var(--border)}
+.fiscal-total-lbl{font-size:12px;font-weight:700;color:var(--dark)}
+.fiscal-total-val{font-size:15px;font-family:'IBM Plex Mono',monospace;color:var(--green);font-weight:700}
+.roi-callout{background:var(--green-light);border-radius:8px;padding:10px 14px;margin-top:12px;display:flex;justify-content:space-between;align-items:center}
+.roi-lbl{font-size:11px;color:var(--green);font-weight:600}
+.roi-val{font-size:14px;font-family:'IBM Plex Mono',monospace;color:var(--green);font-weight:700}
+.yr-table-wrap{background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:20px;box-shadow:var(--shadow)}
+.yr-table{width:100%;border-collapse:collapse;font-size:11px}
+.yr-table th{background:var(--bg);padding:8px 12px;font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;border-bottom:2px solid var(--border);text-align:right}
+.yr-table th:first-child{text-align:left}
+.yr-table td{padding:8px 12px;border-bottom:1px solid #EEF4EE;font-family:'IBM Plex Mono',monospace;text-align:right;color:var(--dark)}
+.yr-table td:first-child{text-align:left;font-family:'IBM Plex Sans',sans-serif;color:var(--mid);font-size:11px}
+.yr-table tr.bk td{background:var(--amber-light);font-weight:600}
+
+/* ── SCORING ── */
+.scoring-wrap{background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:20px;box-shadow:var(--shadow)}
+.scoring-table{width:100%;border-collapse:collapse}
+.scoring-table th{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;padding:10px 14px;text-align:left;background:var(--bg);border-bottom:2px solid var(--border)}
+.scoring-table td{padding:9px 14px;font-size:12px;border-bottom:1px solid #EEF4EE}
+.scoring-table tr:last-child td{border-bottom:none}
+.scoring-table tr:hover td{background:#FAFCFA}
+.rank-num{font-size:11px;font-weight:700;color:var(--green);font-family:'IBM Plex Mono',monospace}
+.score-bar-inline{display:flex;align-items:center;gap:8px}
+.score-bar-track-sm{width:80px;height:6px;background:var(--green-pale);border-radius:3px;overflow:hidden}
+.score-bar-fill-sm{height:100%;background:var(--green);border-radius:3px}
+
+/* ── BENCHMARKING ── */
+.bench-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.bench-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:18px;box-shadow:var(--shadow)}
+.bench-city{font-size:13px;font-weight:700;color:var(--dark);margin-bottom:14px}
+.score-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.score-lbl{font-size:11px;color:var(--mid);width:120px;flex-shrink:0}
+.score-track{flex:1;height:8px;background:var(--green-pale);border-radius:4px;overflow:hidden}
+.score-fill{height:100%;border-radius:4px}
+.sf-high{background:var(--green)}
+.sf-mid{background:#8BBF8B}
+.sf-low{background:#C8D8C8}
+.score-num{font-size:11px;font-family:'IBM Plex Mono',monospace;color:var(--mid);width:30px;text-align:right;flex-shrink:0}
+
+/* ── MEMO ── */
+.memo-wrap{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:32px 36px;box-shadow:var(--shadow);max-width:760px}
+.memo-role-badge{display:inline-block;background:var(--blue-lt);color:var(--blue);border-radius:20px;padding:4px 12px;font-size:11px;font-weight:600;margin-bottom:20px}
+.memo-section-title{font-size:11px;font-weight:700;color:var(--green);text-transform:uppercase;letter-spacing:1px;margin:20px 0 6px}
+.memo-body{font-size:13.5px;line-height:1.75;color:var(--mid);white-space:pre-wrap}
+.memo-divider{border:none;border-top:1px solid var(--border);margin:20px 0}
+.memo-actions{display:flex;gap:10px;margin-top:24px;padding-top:20px;border-top:1px solid var(--border)}
+.memo-btn{display:flex;align-items:center;gap:7px;padding:9px 18px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;transition:all .15s;border:none}
+.memo-btn.primary{background:var(--green);color:white}
+.memo-btn.primary:hover{background:#245224}
+.memo-btn.secondary{background:none;border:1.5px solid var(--border);color:var(--mid)}
+.memo-btn.secondary:hover{border-color:var(--green);color:var(--green)}
+.spinner{width:18px;height:18px;border:2px solid var(--border);border-top-color:var(--green);border-radius:50%;animation:spin .8s linear infinite;display:inline-block}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── MOBILE ── */
+@media(max-width:768px){
+  .app-layout{grid-template-columns:1fr}
+  .sidebar{position:fixed;bottom:0;left:0;right:0;top:auto;height:60px;flex-direction:row;border-top:1px solid var(--border);border-right:none;padding:0 8px;overflow:hidden;z-index:99}
+  .sidebar-section,.shortlist-section{display:none}
+  .sidebar .nav-item{flex-direction:column;gap:2px;padding:6px 8px;font-size:10px}
+  .content{padding:16px;padding-bottom:80px}
+  .metric-row{grid-template-columns:1fr 1fr}
+  .inc-grid,.bench-grid{grid-template-columns:1fr}
+  .intake-main{grid-template-columns:1fr;padding:24px 16px 60px}
+  .form-container{grid-column:1}
+  .archetype-grid{grid-template-columns:1fr 1fr}
+  .role-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .topbar{padding:0 16px}
+  .topbar-meta span:not(.topbar-chip){display:none}
+}
+@media print{
+  .topbar,.sidebar,.memo-actions{display:none!important}
+  .app-layout{grid-template-columns:1fr}
+  .content{padding:24px}
+  .memo-wrap{box-shadow:none;border:none;max-width:100%}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════ INTAKE FORM ══════════════════════ -->
+<div class="intake-page" id="intake-page">
+  <header class="intake-header">
+    <div class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="white"/><path d="M8 1v3M8 12v3M1 8h3M12 8h3" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <span class="logo-text">EDai</span>
+      <span class="logo-sub">Location Intelligence</span>
+    </div>
+    <span class="header-badge">Public Beta</span>
+  </header>
+
+  <main class="intake-main">
+    <div class="form-container">
+
+      <div class="form-header">
+        <p class="form-eyebrow">Site Location Analysis</p>
+        <h1 class="form-title">Where should your<br>project be located?</h1>
+        <p class="form-subtitle">Enter four numbers. Get a full cost, talent, incentives,<br>and economic impact analysis across 100 U.S. metros.</p>
+      </div>
+
+      <!-- Step 1 -->
+      <div class="card">
+        <div class="card-label"><span class="step-num">1</span> Project type</div>
+        <div class="archetype-grid">
+          <button class="arch-btn" onclick="selArch(this,'office')">
+            <span class="arch-icon">🏢</span><span class="arch-name">Office</span><span class="arch-desc">Professional services, tech, finance</span>
+          </button>
+          <button class="arch-btn" onclick="selArch(this,'manufacturing')">
+            <span class="arch-icon">🏭</span><span class="arch-name">Manufacturing</span><span class="arch-desc">Production, assembly, processing</span>
+          </button>
+          <button class="arch-btn" onclick="selArch(this,'distribution')">
+            <span class="arch-icon">📦</span><span class="arch-name">Distribution</span><span class="arch-desc">Warehousing, logistics, fulfillment</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="card">
+        <div class="card-label"><span class="step-num">2</span> Project parameters</div>
+        <div class="input-group">
+          <label class="input-label">Number of jobs (FTEs) <span class="input-hint">Full-time equivalents</span></label>
+          <div class="input-wrapper">
+            <input type="number" id="f-hc" placeholder="e.g. 250" min="1" oninput="updateDerived()">
+            <span class="input-suffix">FTEs</span>
+          </div>
+        </div>
+        <div class="input-group">
+          <label class="input-label">Average annual wage <span class="input-hint">Per employee</span></label>
+          <div class="input-wrapper">
+            <span class="input-prefix">$</span>
+            <input type="number" id="f-wage" class="has-prefix" placeholder="e.g. 75,000" min="15000" oninput="updateDerived()">
+          </div>
+          <div class="derived-hint" id="hint-wage"></div>
+        </div>
+        <div class="input-group">
+          <label class="input-label">Capital expenditure <span class="input-hint">Total project investment</span></label>
+          <div class="input-wrapper">
+            <span class="input-prefix">$</span>
+            <input type="number" id="f-capex" class="has-prefix" placeholder="e.g. 15,000,000" min="0" oninput="updateDerived()">
+          </div>
+          <div class="derived-hint" id="hint-capex"></div>
+        </div>
+      </div>
+
+      <!-- Derived preview -->
+      <div class="derived-preview" id="derived-preview">
+        <div class="derived-title">Estimated project scale</div>
+        <div class="derived-grid">
+          <div><span class="derived-val" id="d-payroll">—</span><span class="derived-label">Annual payroll</span></div>
+          <div><span class="derived-val" id="d-revenue">—</span><span class="derived-label">Est. annual revenue</span></div>
+          <div><span class="derived-val" id="d-sqft">—</span><span class="derived-label">Est. square footage</span></div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="card">
+        <div class="card-label"><span class="step-num">3</span> Your role — shapes how findings are presented</div>
+        <div class="role-grid">
+          <button class="role-btn" onclick="selRole(this,'business_leader')">
+            <span class="role-name">Business leader</span><span class="role-desc">Evaluating where to locate or expand</span>
+          </button>
+          <button class="role-btn" onclick="selRole(this,'site_selector')">
+            <span class="role-name">Site selector</span><span class="role-desc">Screening markets for a client</span>
+          </button>
+          <button class="role-btn" onclick="selRole(this,'econ_developer')">
+            <span class="role-name">Economic developer</span><span class="role-desc">Understanding your market's position</span>
+          </button>
+        </div>
+      </div>
+
+      <button class="submit-btn" id="submit-btn" disabled onclick="submitForm()">
+        <span>Analyze 100 metros</span><span>→</span>
+      </button>
+      <p class="footer-note">Free to use. No account required.<br>Backend must be running at <a href="#">localhost:8000</a></p>
+    </div>
+  </main>
+</div>
+
+<!-- ══════════════════════ LOADING ══════════════════════ -->
+<div class="loading-screen" id="loading-screen">
+  <div>
+    <div class="loading-title">Analyzing 100 metros…</div>
+    <div class="loading-sub" id="loading-sub">Running five engines in parallel</div>
+  </div>
+  <div class="engines-list">
+    <div class="engine-row"><span class="engine-icon">💰</span><span class="engine-name">Cost of Doing Business</span><div class="eng-bar"><div class="eng-bar-fill" id="bar-codb"></div></div><span class="eng-status" id="st-codb">queued</span></div>
+    <div class="engine-row"><span class="engine-icon">🎯</span><span class="engine-name">Incentives</span><div class="eng-bar"><div class="eng-bar-fill" id="bar-inc"></div></div><span class="eng-status" id="st-inc">queued</span></div>
+    <div class="engine-row"><span class="engine-icon">📈</span><span class="engine-name">Economic Impact</span><div class="eng-bar"><div class="eng-bar-fill" id="bar-econ"></div></div><span class="eng-status" id="st-econ">queued</span></div>
+    <div class="engine-row"><span class="engine-icon">🗺️</span><span class="engine-name">Location Scoring</span><div class="eng-bar"><div class="eng-bar-fill" id="bar-score"></div></div><span class="eng-status" id="st-score">queued</span></div>
+    <div class="engine-row"><span class="engine-icon">🏛️</span><span class="engine-name">Fiscal Impact</span><div class="eng-bar"><div class="eng-bar-fill" id="bar-fiscal"></div></div><span class="eng-status" id="st-fiscal">queued</span></div>
+  </div>
+  <div style="font-size:12px;color:var(--muted)">Typically 7–12 seconds</div>
+</div>
+
+<!-- ══════════════════════ DASHBOARD ══════════════════════ -->
+<div class="dashboard" id="dashboard">
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="logo">
+      <div class="logo-mark"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="3" fill="white"/><path d="M8 1v3M8 12v3M1 8h3M12 8h3" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <span class="logo-text">EDai</span><span class="logo-sub">Location Intelligence</span>
+    </div>
+    <div class="topbar-meta">
+      <span id="tb-summary">—</span>
+      <span class="topbar-chip" id="tb-role">—</span>
+      <button class="topbar-btn" onclick="goBack()">← New analysis</button>
+      <button class="topbar-btn" onclick="window.print()">⬇ PDF</button>
+    </div>
+  </div>
+
+  <div class="app-layout">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">Project summary</div>
+        <div class="project-card">
+          <div class="project-type" id="sb-arch">—</div>
+          <div class="project-stat"><span class="project-stat-label">FTEs</span><span class="project-stat-val" id="sb-hc">—</span></div>
+          <div class="project-stat"><span class="project-stat-label">Avg wage</span><span class="project-stat-val" id="sb-wage">—</span></div>
+          <div class="project-stat"><span class="project-stat-label">Capex</span><span class="project-stat-val" id="sb-capex">—</span></div>
+          <div class="project-stat"><span class="project-stat-label">Est. payroll</span><span class="project-stat-val" id="sb-payroll">—</span></div>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Analysis modules</div>
+        <button class="nav-item active" id="nav-codb"    onclick="showPanel('codb')"><span class="nav-icon">💰</span>Cost of Doing Business<span class="nav-badge" id="nb-codb">—</span></button>
+        <button class="nav-item"        id="nav-inc"     onclick="showPanel('inc')"><span class="nav-icon">🎯</span>Incentives</button>
+        <button class="nav-item"        id="nav-econ"    onclick="showPanel('econ')"><span class="nav-icon">📈</span>Economic Impact</button>
+        <button class="nav-item"        id="nav-fiscal"  onclick="showPanel('fiscal')"><span class="nav-icon">🏛️</span>Fiscal Impact</button>
+        <button class="nav-item"        id="nav-scoring" onclick="showPanel('scoring')"><span class="nav-icon">🗺️</span>Location Scoring</button>
+        <button class="nav-item"        id="nav-bench"   onclick="showPanel('bench')"><span class="nav-icon">📊</span>Benchmarking</button>
+        <div class="nav-sep"></div>
+        <button class="nav-item"        id="nav-memo"    onclick="showPanel('memo')"><span class="nav-icon">📝</span>Decision Memo</button>
+      </div>
+      <div class="shortlist-section">
+        <div style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:8px;">Top metros</div>
+        <div id="shortlist-chips"></div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="panel active" id="panel-codb"><div id="codb-content">Loading…</div></div>
+      <div class="panel"        id="panel-inc"><div id="inc-content">Loading…</div></div>
+      <div class="panel"        id="panel-econ"><div id="econ-content">Loading…</div></div>
+      <div class="panel"        id="panel-fiscal"><div id="fiscal-content">Loading…</div></div>
+      <div class="panel"        id="panel-scoring"><div id="scoring-content">Loading…</div></div>
+      <div class="panel"        id="panel-bench"><div id="bench-content">Loading…</div></div>
+      <div class="panel"        id="panel-memo"><div id="memo-content"></div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Auto-detect environment: use production URL when not running locally
+const API = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+  ? 'http://localhost:8000'
+  : 'https://edai-api.onrender.com';
+const SQFT = {office:200,manufacturing:700,distribution:3200};
+const REVMUL = {office:255000,manufacturing:673000,distribution:395000};
+const WAGEMED = {office:75000,manufacturing:52000,distribution:45000};
+let state = {arch:null,role:null};
+let G = {}; // global result cache
+
+function fmt(n){
+  if(!n&&n!==0)return'—';
+  const a=Math.abs(n);
+  if(a>=1e9)return'$'+(n/1e9).toFixed(1)+'B';
+  if(a>=1e6)return'$'+(n/1e6).toFixed(1)+'M';
+  if(a>=1e3)return'$'+Math.round(n/1e3)+'K';
+  return'$'+Math.round(n);
+}
+function fmtK(n){
+  if(!n&&n!==0)return'—';
+  const a=Math.abs(n);
+  if(a>=1e6)return'$'+(n/1e6).toFixed(2)+'M';
+  if(a>=1e3)return'$'+(n/1e3).toFixed(0)+'K';
+  return'$'+Math.round(n);
+}
+function fmtNpv(n){
+  if(!n||n===0)return'N/A';
+  if(Math.abs(n)>=1e6)return'$'+(n/1e6).toFixed(2)+'M';
+  return'$'+Math.round(n/1e3)+'K';
+}
+
+// ── INTAKE ──────────────────────────────────────────────────────────
+function selArch(btn,type){
+  document.querySelectorAll('.arch-btn').forEach(b=>b.classList.remove('selected'));
+  btn.classList.add('selected');
+  state.arch=type;
+  updateDerived();
+  checkReady();
+}
+function selRole(btn,role){
+  document.querySelectorAll('.role-btn').forEach(b=>b.classList.remove('selected'));
+  btn.classList.add('selected');
+  state.role=role;
+  checkReady();
+}
+function updateDerived(){
+  const hc=parseFloat(document.getElementById('f-hc').value)||0;
+  const wage=parseFloat(document.getElementById('f-wage').value)||0;
+  const capex=parseFloat(document.getElementById('f-capex').value)||0;
+  const arch=state.arch;
+  if(hc>0&&wage>0){
+    const payroll=hc*wage;
+    const rev=arch?hc*REVMUL[arch]:hc*255000;
+    const sqft=arch?hc*SQFT[arch]:hc*200;
+    document.getElementById('d-payroll').textContent=fmt(payroll);
+    document.getElementById('d-revenue').textContent=fmt(rev);
+    document.getElementById('d-sqft').textContent=Math.round(sqft).toLocaleString()+' sf';
+    document.getElementById('derived-preview').classList.add('show');
+    const med=arch?WAGEMED[arch]:65000;
+    const pct=Math.round(((wage-med)/med)*100);
+    const hw=document.getElementById('hint-wage');
+    if(Math.abs(pct)<=5){hw.textContent='≈ BLS median for this sector';}
+    else{hw.textContent=(pct>0?'+':'')+pct+'% vs. BLS median';}
+  } else {
+    document.getElementById('derived-preview').classList.remove('show');
+  }
+  if(capex>0){
+    document.getElementById('hint-capex').textContent='~'+fmt(capex*0.012)+'/yr estimated property tax';
+  }
+  checkReady();
+}
+function checkReady(){
+  const hc=parseFloat(document.getElementById('f-hc').value)||0;
+  const wage=parseFloat(document.getElementById('f-wage').value)||0;
+  const ready=state.arch&&state.role&&hc>0&&wage>0;
+  document.getElementById('submit-btn').disabled=!ready;
+}
+
+// ── SUBMIT ──────────────────────────────────────────────────────────
+async function submitForm(){
+  const hc=parseFloat(document.getElementById('f-hc').value);
+  const wage=parseFloat(document.getElementById('f-wage').value);
+  const capex=parseFloat(document.getElementById('f-capex').value)||0;
+  G.formData={archetype:state.arch,user_role:state.role,headcount:hc,avg_wage:wage,capex:capex};
+
+  document.getElementById('intake-page').style.display='none';
+  document.getElementById('loading-screen').classList.add('show');
+  document.getElementById('loading-sub').textContent=
+    `${hc.toLocaleString()} FTEs · $${wage.toLocaleString()} avg wage · ${state.arch}`;
+
+  // Animate progress bars
+  const bars=[
+    {bar:'bar-codb',st:'st-codb',delay:0},
+    {bar:'bar-inc',st:'st-inc',delay:300},
+    {bar:'bar-econ',st:'st-econ',delay:600},
+    {bar:'bar-score',st:'st-score',delay:900},
+    {bar:'bar-fiscal',st:'st-fiscal',delay:1200}
+  ];
+  bars.forEach(({bar,st,delay})=>{
+    setTimeout(()=>{
+      document.getElementById(st).textContent='running…';
+      document.getElementById(st).className='eng-status running';
+      let w=0;
+      const iv=setInterval(()=>{
+        w=Math.min(85,w+Math.random()*8);
+        document.getElementById(bar).style.width=w+'%';
+        if(w>=85)clearInterval(iv);
+      },200);
+    },delay);
+  });
+
+  try{
+    const resp=await fetch(`${API}/analyze`,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(G.formData)
+    });
+    if(!resp.ok)throw new Error(`API error ${resp.status}: ${await resp.text()}`);
+    const data=await resp.json();
+    G.result=data;
+
+    // Mark all bars done
+    bars.forEach(({bar,st})=>{
+      document.getElementById(bar).style.width='100%';
+      document.getElementById(st).textContent='✓ done';
+      document.getElementById(st).className='eng-status done';
+    });
+
+    setTimeout(()=>showDashboard(),400);
+  } catch(err){
+    document.getElementById('loading-screen').classList.remove('show');
+    document.getElementById('intake-page').style.display='';
+    alert('API error: '+err.message+'\n\nIs the backend running at '+API+'?');
+  }
+}
+
+// ── DASHBOARD ──────────────────────────────────────────────────────
+function showDashboard(){
+  document.getElementById('loading-screen').classList.remove('show');
+  document.getElementById('dashboard').classList.add('show');
+  populateDashboard();
+}
+function goBack(){
+  document.getElementById('dashboard').classList.remove('show');
+  document.getElementById('intake-page').style.display='';
+  G.result=null;
+}
+
+function populateDashboard(){
+  const fd=G.formData;
+  const r=G.result;
+  const archMap={office:'🏢 Office',manufacturing:'🏭 Manufacturing',distribution:'📦 Distribution'};
+  const roleMap={business_leader:'Business Leader',site_selector:'Site Selector',econ_developer:'Economic Developer'};
+
+  // Topbar
+  document.getElementById('tb-summary').textContent=
+    `${archMap[fd.archetype]||fd.archetype} · ${parseInt(fd.headcount).toLocaleString()} FTEs · $${parseInt(fd.avg_wage).toLocaleString()} avg wage`;
+  document.getElementById('tb-role').textContent=roleMap[fd.user_role]||fd.user_role;
+
+  // Sidebar project card
+  document.getElementById('sb-arch').textContent=archMap[fd.archetype]||fd.archetype;
+  document.getElementById('sb-hc').textContent=parseInt(fd.headcount).toLocaleString();
+  document.getElementById('sb-wage').textContent='$'+parseInt(fd.avg_wage).toLocaleString();
+  document.getElementById('sb-capex').textContent=fmt(fd.capex);
+  document.getElementById('sb-payroll').textContent=fmt(fd.headcount*fd.avg_wage);
+
+  // Build all panels
+  buildCodbPanel(r);
+  buildIncPanel(r);
+  buildEconPanel(r);
+  buildFiscalPanel(r);
+  buildScoringPanel(r);
+  buildBenchPanel(r);
+  buildMemoPanel(r);
+}
+
+function showPanel(name){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+  document.getElementById('panel-'+name).classList.add('active');
+  document.getElementById('nav-'+name).classList.add('active');
+}
+
+// ── CODB PANEL ─────────────────────────────────────────────────────
+function buildCodbPanel(r){
+  const eng=r?.results?.codb;
+  const el=document.getElementById('codb-content');
+  if(!eng||eng.status==='error'){el.innerHTML=errHtml('Cost of Doing Business',eng?.error);return;}
+  const metros=eng.data?.top_metros||eng.data?.metros||[];
+  if(!metros.length){el.innerHTML=errHtml('Cost of Doing Business','No metro data returned.');return;}
+
+  // API returns after_tax_margin as a decimal (e.g. 0.2016 = 20.16%); convert to pct
+function mPct(m){var v=(m.after_tax_margin!=null?m.after_tax_margin:m.after_tax_margin_pct||m.margin_pct||0);return Math.round(v*10)/10;}
+
+  document.getElementById('nb-codb').textContent=metros.length;
+  const margins=metros.map(m=>mPct(m));
+  const avg=eng.data?.avg_margin_pct!=null?eng.data.avg_margin_pct:(margins.reduce((a,b)=>a+b,0)/margins.length);
+  const maxM=Math.max(...margins);
+  const top=metros[0];
+
+  // Shortlist chips
+  const chips=metros.slice(0,5).map(m=>`
+    <div class="city-chip active">
+      <div><div class="city-name">${m.metro||m.name}</div></div>
+      <span class="city-margin">${mPct(m).toFixed(1)}%</span>
+    </div>`).join('');
+  document.getElementById('shortlist-chips').innerHTML=chips;
+
+  // Build chart (top 40)
+  const rows=metros.slice(0,40).map((m,i)=>{
+    const name=m.metro||m.name||`Metro ${i+1}`;
+    const margin=mPct(m);
+    const pct=(margin/maxM)*100;
+    const avgPct=(avg/maxM)*100;
+    const isTop=i<5;
+    const divider=i===5?'<div class="divider-row">↑ Top 10% — ↓ Remaining</div>':
+                  i===20?'<div class="divider-row">↓ Below average</div>':'';
+    return`${divider}<div class="bc-row">
+      <span class="bc-label${isTop?' top':''}" title="${name}">${name}</span>
+      <div class="bc-track">
+        <div class="bc-fill ${isTop?'top':'dim'}" style="width:${pct}%">
+          <span class="bc-val">${margin.toFixed(1)}%</span>
+        </div>
+        <div class="bc-avg-line" style="left:${avgPct}%">
+          ${i===0?`<span class="bc-avg-label">Avg ${avg.toFixed(1)}%</span>`:''}
+        </div>
+      </div></div>`;
+  }).join('');
+
+  el.innerHTML=`
+    <div class="panel-title">Cost of Doing Business</div>
+    <div class="panel-subtitle">After-tax operating margin across ${metros.length} metros.</div>
+    <div class="thesis-bar">📌 <strong>${top.metro||top.name}</strong> leads at ${mPct(top).toFixed(1)}%.
+    National average: ${avg.toFixed(1)}% across ${metros.length} metros.</div>
+    <div class="metric-row" style="grid-template-columns:repeat(3,1fr)">
+      <div class="metric-card highlight"><div class="metric-label">Top metro</div><div class="metric-val">${mPct(top).toFixed(1)}%</div><div class="metric-sub">${top.metro||top.name}</div></div>
+      <div class="metric-card"><div class="metric-label">National avg</div><div class="metric-val">${avg.toFixed(1)}%</div><div class="metric-sub">${metros.length} metros</div></div>
+      <div class="metric-card"><div class="metric-label">Spread</div><div class="metric-val">${(Math.max(...margins)-Math.min(...margins)).toFixed(1)}pp</div><div class="metric-sub">Best vs. worst</div></div>
+    </div>
+    <div class="rank-chart-wrap">
+      <div class="chart-header"><span class="chart-title">After-tax operating margin (%)</span>
+      <div class="chart-legend">
+        <div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div>Top 5</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#B8CCB8"></div>Other metros</div>
+      </div></div>
+      <div>${rows}</div>
+      ${metros.length>40?`<div class="divider-row">… and ${metros.length-40} more metros</div>`:''}
+    </div>
+    <div class="vintage-note">Wages: BLS OES 2023 · Rents: CommercialEdge Q3 2024 · Taxes: EY/COST FY2023</div>`;
+}
+
+// ── INCENTIVES PANEL ──────────────────────────────────────────────
+function buildIncPanel(r){
+  const eng=r?.results?.incentives;
+  const el=document.getElementById('inc-content');
+  if(!eng||eng.status==='error'){el.innerHTML=errHtml('Incentives',eng?.error);return;}
+  const data=eng.data||{};
+  // API returns top_programs (list of up to 5), total_incentives_npv, programs_eligible count
+  const programs=data.top_programs||data.programs||data.eligible_programs||[];
+  const totalNpv=data.total_incentives_npv||programs.reduce((s,p)=>s+(p.npv||p.estimated_npv||0),0);
+  const programsEligible=data.programs_eligible||programs.length;
+  const top5=programs.slice(0,5);
+  const rest=programs.slice(5,10);
+  const state2=data.state||data.state_abbreviation||'??';
+
+  function badgeCls(t){const s=(t||'').toLowerCase();if(s.includes('credit'))return'credit';if(s.includes('grant'))return'grant';if(s.includes('train'))return'training';return'loan';}
+  function progHtml(p,i){
+    // API key is 'program' (not 'program_name')
+    const name=p.program||p.program_name||p.name||`Program ${i+1}`;
+    const npv=p.npv||p.estimated_npv||0;
+    const type=p.incentive_type||p.type||'credit';
+    const note=p.note||p.description||'';
+    return`<div class="inc-prog">
+      <span class="badge ${badgeCls(type)}">${type.toLowerCase().slice(0,8)}</span>
+      <div><div class="inc-name">${name}</div><div class="inc-est">${fmtNpv(npv)}</div>${note?`<div class="inc-note">${note.slice(0,120)}</div>`:''}</div>
+    </div>`;
+  }
+
+  el.innerHTML=`
+    <div class="panel-title">Incentives Eligibility &amp; Estimation</div>
+    <div class="panel-subtitle">Estimated state incentives for which this project would likely qualify.</div>
+    <div class="thesis-bar">📌 <strong>${programsEligible} programs</strong> matched in ${state2}.
+    Total estimated NPV: <strong>${fmtNpv(totalNpv)}</strong>.</div>
+    <div class="metric-row" style="grid-template-columns:repeat(3,1fr)">
+      <div class="metric-card highlight"><div class="metric-label">Total est. NPV</div><div class="metric-val" style="font-size:18px">${fmtNpv(totalNpv)}</div><div class="metric-sub">${state2} programs</div></div>
+      <div class="metric-card"><div class="metric-label">Programs matched</div><div class="metric-val">${programsEligible}</div><div class="metric-sub">eligible programs</div></div>
+      <div class="metric-card"><div class="metric-label">Top program</div><div class="metric-val" style="font-size:16px">${fmtNpv(top5[0]?.npv||top5[0]?.estimated_npv||0)}</div><div class="metric-sub" style="font-size:10px;line-height:1.3">${top5[0]?.program||top5[0]?.program_name||top5[0]?.name||'—'}</div></div>
+    </div>
+    <div class="inc-grid">
+      <div class="inc-card">
+        <div class="inc-city-hdr">Top programs — ${state2}<span class="inc-total">${fmtNpv(totalNpv)} total</span></div>
+        ${top5.map((p,i)=>progHtml(p,i)).join('')}
+      </div>
+      <div class="inc-card">
+        <div class="inc-city-hdr">Additional programs<span class="inc-total">${rest.length} more</span></div>
+        ${rest.length===0?'<div style="font-size:12px;color:var(--muted);padding-top:8px">No additional programs.</div>':rest.map((p,i)=>progHtml(p,i+5)).join('')}
+        ${programsEligible>10?`<div style="font-size:11px;color:var(--muted);padding-top:8px;border-top:1px solid #EEF4EE;margin-top:8px">+${programsEligible-10} more programs in full report</div>`:''}
+      </div>
+    </div>
+    <div class="vintage-note">Program eligibility screened against EDai catalog (275+ state programs). Estimates are indicative.</div>`;
+}
+
+// ── ECON PANEL ────────────────────────────────────────────────────
+function buildEconPanel(r){
+  const eng=r?.results?.economic_impact;
+  const el=document.getElementById('econ-content');
+  if(!eng||eng.status==='error'){el.innerHTML=errHtml('Economic Impact',eng?.error);return;}
+  const data=eng.data||{};
+
+  // API returns flat fields with ops_ and constr_ prefixes — no nested objects
+  const opsJobs   = data.ops_total_jobs||0;
+  const opsOutput = data.ops_total_output||0;
+  const opsEarn   = data.ops_total_earnings||0;
+  const opsVA     = data.ops_total_value_added||0;
+  const empMult   = data.ops_de_employment_mult||0;
+  const outMult   = data.ops_fd_output_mult||0;
+
+  const constrJobs   = data.constr_total_jobs||0;
+  const constrOutput = data.constr_total_output||0;
+
+  const totalJobs   = data.total_jobs||(opsJobs+constrJobs);
+  const totalOutput = data.total_output||(opsOutput+constrOutput);
+  const totalEarn   = data.total_earnings||opsEarn;
+  const totalVA     = data.total_value_added||opsVA;
+
+  const topSectors  = data.top_sectors||[];
+
+  // Sector rows
+  const sectorRows=topSectors.slice(0,5).map(s=>{
+    const name=s.sector||s.industry||s.name||'—';
+    const jobs=s.jobs||s.employment||0;
+    const out=s.output||0;
+    return`<div class="impact-row"><div class="ic lbl">${name}</div><div class="ic">${jobs.toFixed?jobs.toFixed(1):Math.round(jobs)}</div><div class="ic">${fmt(out)}</div><div class="ic">—</div></div>`;
+  }).join('');
+
+  el.innerHTML=`
+    <div class="panel-title">Economic Impact</div>
+    <div class="panel-subtitle">Operations and construction impacts using RIMS II Type II multipliers.</div>
+    <div class="metric-row">
+      <div class="metric-card highlight"><div class="metric-label">Total jobs supported</div><div class="metric-val">${Math.round(totalJobs).toLocaleString()}</div><div class="metric-sub">Operations + construction</div></div>
+      <div class="metric-card"><div class="metric-label">Employment multiplier</div><div class="metric-val">${empMult?empMult.toFixed(2)+'×':'—'}</div><div class="metric-sub">Per direct job (ops)</div></div>
+      <div class="metric-card"><div class="metric-label">Total output (annual)</div><div class="metric-val" style="font-size:18px">${fmt(totalOutput)}</div><div class="metric-sub">Operations + construction</div></div>
+      <div class="metric-card"><div class="metric-label">Output multiplier</div><div class="metric-val">${outMult?outMult.toFixed(2)+'×':'—'}</div><div class="metric-sub">Per $ direct output</div></div>
+    </div>
+    <div class="impact-wrap">
+      <div class="section-title">Operations — annual effects (RIMS II)</div>
+      <div class="impact-row hdr">
+        <div class="ic col-h lbl">Category</div><div class="ic col-h">Jobs</div><div class="ic col-h">Output</div><div class="ic col-h">Earnings</div>
+      </div>
+      <div class="impact-row">
+        <div class="ic lbl">Total operations <span class="mult-badge">${empMult?empMult.toFixed(2)+'× emp':'RIMS II'}</span></div>
+        <div class="ic tot">${opsJobs.toFixed?opsJobs.toFixed(1):Math.round(opsJobs)}</div>
+        <div class="ic tot">${fmt(opsOutput)}</div>
+        <div class="ic tot">${fmt(opsEarn)}</div>
+      </div>
+      ${constrJobs>0?`<div class="impact-row">
+        <div class="ic lbl">Construction (one-time)</div>
+        <div class="ic sub">${constrJobs.toFixed?constrJobs.toFixed(1):Math.round(constrJobs)}</div>
+        <div class="ic sub">${fmt(constrOutput)}</div>
+        <div class="ic sub">—</div>
+      </div>`:''}
+      <div class="impact-row" style="border-top:2px solid var(--border)">
+        <div class="ic lbl" style="font-weight:700">Grand total</div>
+        <div class="ic tot">${Math.round(totalJobs).toLocaleString()}</div>
+        <div class="ic tot">${fmt(totalOutput)}</div>
+        <div class="ic tot">${fmt(totalEarn)}</div>
+      </div>
+    </div>
+    ${topSectors.length?`<div class="impact-wrap">
+      <div class="section-title">Top impacted sectors</div>
+      <div class="impact-row hdr">
+        <div class="ic col-h lbl">Sector</div><div class="ic col-h">Jobs</div><div class="ic col-h">Output</div><div class="ic col-h">&nbsp;</div>
+      </div>
+      ${sectorRows}
+    </div>`:''}
+    <div class="vintage-note">Multipliers: BEA RIMS II Type II · State: ${data.state||'—'} · Sector: ${data.sector||'—'}</div>`;
+}
+
+// ── FISCAL PANEL ─────────────────────────────────────────────────
+function buildFiscalPanel(r){
+  const eng=r?.results?.fiscal_impact;
+  const el=document.getElementById('fiscal-content');
+  if(!eng||eng.status==='error'){el.innerHTML=errHtml('Fiscal Impact',eng?.error);return;}
+  const data=eng.data||{};
+
+  // API returns flat y1_* fields and time_series_5yr array
+  const yearly=data.time_series_5yr||data.yearly||data.annual_breakdown||[];
+  // breakeven is breakeven_calendar_year (a calendar year like 2025) or breakeven_project_year
+  const bk=data.breakeven_calendar_year||data.breakeven_project_year||data.breakeven_year||'—';
+
+  // Year 1 revenues from top-level y1_* fields (more reliable than first row of time_series)
+  const revItems=[
+    {l:'Personal income tax',v:data.y1_revenue_pit||0},
+    {l:'Corporate income tax',v:data.y1_revenue_cit||0},
+    {l:'Sales tax',v:data.y1_revenue_sales||0},
+    {l:'Property tax',v:data.y1_revenue_property||0},
+    {l:'BPOL / business tax',v:data.y1_revenue_bpol||0},
+    {l:'Utility tax',v:data.y1_revenue_utility||0},
+  ].filter(x=>x.v>0);
+
+  const tot1=data.y1_total_revenue||revItems.reduce((s,x)=>s+x.v,0);
+  const tot10=data.total_10yr_revenue||0;
+
+  const fiscalRows=revItems.map(x=>`<div class="fiscal-row"><span class="fiscal-row-lbl">${x.l}</span><span class="fiscal-row-val">${fmtK(x.v)}</span></div>`).join('');
+
+  // Year-by-year table from time_series_5yr
+  // Row fields: year, calendar_year, direct_jobs, rev_property, rev_sales, rev_pit, rev_bpol, rev_cit, rev_utility, total_revenue, cumulative
+  const yrRows=yearly.slice(0,10).map((y,i)=>{
+    const yn=y.calendar_year||y.year||(i+1);
+    const prop =y.rev_property||y.property_tax||0;
+    const sales =y.rev_sales||y.sales_tax||0;
+    const pit_  =y.rev_pit||y.pit||0;
+    const bpol_ =y.rev_bpol||y.bpol||0;
+    const tot   =y.total_revenue||y.total_local_revenue||(prop+sales+pit_+bpol_);
+    const cum   =y.cumulative||y.cumulative_revenue||0;
+    const isBk  =yn===bk;
+    return`<tr class="${isBk?'bk':''}"><td>${yn}${isBk?' ★':''}</td><td>${fmtK(prop)}</td><td>${fmtK(sales)}</td><td>${fmtK(pit_)}</td><td>${fmtK(bpol_)}</td><td style="font-weight:600">${fmtK(tot)}</td><td>${cum?fmt(cum):'—'}</td></tr>`;
+  }).join('');
+
+  // Sort revItems for "largest source" display (make a copy so original order kept in fiscalRows)
+  const sortedRev=[...revItems].sort((a,b)=>b.v-a.v);
+
+  el.innerHTML=`
+    <div class="panel-title">Fiscal Impact</div>
+    <div class="panel-subtitle">Estimated annual tax revenues generated for state and local governments.</div>
+    <div class="thesis-bar">📌 Year 1 total revenues: <strong>${fmt(tot1)}</strong>.${bk!=='—'?` Breakeven year: <strong>${bk}</strong>.`:''}</div>
+    <div class="metric-row">
+      <div class="metric-card highlight"><div class="metric-label">Year 1 total</div><div class="metric-val" style="font-size:20px">${fmt(tot1)}</div><div class="metric-sub">State + local</div></div>
+      <div class="metric-card"><div class="metric-label">10-yr cumulative</div><div class="metric-val" style="font-size:20px">${tot10?fmt(tot10):fmt(tot1*8)}</div><div class="metric-sub">Estimated</div></div>
+      <div class="metric-card"><div class="metric-label">Breakeven year</div><div class="metric-val">${bk}</div><div class="metric-sub">Incentives recovered</div></div>
+      <div class="metric-card"><div class="metric-label">Largest source</div><div class="metric-val" style="font-size:16px">${(sortedRev[0]?.l||'—').split(' ')[0]}</div><div class="metric-sub">${fmtK(sortedRev[0]?.v||0)} in Y1</div></div>
+    </div>
+    <div class="fiscal-card">
+      <div class="fiscal-city">Year 1 revenue breakdown — ${data.state||''} ${data.city||''}</div>
+      ${fiscalRows||'<div style="font-size:12px;color:var(--muted)">No revenue detail available.</div>'}
+      <div class="fiscal-total"><span class="fiscal-total-lbl">Total Year 1</span><span class="fiscal-total-val">${fmt(tot1)}</span></div>
+      ${bk!=='—'?`<div class="roi-callout"><span class="roi-lbl">Breakeven year ${bk}</span><span class="roi-val">10-yr: ${tot10?fmt(tot10):fmt(tot1*8)}</span></div>`:''}
+    </div>
+    ${yrRows?`<div class="section-title" style="margin-top:8px">Year-by-year</div>
+    <div class="yr-table-wrap"><table class="yr-table">
+      <thead><tr><th>Year</th><th>Property</th><th>Sales</th><th>PIT</th><th>BPOL</th><th>Total</th><th>Cumulative</th></tr></thead>
+      <tbody>${yrRows}</tbody>
+    </table></div>`:''}
+    <div class="vintage-note">Tax Foundation 2024 · Lincoln Institute 2024 · ★ = breakeven year</div>`;
+}
+
+// ── SCORING PANEL ─────────────────────────────────────────────────
+function buildScoringPanel(r){
+  const eng=r?.results?.location_scoring;
+  const el=document.getElementById('scoring-content');
+  if(!eng||eng.status==='error'){el.innerHTML=errHtml('Location Scoring',eng?.error);return;}
+  const data=eng.data||{};
+  // API returns top_cities (list of 10), cities_scored count, score_max/min/mean
+  const cities=data.top_cities||data.cities||data.ranked_cities||data.results||[];
+  if(!cities.length){el.innerHTML=errHtml('Location Scoring','No cities returned.');return;}
+
+  const scoreMax=data.score_max||cities[0]?.total_score||5;  // normalize against actual max
+  const citiesCount=data.cities_scored||cities.length;
+
+  const top20=cities.slice(0,20);
+  const rows=top20.map((c,i)=>{
+    // API uses city_name (not city), plus city_state combined field
+    const name=c.city_name||c.city||c.name||`City ${i+1}`;
+    const state2=c.state||'';
+    const score=c.total_score||c.score||0;
+    const pct=Math.min(100,(score/scoreMax)*100);
+    const bg=pct>=75?'var(--green)':pct>=50?'#8BBF8B':'#C8D8C8';
+    return`<tr><td><span class="rank-num">#${i+1}</span></td>
+      <td style="font-weight:600;color:var(--dark)">${name}</td>
+      <td style="color:var(--muted);font-family:'IBM Plex Mono',monospace;font-size:11px">${state2}</td>
+      <td style="font-family:'IBM Plex Mono',monospace;font-weight:600">${score.toFixed(2)}</td>
+      <td><div class="score-bar-inline"><div class="score-bar-track-sm"><div class="score-bar-fill-sm" style="width:${pct}%;background:${bg}"></div></div><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--mid)">${pct.toFixed(0)}%</span></div></td>
+    </tr>`;
+  }).join('');
+
+  const top1Name=cities[0]?.city_name||cities[0]?.city||cities[0]?.name||'—';
+  const top1Score=(cities[0]?.total_score||cities[0]?.score||0).toFixed(2);
+
+  el.innerHTML=`
+    <div class="panel-title">Location Scoring</div>
+    <div class="panel-subtitle">${citiesCount} cities scored with archetype-weighted location factors.</div>
+    <div class="thesis-bar">📌 <strong>#1 ${top1Name}</strong> leads with a ${top1Score} score (max ${scoreMax.toFixed(2)}).</div>
+    <div class="scoring-wrap">
+      <table class="scoring-table">
+        <thead><tr><th style="width:40px">Rank</th><th>City</th><th>State</th><th>Score</th><th>vs. max</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+    ${citiesCount>20?`<div style="font-size:12px;color:var(--muted);text-align:center;margin-bottom:16px">Top ${top20.length} of ${citiesCount} cities</div>`:''}
+    <div class="vintage-note">Scores: archetype-specific weights · ${citiesCount} cities analyzed</div>`;
+}
+
+// ── BENCH PANEL ───────────────────────────────────────────────────
+function buildBenchPanel(r){
+  // Use correct field names: top_metros (CODB), top_cities (scoring)
+  const codbData=r?.results?.codb?.data||{};
+  const codbMetros=(codbData.top_metros||codbData.metros||[]).slice(0,4);
+  const scoringData=r?.results?.location_scoring?.data||{};
+  const scoredCities=scoringData.top_cities||scoringData.cities||scoringData.ranked_cities||[];
+  const scoreMax=scoringData.score_max||scoredCities[0]?.total_score||5;
+  const el=document.getElementById('bench-content');
+
+  // Match CODB metro name against scored city name (city_name field)
+  function findSc(metroName){
+    const clean=(metroName||'').toLowerCase().replace(/\s*,.*$/,'').split('-')[0].trim();
+    return scoredCities.find(c=>{
+      const cn=(c.city_name||c.city||c.name||'').toLowerCase().replace(/\s*,.*$/,'').split('-')[0].trim();
+      return cn.includes(clean)||clean.includes(cn)||cn===clean;
+    });
+  }
+
+  // Helper: convert decimal margin to pct
+  function mPct(m){var v=(m.after_tax_margin!=null?m.after_tax_margin:m.after_tax_margin_pct||m.margin_pct||0);return Math.round(v*10)/10;}
+
+  const cards=codbMetros.map(metro=>{
+    const name=metro.metro||metro.name||'—';
+    const margin=mPct(metro);
+    const sc=findSc(name);
+    const cats=Object.entries(sc?.category_scores||sc?.scores||{}).slice(0,5);
+    const overall=sc?(sc.total_score||sc.score||0):null;
+    const rows=cats.map(([cat,val])=>{
+      const pct=Math.min(100,(val/scoreMax)*100);
+      const cls=pct>=70?'sf-high':pct>=45?'sf-mid':'sf-low';
+      return`<div class="score-row"><span class="score-lbl">${cat}</span><div class="score-track"><div class="score-fill ${cls}" style="width:${pct}%"></div></div><span class="score-num">${Math.round(pct)}</span></div>`;
+    }).join('');
+    const overallPct=overall!=null?Math.min(100,(overall/scoreMax)*100):0;
+    return`<div class="bench-card">
+      <div class="bench-city">${name}</div>
+      ${rows||'<div style="font-size:12px;color:var(--muted);padding:8px 0">Scoring data not available for this metro.</div>'}
+      ${overall!=null?`<div class="score-row" style="margin-top:6px;padding-top:6px;border-top:1px solid var(--border)"><span class="score-lbl" style="font-weight:700">Overall</span><div class="score-track"><div class="score-fill sf-high" style="width:${overallPct}%"></div></div><span class="score-num" style="font-weight:700">${overall.toFixed(2)}</span></div>`:''}
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border)">
+        <div><div style="font-size:13px;font-family:'IBM Plex Mono',monospace;font-weight:600">${margin.toFixed(1)}%</div><div style="font-size:10px;color:var(--muted);margin-top:1px">After-tax margin</div></div>
+        <div><div style="font-size:13px;font-family:'IBM Plex Mono',monospace;font-weight:600">#${codbMetros.indexOf(metro)+1}</div><div style="font-size:10px;color:var(--muted);margin-top:1px">CODB rank</div></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  el.innerHTML=`
+    <div class="panel-title">Location Benchmarking</div>
+    <div class="panel-subtitle">Combined cost, talent, and location factor scores for top metros.</div>
+    <div class="thesis-bar">📌 Top metros compared across cost competitiveness (CODB) and location quality scores (Scoring engine).</div>
+    <div class="bench-grid">${cards||'<div class="error-state"><div class="error-title">No metro data available</div></div>'}</div>
+    <div class="vintage-note">CODB: BLS OES 2023 + CommercialEdge Q3 2024 · Scoring: Area Development survey + EDai composite</div>`;
+}
+
+// ── MEMO PANEL ───────────────────────────────────────────────────
+function buildMemoPanel(r){
+  const roleLabels={business_leader:'💼 Business Leader',site_selector:'📋 Site Selector',econ_developer:'🏛️ Economic Developer'};
+  const role=G.formData?.user_role||'business_leader';
+  document.getElementById('memo-content').innerHTML=`
+    <div class="panel-title">Decision Memo</div>
+    <div class="panel-subtitle">Claude-powered synthesis across all five engines.</div>
+    <div class="memo-wrap">
+      <div class="memo-role-badge">${roleLabels[role]||role}</div>
+      <div id="memo-body-area" style="padding:8px 0">
+        <p style="font-size:13px;color:var(--muted);margin-bottom:16px">
+          Click <strong>Generate memo</strong> to have Claude synthesize findings from all five engines
+          into a concise location decision brief tailored to your role.<br><br>
+          <span style="font-size:11px">Requires ANTHROPIC_API_KEY on the backend server.</span>
+        </p>
+      </div>
+      <div class="memo-actions" id="memo-actions">
+        <button class="memo-btn primary" onclick="generateMemo()">✦ Generate memo</button>
+      </div>
+    </div>`;
+}
+
+async function generateMemo(){
+  const r=G.result;
+  const memoCtx=r?.memo_context;
+  const role=G.formData?.user_role||'business_leader';
+  if(!memoCtx){alert('No memo context available. Please re-run analysis.');return;}
+
+  document.getElementById('memo-body-area').innerHTML=
+    `<div style="display:flex;align-items:center;gap:12px;padding:20px 0"><div class="spinner"></div><span style="font-size:13px;color:var(--muted)">Synthesizing findings… typically 8–12 seconds</span></div>`;
+  document.getElementById('memo-actions').innerHTML='<button class="memo-btn secondary" disabled>Generating…</button>';
+
+  try{
+    const resp=await fetch(`${API}/memo`,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({memo_context:memoCtx,user_role:role})
+    });
+    if(!resp.ok)throw new Error(`API ${resp.status}: ${await resp.text()}`);
+    const data=await resp.json();
+    const memoText=data.memo||data.text||'';
+
+    // Render memo text with section detection
+    const sections=[];
+    let cur={title:null,body:[]};
+    for(const line of memoText.split('\n')){
+      const isHdr=/^#+\s/.test(line)||(/^[A-Z][A-Z\s&]{3,}:?\s*$/.test(line.trim())&&line.trim().length<80);
+      if(isHdr&&line.trim().length>2){
+        if(cur.body.length>0||cur.title)sections.push(cur);
+        cur={title:line.replace(/^#+\s/,'').trim(),body:[]};
+      } else cur.body.push(line);
+    }
+    if(cur.body.length>0||cur.title)sections.push(cur);
+
+    let html='';
+    sections.forEach((s,i)=>{
+      if(i>0)html+='<hr class="memo-divider">';
+      if(s.title)html+=`<div class="memo-section-title">${s.title}</div>`;
+      if(s.body.length)html+=`<div class="memo-body">${s.body.join('\n').trim()}</div>`;
+    });
+    if(!sections.length)html=`<div class="memo-body">${memoText}</div>`;
+
+    document.getElementById('memo-body-area').innerHTML=html;
+    document.getElementById('memo-actions').innerHTML=`
+      <button class="memo-btn primary" onclick="navigator.clipboard.writeText(document.getElementById('memo-body-area').innerText)">📋 Copy memo</button>
+      <button class="memo-btn secondary" onclick="window.print()">⬇ Download PDF</button>
+      <button class="memo-btn secondary" onclick="generateMemo()">🔄 Regenerate</button>`;
+  } catch(err){
+    document.getElementById('memo-body-area').innerHTML=
+      `<div class="error-state"><div class="error-title">Memo generation failed</div><div class="error-msg">${err.message}</div></div>`;
+    document.getElementById('memo-actions').innerHTML=
+      `<button class="memo-btn primary" onclick="generateMemo()">✦ Retry</button>`;
+  }
+}
+
+// ── UTILITIES ────────────────────────────────────────────────────
+function errHtml(name,msg){
+  return`<div class="error-state"><div class="error-title">${name} — data unavailable</div><div class="error-msg">${msg||'Engine returned an error. Other panels are unaffected.'}</div></div>`;
+}
+</script>
+</body>
+</html>

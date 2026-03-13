@@ -1,0 +1,2253 @@
+{
+  "run_at": "2026-03-10T17:24:23.340603+00:00",
+  "summary": {
+    "run_at": "2026-03-10T17:24:23.340603+00:00",
+    "total_programs_in_model": 295,
+    "total_programs_on_bls": 15,
+    "states_scraped": 2,
+    "unverified": 286,
+    "new_candidates": 6,
+    "parameters_changed": 0,
+    "active": 9,
+    "low_confidence_matches": 0
+  },
+  "unverified": [
+    {
+      "state": "Alabama",
+      "model_name": "Enterprise Zone credit/exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arizona",
+      "model_name": "Quality Jobs Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arizona",
+      "model_name": "Qualified Facility Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arizona",
+      "model_name": "Research and Development Nonrefundable Income Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arizona",
+      "model_name": "Research and Development Refundable Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arizona",
+      "model_name": "Arizona Competes Fund",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arizona",
+      "model_name": "Sales Tax Exemptions for manufacturing",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arizona",
+      "model_name": "Computer Data Center Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arizona",
+      "model_name": "Arizona Job Training Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arkansas",
+      "model_name": "Advantage Arkansas (Income Tax Credit)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arkansas",
+      "model_name": "ArkPlus (income tax credit)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arkansas",
+      "model_name": "Targeted ArkPlus",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arkansas",
+      "model_name": "Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arkansas",
+      "model_name": "Tax Back",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arkansas",
+      "model_name": "Targeted business incentives",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arkansas",
+      "model_name": "Create Rebate (Cash Rebate)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Arkansas",
+      "model_name": "Governor’s Quick Action Closing Fund",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "California",
+      "model_name": "California Competes Tax Credit (“Cal Competes”)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "California",
+      "model_name": "New Employment Credit (NEC) (not integrated)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "California",
+      "model_name": "California Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "California",
+      "model_name": "Manufacturing and R&D Partial Sales and Use Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Colorado",
+      "model_name": "Job Growth Incentive Tax Credit (JGITC)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Colorado",
+      "model_name": "Enterprise Zone Tax Credits",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Colorado",
+      "model_name": "Strategic Fund Incentive",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Colorado",
+      "model_name": "Colorado First and Existing Industry Customized Job Training Grant Programs",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Colorado",
+      "model_name": "Sales and use tax refund for manufacturing",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Connecticut",
+      "model_name": "Urban and Industrial Sites Reinvestment (URA) Tax Credit Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Connecticut",
+      "model_name": "Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Connecticut",
+      "model_name": "Sales and use tax exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Connecticut",
+      "model_name": "Property tax exemptions for MME",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Connecticut",
+      "model_name": "Enterprise Zone",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Delaware",
+      "model_name": "New Economy Jobs Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Delaware",
+      "model_name": "Strategic Fund",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Delaware",
+      "model_name": "New Business Facility Corporate Income Credit (Blue Collar Jobs Act)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Delaware",
+      "model_name": "Business and Occupational Gross Receipts Tax Reduction",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Delaware",
+      "model_name": "Business Finder's Fee Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Delaware",
+      "model_name": "Workforce Training Fund",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Delaware",
+      "model_name": "Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Florida",
+      "model_name": "Qualified Target Industry Tax Refund (QTI)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Florida",
+      "model_name": "Capital Investment Tax Credit (CITC)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Florida",
+      "model_name": "Quick Response Training (QRT)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Florida",
+      "model_name": "Sales tax exemption for M&E",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Maine",
+      "model_name": "Sales tax exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Maine",
+      "model_name": "Business Equipment Tax Exemption (BETE)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Maine",
+      "model_name": "Employment Tax Increment Financing Program (ETIF)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Maine",
+      "model_name": "Pine Tree Development Zone Program (PTDZ)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Maine",
+      "model_name": "Major Business Headquarters Expansion Program (MBHQ)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Maine",
+      "model_name": "Research expense tax credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Georgia",
+      "model_name": "Quality Jobs Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Georgia",
+      "model_name": "Job Creation Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Georgia",
+      "model_name": "Investment Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Georgia",
+      "model_name": "Mega Project Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Georgia",
+      "model_name": "Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Georgia",
+      "model_name": "Sales tax exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Georgia",
+      "model_name": "Quick Start Employee Training",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Idaho",
+      "model_name": "Idaho Tax Reimbursement Incentive",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Idaho",
+      "model_name": "Idaho Business Advantage",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Idaho",
+      "model_name": "R&D Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Idaho",
+      "model_name": "Idaho Opportunity Fund (not integrated)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Idaho",
+      "model_name": "Workforce Development Training Fund: Employer Grants",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Idaho",
+      "model_name": "$100,000 Personal Property Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Idaho",
+      "model_name": "Sales & use tax exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Idaho",
+      "model_name": "Data Center sales tax exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Idaho",
+      "model_name": "Non-retail facilities property tax exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Idaho",
+      "model_name": "Large Business Property Tax Cap",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Idaho",
+      "model_name": "Large employer property tax cap",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Illinois",
+      "model_name": "Economic Development for a Growing Economy (EDGE)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Illinois",
+      "model_name": "Blue Collar Jobs Act (Beginning Jan 1st, 2021)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Illinois",
+      "model_name": "High Impact Business Program (HIB)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Illinois",
+      "model_name": "Enterprise Zone Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Illinois",
+      "model_name": "Large Business Development Program (LBDP)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Illinois",
+      "model_name": "Employer Training Investment Program (ETIP)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Illinois",
+      "model_name": "Data Center Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Illinois",
+      "model_name": "Property Tax Exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Indiana",
+      "model_name": "Data Center Gross Retail and Use Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Indiana",
+      "model_name": "Research and Development tax incentives",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Indiana",
+      "model_name": "Headquarters Relocation Tax Credit (HQRTC)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Indiana",
+      "model_name": "Hoosier Business Investment Tax Credit Program (HBI)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Indiana",
+      "model_name": "Economic Development for a Growing Economy Program (EDGE)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Indiana",
+      "model_name": "Skills Enhancement Fund (SEF)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Iowa",
+      "model_name": "Economic Development Set-Aside (EDSA)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Iowa",
+      "model_name": "High Quality Jobs Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Iowa",
+      "model_name": "Targeted Jobs Withholding Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Iowa",
+      "model_name": "Research Activities Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Iowa",
+      "model_name": "New Jobs Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Kansas",
+      "model_name": "Promoting Employment Across Kansas (PEAK)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Kansas",
+      "model_name": "High Performance Incentive Program (HPIP)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Kansas",
+      "model_name": "Research & Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Kentucky",
+      "model_name": "Kentucky Business Investment (KBI) Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Kentucky",
+      "model_name": "Kentucky Enterprise Initiative Act (KEIA)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Kentucky",
+      "model_name": "Grant-in-Aid program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Kentucky",
+      "model_name": "Kentucky Reinvestment Act (KRA)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Nevada",
+      "model_name": "Catalyst Fund",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Nevada",
+      "model_name": "Silver State Works",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Nevada",
+      "model_name": "Nevada Tax Abatements",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Louisiana",
+      "model_name": "Quality Jobs (QJ) program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Louisiana",
+      "model_name": "Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Louisiana",
+      "model_name": "Enterprise Zone",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Louisiana",
+      "model_name": "Industrial Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Louisiana",
+      "model_name": "Sales Tax Exemption on Manufacturing Machinery & Equipment",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Louisiana",
+      "model_name": "Sales Tax Exemption on Business Utilities",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Louisiana",
+      "model_name": "FastStart Job Training Assistance Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Maryland",
+      "model_name": "Job Creation Tax Credit (JCTC)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Maryland",
+      "model_name": "Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Maryland",
+      "model_name": "Maryland Economic Development Assistance Authority and Fund (MEDAAF)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Maryland",
+      "model_name": "Economic Development Opportunities Fund (Sunny Day)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Maryland",
+      "model_name": "Enterprise Zone",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Massachusetts",
+      "model_name": "Sales & Use Tax Exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Massachusetts",
+      "model_name": "Property Tax Incentives",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Massachusetts",
+      "model_name": "Massachusetts Investment Tax Credit (ITC)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Massachusetts",
+      "model_name": "The Economic Development Incentive Program (EDIP)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Massachusetts",
+      "model_name": "Massachusetts Life Sciences Initiative (not included)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Massachusetts",
+      "model_name": "Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Michigan",
+      "model_name": "Michigan Business Development Program (MBDP)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Michigan",
+      "model_name": "Border County Incentives",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Michigan",
+      "model_name": "Sales tax exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Michigan",
+      "model_name": "State Education Tax Abatement",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Michigan",
+      "model_name": "Industrial Property Tax Abatement",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Michigan",
+      "model_name": "State Essential Services Assessment Exemption Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Michigan",
+      "model_name": "Michigan Works! (not included)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Minnesota",
+      "model_name": "Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Minnesota",
+      "model_name": "Minnesota Job Creation Fund (MJCF)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Minnesota",
+      "model_name": "Border Cities Enterprise Zone Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Minnesota",
+      "model_name": "Data Centers",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Minnesota",
+      "model_name": "Sales and Use Tax Exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Minnesota",
+      "model_name": "Greater Minnesota Job Expansion Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Minnesota",
+      "model_name": "Minnesota Job Training Incentive Program (JTIP)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Mississippi",
+      "model_name": "Advantage Jobs Incentive Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Mississippi",
+      "model_name": "Jobs Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Mississippi",
+      "model_name": "National or Regional Headquarters Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Mississippi",
+      "model_name": "Research and Development Skills Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Mississippi",
+      "model_name": "Manufacturing Investment Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Mississippi",
+      "model_name": "Growth and Prosperity (GAP) Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Mississippi",
+      "model_name": "Sales and Use Tax Exemption for Construction or Expansion",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Mississippi",
+      "model_name": "Sales and Use Tax Exemption for Data Center enterprises",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Mississippi",
+      "model_name": "Property tax abatements",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Missouri",
+      "model_name": "Missouri Works",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Missouri",
+      "model_name": "Business Facility Headquarters Tax Credit Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Missouri",
+      "model_name": "Missouri One Start",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Missouri",
+      "model_name": "Data Center Sales and Utility Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Missouri",
+      "model_name": "Sales Tax Exemption for Manufacturers",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Montana",
+      "model_name": "Big Sky Economic Development Trust Fund",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Montana",
+      "model_name": "New or Expanding Industry Wage Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Montana",
+      "model_name": "New or Expanding Industries property tax abatement",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Montana",
+      "model_name": "New Industrial Property or R&D Tax Abatement",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Montana",
+      "model_name": "Empowerment Zone Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Montana",
+      "model_name": "Enterprise Data Center Class 17 Property Tax",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Montana",
+      "model_name": "The Primary Sector Workforce Training Grant",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Nebraska",
+      "model_name": "Nebraska Advantage – Research and Development Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Nebraska",
+      "model_name": "Nebraska Customized Job Training Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Nebraska",
+      "model_name": "Nebraska Advantage",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New Hampshire",
+      "model_name": "Economic Revitalization Zone Tax Credits (ERZ Tax Credit) Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New Hampshire",
+      "model_name": "Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New Hampshire",
+      "model_name": "Coos County Job Creation Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New Jersey",
+      "model_name": "Grow New Jersey",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New Jersey",
+      "model_name": "Urban Enterprise Zone (UEZ) Sales Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New Mexico",
+      "model_name": "High Wage Jobs Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New Mexico",
+      "model_name": "Rural Jobs Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New Mexico",
+      "model_name": "Investment Tax Credit for Manufacturers",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New Mexico",
+      "model_name": "Job Training Incentive Program (JTIP)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New York",
+      "model_name": "Business Expansion & Retention Grants",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New York",
+      "model_name": "Excelsior Jobs Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New York",
+      "model_name": "Investment Tax Credit (ITC)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New York",
+      "model_name": "Employment Incentive Credit (EIC)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New York",
+      "model_name": "Employee Training Incentive Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New York",
+      "model_name": "Manufacturer's Real Property Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "New York",
+      "model_name": "Sales Tax Exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "North Carolina",
+      "model_name": "Job Development Investment Grant (JDIG)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "North Carolina",
+      "model_name": "One North Carolina Fund (One NC)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "North Carolina",
+      "model_name": "Customized Training Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "North Carolina",
+      "model_name": "Sales tax exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "North Carolina",
+      "model_name": "Data center sales tax exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "North Dakota",
+      "model_name": "Research Expense Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "North Dakota",
+      "model_name": "Workforce Recruitment Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "North Dakota",
+      "model_name": "Renaissance Zones",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "North Dakota",
+      "model_name": "Sales and Use Tax Exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "North Dakota",
+      "model_name": "Property Tax Exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "North Dakota",
+      "model_name": "Income Tax Exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Ohio",
+      "model_name": "Job Creation Tax Credit (JCTC)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Ohio",
+      "model_name": "Research & Development Investment Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Ohio",
+      "model_name": "JobsOhio Economic Development Grant",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Ohio",
+      "model_name": "JobsOhio Research & Development (R&D) Center Grant",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Ohio",
+      "model_name": "Enterprise Zone",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Ohio",
+      "model_name": "Sales & Use Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Ohio",
+      "model_name": "Data Center Tax Abatement",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oregon",
+      "model_name": "Strategic Investment Program (SIP) Property Tax Abatement",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oregon",
+      "model_name": "Business Expansion Program (BEP)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oregon",
+      "model_name": "Governors’ Strategic Reserve Fund",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oregon",
+      "model_name": "Enterprise Zones",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oregon",
+      "model_name": "Oregon Investment Advantage",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oklahoma",
+      "model_name": "Oklahoma Quality Jobs Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oklahoma",
+      "model_name": "Small Employer Quality Jobs Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oklahoma",
+      "model_name": "The 21st Century Oklahoma Quality Jobs Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oklahoma",
+      "model_name": "Oklahoma Quick Action Closing Fund",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oklahoma",
+      "model_name": "Insurance Premium Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oklahoma",
+      "model_name": "Investment / New Jobs Income Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oklahoma",
+      "model_name": "Quality Jobs + Investment Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oklahoma",
+      "model_name": "Sales & Use Tax Exemptions/refunds",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oklahoma",
+      "model_name": "Ad valorem tax exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Oklahoma",
+      "model_name": "Opportunity and Enterprise Zones",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Pennsylvania",
+      "model_name": "Job Creation Tax Credit (JCTC)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Pennsylvania",
+      "model_name": "Manufacturing Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Pennsylvania",
+      "model_name": "Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Pennsylvania",
+      "model_name": "Qualified Manufacturing Innovation and Reinvestment Deduction",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Pennsylvania",
+      "model_name": "Pennsylvania First Program (PA First)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Pennsylvania",
+      "model_name": "Redevelopment Assistance Capital Program (RACP)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Pennsylvania",
+      "model_name": "Keystone Opportunity Zone (KOZ)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Pennsylvania",
+      "model_name": "Keystone Innovation Zone (KOIZ)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Pennsylvania",
+      "model_name": "Computer Data Center Equipment Incentive Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "Manufacturers' property tax exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "Qualified Jobs Incentive Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "Anchor Institution Tax Credit (expired 2019)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "First Wave Closing Fund (not on Commerce RI website)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "Investment Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "High Performance Manufacturing Investment Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "High Performance Non-Manufacturing Investment Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "New Employment Tax Incentive",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "Job Training Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "Research and development elective deduction",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "Research and development property credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "Research and development expense credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Rhode Island",
+      "model_name": "Sales and Use Tax Exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Carolina",
+      "model_name": "Jobs Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Carolina",
+      "model_name": "Corporate Headquarters Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Carolina",
+      "model_name": "Enhanced Corporate Headquarters Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Carolina",
+      "model_name": "Investment Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Carolina",
+      "model_name": "Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Carolina",
+      "model_name": "Corporate Income Tax Moratorium",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Carolina",
+      "model_name": "Job Development Credit (or Job Development Credit)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Carolina",
+      "model_name": "Sales tax exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Carolina",
+      "model_name": "Data centers sales tax exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Carolina",
+      "model_name": "Property tax exemptions and abatements",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Dakota",
+      "model_name": "South Dakota Jobs Grant Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Dakota",
+      "model_name": "Reinvestment Payment Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Dakota",
+      "model_name": "South Dakota Workforce Development Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "South Dakota",
+      "model_name": "FYI. Businesses not subject to following taxes",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Tennessee",
+      "model_name": "FastTrack Infrastructure, job training assistance, and economic development grants",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Tennessee",
+      "model_name": "Job Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Tennessee",
+      "model_name": "Enhanced Job Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Tennessee",
+      "model_name": "Industrial Machinery Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Tennessee",
+      "model_name": "Sales tax exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Texas",
+      "model_name": "Texas Enterprise Fund (TEF)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Texas",
+      "model_name": "Enterprise Zones",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Texas",
+      "model_name": "Data Center Sales Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Texas",
+      "model_name": "Sales Tax Exemption with Manufacturing",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Texas",
+      "model_name": "Texas Research & Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Texas",
+      "model_name": "Texas Economic Development Act (Chapter 313)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Utah",
+      "model_name": "Economic Development Tax Increment Finance Tax Credit (EDTIF)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Utah",
+      "model_name": "Research Activities Credits",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Utah",
+      "model_name": "Industrial Assistance Fund (IAF)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Utah",
+      "model_name": "Enterprise Zone Tax Credits",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Utah",
+      "model_name": "Sales & Use Tax Exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Vermont",
+      "model_name": "Research and Development Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Vermont",
+      "model_name": "Vermont Employment Growth Incentive (VEGI)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Sales tax exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Data center retail sales & use tax exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Major R&D Expenses Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Commonwealth’s Opportunity Fund (COF)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Virginia Investment Partnership Grant (VIP)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Major Eligible Employer Grant (MEE)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Virginia",
+      "model_name": "New Company Incentive",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Virginia Economic Development Incentive Grant (VEDIG)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Virginia Jobs Investment Program - Virginia New Jobs Program (VJIP)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Washington",
+      "model_name": "Sales and Use Tax Exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Washington",
+      "model_name": "Governor’s Strategic Reserve Fund (GSRF)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Washington",
+      "model_name": "Work Start",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Washington",
+      "model_name": "Rural County/CEZ Sales and Use/Public Utility Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Washington",
+      "model_name": "Rural County/CEZ Business and Occupation (B&O) Tax Credits",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "West Virginia",
+      "model_name": "Economic Opportunity Tax Credit for Corporate Headquarters Relocation",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "West Virginia",
+      "model_name": "Economic Opportunity Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "West Virginia",
+      "model_name": "Economic Opportunity Tax Credit for Job Creation",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "West Virginia",
+      "model_name": "Manufacturing Investment Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "West Virginia",
+      "model_name": "Manufacturing Property Tax Adjustment Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "West Virginia",
+      "model_name": "Sales & Use Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "West Virginia",
+      "model_name": "High Technology Valuation Act (Data Centers)",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "West Virginia",
+      "model_name": "Governor’s Guaranteed Work Force Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "West Virginia",
+      "model_name": "Five for Ten Program - Manufacturing",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Wisconsin",
+      "model_name": "Nonrefundable Research Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Wisconsin",
+      "model_name": "Business Development Tax Credit (BTC) Program",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Wisconsin",
+      "model_name": "Enterprise Zone Jobs Tax Credit",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Wisconsin",
+      "model_name": "Development Opportunity Zone",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Wisconsin",
+      "model_name": "Workforce Training Grants",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Wisconsin",
+      "model_name": "Sales and use tax exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Wisconsin",
+      "model_name": "Property tax exemptions",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Wyoming",
+      "model_name": "Manufacturing Sales Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    },
+    {
+      "state": "Wyoming",
+      "model_name": "Data Center Sales Tax Exemption",
+      "match_status": "unverified",
+      "note": "Not found on BLS Strategies. Possible sunset or page not yet covered — Sean to confirm."
+    }
+  ],
+  "new_candidates": [
+    {
+      "state": "Alabama",
+      "bls_name": "Alabama Innovation Fund",
+      "match_status": "new_candidate",
+      "note": "New program found on BLS Strategies. Sean to approve before adding to model.",
+      "bls_record": {
+        "state": "Alabama",
+        "program_name": "Alabama Innovation Fund",
+        "program_type": "Grant",
+        "jobs_threshold": 10,
+        "wage_threshold": null,
+        "capex_threshold": 500000,
+        "credit_rate": null,
+        "award_cap": 1000000,
+        "carryforward_years": null,
+        "refundable": true,
+        "program_status": "active",
+        "description": "The Alabama Innovation Fund provides competitive grants of up to $1 million to companies commercializing innovative technologies in Alabama. Applicants must create at least 10 jobs and invest at least $500,000.",
+        "source_url": "https://www.blsstrategies.com/incentives/alabama",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      },
+      "match_score": null
+    },
+    {
+      "state": "Virginia",
+      "bls_name": "Sales Tax Exemptions for Manufacturing",
+      "match_status": "new_candidate",
+      "note": "New program found on BLS Strategies. Sean to approve before adding to model.",
+      "bls_record": {
+        "state": "Virginia",
+        "program_name": "Sales Tax Exemptions for Manufacturing",
+        "program_type": "Sales/Use Tax Exemption",
+        "jobs_threshold": null,
+        "wage_threshold": null,
+        "capex_threshold": null,
+        "credit_rate": null,
+        "award_cap": null,
+        "carryforward_years": null,
+        "refundable": null,
+        "program_status": "active",
+        "description": "Virginia provides a sales and use tax exemption on machinery and equipment used directly in manufacturing, processing, mining, and refining. Qualifying equipment must be used directly in production.",
+        "source_url": "https://www.blsstrategies.com/incentives/virginia",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      },
+      "match_score": null
+    },
+    {
+      "state": "Virginia",
+      "bls_name": "Data Center Sales Tax Exemption",
+      "match_status": "new_candidate",
+      "note": "New program found on BLS Strategies. Sean to approve before adding to model.",
+      "bls_record": {
+        "state": "Virginia",
+        "program_name": "Data Center Sales Tax Exemption",
+        "program_type": "Sales/Use Tax Exemption",
+        "jobs_threshold": 50,
+        "wage_threshold": 150000,
+        "capex_threshold": 150000000,
+        "credit_rate": null,
+        "award_cap": null,
+        "carryforward_years": null,
+        "refundable": null,
+        "program_status": "active",
+        "description": "Qualifying data centers may receive full exemption from sales and use taxes on computer equipment, software, and enabling hardware. Minimum 50 jobs paying an average of $150,000 or more and $150 million in capital investment required.",
+        "source_url": "https://www.blsstrategies.com/incentives/virginia",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      },
+      "match_score": null
+    },
+    {
+      "state": "Virginia",
+      "bls_name": "Major Research and Development Expenses Tax Credit",
+      "match_status": "new_candidate",
+      "note": "New program found on BLS Strategies. Sean to approve before adding to model.",
+      "bls_record": {
+        "state": "Virginia",
+        "program_name": "Major Research and Development Expenses Tax Credit",
+        "program_type": "Tax Credit",
+        "jobs_threshold": null,
+        "wage_threshold": null,
+        "capex_threshold": null,
+        "credit_rate": 0.15,
+        "award_cap": null,
+        "carryforward_years": 10,
+        "refundable": false,
+        "program_status": "active",
+        "description": "Virginia provides a non-refundable income tax credit equal to 15% of qualifying R&D expenditures that exceed the Virginia base amount. Excess credits may be carried forward for up to 10 years.",
+        "source_url": "https://www.blsstrategies.com/incentives/virginia",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      },
+      "match_score": null
+    },
+    {
+      "state": "Virginia",
+      "bls_name": "Virginia Jobs Investment Program (VJIP)",
+      "match_status": "new_candidate",
+      "note": "New program found on BLS Strategies. Sean to approve before adding to model.",
+      "bls_record": {
+        "state": "Virginia",
+        "program_name": "Virginia Jobs Investment Program (VJIP)",
+        "program_type": "Job Training Grant",
+        "jobs_threshold": 25,
+        "wage_threshold": null,
+        "capex_threshold": null,
+        "credit_rate": null,
+        "award_cap": null,
+        "carryforward_years": null,
+        "refundable": true,
+        "program_status": "active",
+        "description": "VJIP provides customized recruitment and training services to companies creating at least 25 new jobs. Assistance ranges from $100 to $500 per new employee depending on project type and wage level.",
+        "source_url": "https://www.blsstrategies.com/incentives/virginia",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      },
+      "match_score": null
+    },
+    {
+      "state": "Virginia",
+      "bls_name": "GO Virginia Regional Competitiveness Grant",
+      "match_status": "new_candidate",
+      "note": "New program found on BLS Strategies. Sean to approve before adding to model.",
+      "bls_record": {
+        "state": "Virginia",
+        "program_name": "GO Virginia Regional Competitiveness Grant",
+        "program_type": "Grant",
+        "jobs_threshold": 35,
+        "wage_threshold": 55000,
+        "capex_threshold": 2000000,
+        "credit_rate": null,
+        "award_cap": 3000000,
+        "carryforward_years": null,
+        "refundable": true,
+        "program_status": "active",
+        "description": "GO Virginia grants support regional economic development projects that create at least 35 new jobs at or above the regional median wage. Awards up to $3 million per project are available from the Growth and Opportunity for Virginia fund.",
+        "source_url": "https://www.blsstrategies.com/incentives/virginia",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      },
+      "match_score": null
+    }
+  ],
+  "parameters_changed": [],
+  "active": [
+    {
+      "state": "Alabama",
+      "model_name": "Jobs Act Incentives: Jobs",
+      "bls_name": "Jobs Act Incentives: Jobs",
+      "match_status": "active",
+      "match_score": 100.0,
+      "informational_diffs": [
+        {
+          "field": "jobs_threshold",
+          "model_value": "not documented",
+          "bls_value": 50,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "capex_threshold",
+          "model_value": "not documented",
+          "bls_value": 2000000,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "credit_rate",
+          "model_value": "not documented",
+          "bls_value": 0.04,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "refundable",
+          "model_value": "not documented",
+          "bls_value": true,
+          "diff_type": "model_undocumented"
+        }
+      ],
+      "bls_record": {
+        "state": "Alabama",
+        "program_name": "Jobs Act Incentives: Jobs",
+        "program_type": "Cash Rebate",
+        "jobs_threshold": 50,
+        "wage_threshold": null,
+        "capex_threshold": 2000000,
+        "credit_rate": 0.04,
+        "award_cap": null,
+        "carryforward_years": null,
+        "refundable": true,
+        "program_status": "active",
+        "description": "The Jobs Act provides cash rebates of up to 4% of prior-year gross payroll for qualifying jobs. Companies must create at least 50 net new full-time jobs in non-targeted counties (10 in targeted/Jumpstart counties) and invest at least $2 million in capital.",
+        "source_url": "https://www.blsstrategies.com/incentives/alabama",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      }
+    },
+    {
+      "state": "Alabama",
+      "model_name": "Jobs Act Incentives: Investment",
+      "bls_name": "Jobs Act Incentives: Investment",
+      "match_status": "active",
+      "match_score": 100.0,
+      "informational_diffs": [
+        {
+          "field": "jobs_threshold",
+          "model_value": "not documented",
+          "bls_value": 50,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "capex_threshold",
+          "model_value": "not documented",
+          "bls_value": 2000000,
+          "diff_type": "model_undocumented"
+        }
+      ],
+      "bls_record": {
+        "state": "Alabama",
+        "program_name": "Jobs Act Incentives: Investment",
+        "program_type": "Tax Abatement",
+        "jobs_threshold": 50,
+        "wage_threshold": null,
+        "capex_threshold": 2000000,
+        "credit_rate": null,
+        "award_cap": null,
+        "carryforward_years": null,
+        "refundable": null,
+        "program_status": "active",
+        "description": "The Jobs Act investment component provides abatements on state and non-educational county property taxes and sales/use taxes on construction materials, equipment, and machinery for qualifying projects with at least 50 jobs and $2 million in capital.",
+        "source_url": "https://www.blsstrategies.com/incentives/alabama",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      }
+    },
+    {
+      "state": "Alabama",
+      "model_name": "Sales tax exemptions",
+      "bls_name": "Sales Tax Exemptions",
+      "match_status": "active",
+      "match_score": 100.0,
+      "informational_diffs": [],
+      "bls_record": {
+        "state": "Alabama",
+        "program_name": "Sales Tax Exemptions",
+        "program_type": "Sales/Use Tax Exemption",
+        "jobs_threshold": null,
+        "wage_threshold": null,
+        "capex_threshold": null,
+        "credit_rate": null,
+        "award_cap": null,
+        "carryforward_years": null,
+        "refundable": null,
+        "program_status": "active",
+        "description": "Alabama provides exemptions from the 4% state sales and use tax on purchases of manufacturing machinery and equipment, raw materials, and fuels used in manufacturing.",
+        "source_url": "https://www.blsstrategies.com/incentives/alabama",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      }
+    },
+    {
+      "state": "Alabama",
+      "model_name": "Property tax abatements",
+      "bls_name": "Property Tax Abatements",
+      "match_status": "active",
+      "match_score": 100.0,
+      "informational_diffs": [
+        {
+          "field": "jobs_threshold",
+          "model_value": "not documented",
+          "bls_value": 50,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "capex_threshold",
+          "model_value": "not documented",
+          "bls_value": 2000000,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "credit_rate",
+          "model_value": "not documented",
+          "bls_value": 1.0,
+          "diff_type": "model_undocumented"
+        }
+      ],
+      "bls_record": {
+        "state": "Alabama",
+        "program_name": "Property Tax Abatements",
+        "program_type": "Property Tax Abatement",
+        "jobs_threshold": 50,
+        "wage_threshold": null,
+        "capex_threshold": 2000000,
+        "credit_rate": 1.0,
+        "award_cap": null,
+        "carryforward_years": null,
+        "refundable": null,
+        "program_status": "active",
+        "description": "Qualified projects may receive abatements on property taxes for up to 20 years (30 years for large projects) for non-educational property taxes on real and personal property. Minimum 50 jobs and $2 million capital investment required.",
+        "source_url": "https://www.blsstrategies.com/incentives/alabama",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      }
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Enterprise Zone Job Creation Grant",
+      "bls_name": "Enterprise Zone Job Creation Grant",
+      "match_status": "active",
+      "match_score": 100.0,
+      "informational_diffs": [
+        {
+          "field": "jobs_threshold",
+          "model_value": "not documented",
+          "bls_value": 4,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "award_cap",
+          "model_value": "not documented",
+          "bls_value": 800,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "refundable",
+          "model_value": "not documented",
+          "bls_value": true,
+          "diff_type": "model_undocumented"
+        }
+      ],
+      "bls_record": {
+        "state": "Virginia",
+        "program_name": "Enterprise Zone Job Creation Grant",
+        "program_type": "Grant",
+        "jobs_threshold": 4,
+        "wage_threshold": null,
+        "capex_threshold": null,
+        "credit_rate": null,
+        "award_cap": 800,
+        "carryforward_years": null,
+        "refundable": true,
+        "program_status": "active",
+        "description": "Eligible businesses in Enterprise Zones may receive annual grants of $500 to $800 per net new job (at least 4 new jobs required) for up to 5 years. Wages must meet or exceed the lower of the federal or state minimum wage.",
+        "source_url": "https://www.blsstrategies.com/incentives/virginia",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      }
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Enterprise Zone Real Property Investment Grant",
+      "bls_name": "Enterprise Zone Real Property Investment Grant",
+      "match_status": "active",
+      "match_score": 100.0,
+      "informational_diffs": [
+        {
+          "field": "capex_threshold",
+          "model_value": "not documented",
+          "bls_value": 100000,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "award_cap",
+          "model_value": "not documented",
+          "bls_value": 100000,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "refundable",
+          "model_value": "not documented",
+          "bls_value": true,
+          "diff_type": "model_undocumented"
+        }
+      ],
+      "bls_record": {
+        "state": "Virginia",
+        "program_name": "Enterprise Zone Real Property Investment Grant",
+        "program_type": "Grant",
+        "jobs_threshold": null,
+        "wage_threshold": null,
+        "capex_threshold": 100000,
+        "credit_rate": null,
+        "award_cap": 100000,
+        "carryforward_years": null,
+        "refundable": true,
+        "program_status": "active",
+        "description": "Businesses making qualifying real property investments in Enterprise Zones may receive grants of 20% of qualified real property investment up to a maximum of $100,000 per building. Minimum investment of $100,000 required.",
+        "source_url": "https://www.blsstrategies.com/incentives/virginia",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      }
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Refundable R&D Expense Tax Credit",
+      "bls_name": "Refundable R&D Expense Tax Credit",
+      "match_status": "active",
+      "match_score": 100.0,
+      "informational_diffs": [
+        {
+          "field": "credit_rate",
+          "model_value": "not documented",
+          "bls_value": 0.15,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "refundable",
+          "model_value": "not documented",
+          "bls_value": true,
+          "diff_type": "model_undocumented"
+        }
+      ],
+      "bls_record": {
+        "state": "Virginia",
+        "program_name": "Refundable R&D Expense Tax Credit",
+        "program_type": "Tax Credit",
+        "jobs_threshold": null,
+        "wage_threshold": null,
+        "capex_threshold": null,
+        "credit_rate": 0.15,
+        "award_cap": null,
+        "carryforward_years": null,
+        "refundable": true,
+        "program_status": "active",
+        "description": "Virginia offers a refundable income tax credit of 15% of qualifying R&D expenses for companies with Virginia R&D expenses of $5 million or less.",
+        "source_url": "https://www.blsstrategies.com/incentives/virginia",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      }
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Major Business Facility Job Tax Credit",
+      "bls_name": "Major Business Facility Job Tax Credit",
+      "match_status": "active",
+      "match_score": 100.0,
+      "informational_diffs": [
+        {
+          "field": "jobs_threshold",
+          "model_value": "not documented",
+          "bls_value": 100,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "carryforward_years",
+          "model_value": "not documented",
+          "bls_value": 5,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "refundable",
+          "model_value": "not documented",
+          "bls_value": false,
+          "diff_type": "model_undocumented"
+        }
+      ],
+      "bls_record": {
+        "state": "Virginia",
+        "program_name": "Major Business Facility Job Tax Credit",
+        "program_type": "Tax Credit",
+        "jobs_threshold": 100,
+        "wage_threshold": null,
+        "capex_threshold": null,
+        "credit_rate": null,
+        "award_cap": null,
+        "carryforward_years": 5,
+        "refundable": false,
+        "program_status": "active",
+        "description": "Provides a $1,000 credit per net new permanent full-time job for companies that create 100 or more jobs. Credits may be carried forward for up to 5 years. Note: The minimum job threshold was recently increased from 50 to 100 jobs.",
+        "source_url": "https://www.blsstrategies.com/incentives/virginia",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      }
+    },
+    {
+      "state": "Virginia",
+      "model_name": "Virginia Talent Accelerator Program",
+      "bls_name": "Virginia Talent Accelerator Program",
+      "match_status": "active",
+      "match_score": 100.0,
+      "informational_diffs": [
+        {
+          "field": "jobs_threshold",
+          "model_value": "not documented",
+          "bls_value": 25,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "wage_threshold",
+          "model_value": "not documented",
+          "bls_value": 50000,
+          "diff_type": "model_undocumented"
+        },
+        {
+          "field": "refundable",
+          "model_value": "not documented",
+          "bls_value": true,
+          "diff_type": "model_undocumented"
+        }
+      ],
+      "bls_record": {
+        "state": "Virginia",
+        "program_name": "Virginia Talent Accelerator Program",
+        "program_type": "Job Training Grant",
+        "jobs_threshold": 25,
+        "wage_threshold": 50000,
+        "capex_threshold": null,
+        "credit_rate": null,
+        "award_cap": null,
+        "carryforward_years": null,
+        "refundable": true,
+        "program_status": "active",
+        "description": "Provides fully customized workforce recruitment and training services at no cost to qualifying companies. Requires at least 25 new jobs paying above $50,000 annually.",
+        "source_url": "https://www.blsstrategies.com/incentives/virginia",
+        "scraped_at": "2026-03-10T17:24:23.271992+00:00",
+        "extraction_method": "mock"
+      }
+    }
+  ],
+  "low_confidence_matches": []
+}

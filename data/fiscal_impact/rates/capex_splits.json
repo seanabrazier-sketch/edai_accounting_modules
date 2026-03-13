@@ -1,0 +1,37 @@
+{
+  "capex_splits": [
+    {
+      "category": "Land",
+      "generic_share": 0.1,
+      "commercial_share": 0.16666666666666669
+    },
+    {
+      "category": "Construction material",
+      "generic_share": 0.16000000000000003,
+      "commercial_share": 0.2666666666666667
+    },
+    {
+      "category": "Construction labor",
+      "generic_share": 0.24,
+      "commercial_share": 0.4
+    },
+    {
+      "category": "Machinery and tools",
+      "generic_share": 0.25,
+      "commercial_share": null
+    },
+    {
+      "category": "Tangible personal property (e.g., fixtures, computer equipment)",
+      "generic_share": 0.05,
+      "commercial_share": 0.16666666666666666
+    },
+    {
+      "category": "Inventory",
+      "generic_share": 0.2,
+      "commercial_share": null
+    }
+  ],
+  "source": "Excel Capex Splits tab; IRS / Boyd / Lincoln Institute data",
+  "vintage": "2024",
+  "note": "Shares are decimal fractions of total capex. generic=industrial/mfg split; commercial=commercial RE split"
+}

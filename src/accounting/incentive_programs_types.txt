@@ -41,6 +41,7 @@ n/a
 1. Grant
 5. Credit: Refundable
 5. Credit: Refundable
+3. Exemption
 6. Credit: No carryforward
 1. Grant
 3. Exemption
@@ -71,6 +72,7 @@ n/a
 3. Exemption
 3. Exemption
 3. Exemption
+3. Exemption
 5. Credit: Refundable
 4. Credit: Carryforward
 6. Credit: No carryforward
@@ -85,6 +87,7 @@ n/a
 4. Credit: Carryforward
 4. Credit: Carryforward
 4. Credit: Carryforward
+n/a
 3. Exemption
 1. Grant
 4. Credit: Carryforward
@@ -99,8 +102,6 @@ n/a
 6. Credit: No carryforward
 5. Credit: Refundable
 4. Credit: Carryforward
-3. Exemption
-3. Exemption
 4. Credit: Carryforward
 5. Credit: Refundable
 1. Grant
@@ -150,7 +151,6 @@ n/a
 5. Credit: Refundable
 1. Grant
 4. Credit: Carryforward
-n/a
 5. Credit: Refundable
 3. Exemption
 4. Credit: Carryforward
@@ -183,6 +183,7 @@ n/a
 5. Credit: Refundable
 4. Credit: Carryforward
 1. Grant
+3. Exemption
 1. Grant
 3. Exemption
 3. Exemption
@@ -199,7 +200,6 @@ n/a
 n/a
 1. Grant
 1. Grant
-3. Exemption
 3. Exemption
 6. Credit: No carryforward
 4. Credit: Carryforward

@@ -1,0 +1,1420 @@
+{
+  "bracket_rates": [
+    {
+      "state": "Alabama",
+      "Single Rate": 0.02,
+      "Single Bracket": 0,
+      "Married rate": 0.02,
+      "Married bracket": 0,
+      "Single Std Deduction": 3000,
+      "Married Std Deduction": 8500,
+      "Single Pers Exempt": 1500,
+      "Couple Pers Exempt": 3000,
+      "Dependent Pers Exempt": 1000
+    },
+    {
+      "state": "Alabama",
+      "Single Rate": 0.04,
+      "Single Bracket": 500,
+      "Married rate": 0.04,
+      "Married bracket": 1000
+    },
+    {
+      "state": "Alabama",
+      "Single Rate": 0.05,
+      "Single Bracket": 3000,
+      "Married rate": 0.05,
+      "Married bracket": 6000
+    },
+    {
+      "state": "Alaska"
+    },
+    {
+      "state": "Arizona",
+      "Single Rate": 0.025,
+      "Single Bracket": 0,
+      "Married rate": 0.025,
+      "Married bracket": 0,
+      "Single Std Deduction": 13850,
+      "Married Std Deduction": 27700,
+      "Dependent Pers Exempt": 100
+    },
+    {
+      "state": "Arkansas",
+      "Single Rate": 0.02,
+      "Single Bracket": 0,
+      "Married rate": 0.02,
+      "Married bracket": 0,
+      "Single Std Deduction": 2270,
+      "Married Std Deduction": 4540,
+      "Single Pers Exempt": 29,
+      "Couple Pers Exempt": 58,
+      "Dependent Pers Exempt": 29
+    },
+    {
+      "state": "Arkansas",
+      "Single Rate": 0.04,
+      "Single Bracket": 4300,
+      "Married rate": 0.04,
+      "Married bracket": 4300
+    },
+    {
+      "state": "Arkansas",
+      "Single Rate": 0.049,
+      "Single Bracket": 8500,
+      "Married rate": 0.049,
+      "Married bracket": 8500
+    },
+    {
+      "state": "California",
+      "Single Rate": 0.01,
+      "Single Bracket": 0,
+      "Married rate": 0.01,
+      "Married bracket": 0,
+      "Single Std Deduction": 5202,
+      "Married Std Deduction": 10404,
+      "Single Pers Exempt": 140,
+      "Couple Pers Exempt": 280,
+      "Dependent Pers Exempt": 433
+    },
+    {
+      "state": "California",
+      "Single Rate": 0.02,
+      "Single Bracket": 10099,
+      "Married rate": 0.02,
+      "Married bracket": 20198
+    },
+    {
+      "state": "California",
+      "Single Rate": 0.04,
+      "Single Bracket": 23942,
+      "Married rate": 0.04,
+      "Married bracket": 47884
+    },
+    {
+      "state": "California",
+      "Single Rate": 0.06,
+      "Single Bracket": 37788,
+      "Married rate": 0.06,
+      "Married bracket": 75576
+    },
+    {
+      "state": "California",
+      "Single Rate": 0.08,
+      "Single Bracket": 52455,
+      "Married rate": 0.08,
+      "Married bracket": 104910
+    },
+    {
+      "state": "California",
+      "Single Rate": 0.093,
+      "Single Bracket": 66295,
+      "Married rate": 0.093,
+      "Married bracket": 132590
+    },
+    {
+      "state": "California",
+      "Single Rate": 0.103,
+      "Single Bracket": 338639,
+      "Married rate": 0.103,
+      "Married bracket": 677278
+    },
+    {
+      "state": "California",
+      "Single Rate": 0.113,
+      "Single Bracket": 406364,
+      "Married rate": 0.113,
+      "Married bracket": 812728
+    },
+    {
+      "state": "California",
+      "Single Rate": 0.123,
+      "Single Bracket": 677275,
+      "Married rate": 0.123,
+      "Married bracket": 1000000
+    },
+    {
+      "state": "California",
+      "Single Rate": 0.133,
+      "Single Bracket": 1000000,
+      "Married rate": 0.133,
+      "Married bracket": 1354550
+    },
+    {
+      "state": "Colorado",
+      "Single Rate": 0.044,
+      "Single Bracket": 0,
+      "Married rate": 0.044,
+      "Married bracket": 0,
+      "Single Std Deduction": 13850,
+      "Married Std Deduction": 27700
+    },
+    {
+      "state": "Connecticut",
+      "Single Rate": 0.03,
+      "Single Bracket": 0,
+      "Married rate": 0.03,
+      "Married bracket": 0,
+      "Single Pers Exempt": 15000,
+      "Couple Pers Exempt": 24000,
+      "Dependent Pers Exempt": 0
+    },
+    {
+      "state": "Connecticut",
+      "Single Rate": 0.05,
+      "Single Bracket": 10000,
+      "Married rate": 0.05,
+      "Married bracket": 20000
+    },
+    {
+      "state": "Connecticut",
+      "Single Rate": 0.055,
+      "Single Bracket": 50000,
+      "Married rate": 0.055,
+      "Married bracket": 100000
+    },
+    {
+      "state": "Connecticut",
+      "Single Rate": 0.06,
+      "Single Bracket": 100000,
+      "Married rate": 0.06,
+      "Married bracket": 200000
+    },
+    {
+      "state": "Connecticut",
+      "Single Rate": 0.065,
+      "Single Bracket": 200000,
+      "Married rate": 0.065,
+      "Married bracket": 400000
+    },
+    {
+      "state": "Connecticut",
+      "Single Rate": 0.069,
+      "Single Bracket": 250000,
+      "Married rate": 0.069,
+      "Married bracket": 500000
+    },
+    {
+      "state": "Connecticut",
+      "Single Rate": 0.0699,
+      "Single Bracket": 500000,
+      "Married rate": 0.0699,
+      "Married bracket": 1000000
+    },
+    {
+      "state": "Delaware",
+      "Single Rate": 0.022,
+      "Single Bracket": 2000,
+      "Married rate": 0.022,
+      "Married bracket": 2000,
+      "Single Std Deduction": 3250,
+      "Married Std Deduction": 6500,
+      "Single Pers Exempt": 110,
+      "Couple Pers Exempt": 220,
+      "Dependent Pers Exempt": 110
+    },
+    {
+      "state": "Delaware",
+      "Single Rate": 0.039,
+      "Single Bracket": 5000,
+      "Married rate": 0.039,
+      "Married bracket": 5000
+    },
+    {
+      "state": "Delaware",
+      "Single Rate": 0.048,
+      "Single Bracket": 10000,
+      "Married rate": 0.048,
+      "Married bracket": 10000
+    },
+    {
+      "state": "Delaware",
+      "Single Rate": 0.052,
+      "Single Bracket": 20000,
+      "Married rate": 0.052,
+      "Married bracket": 20000
+    },
+    {
+      "state": "Delaware",
+      "Single Rate": 0.0555,
+      "Single Bracket": 25000,
+      "Married rate": 0.0555,
+      "Married bracket": 25000
+    },
+    {
+      "state": "Delaware",
+      "Single Rate": 0.066,
+      "Single Bracket": 60000,
+      "Married rate": 0.066,
+      "Married bracket": 60000
+    },
+    {
+      "state": "Florida"
+    },
+    {
+      "state": "Georgia",
+      "Single Rate": 0.01,
+      "Single Bracket": 0,
+      "Married rate": 0.01,
+      "Married bracket": 0,
+      "Single Std Deduction": 5400,
+      "Married Std Deduction": 7100,
+      "Single Pers Exempt": 2700,
+      "Couple Pers Exempt": 7400,
+      "Dependent Pers Exempt": 3000
+    },
+    {
+      "state": "Georgia",
+      "Single Rate": 0.02,
+      "Single Bracket": 750,
+      "Married rate": 0.02,
+      "Married bracket": 1000
+    },
+    {
+      "state": "Georgia",
+      "Single Rate": 0.03,
+      "Single Bracket": 2250,
+      "Married rate": 0.03,
+      "Married bracket": 3000
+    },
+    {
+      "state": "Georgia",
+      "Single Rate": 0.04,
+      "Single Bracket": 3750,
+      "Married rate": 0.04,
+      "Married bracket": 5000
+    },
+    {
+      "state": "Georgia",
+      "Single Rate": 0.05,
+      "Single Bracket": 5250,
+      "Married rate": 0.05,
+      "Married bracket": 7000
+    },
+    {
+      "state": "Georgia",
+      "Single Rate": 0.0575,
+      "Single Bracket": 7000,
+      "Married rate": 0.0575,
+      "Married bracket": 10000
+    },
+    {
+      "state": "Hawaii",
+      "Single Rate": 0.014,
+      "Single Bracket": 0,
+      "Married rate": 0.014,
+      "Married bracket": 0,
+      "Single Std Deduction": 2200,
+      "Married Std Deduction": 4400,
+      "Single Pers Exempt": 1144,
+      "Couple Pers Exempt": 2288,
+      "Dependent Pers Exempt": 1144
+    },
+    {
+      "state": "Hawaii",
+      "Single Rate": 0.032,
+      "Single Bracket": 2400,
+      "Married rate": 0.032,
+      "Married bracket": 4800
+    },
+    {
+      "state": "Hawaii",
+      "Single Rate": 0.055,
+      "Single Bracket": 4800,
+      "Married rate": 0.055,
+      "Married bracket": 9600
+    },
+    {
+      "state": "Hawaii",
+      "Single Rate": 0.064,
+      "Single Bracket": 9600,
+      "Married rate": 0.064,
+      "Married bracket": 19200
+    },
+    {
+      "state": "Hawaii",
+      "Single Rate": 0.068,
+      "Single Bracket": 14400,
+      "Married rate": 0.068,
+      "Married bracket": 28800
+    },
+    {
+      "state": "Hawaii",
+      "Single Rate": 0.072,
+      "Single Bracket": 19200,
+      "Married rate": 0.072,
+      "Married bracket": 38400
+    },
+    {
+      "state": "Hawaii",
+      "Single Rate": 0.076,
+      "Single Bracket": 24000,
+      "Married rate": 0.076,
+      "Married bracket": 48000
+    },
+    {
+      "state": "Hawaii",
+      "Single Rate": 0.079,
+      "Single Bracket": 36000,
+      "Married rate": 0.079,
+      "Married bracket": 72000
+    },
+    {
+      "state": "Hawaii",
+      "Single Rate": 0.0825,
+      "Single Bracket": 48000,
+      "Married rate": 0.0825,
+      "Married bracket": 96000
+    },
+    {
+      "state": "Hawaii",
+      "Single Rate": 0.09,
+      "Single Bracket": 150000,
+      "Married rate": 0.09,
+      "Married bracket": 300000
+    },
+    {
+      "state": "Hawaii",
+      "Single Rate": 0.1,
+      "Single Bracket": 175000,
+      "Married rate": 0.1,
+      "Married bracket": 350000
+    },
+    {
+      "state": "Hawaii",
+      "Single Rate": 0.11,
+      "Single Bracket": 200000,
+      "Married rate": 0.11,
+      "Married bracket": 400000
+    },
+    {
+      "state": "Idaho",
+      "Single Rate": 0.058,
+      "Single Bracket": 0,
+      "Married rate": 0.058,
+      "Married bracket": 0,
+      "Single Std Deduction": 13850,
+      "Married Std Deduction": 27700
+    },
+    {
+      "state": "Illinois",
+      "Single Rate": 0.0495,
+      "Single Bracket": 0,
+      "Married rate": 0.0495,
+      "Married bracket": 0,
+      "Single Pers Exempt": 2425,
+      "Couple Pers Exempt": 2850,
+      "Dependent Pers Exempt": 2425
+    },
+    {
+      "state": "Indiana",
+      "Single Rate": 0.0315,
+      "Single Bracket": 0,
+      "Married rate": 0.0315,
+      "Married bracket": 0,
+      "Single Pers Exempt": 1000,
+      "Couple Pers Exempt": 2000,
+      "Dependent Pers Exempt": 1000
+    },
+    {
+      "state": "Iowa",
+      "Single Rate": 0.044,
+      "Single Bracket": 0,
+      "Married rate": 0.044,
+      "Married bracket": 0,
+      "Single Pers Exempt": 40,
+      "Couple Pers Exempt": 80,
+      "Dependent Pers Exempt": 40
+    },
+    {
+      "state": "Iowa",
+      "Single Rate": 0.0482,
+      "Single Bracket": 6000,
+      "Married rate": 0.0482,
+      "Married bracket": 12000
+    },
+    {
+      "state": "Iowa",
+      "Single Rate": 0.057,
+      "Single Bracket": 30000,
+      "Married rate": 0.057,
+      "Married bracket": 60000
+    },
+    {
+      "state": "Iowa",
+      "Single Rate": 0.06,
+      "Single Bracket": 75000,
+      "Married rate": 0.06,
+      "Married bracket": 150000
+    },
+    {
+      "state": "Kansas",
+      "Single Rate": 0.031,
+      "Single Bracket": 0,
+      "Married rate": 0.031,
+      "Married bracket": 0,
+      "Single Std Deduction": 3500,
+      "Married Std Deduction": 8000,
+      "Single Pers Exempt": 2250,
+      "Couple Pers Exempt": 4500,
+      "Dependent Pers Exempt": 2250
+    },
+    {
+      "state": "Kansas",
+      "Single Rate": 0.0525,
+      "Single Bracket": 15000,
+      "Married rate": 0.0525,
+      "Married bracket": 30000
+    },
+    {
+      "state": "Kansas",
+      "Single Rate": 0.057,
+      "Single Bracket": 30000,
+      "Married rate": 0.057,
+      "Married bracket": 60000
+    },
+    {
+      "state": "Kentucky",
+      "Single Rate": 0.045,
+      "Single Bracket": 0,
+      "Married rate": 0.045,
+      "Married bracket": 0,
+      "Single Std Deduction": 2770,
+      "Married Std Deduction": 5540
+    },
+    {
+      "state": "Louisiana",
+      "Single Rate": 0.0185,
+      "Single Bracket": 0,
+      "Married rate": 0.0185,
+      "Married bracket": 0,
+      "Single Pers Exempt": 4500,
+      "Couple Pers Exempt": 9000,
+      "Dependent Pers Exempt": 1000
+    },
+    {
+      "state": "Louisiana",
+      "Single Rate": 0.035,
+      "Single Bracket": 12500,
+      "Married rate": 0.035,
+      "Married bracket": 25000
+    },
+    {
+      "state": "Louisiana",
+      "Single Rate": 0.04245,
+      "Single Bracket": 50000,
+      "Married rate": 0.04245,
+      "Married bracket": 100000
+    },
+    {
+      "state": "Maine",
+      "Single Rate": 0.058,
+      "Single Bracket": 0,
+      "Married rate": 0.058,
+      "Married bracket": 0,
+      "Single Std Deduction": 13850,
+      "Married Std Deduction": 27700,
+      "Single Pers Exempt": 4700,
+      "Couple Pers Exempt": 9400,
+      "Dependent Pers Exempt": 300
+    },
+    {
+      "state": "Maine",
+      "Single Rate": 0.0675,
+      "Single Bracket": 24500,
+      "Married rate": 0.0675,
+      "Married bracket": 49050
+    },
+    {
+      "state": "Maine",
+      "Single Rate": 0.0715,
+      "Single Bracket": 58050,
+      "Married rate": 0.0715,
+      "Married bracket": 116100
+    },
+    {
+      "state": "Maryland",
+      "Single Rate": 0.02,
+      "Single Bracket": 0,
+      "Married rate": 0.02,
+      "Married bracket": 0,
+      "Single Std Deduction": 2400,
+      "Married Std Deduction": 4850,
+      "Single Pers Exempt": 3200,
+      "Couple Pers Exempt": 6400,
+      "Dependent Pers Exempt": 3200
+    },
+    {
+      "state": "Maryland",
+      "Single Rate": 0.03,
+      "Single Bracket": 1000,
+      "Married rate": 0.03,
+      "Married bracket": 1000
+    },
+    {
+      "state": "Maryland",
+      "Single Rate": 0.04,
+      "Single Bracket": 2000,
+      "Married rate": 0.04,
+      "Married bracket": 2000
+    },
+    {
+      "state": "Maryland",
+      "Single Rate": 0.0475,
+      "Single Bracket": 3000,
+      "Married rate": 0.0475,
+      "Married bracket": 3000
+    },
+    {
+      "state": "Maryland",
+      "Single Rate": 0.05,
+      "Single Bracket": 100000,
+      "Married rate": 0.05,
+      "Married bracket": 150000
+    },
+    {
+      "state": "Maryland",
+      "Single Rate": 0.0525,
+      "Single Bracket": 125000,
+      "Married rate": 0.0525,
+      "Married bracket": 175000
+    },
+    {
+      "state": "Maryland",
+      "Single Rate": 0.055,
+      "Single Bracket": 150000,
+      "Married rate": 0.055,
+      "Married bracket": 225000
+    },
+    {
+      "state": "Maryland",
+      "Single Rate": 0.0575,
+      "Single Bracket": 250000,
+      "Married rate": 0.0575,
+      "Married bracket": 300000
+    },
+    {
+      "state": "Massachusetts",
+      "Single Rate": 0.05,
+      "Single Bracket": 0,
+      "Married rate": 0.05,
+      "Married bracket": 0,
+      "Single Pers Exempt": 4400,
+      "Couple Pers Exempt": 8800,
+      "Dependent Pers Exempt": 1000
+    },
+    {
+      "state": "Massachusetts",
+      "Single Rate": 0.09,
+      "Single Bracket": 1000000,
+      "Married rate": 0.09,
+      "Married bracket": 1000000
+    },
+    {
+      "state": "Michigan",
+      "Single Rate": 0.0425,
+      "Single Bracket": 0,
+      "Married rate": 0.0425,
+      "Married bracket": 0,
+      "Single Pers Exempt": 5000,
+      "Couple Pers Exempt": 10000,
+      "Dependent Pers Exempt": 5000
+    },
+    {
+      "state": "Minnesota",
+      "Single Rate": 0.0535,
+      "Single Bracket": 0,
+      "Married rate": 0.0535,
+      "Married bracket": 0,
+      "Single Std Deduction": 13825,
+      "Married Std Deduction": 27650,
+      "Dependent Pers Exempt": 4800
+    },
+    {
+      "state": "Minnesota",
+      "Single Rate": 0.068,
+      "Single Bracket": 30070,
+      "Married rate": 0.068,
+      "Married bracket": 43950
+    },
+    {
+      "state": "Minnesota",
+      "Single Rate": 0.0785,
+      "Single Bracket": 98760,
+      "Married rate": 0.0785,
+      "Married bracket": 174610
+    },
+    {
+      "state": "Minnesota",
+      "Single Rate": 0.0985,
+      "Single Bracket": 183340,
+      "Married rate": 0.0985,
+      "Married bracket": 304970
+    },
+    {
+      "state": "Mississippi",
+      "Single Rate": 0.05,
+      "Single Bracket": 10000,
+      "Married rate": 0.05,
+      "Married bracket": 10000,
+      "Single Std Deduction": 2300,
+      "Married Std Deduction": 4600,
+      "Single Pers Exempt": 6000,
+      "Couple Pers Exempt": 12000,
+      "Dependent Pers Exempt": 1500
+    },
+    {
+      "state": "Missouri",
+      "Single Rate": 0.02,
+      "Single Bracket": 1121,
+      "Married rate": 0.02,
+      "Married bracket": 1121,
+      "Single Std Deduction": 13850,
+      "Married Std Deduction": 27700
+    },
+    {
+      "state": "Missouri",
+      "Single Rate": 0.025,
+      "Single Bracket": 2242,
+      "Married rate": 0.025,
+      "Married bracket": 2242
+    },
+    {
+      "state": "Missouri",
+      "Single Rate": 0.03,
+      "Single Bracket": 3363,
+      "Married rate": 0.03,
+      "Married bracket": 3363
+    },
+    {
+      "state": "Missouri",
+      "Single Rate": 0.035,
+      "Single Bracket": 4484,
+      "Married rate": 0.035,
+      "Married bracket": 4484
+    },
+    {
+      "state": "Missouri",
+      "Single Rate": 0.04,
+      "Single Bracket": 5605,
+      "Married rate": 0.04,
+      "Married bracket": 5605
+    },
+    {
+      "state": "Missouri",
+      "Single Rate": 0.045,
+      "Single Bracket": 6726,
+      "Married rate": 0.045,
+      "Married bracket": 6726
+    },
+    {
+      "state": "Missouri",
+      "Single Rate": 0.0495,
+      "Single Bracket": 7847,
+      "Married rate": 0.0495,
+      "Married bracket": 7847
+    },
+    {
+      "state": "Montana",
+      "Single Rate": 0.01,
+      "Single Bracket": 0,
+      "Married rate": 0.01,
+      "Married bracket": 0,
+      "Single Std Deduction": 5540,
+      "Married Std Deduction": 11080,
+      "Single Pers Exempt": 2960,
+      "Couple Pers Exempt": 5920,
+      "Dependent Pers Exempt": 2960
+    },
+    {
+      "state": "Montana",
+      "Single Rate": 0.02,
+      "Single Bracket": 3600,
+      "Married rate": 0.02,
+      "Married bracket": 3600
+    },
+    {
+      "state": "Montana",
+      "Single Rate": 0.03,
+      "Single Bracket": 6300,
+      "Married rate": 0.03,
+      "Married bracket": 6300
+    },
+    {
+      "state": "Montana",
+      "Single Rate": 0.04,
+      "Single Bracket": 9700,
+      "Married rate": 0.04,
+      "Married bracket": 9700
+    },
+    {
+      "state": "Montana",
+      "Single Rate": 0.05,
+      "Single Bracket": 13000,
+      "Married rate": 0.05,
+      "Married bracket": 13000
+    },
+    {
+      "state": "Montana",
+      "Single Rate": 0.06,
+      "Single Bracket": 16800,
+      "Married rate": 0.06,
+      "Married bracket": 16800
+    },
+    {
+      "state": "Montana",
+      "Single Rate": 0.0675,
+      "Single Bracket": 21600,
+      "Married rate": 0.0675,
+      "Married bracket": 21600
+    },
+    {
+      "state": "Nebraska",
+      "Single Rate": 0.0246,
+      "Single Bracket": 0,
+      "Married rate": 0.0246,
+      "Married bracket": 0,
+      "Single Std Deduction": 7900,
+      "Married Std Deduction": 15800,
+      "Single Pers Exempt": 157,
+      "Couple Pers Exempt": 314,
+      "Dependent Pers Exempt": 157
+    },
+    {
+      "state": "Nebraska",
+      "Single Rate": 0.0351,
+      "Single Bracket": 3700,
+      "Married rate": 0.0351,
+      "Married bracket": 7390
+    },
+    {
+      "state": "Nebraska",
+      "Single Rate": 0.0501,
+      "Single Bracket": 22170,
+      "Married rate": 0.0501,
+      "Married bracket": 44350
+    },
+    {
+      "state": "Nebraska",
+      "Single Rate": 0.0664,
+      "Single Bracket": 35730,
+      "Married rate": 0.0664,
+      "Married bracket": 71460
+    },
+    {
+      "state": "Nevada"
+    },
+    {
+      "state": "New Hampshire",
+      "Single Pers Exempt": 2400,
+      "Couple Pers Exempt": 4800
+    },
+    {
+      "state": "New Jersey",
+      "Single Rate": 0.014,
+      "Single Bracket": 0,
+      "Married rate": 0.014,
+      "Married bracket": 0,
+      "Single Pers Exempt": 1000,
+      "Couple Pers Exempt": 2000,
+      "Dependent Pers Exempt": 1500
+    },
+    {
+      "state": "New Jersey",
+      "Single Rate": 0.0175,
+      "Single Bracket": 20000,
+      "Married rate": 0.0175,
+      "Married bracket": 20000
+    },
+    {
+      "state": "New Jersey",
+      "Single Rate": 0.035,
+      "Single Bracket": 35000,
+      "Married rate": 0.0245,
+      "Married bracket": 50000
+    },
+    {
+      "state": "New Jersey",
+      "Single Rate": 0.05525,
+      "Single Bracket": 40000,
+      "Married rate": 0.035,
+      "Married bracket": 70000
+    },
+    {
+      "state": "New Jersey",
+      "Single Rate": 0.0637,
+      "Single Bracket": 75000,
+      "Married rate": 0.05525,
+      "Married bracket": 80000
+    },
+    {
+      "state": "New Jersey",
+      "Single Rate": 0.0897,
+      "Single Bracket": 500000,
+      "Married rate": 0.0637,
+      "Married bracket": 150000
+    },
+    {
+      "state": "New Jersey",
+      "Single Rate": 0.1075,
+      "Single Bracket": 1000000,
+      "Married rate": 0.0897,
+      "Married bracket": 500000
+    },
+    {
+      "state": "New Jersey",
+      "Married rate": 0.1075,
+      "Married bracket": 1000000
+    },
+    {
+      "state": "New Mexico",
+      "Single Rate": 0.017,
+      "Single Bracket": 0,
+      "Married rate": 0.017,
+      "Married bracket": 0,
+      "Single Std Deduction": 13850,
+      "Married Std Deduction": 27700,
+      "Dependent Pers Exempt": 4000
+    },
+    {
+      "state": "New Mexico",
+      "Single Rate": 0.032,
+      "Single Bracket": 5500,
+      "Married rate": 0.032,
+      "Married bracket": 8000
+    },
+    {
+      "state": "New Mexico",
+      "Single Rate": 0.047,
+      "Single Bracket": 11000,
+      "Married rate": 0.047,
+      "Married bracket": 16000
+    },
+    {
+      "state": "New Mexico",
+      "Single Rate": 0.049,
+      "Single Bracket": 16000,
+      "Married rate": 0.049,
+      "Married bracket": 24000
+    },
+    {
+      "state": "New Mexico",
+      "Single Rate": 0.059,
+      "Single Bracket": 210000,
+      "Married rate": 0.059,
+      "Married bracket": 315000
+    },
+    {
+      "state": "New York",
+      "Single Rate": 0.04,
+      "Single Bracket": 0,
+      "Married rate": 0.04,
+      "Married bracket": 0,
+      "Single Std Deduction": 8000,
+      "Married Std Deduction": 16050,
+      "Dependent Pers Exempt": 1000
+    },
+    {
+      "state": "New York",
+      "Single Rate": 0.045,
+      "Single Bracket": 8500,
+      "Married rate": 0.045,
+      "Married bracket": 17150
+    },
+    {
+      "state": "New York",
+      "Single Rate": 0.0525,
+      "Single Bracket": 11700,
+      "Married rate": 0.0525,
+      "Married bracket": 23600
+    },
+    {
+      "state": "New York",
+      "Single Rate": 0.055,
+      "Single Bracket": 13900,
+      "Married rate": 0.055,
+      "Married bracket": 27900
+    },
+    {
+      "state": "New York",
+      "Single Rate": 0.06,
+      "Single Bracket": 80650,
+      "Married rate": 0.06,
+      "Married bracket": 161550
+    },
+    {
+      "state": "New York",
+      "Single Rate": 0.0685,
+      "Single Bracket": 215400,
+      "Married rate": 0.0685,
+      "Married bracket": 323200
+    },
+    {
+      "state": "New York",
+      "Single Rate": 0.0965,
+      "Single Bracket": 1077550,
+      "Married rate": 0.0965,
+      "Married bracket": 2155350
+    },
+    {
+      "state": "New York",
+      "Single Rate": 0.103,
+      "Single Bracket": 5000000,
+      "Married rate": 0.103,
+      "Married bracket": 5000000
+    },
+    {
+      "state": "New York",
+      "Single Rate": 0.109,
+      "Single Bracket": 25000000,
+      "Married rate": 0.109,
+      "Married bracket": 25000000
+    },
+    {
+      "state": "North Carolina",
+      "Single Rate": 0.0475,
+      "Single Bracket": 0,
+      "Married rate": 0.0475,
+      "Married bracket": 0,
+      "Single Std Deduction": 12750,
+      "Married Std Deduction": 25500
+    },
+    {
+      "state": "North Dakota",
+      "Single Rate": 0.011,
+      "Single Bracket": 0,
+      "Married rate": 0.011,
+      "Married bracket": 0,
+      "Single Std Deduction": 13850,
+      "Married Std Deduction": 27700
+    },
+    {
+      "state": "North Dakota",
+      "Single Rate": 0.0204,
+      "Single Bracket": 41775,
+      "Married rate": 0.0204,
+      "Married bracket": 69700
+    },
+    {
+      "state": "North Dakota",
+      "Single Rate": 0.0227,
+      "Single Bracket": 101050,
+      "Married rate": 0.0227,
+      "Married bracket": 168450
+    },
+    {
+      "state": "North Dakota",
+      "Single Rate": 0.0264,
+      "Single Bracket": 210825,
+      "Married rate": 0.0264,
+      "Married bracket": 256650
+    },
+    {
+      "state": "North Dakota",
+      "Single Rate": 0.029,
+      "Single Bracket": 458350,
+      "Married rate": 0.029,
+      "Married bracket": 458350
+    },
+    {
+      "state": "Ohio",
+      "Single Rate": 0.02765,
+      "Single Bracket": 26050,
+      "Married rate": 0.02765,
+      "Married bracket": 26050,
+      "Single Pers Exempt": 2400,
+      "Couple Pers Exempt": 4800,
+      "Dependent Pers Exempt": 2400
+    },
+    {
+      "state": "Ohio",
+      "Single Rate": 0.03226,
+      "Single Bracket": 46100,
+      "Married rate": 0.03226,
+      "Married bracket": 46100
+    },
+    {
+      "state": "Ohio",
+      "Single Rate": 0.03688,
+      "Single Bracket": 92150,
+      "Married rate": 0.03688,
+      "Married bracket": 92150
+    },
+    {
+      "state": "Ohio",
+      "Single Rate": 0.0399,
+      "Single Bracket": 115300,
+      "Married rate": 0.0399,
+      "Married bracket": 115300
+    },
+    {
+      "state": "Ohio",
+      "Single Rate": 0.04797,
+      "Single Bracket": 221300,
+      "Married rate": 0.04797,
+      "Married bracket": 221300
+    },
+    {
+      "state": "Oklahoma",
+      "Single Rate": 0.0025,
+      "Single Bracket": 0,
+      "Married rate": 0.0025,
+      "Married bracket": 0,
+      "Single Std Deduction": 6350,
+      "Married Std Deduction": 12700,
+      "Single Pers Exempt": 1000,
+      "Couple Pers Exempt": 2000,
+      "Dependent Pers Exempt": 1000
+    },
+    {
+      "state": "Oklahoma",
+      "Single Rate": 0.0075,
+      "Single Bracket": 1000,
+      "Married rate": 0.0075,
+      "Married bracket": 2000
+    },
+    {
+      "state": "Oklahoma",
+      "Single Rate": 0.0175,
+      "Single Bracket": 2500,
+      "Married rate": 0.0175,
+      "Married bracket": 5000
+    },
+    {
+      "state": "Oklahoma",
+      "Single Rate": 0.0275,
+      "Single Bracket": 3750,
+      "Married rate": 0.0275,
+      "Married bracket": 7500
+    },
+    {
+      "state": "Oklahoma",
+      "Single Rate": 0.0375,
+      "Single Bracket": 4900,
+      "Married rate": 0.0375,
+      "Married bracket": 9800
+    },
+    {
+      "state": "Oklahoma",
+      "Single Rate": 0.0475,
+      "Single Bracket": 7200,
+      "Married rate": 0.0475,
+      "Married bracket": 12200
+    },
+    {
+      "state": "Oregon",
+      "Single Rate": 0.0475,
+      "Single Bracket": 0,
+      "Married rate": 0.0475,
+      "Married bracket": 0,
+      "Single Std Deduction": 2605,
+      "Married Std Deduction": 5210,
+      "Single Pers Exempt": 236,
+      "Couple Pers Exempt": 472,
+      "Dependent Pers Exempt": 236
+    },
+    {
+      "state": "Oregon",
+      "Single Rate": 0.0675,
+      "Single Bracket": 4050,
+      "Married rate": 0.0675,
+      "Married bracket": 8100
+    },
+    {
+      "state": "Oregon",
+      "Single Rate": 0.0875,
+      "Single Bracket": 10200,
+      "Married rate": 0.0875,
+      "Married bracket": 20400
+    },
+    {
+      "state": "Oregon",
+      "Single Rate": 0.099,
+      "Single Bracket": 125000,
+      "Married rate": 0.099,
+      "Married bracket": 250000
+    },
+    {
+      "state": "Pennsylvania",
+      "Single Rate": 0.0307,
+      "Single Bracket": 0,
+      "Married rate": 0.0307,
+      "Married bracket": 0
+    },
+    {
+      "state": "Rhode Island",
+      "Single Rate": 0.0375,
+      "Single Bracket": 0,
+      "Married rate": 0.0375,
+      "Married bracket": 0,
+      "Single Std Deduction": 10000,
+      "Married Std Deduction": 20050,
+      "Single Pers Exempt": 4700,
+      "Couple Pers Exempt": 9400,
+      "Dependent Pers Exempt": 4700
+    },
+    {
+      "state": "Rhode Island",
+      "Single Rate": 0.0475,
+      "Single Bracket": 68200,
+      "Married rate": 0.0475,
+      "Married bracket": 68200
+    },
+    {
+      "state": "Rhode Island",
+      "Single Rate": 0.0599,
+      "Single Bracket": 155050,
+      "Married rate": 0.0599,
+      "Married bracket": 155050
+    },
+    {
+      "state": "South Carolina",
+      "Single Rate": 0,
+      "Single Bracket": 0,
+      "Married rate": 0,
+      "Married bracket": 0,
+      "Single Std Deduction": 13850,
+      "Married Std Deduction": 27700,
+      "Dependent Pers Exempt": 4430
+    },
+    {
+      "state": "South Carolina",
+      "Single Rate": 0.03,
+      "Single Bracket": 3200,
+      "Married rate": 0.03,
+      "Married bracket": 3200
+    },
+    {
+      "state": "South Carolina",
+      "Single Rate": 0.065,
+      "Single Bracket": 16040,
+      "Married rate": 0.065,
+      "Married bracket": 16040
+    },
+    {
+      "state": "South Dakota",
+      "Single Bracket": 0
+    },
+    {
+      "state": "Tennessee",
+      "Single Bracket": 0
+    },
+    {
+      "state": "Texas",
+      "Single Bracket": 0
+    },
+    {
+      "state": "Utah",
+      "Single Rate": 0.0485,
+      "Single Bracket": 0,
+      "Married rate": 0.0485,
+      "Married bracket": 0,
+      "Single Std Deduction": 831,
+      "Married Std Deduction": 1662,
+      "Dependent Pers Exempt": 1802
+    },
+    {
+      "state": "Vermont",
+      "Single Rate": 0.0335,
+      "Single Bracket": 0,
+      "Married rate": 0.0335,
+      "Married bracket": 0,
+      "Single Std Deduction": 6500,
+      "Married Std Deduction": 13050,
+      "Single Pers Exempt": 4500,
+      "Couple Pers Exempt": 9000,
+      "Dependent Pers Exempt": 4500
+    },
+    {
+      "state": "Vermont",
+      "Single Rate": 0.066,
+      "Single Bracket": 42150,
+      "Married rate": 0.066,
+      "Married bracket": 70450
+    },
+    {
+      "state": "Vermont",
+      "Single Rate": 0.076,
+      "Single Bracket": 102200,
+      "Married rate": 0.076,
+      "Married bracket": 170300
+    },
+    {
+      "state": "Vermont",
+      "Single Rate": 0.0875,
+      "Single Bracket": 213150,
+      "Married rate": 0.0875,
+      "Married bracket": 259500
+    },
+    {
+      "state": "Virginia",
+      "Single Rate": 0.02,
+      "Single Bracket": 0,
+      "Married rate": 0.02,
+      "Married bracket": 0,
+      "Single Std Deduction": 8000,
+      "Married Std Deduction": 16000,
+      "Single Pers Exempt": 930,
+      "Couple Pers Exempt": 1860,
+      "Dependent Pers Exempt": 930
+    },
+    {
+      "state": "Virginia",
+      "Single Rate": 0.03,
+      "Single Bracket": 3000,
+      "Married rate": 0.03,
+      "Married bracket": 3000
+    },
+    {
+      "state": "Virginia",
+      "Single Rate": 0.05,
+      "Single Bracket": 5000,
+      "Married rate": 0.05,
+      "Married bracket": 5000
+    },
+    {
+      "state": "Virginia",
+      "Single Rate": 0.0575,
+      "Single Bracket": 17000,
+      "Married rate": 0.0575,
+      "Married bracket": 17000
+    },
+    {
+      "state": "Washington",
+      "Single Std Deduction": 250000,
+      "Married Std Deduction": 250000
+    },
+    {
+      "state": "West Virginia",
+      "Single Rate": 0.03,
+      "Single Bracket": 0,
+      "Married rate": 0.03,
+      "Married bracket": 0,
+      "Single Pers Exempt": 2000,
+      "Couple Pers Exempt": 4000,
+      "Dependent Pers Exempt": 2000
+    },
+    {
+      "state": "West Virginia",
+      "Single Rate": 0.04,
+      "Single Bracket": 10000,
+      "Married rate": 0.04,
+      "Married bracket": 10000
+    },
+    {
+      "state": "West Virginia",
+      "Single Rate": 0.045,
+      "Single Bracket": 25000,
+      "Married rate": 0.045,
+      "Married bracket": 25000
+    },
+    {
+      "state": "West Virginia",
+      "Single Rate": 0.06,
+      "Single Bracket": 40000,
+      "Married rate": 0.06,
+      "Married bracket": 40000
+    },
+    {
+      "state": "West Virginia",
+      "Single Rate": 0.065,
+      "Single Bracket": 60000,
+      "Married rate": 0.065,
+      "Married bracket": 60000
+    },
+    {
+      "state": "Wisconsin",
+      "Single Rate": 0.0354,
+      "Single Bracket": 0,
+      "Married rate": 0.0354,
+      "Married bracket": 0,
+      "Single Std Deduction": 12760,
+      "Married Std Deduction": 23620,
+      "Single Pers Exempt": 700,
+      "Couple Pers Exempt": 1400,
+      "Dependent Pers Exempt": 700
+    },
+    {
+      "state": "Wisconsin",
+      "Single Rate": 0.0465,
+      "Single Bracket": 13810,
+      "Married rate": 0.0465,
+      "Married bracket": 18420
+    },
+    {
+      "state": "Wisconsin",
+      "Single Rate": 0.053,
+      "Single Bracket": 27630,
+      "Married rate": 0.053,
+      "Married bracket": 36840
+    },
+    {
+      "state": "Wisconsin",
+      "Single Rate": 0.0765,
+      "Single Bracket": 304170,
+      "Married rate": 0.0765,
+      "Married bracket": 405550
+    },
+    {
+      "state": "Wyoming"
+    },
+    {
+      "state": "D.C.",
+      "Single Rate": 0.04,
+      "Single Bracket": 0,
+      "Married rate": 0.04,
+      "Married bracket": 0,
+      "Single Std Deduction": 13850,
+      "Married Std Deduction": 27700,
+      "Single Pers Exempt": "n.a.",
+      "Couple Pers Exempt": "n.a.",
+      "Dependent Pers Exempt": "n.a."
+    },
+    {
+      "state": "D.C.",
+      "Single Rate": 0.06,
+      "Single Bracket": 10000,
+      "Married rate": 0.06,
+      "Married bracket": 10000
+    },
+    {
+      "state": "D.C.",
+      "Single Rate": 0.065,
+      "Single Bracket": 40000,
+      "Married rate": 0.065,
+      "Married bracket": 40000
+    },
+    {
+      "state": "D.C.",
+      "Single Rate": 0.085,
+      "Single Bracket": 60000,
+      "Married rate": 0.085,
+      "Married bracket": 60000
+    },
+    {
+      "state": "D.C.",
+      "Single Rate": 0.0925,
+      "Single Bracket": 250000,
+      "Married rate": 0.0925,
+      "Married bracket": 250000
+    },
+    {
+      "state": "D.C.",
+      "Single Rate": 0.0975,
+      "Single Bracket": 500000,
+      "Married rate": 0.0975,
+      "Married bracket": 500000
+    },
+    {
+      "state": "D.C.",
+      "Single Rate": 0.1075,
+      "Single Bracket": 1000000,
+      "Married rate": 0.1075,
+      "Married bracket": 1000000
+    }
+  ],
+  "richmond_va_calcs": {},
+  "source": "Tax Foundation via Excel Indiv Tax Rates CSV + Pers Inc Tax calcs",
+  "vintage": "2024",
+  "note": "204 bracket rows across 50 states + DC; Alaska/Florida/Nevada/SD/TN/TX/WA/WY have 0 rate"
+}

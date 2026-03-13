@@ -25,12 +25,14 @@ class IncentiveProgram(IncentiveProgramBase):
 
     def estimated_incentives(self) -> List[float]:
         output = self.two_years * self.project_level_inputs['Promised jobs']
+        # Year 0 = $0 (construction), Year 1 = full credit, Year 2 = full credit,
+        # Years 3-10 = $0.  The credit is awarded for two consecutive tax years.
         incentives = [0.0, output]
 
         for j in range(1, 10):
-            if len(incentives[2:]) + 1 >= 2:
-                incentives.append(0)
-            else:
+            if j == 1:   # Year 2 — second year of the two-year credit
                 incentives.append(output)
+            else:
+                incentives.append(0)
 
         return incentives

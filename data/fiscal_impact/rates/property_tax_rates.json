@@ -1,0 +1,742 @@
+{
+  "lincoln_city_data": [
+    {
+      "state_city": "Alabama_Birmingham",
+      "state": "Alabama",
+      "city": "Birmingham",
+      "commercial_rate_100k": 0.01311,
+      "commercial_rate_1m": 0.01311
+    },
+    {
+      "state_city": "Alaska_Anchorage",
+      "state": "Alaska",
+      "city": "Anchorage",
+      "commercial_rate_100k": 0.01241,
+      "commercial_rate_1m": 0.01493
+    },
+    {
+      "state_city": "Arizona_Phoenix",
+      "state": "Arizona",
+      "city": "Phoenix",
+      "commercial_rate_100k": 0.01899,
+      "commercial_rate_1m": 0.01899
+    },
+    {
+      "state_city": "Arkansas_Little Rock",
+      "state": "Arkansas",
+      "city": "Little Rock",
+      "commercial_rate_100k": 0.01408,
+      "commercial_rate_1m": 0.01408
+    },
+    {
+      "state_city": "California_Los Angeles",
+      "state": "California",
+      "city": "Los Angeles",
+      "commercial_rate_100k": 0.01166,
+      "commercial_rate_1m": 0.01166
+    },
+    {
+      "state_city": "Colorado_Denver",
+      "state": "Colorado",
+      "city": "Denver",
+      "commercial_rate_100k": 0.01776,
+      "commercial_rate_1m": 0.02137
+    },
+    {
+      "state_city": "Connecticut_Bridgeport",
+      "state": "Connecticut",
+      "city": "Bridgeport",
+      "commercial_rate_100k": 0.03042,
+      "commercial_rate_1m": 0.03042
+    },
+    {
+      "state_city": "DC_Washington",
+      "state": "DC",
+      "city": "Washington",
+      "commercial_rate_100k": 0.01191,
+      "commercial_rate_1m": 0.01191
+    },
+    {
+      "state_city": "Delaware_Wilmington",
+      "state": "Delaware",
+      "city": "Wilmington",
+      "commercial_rate_100k": 0.0113,
+      "commercial_rate_1m": 0.0113
+    },
+    {
+      "state_city": "Florida_Jacksonville",
+      "state": "Florida",
+      "city": "Jacksonville",
+      "commercial_rate_100k": 0.01287,
+      "commercial_rate_1m": 0.01526
+    },
+    {
+      "state_city": "Georgia_Atlanta",
+      "state": "Georgia",
+      "city": "Atlanta",
+      "commercial_rate_100k": 0.01543,
+      "commercial_rate_1m": 0.01543
+    },
+    {
+      "state_city": "Hawaii_Honolulu",
+      "state": "Hawaii",
+      "city": "Honolulu",
+      "commercial_rate_100k": 0.00906,
+      "commercial_rate_1m": 0.00906
+    },
+    {
+      "state_city": "Idaho_Boise",
+      "state": "Idaho",
+      "city": "Boise",
+      "commercial_rate_100k": 0.00661,
+      "commercial_rate_1m": 0.00661
+    },
+    {
+      "state_city": "Illinois_Aurora*",
+      "state": "Illinois",
+      "city": "Aurora*",
+      "commercial_rate_100k": 0.02732,
+      "commercial_rate_1m": 0.02732
+    },
+    {
+      "state_city": "Illinois_Chicago",
+      "state": "Illinois",
+      "city": "Chicago",
+      "commercial_rate_100k": 0.04005,
+      "commercial_rate_1m": 0.04005
+    },
+    {
+      "state_city": "Indiana_Indianapolis",
+      "state": "Indiana",
+      "city": "Indianapolis",
+      "commercial_rate_100k": 0.02222,
+      "commercial_rate_1m": 0.02717
+    },
+    {
+      "state_city": "Iowa_Des Moines",
+      "state": "Iowa",
+      "city": "Des Moines",
+      "commercial_rate_100k": 0.02033,
+      "commercial_rate_1m": 0.02855
+    },
+    {
+      "state_city": "Kansas_Wichita",
+      "state": "Kansas",
+      "city": "Wichita",
+      "commercial_rate_100k": 0.02568,
+      "commercial_rate_1m": 0.02568
+    },
+    {
+      "state_city": "Kentucky_Louisville",
+      "state": "Kentucky",
+      "city": "Louisville",
+      "commercial_rate_100k": 0.01343,
+      "commercial_rate_1m": 0.01343
+    },
+    {
+      "state_city": "Louisiana_New Orleans",
+      "state": "Louisiana",
+      "city": "New Orleans",
+      "commercial_rate_100k": 0.01979,
+      "commercial_rate_1m": 0.01979
+    },
+    {
+      "state_city": "Maine_Portland",
+      "state": "Maine",
+      "city": "Portland",
+      "commercial_rate_100k": 0.01242,
+      "commercial_rate_1m": 0.01242
+    },
+    {
+      "state_city": "Maryland_Baltimore",
+      "state": "Maryland",
+      "city": "Baltimore",
+      "commercial_rate_100k": 0.02633,
+      "commercial_rate_1m": 0.02633
+    },
+    {
+      "state_city": "Massachusetts_Boston",
+      "state": "Massachusetts",
+      "city": "Boston",
+      "commercial_rate_100k": 0.0178,
+      "commercial_rate_1m": 0.0178
+    },
+    {
+      "state_city": "Michigan_Detroit",
+      "state": "Michigan",
+      "city": "Detroit",
+      "commercial_rate_100k": 0.03912,
+      "commercial_rate_1m": 0.03912
+    },
+    {
+      "state_city": "Minnesota_Minneapolis",
+      "state": "Minnesota",
+      "city": "Minneapolis",
+      "commercial_rate_100k": 0.01555,
+      "commercial_rate_1m": 0.0245
+    },
+    {
+      "state_city": "Mississippi_Jackson",
+      "state": "Mississippi",
+      "city": "Jackson",
+      "commercial_rate_100k": 0.02732,
+      "commercial_rate_1m": 0.02732
+    },
+    {
+      "state_city": "Missouri_Kansas City",
+      "state": "Missouri",
+      "city": "Kansas City",
+      "commercial_rate_100k": 0.02851,
+      "commercial_rate_1m": 0.02851
+    },
+    {
+      "state_city": "Montana_Billings",
+      "state": "Montana",
+      "city": "Billings",
+      "commercial_rate_100k": 0.01094,
+      "commercial_rate_1m": 0.01094
+    },
+    {
+      "state_city": "Nebraska_Omaha",
+      "state": "Nebraska",
+      "city": "Omaha",
+      "commercial_rate_100k": 0.01876,
+      "commercial_rate_1m": 0.02045
+    },
+    {
+      "state_city": "Nevada_Las Vegas",
+      "state": "Nevada",
+      "city": "Las Vegas",
+      "commercial_rate_100k": 0.01131,
+      "commercial_rate_1m": 0.01131
+    },
+    {
+      "state_city": "New Hampshire_Manchester",
+      "state": "New Hampshire",
+      "city": "Manchester",
+      "commercial_rate_100k": 0.01461,
+      "commercial_rate_1m": 0.01461
+    },
+    {
+      "state_city": "New Jersey_Newark",
+      "state": "New Jersey",
+      "city": "Newark",
+      "commercial_rate_100k": 0.02667,
+      "commercial_rate_1m": 0.02667
+    },
+    {
+      "state_city": "New Mexico_Albuquerque",
+      "state": "New Mexico",
+      "city": "Albuquerque",
+      "commercial_rate_100k": 0.01632,
+      "commercial_rate_1m": 0.01632
+    },
+    {
+      "state_city": "New York_Buffalo*",
+      "state": "New York",
+      "city": "Buffalo*",
+      "commercial_rate_100k": 0.01781,
+      "commercial_rate_1m": 0.01781
+    },
+    {
+      "state_city": "New York_New York City",
+      "state": "New York",
+      "city": "New York City",
+      "commercial_rate_100k": 0.0142,
+      "commercial_rate_1m": 0.0142
+    },
+    {
+      "state_city": "North Carolina_Charlotte",
+      "state": "North Carolina",
+      "city": "Charlotte",
+      "commercial_rate_100k": 0.00759,
+      "commercial_rate_1m": 0.00759
+    },
+    {
+      "state_city": "North Dakota_Fargo",
+      "state": "North Dakota",
+      "city": "Fargo",
+      "commercial_rate_100k": 0.01122,
+      "commercial_rate_1m": 0.01122
+    },
+    {
+      "state_city": "Ohio_Columbus",
+      "state": "Ohio",
+      "city": "Columbus",
+      "commercial_rate_100k": 0.01894,
+      "commercial_rate_1m": 0.01894
+    },
+    {
+      "state_city": "Oklahoma_Oklahoma City",
+      "state": "Oklahoma",
+      "city": "Oklahoma City",
+      "commercial_rate_100k": 0.01348,
+      "commercial_rate_1m": 0.01348
+    },
+    {
+      "state_city": "Oregon_Portland",
+      "state": "Oregon",
+      "city": "Portland",
+      "commercial_rate_100k": 0.02588,
+      "commercial_rate_1m": 0.02588
+    },
+    {
+      "state_city": "Pennsylvania_Philadelphia",
+      "state": "Pennsylvania",
+      "city": "Philadelphia",
+      "commercial_rate_100k": 0.01069,
+      "commercial_rate_1m": 0.01829
+    },
+    {
+      "state_city": "Rhode Island_Providence",
+      "state": "Rhode Island",
+      "city": "Providence",
+      "commercial_rate_100k": 0.03336,
+      "commercial_rate_1m": 0.03336
+    },
+    {
+      "state_city": "South Carolina_Charleston",
+      "state": "South Carolina",
+      "city": "Charleston",
+      "commercial_rate_100k": 0.01781,
+      "commercial_rate_1m": 0.01781
+    },
+    {
+      "state_city": "South Dakota_Sioux Falls",
+      "state": "South Dakota",
+      "city": "Sioux Falls",
+      "commercial_rate_100k": 0.01281,
+      "commercial_rate_1m": 0.01281
+    },
+    {
+      "state_city": "Tennessee_Nashville",
+      "state": "Tennessee",
+      "city": "Nashville",
+      "commercial_rate_100k": 0.01247,
+      "commercial_rate_1m": 0.01247
+    },
+    {
+      "state_city": "Texas_Houston",
+      "state": "Texas",
+      "city": "Houston",
+      "commercial_rate_100k": 0.02098,
+      "commercial_rate_1m": 0.02098
+    },
+    {
+      "state_city": "Utah_Salt Lake City",
+      "state": "Utah",
+      "city": "Salt Lake City",
+      "commercial_rate_100k": 0.00827,
+      "commercial_rate_1m": 0.01003
+    },
+    {
+      "state_city": "Vermont_Burlington",
+      "state": "Vermont",
+      "city": "Burlington",
+      "commercial_rate_100k": 0.02022,
+      "commercial_rate_1m": 0.02022
+    },
+    {
+      "state_city": "Virginia_Virginia Beach",
+      "state": "Virginia",
+      "city": "Virginia Beach",
+      "commercial_rate_100k": 0.00935,
+      "commercial_rate_1m": 0.00935
+    },
+    {
+      "state_city": "Washington_Seattle",
+      "state": "Washington",
+      "city": "Seattle",
+      "commercial_rate_100k": 0.00793,
+      "commercial_rate_1m": 0.00793
+    },
+    {
+      "state_city": "West Virginia_Charleston",
+      "state": "West Virginia",
+      "city": "Charleston",
+      "commercial_rate_100k": 0.01856,
+      "commercial_rate_1m": 0.01856
+    },
+    {
+      "state_city": "Wisconsin_Milwaukee",
+      "state": "Wisconsin",
+      "city": "Milwaukee",
+      "commercial_rate_100k": 0.02325,
+      "commercial_rate_1m": 0.02377
+    },
+    {
+      "state_city": "Wyoming_Cheyenne",
+      "state": "Wyoming",
+      "city": "Cheyenne",
+      "commercial_rate_100k": 0.006,
+      "commercial_rate_1m": 0.006
+    },
+    {
+      "state_city": "AVERAGE_null",
+      "state": "AVERAGE",
+      "city": "null",
+      "commercial_rate_100k": 0.01756,
+      "commercial_rate_1m": 0.01836
+    },
+    {
+      "state_city": "x",
+      "state": "Appendix Table 3c: Commercial Property Taxes for Selected Rural Municipalities",
+      "city": null,
+      "commercial_rate_100k": null,
+      "commercial_rate_1m": null
+    },
+    {
+      "state_city": "State_city",
+      "state": "State",
+      "city": "City",
+      "commercial_rate_100k": "Tax rate",
+      "commercial_rate_1m": "Tax rate, $1M"
+    },
+    {
+      "state_city": "Alabama_Monroeville",
+      "state": "Alabama",
+      "city": "Monroeville",
+      "commercial_rate_100k": 0.00876,
+      "commercial_rate_1m": 0.00876
+    },
+    {
+      "state_city": "Alaska_Ketchikan",
+      "state": "Alaska",
+      "city": "Ketchikan",
+      "commercial_rate_100k": 0.0092,
+      "commercial_rate_1m": 0.01092
+    },
+    {
+      "state_city": "Arizona_Safford",
+      "state": "Arizona",
+      "city": "Safford",
+      "commercial_rate_100k": 0.00938,
+      "commercial_rate_1m": 0.00938
+    },
+    {
+      "state_city": "Arkansas_Pocahontas",
+      "state": "Arkansas",
+      "city": "Pocahontas",
+      "commercial_rate_100k": 0.00819,
+      "commercial_rate_1m": 0.00819
+    },
+    {
+      "state_city": "California_Yreka",
+      "state": "California",
+      "city": "Yreka",
+      "commercial_rate_100k": 0.01046,
+      "commercial_rate_1m": 0.01046
+    }
+  ],
+  "lincoln_state_data": [
+    {
+      "State": "Alabama",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01179",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.00942",
+      "State name to use": "Alabama"
+    },
+    {
+      "State": "Alaska",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01273",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01207",
+      "State name to use": "Alaska"
+    },
+    {
+      "State": "Arizona",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.017595",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01582",
+      "State name to use": "Arizona"
+    },
+    {
+      "State": "Arkansas",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01113",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.0111",
+      "State name to use": "Arkansas"
+    },
+    {
+      "State": "California",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01115",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.00892",
+      "State name to use": "California"
+    },
+    {
+      "State": "Colorado",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.02259",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.018095",
+      "State name to use": "Colorado"
+    },
+    {
+      "State": "Connecticut",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.027205",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01488",
+      "State name to use": "Connecticut"
+    },
+    {
+      "State": "DC",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01261",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01394",
+      "State name to use": "District of Columbia"
+    },
+    {
+      "State": "Delaware",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.00773",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.004635",
+      "State name to use": "Delaware"
+    },
+    {
+      "State": "Florida",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01874",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.015165",
+      "State name to use": "Florida"
+    },
+    {
+      "State": "Georgia",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.016005",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01452",
+      "State name to use": "Georgia"
+    },
+    {
+      "State": "Hawaii",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.00797",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.00487",
+      "State name to use": "Hawaii"
+    },
+    {
+      "State": "Idaho",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01223",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.010215",
+      "State name to use": "Idaho"
+    },
+    {
+      "State": "Illinois",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.028846667",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.016873333",
+      "State name to use": "Illinois"
+    },
+    {
+      "State": "Indiana",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.029025",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.023555",
+      "State name to use": "Indiana"
+    },
+    {
+      "State": "Iowa",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.025775",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.015385",
+      "State name to use": "Iowa"
+    },
+    {
+      "State": "Kansas",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.038285",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.021015",
+      "State name to use": "Kansas"
+    },
+    {
+      "State": "Kentucky",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01356",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.007685",
+      "State name to use": "Kentucky"
+    },
+    {
+      "State": "Louisiana",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01771",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01812",
+      "State name to use": "Louisiana"
+    },
+    {
+      "State": "Maine",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.02248",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.011825",
+      "State name to use": "Maine"
+    },
+    {
+      "State": "Maryland",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.02427",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01218",
+      "State name to use": "Maryland"
+    },
+    {
+      "State": "Massachusetts",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.019225",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01154",
+      "State name to use": "Massachusetts"
+    },
+    {
+      "State": "Michigan",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.033195",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01991",
+      "State name to use": "Michigan"
+    },
+    {
+      "State": "Minnesota",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.02736",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.017045",
+      "State name to use": "Minnesota"
+    },
+    {
+      "State": "Mississippi",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.023685",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.02409",
+      "State name to use": "Mississippi"
+    },
+    {
+      "State": "Missouri",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.024515",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.019655",
+      "State name to use": "Missouri"
+    },
+    {
+      "State": "Montana",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01183",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.009305",
+      "State name to use": "Montana"
+    },
+    {
+      "State": "Nebraska",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.021855",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.017785",
+      "State name to use": "Nebraska"
+    },
+    {
+      "State": "Nevada",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.012035",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.00965",
+      "State name to use": "Nevada"
+    },
+    {
+      "State": "New Hampshire",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01894",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.011365",
+      "State name to use": "New Hampshire"
+    },
+    {
+      "State": "New Jersey",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.02423",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01454",
+      "State name to use": "New Jersey"
+    },
+    {
+      "State": "New Mexico",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01237",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.010055",
+      "State name to use": "New Mexico"
+    },
+    {
+      "State": "New York",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.019",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.0114825",
+      "State name to use": "New York"
+    },
+    {
+      "State": "North Carolina",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.010725",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.0074",
+      "State name to use": "North Carolina"
+    },
+    {
+      "State": "North Dakota",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01361",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.009365",
+      "State name to use": "North Dakota"
+    },
+    {
+      "State": "Ohio",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01933",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01165",
+      "State name to use": "Ohio"
+    },
+    {
+      "State": "Oklahoma",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01102",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01222",
+      "State name to use": "Oklahoma"
+    },
+    {
+      "State": "Oregon",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01807",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01446",
+      "State name to use": "Oregon"
+    },
+    {
+      "State": "Pennsylvania",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01965",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01179",
+      "State name to use": "Pennsylvania"
+    },
+    {
+      "State": "Rhode Island",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.02871",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.015315",
+      "State name to use": "Rhode Island"
+    },
+    {
+      "State": "South Carolina",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.02375",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.03081",
+      "State name to use": "South Carolina"
+    },
+    {
+      "State": "South Dakota",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.01505",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.009035",
+      "State name to use": "South Dakota"
+    },
+    {
+      "State": "Tennessee",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.010535",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.00987",
+      "State name to use": "Tennessee"
+    },
+    {
+      "State": "Texas",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.021445",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.023635",
+      "State name to use": "Texas"
+    },
+    {
+      "State": "Utah",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.012645",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01015",
+      "State name to use": "Utah"
+    },
+    {
+      "State": "Vermont",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.02343",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01517",
+      "State name to use": "Vermont"
+    },
+    {
+      "State": "Virginia",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.00934",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.006575",
+      "State name to use": "Virginia"
+    },
+    {
+      "State": "Washington",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.009585",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.00777",
+      "State name to use": "Washington"
+    },
+    {
+      "State": "West Virginia",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.014415",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01451",
+      "State name to use": "West Virginia"
+    },
+    {
+      "State": "Wisconsin",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.024425",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.01343",
+      "State name to use": "Wisconsin"
+    },
+    {
+      "State": "Wyoming",
+      "Commercial tax rate, $1M, avg. urban and rural": "0.007085",
+      "Industrial tax rate, $1M, avg. urban and rural": "0.006955",
+      "State name to use": "Wyoming"
+    }
+  ],
+  "source": "Lincoln Institute 50-State Property Tax Comparison, taxes paid 2019",
+  "vintage": "2019/2024",
+  "note": "commercial_rate_1m = effective tax rate on $1M commercial property"
+}

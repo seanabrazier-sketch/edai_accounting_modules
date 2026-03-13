@@ -1,0 +1,767 @@
+[
+  {
+    "State": "NJ",
+    "Rate per 100 USD of payroll": 6.44,
+    "State_class": "NJ_9015"
+  },
+  {
+    "State": "CA",
+    "Rate per 100 USD of payroll": 5.82,
+    "State_class": "CA_9015"
+  },
+  {
+    "State": "HI",
+    "Rate per 100 USD of payroll": 5.2,
+    "State_class": "HI_9015"
+  },
+  {
+    "State": "WI",
+    "Rate per 100 USD of payroll": 4.5,
+    "State_class": "WI_9015"
+  },
+  {
+    "State": "RI",
+    "Rate per 100 USD of payroll": 4.41,
+    "State_class": "RI_9015"
+  },
+  {
+    "State": "MO",
+    "Rate per 100 USD of payroll": 4.24,
+    "State_class": "MO_9015"
+  },
+  {
+    "State": "ME",
+    "Rate per 100 USD of payroll": 4.23,
+    "State_class": "ME_9015"
+  },
+  {
+    "State": "ID",
+    "Rate per 100 USD of payroll": 4.21,
+    "State_class": "ID_9015"
+  },
+  {
+    "State": "VT",
+    "Rate per 100 USD of payroll": 4.2,
+    "State_class": "VT_9015"
+  },
+  {
+    "State": "NY",
+    "Rate per 100 USD of payroll": 4.14,
+    "State_class": "NY_9015"
+  },
+  {
+    "State": "LA",
+    "Rate per 100 USD of payroll": 3.99,
+    "State_class": "LA_9015"
+  },
+  {
+    "State": "CT",
+    "Rate per 100 USD of payroll": 3.92,
+    "State_class": "CT_9015"
+  },
+  {
+    "State": "SC",
+    "Rate per 100 USD of payroll": 3.82,
+    "State_class": "SC_9015"
+  },
+  {
+    "State": "SD",
+    "Rate per 100 USD of payroll": 3.77,
+    "State_class": "SD_9015"
+  },
+  {
+    "State": "GA",
+    "Rate per 100 USD of payroll": 3.71,
+    "State_class": "GA_9015"
+  },
+  {
+    "State": "FL",
+    "Rate per 100 USD of payroll": 3.64,
+    "State_class": "FL_9015"
+  },
+  {
+    "State": "AK",
+    "Rate per 100 USD of payroll": 3.62,
+    "State_class": "AK_9015"
+  },
+  {
+    "State": "MN",
+    "Rate per 100 USD of payroll": 3.61,
+    "State_class": "MN_9015"
+  },
+  {
+    "State": "AL",
+    "Rate per 100 USD of payroll": 3.59,
+    "State_class": "AL_9015"
+  },
+  {
+    "State": "NM",
+    "Rate per 100 USD of payroll": 3.59,
+    "State_class": "NM_9015"
+  },
+  {
+    "State": "DE",
+    "Rate per 100 USD of payroll": 3.58,
+    "State_class": "DE_9015"
+  },
+  {
+    "State": "PA",
+    "Rate per 100 USD of payroll": 3.57,
+    "State_class": "PA_9015"
+  },
+  {
+    "State": "OK",
+    "Rate per 100 USD of payroll": 3.5,
+    "State_class": "OK_9015"
+  },
+  {
+    "State": "NH",
+    "Rate per 100 USD of payroll": 3.38,
+    "State_class": "NH_9015"
+  },
+  {
+    "State": "NE",
+    "Rate per 100 USD of payroll": 3.33,
+    "State_class": "NE_9015"
+  },
+  {
+    "State": "MT",
+    "Rate per 100 USD of payroll": 3.12,
+    "State_class": "MT_9015"
+  },
+  {
+    "State": "IA",
+    "Rate per 100 USD of payroll": 3.03,
+    "State_class": "IA_9015"
+  },
+  {
+    "State": "MA",
+    "Rate per 100 USD of payroll": 2.94,
+    "State_class": "MA_9015"
+  },
+  {
+    "State": "WY",
+    "Rate per 100 USD of payroll": 2.92,
+    "State_class": "WY_9015"
+  },
+  {
+    "State": "IL",
+    "Rate per 100 USD of payroll": 2.89,
+    "State_class": "IL_9015"
+  },
+  {
+    "State": "KS",
+    "Rate per 100 USD of payroll": 2.87,
+    "State_class": "KS_9015"
+  },
+  {
+    "State": "OH",
+    "Rate per 100 USD of payroll": 2.79,
+    "State_class": "OH_9015"
+  },
+  {
+    "State": "MI",
+    "Rate per 100 USD of payroll": 2.76,
+    "State_class": "MI_9015"
+  },
+  {
+    "State": "WA",
+    "Rate per 100 USD of payroll": 2.76,
+    "State_class": "WA_9015"
+  },
+  {
+    "State": "NV",
+    "Rate per 100 USD of payroll": 2.67,
+    "State_class": "NV_9015"
+  },
+  {
+    "State": "CO",
+    "Rate per 100 USD of payroll": 2.51,
+    "State_class": "CO_9015"
+  },
+  {
+    "State": "NC",
+    "Rate per 100 USD of payroll": 2.51,
+    "State_class": "NC_9015"
+  },
+  {
+    "State": "MS",
+    "Rate per 100 USD of payroll": 2.44,
+    "State_class": "MS_9015"
+  },
+  {
+    "State": "AZ",
+    "Rate per 100 USD of payroll": 2.29,
+    "State_class": "AZ_9015"
+  },
+  {
+    "State": "UT",
+    "Rate per 100 USD of payroll": 2.1,
+    "State_class": "UT_9015"
+  },
+  {
+    "State": "ND",
+    "Rate per 100 USD of payroll": 2.09,
+    "State_class": "ND_9015"
+  },
+  {
+    "State": "MD",
+    "Rate per 100 USD of payroll": 2.02,
+    "State_class": "MD_9015"
+  },
+  {
+    "State": "TN",
+    "Rate per 100 USD of payroll": 1.93,
+    "State_class": "TN_9015"
+  },
+  {
+    "State": "TX",
+    "Rate per 100 USD of payroll": 1.91,
+    "State_class": "TX_9015"
+  },
+  {
+    "State": "KY",
+    "Rate per 100 USD of payroll": 1.85,
+    "State_class": "KY_9015"
+  },
+  {
+    "State": "IN",
+    "Rate per 100 USD of payroll": 1.84,
+    "State_class": "IN_9015"
+  },
+  {
+    "State": "DC",
+    "Rate per 100 USD of payroll": 1.84,
+    "State_class": "DC_9015"
+  },
+  {
+    "State": "VA",
+    "Rate per 100 USD of payroll": 1.78,
+    "State_class": "VA_9015"
+  },
+  {
+    "State": "WV",
+    "Rate per 100 USD of payroll": 1.76,
+    "State_class": "WV_9015"
+  },
+  {
+    "State": "OR",
+    "Rate per 100 USD of payroll": 1.69,
+    "State_class": "OR_9015"
+  },
+  {
+    "State": "AR",
+    "Rate per 100 USD of payroll": 1.39,
+    "State_class": "AR_9015"
+  },
+  {
+    "State": "HI",
+    "Rate per 100 USD of payroll": 0.41,
+    "State_class": "HI_8810"
+  },
+  {
+    "State": "WY",
+    "Rate per 100 USD of payroll": 0.38,
+    "State_class": "WY_8810"
+  },
+  {
+    "State": "CA",
+    "Rate per 100 USD of payroll": 0.27,
+    "State_class": "CA_8810"
+  },
+  {
+    "State": "MT",
+    "Rate per 100 USD of payroll": 0.27,
+    "State_class": "MT_8810"
+  },
+  {
+    "State": "AK",
+    "Rate per 100 USD of payroll": 0.26,
+    "State_class": "AK_8810"
+  },
+  {
+    "State": "ME",
+    "Rate per 100 USD of payroll": 0.25,
+    "State_class": "ME_8810"
+  },
+  {
+    "State": "VT",
+    "Rate per 100 USD of payroll": 0.21,
+    "State_class": "VT_8810"
+  },
+  {
+    "State": "LA",
+    "Rate per 100 USD of payroll": 0.2,
+    "State_class": "LA_8810"
+  },
+  {
+    "State": "NM",
+    "Rate per 100 USD of payroll": 0.2,
+    "State_class": "NM_8810"
+  },
+  {
+    "State": "IA",
+    "Rate per 100 USD of payroll": 0.2,
+    "State_class": "IA_8810"
+  },
+  {
+    "State": "SC",
+    "Rate per 100 USD of payroll": 0.19,
+    "State_class": "SC_8810"
+  },
+  {
+    "State": "WI",
+    "Rate per 100 USD of payroll": 0.19,
+    "State_class": "WI_8810"
+  },
+  {
+    "State": "ID",
+    "Rate per 100 USD of payroll": 0.18,
+    "State_class": "ID_8810"
+  },
+  {
+    "State": "NJ",
+    "Rate per 100 USD of payroll": 0.18,
+    "State_class": "NJ_8810"
+  },
+  {
+    "State": "MO",
+    "Rate per 100 USD of payroll": 0.18,
+    "State_class": "MO_8810"
+  },
+  {
+    "State": "MS",
+    "Rate per 100 USD of payroll": 0.18,
+    "State_class": "MS_8810"
+  },
+  {
+    "State": "AL",
+    "Rate per 100 USD of payroll": 0.17,
+    "State_class": "AL_8810"
+  },
+  {
+    "State": "OK",
+    "Rate per 100 USD of payroll": 0.17,
+    "State_class": "OK_8810"
+  },
+  {
+    "State": "NE",
+    "Rate per 100 USD of payroll": 0.17,
+    "State_class": "NE_8810"
+  },
+  {
+    "State": "SD",
+    "Rate per 100 USD of payroll": 0.17,
+    "State_class": "SD_8810"
+  },
+  {
+    "State": "RI",
+    "Rate per 100 USD of payroll": 0.16,
+    "State_class": "RI_8810"
+  },
+  {
+    "State": "NY",
+    "Rate per 100 USD of payroll": 0.16,
+    "State_class": "NY_8810"
+  },
+  {
+    "State": "FL",
+    "Rate per 100 USD of payroll": 0.16,
+    "State_class": "FL_8810"
+  },
+  {
+    "State": "NH",
+    "Rate per 100 USD of payroll": 0.14,
+    "State_class": "NH_8810"
+  },
+  {
+    "State": "DE",
+    "Rate per 100 USD of payroll": 0.14,
+    "State_class": "DE_8810"
+  },
+  {
+    "State": "MN",
+    "Rate per 100 USD of payroll": 0.14,
+    "State_class": "MN_8810"
+  },
+  {
+    "State": "GA",
+    "Rate per 100 USD of payroll": 0.13,
+    "State_class": "GA_8810"
+  },
+  {
+    "State": "IN",
+    "Rate per 100 USD of payroll": 0.13,
+    "State_class": "IN_8810"
+  },
+  {
+    "State": "PA",
+    "Rate per 100 USD of payroll": 0.13,
+    "State_class": "PA_8810"
+  },
+  {
+    "State": "KY",
+    "Rate per 100 USD of payroll": 0.13,
+    "State_class": "KY_8810"
+  },
+  {
+    "State": "NC",
+    "Rate per 100 USD of payroll": 0.12,
+    "State_class": "NC_8810"
+  },
+  {
+    "State": "CT",
+    "Rate per 100 USD of payroll": 0.12,
+    "State_class": "CT_8810"
+  },
+  {
+    "State": "TN",
+    "Rate per 100 USD of payroll": 0.12,
+    "State_class": "TN_8810"
+  },
+  {
+    "State": "WV",
+    "Rate per 100 USD of payroll": 0.11,
+    "State_class": "WV_8810"
+  },
+  {
+    "State": "IL",
+    "Rate per 100 USD of payroll": 0.11,
+    "State_class": "IL_8810"
+  },
+  {
+    "State": "NV",
+    "Rate per 100 USD of payroll": 0.11,
+    "State_class": "NV_8810"
+  },
+  {
+    "State": "KS",
+    "Rate per 100 USD of payroll": 0.11,
+    "State_class": "KS_8810"
+  },
+  {
+    "State": "ND",
+    "Rate per 100 USD of payroll": 0.1,
+    "State_class": "ND_8810"
+  },
+  {
+    "State": "MI",
+    "Rate per 100 USD of payroll": 0.1,
+    "State_class": "MI_8810"
+  },
+  {
+    "State": "AZ",
+    "Rate per 100 USD of payroll": 0.1,
+    "State_class": "AZ_8810"
+  },
+  {
+    "State": "CO",
+    "Rate per 100 USD of payroll": 0.09,
+    "State_class": "CO_8810"
+  },
+  {
+    "State": "DC",
+    "Rate per 100 USD of payroll": 0.09,
+    "State_class": "DC_8810"
+  },
+  {
+    "State": "VA",
+    "Rate per 100 USD of payroll": 0.09,
+    "State_class": "VA_8810"
+  },
+  {
+    "State": "AR",
+    "Rate per 100 USD of payroll": 0.09,
+    "State_class": "AR_8810"
+  },
+  {
+    "State": "UT",
+    "Rate per 100 USD of payroll": 0.09,
+    "State_class": "UT_8810"
+  },
+  {
+    "State": "MD",
+    "Rate per 100 USD of payroll": 0.09,
+    "State_class": "MD_8810"
+  },
+  {
+    "State": "TX",
+    "Rate per 100 USD of payroll": 0.08,
+    "State_class": "TX_8810"
+  },
+  {
+    "State": "OH",
+    "Rate per 100 USD of payroll": 0.08,
+    "State_class": "OH_8810"
+  },
+  {
+    "State": "MA",
+    "Rate per 100 USD of payroll": 0.07,
+    "State_class": "MA_8810"
+  },
+  {
+    "State": "OR",
+    "Rate per 100 USD of payroll": 0.06,
+    "State_class": "OR_8810"
+  },
+  {
+    "State": "WA",
+    "Rate per 100 USD of payroll": 0.05,
+    "State_class": "WA_8810"
+  },
+  {
+    "State": "CA",
+    "Rate per 100 USD of payroll": 7.83,
+    "State_class": "CA_6504"
+  },
+  {
+    "State": "NY",
+    "Rate per 100 USD of payroll": 5.67,
+    "State_class": "NY_6504"
+  },
+  {
+    "State": "NJ",
+    "Rate per 100 USD of payroll": 5.44,
+    "State_class": "NJ_6504"
+  },
+  {
+    "State": "HI",
+    "Rate per 100 USD of payroll": 4.89,
+    "State_class": "HI_6504"
+  },
+  {
+    "State": "ME",
+    "Rate per 100 USD of payroll": 4.54,
+    "State_class": "ME_6504"
+  },
+  {
+    "State": "NM",
+    "Rate per 100 USD of payroll": 4.22,
+    "State_class": "NM_6504"
+  },
+  {
+    "State": "VT",
+    "Rate per 100 USD of payroll": 4.2,
+    "State_class": "VT_6504"
+  },
+  {
+    "State": "IL",
+    "Rate per 100 USD of payroll": 4.05,
+    "State_class": "IL_6504"
+  },
+  {
+    "State": "RI",
+    "Rate per 100 USD of payroll": 4.03,
+    "State_class": "RI_6504"
+  },
+  {
+    "State": "KS",
+    "Rate per 100 USD of payroll": 3.98,
+    "State_class": "KS_6504"
+  },
+  {
+    "State": "WY",
+    "Rate per 100 USD of payroll": 3.83,
+    "State_class": "WY_6504"
+  },
+  {
+    "State": "ID",
+    "Rate per 100 USD of payroll": 3.81,
+    "State_class": "ID_6504"
+  },
+  {
+    "State": "CT",
+    "Rate per 100 USD of payroll": 3.77,
+    "State_class": "CT_6504"
+  },
+  {
+    "State": "MN",
+    "Rate per 100 USD of payroll": 3.75,
+    "State_class": "MN_6504"
+  },
+  {
+    "State": "DE",
+    "Rate per 100 USD of payroll": 3.72,
+    "State_class": "DE_6504"
+  },
+  {
+    "State": "LA",
+    "Rate per 100 USD of payroll": 3.69,
+    "State_class": "LA_6504"
+  },
+  {
+    "State": "WA",
+    "Rate per 100 USD of payroll": 3.68,
+    "State_class": "WA_6504"
+  },
+  {
+    "State": "MT",
+    "Rate per 100 USD of payroll": 3.53,
+    "State_class": "MT_6504"
+  },
+  {
+    "State": "PA",
+    "Rate per 100 USD of payroll": 3.42,
+    "State_class": "PA_6504"
+  },
+  {
+    "State": "GA",
+    "Rate per 100 USD of payroll": 3.32,
+    "State_class": "GA_6504"
+  },
+  {
+    "State": "MO",
+    "Rate per 100 USD of payroll": 3.3,
+    "State_class": "MO_6504"
+  },
+  {
+    "State": "FL",
+    "Rate per 100 USD of payroll": 3.09,
+    "State_class": "FL_6504"
+  },
+  {
+    "State": "NE",
+    "Rate per 100 USD of payroll": 3.04,
+    "State_class": "NE_6504"
+  },
+  {
+    "State": "AL",
+    "Rate per 100 USD of payroll": 3.0,
+    "State_class": "AL_6504"
+  },
+  {
+    "State": "IA",
+    "Rate per 100 USD of payroll": 2.91,
+    "State_class": "IA_6504"
+  },
+  {
+    "State": "AK",
+    "Rate per 100 USD of payroll": 2.91,
+    "State_class": "AK_6504"
+  },
+  {
+    "State": "SD",
+    "Rate per 100 USD of payroll": 2.86,
+    "State_class": "SD_6504"
+  },
+  {
+    "State": "SC",
+    "Rate per 100 USD of payroll": 2.78,
+    "State_class": "SC_6504"
+  },
+  {
+    "State": "NC",
+    "Rate per 100 USD of payroll": 2.75,
+    "State_class": "NC_6504"
+  },
+  {
+    "State": "WI",
+    "Rate per 100 USD of payroll": 2.72,
+    "State_class": "WI_6504"
+  },
+  {
+    "State": "MA",
+    "Rate per 100 USD of payroll": 2.56,
+    "State_class": "MA_6504"
+  },
+  {
+    "State": "NV",
+    "Rate per 100 USD of payroll": 2.52,
+    "State_class": "NV_6504"
+  },
+  {
+    "State": "TX",
+    "Rate per 100 USD of payroll": 2.46,
+    "State_class": "TX_6504"
+  },
+  {
+    "State": "NH",
+    "Rate per 100 USD of payroll": 2.42,
+    "State_class": "NH_6504"
+  },
+  {
+    "State": "MS",
+    "Rate per 100 USD of payroll": 2.4,
+    "State_class": "MS_6504"
+  },
+  {
+    "State": "DC",
+    "Rate per 100 USD of payroll": 2.28,
+    "State_class": "DC_6504"
+  },
+  {
+    "State": "AZ",
+    "Rate per 100 USD of payroll": 2.17,
+    "State_class": "AZ_6504"
+  },
+  {
+    "State": "CO",
+    "Rate per 100 USD of payroll": 2.1,
+    "State_class": "CO_6504"
+  },
+  {
+    "State": "VA",
+    "Rate per 100 USD of payroll": 2.03,
+    "State_class": "VA_6504"
+  },
+  {
+    "State": "MD",
+    "Rate per 100 USD of payroll": 2.01,
+    "State_class": "MD_6504"
+  },
+  {
+    "State": "IN",
+    "Rate per 100 USD of payroll": 1.98,
+    "State_class": "IN_6504"
+  },
+  {
+    "State": "ND",
+    "Rate per 100 USD of payroll": 1.78,
+    "State_class": "ND_6504"
+  },
+  {
+    "State": "TN",
+    "Rate per 100 USD of payroll": 1.77,
+    "State_class": "TN_6504"
+  },
+  {
+    "State": "OH",
+    "Rate per 100 USD of payroll": 1.74,
+    "State_class": "OH_6504"
+  },
+  {
+    "State": "MI",
+    "Rate per 100 USD of payroll": 1.73,
+    "State_class": "MI_6504"
+  },
+  {
+    "State": "KY",
+    "Rate per 100 USD of payroll": 1.7,
+    "State_class": "KY_6504"
+  },
+  {
+    "State": "OR",
+    "Rate per 100 USD of payroll": 1.58,
+    "State_class": "OR_6504"
+  },
+  {
+    "State": "UT",
+    "Rate per 100 USD of payroll": 1.55,
+    "State_class": "UT_6504"
+  },
+  {
+    "State": "WV",
+    "Rate per 100 USD of payroll": 1.31,
+    "State_class": "WV_6504"
+  },
+  {
+    "State": "AR",
+    "Rate per 100 USD of payroll": 1.18,
+    "State_class": "AR_6504"
+  },
+  {
+    "State": "OK",
+    "Rate per 100 USD of payroll": 0.0,
+    "State_class": "OK_6504"
+  }
+]

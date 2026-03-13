@@ -1,0 +1,368 @@
+[
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Title: Average Annual Single Premium per Enrolled Employee For Employer-Based Health Insurance | KFF State Health Facts",
+    "%22sort%22:%22asc%22%7D": null,
+    "col_2": null,
+    "col_3": null
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Timeframe: 2024",
+    "%22sort%22:%22asc%22%7D": null,
+    "col_2": null,
+    "col_3": null
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Location",
+    "%22sort%22:%22asc%22%7D": "Employee Contribution",
+    "col_2": "Employer Contribution",
+    "col_3": "Total Annual Premium"
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "United States",
+    "%22sort%22:%22asc%22%7D": 1789,
+    "col_2": 6697,
+    "col_3": 8486
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Alabama",
+    "%22sort%22:%22asc%22%7D": 1925,
+    "col_2": 5931,
+    "col_3": 7856
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Alaska",
+    "%22sort%22:%22asc%22%7D": 1910,
+    "col_2": 7416,
+    "col_3": 9326
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Arizona",
+    "%22sort%22:%22asc%22%7D": 1539,
+    "col_2": 6772,
+    "col_3": 8311
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Arkansas",
+    "%22sort%22:%22asc%22%7D": 1744,
+    "col_2": 5789,
+    "col_3": 7533
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "California",
+    "%22sort%22:%22asc%22%7D": 1947,
+    "col_2": 7018,
+    "col_3": 8965
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Colorado",
+    "%22sort%22:%22asc%22%7D": 1913,
+    "col_2": 6462,
+    "col_3": 8375
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Connecticut",
+    "%22sort%22:%22asc%22%7D": 1853,
+    "col_2": 7100,
+    "col_3": 8953
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Delaware",
+    "%22sort%22:%22asc%22%7D": 1806,
+    "col_2": 7334,
+    "col_3": 9140
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "District of Columbia",
+    "%22sort%22:%22asc%22%7D": 2047,
+    "col_2": 6855,
+    "col_3": 8902
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Florida",
+    "%22sort%22:%22asc%22%7D": 1779,
+    "col_2": 7237,
+    "col_3": 9016
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Georgia",
+    "%22sort%22:%22asc%22%7D": 1571,
+    "col_2": 6248,
+    "col_3": 7819
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Hawaii",
+    "%22sort%22:%22asc%22%7D": 799,
+    "col_2": 6705,
+    "col_3": 7504
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Idaho",
+    "%22sort%22:%22asc%22%7D": 1509,
+    "col_2": 6015,
+    "col_3": 7524
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Illinois",
+    "%22sort%22:%22asc%22%7D": 1899,
+    "col_2": 6884,
+    "col_3": 8783
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Indiana",
+    "%22sort%22:%22asc%22%7D": 1676,
+    "col_2": 6807,
+    "col_3": 8483
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Iowa",
+    "%22sort%22:%22asc%22%7D": 1784,
+    "col_2": 5857,
+    "col_3": 7641
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Kansas",
+    "%22sort%22:%22asc%22%7D": 1699,
+    "col_2": 6175,
+    "col_3": 7874
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Kentucky",
+    "%22sort%22:%22asc%22%7D": 1686,
+    "col_2": 6381,
+    "col_3": 8067
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Louisiana",
+    "%22sort%22:%22asc%22%7D": 2026,
+    "col_2": 6132,
+    "col_3": 8158
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Maine",
+    "%22sort%22:%22asc%22%7D": 1657,
+    "col_2": 7112,
+    "col_3": 8769
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Maryland",
+    "%22sort%22:%22asc%22%7D": 1911,
+    "col_2": 6049,
+    "col_3": 7960
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Massachusetts",
+    "%22sort%22:%22asc%22%7D": 2077,
+    "col_2": 7335,
+    "col_3": 9412
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Michigan",
+    "%22sort%22:%22asc%22%7D": 1825,
+    "col_2": 7060,
+    "col_3": 8885
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Minnesota",
+    "%22sort%22:%22asc%22%7D": 1942,
+    "col_2": 6153,
+    "col_3": 8095
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Mississippi",
+    "%22sort%22:%22asc%22%7D": 1852,
+    "col_2": 5712,
+    "col_3": 7564
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Missouri",
+    "%22sort%22:%22asc%22%7D": 1792,
+    "col_2": 6760,
+    "col_3": 8552
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Montana",
+    "%22sort%22:%22asc%22%7D": 1316,
+    "col_2": 6627,
+    "col_3": 7943
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Nebraska",
+    "%22sort%22:%22asc%22%7D": 1695,
+    "col_2": 6102,
+    "col_3": 7797
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Nevada",
+    "%22sort%22:%22asc%22%7D": 1414,
+    "col_2": 6035,
+    "col_3": 7449
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "New Hampshire",
+    "%22sort%22:%22asc%22%7D": 1908,
+    "col_2": 6444,
+    "col_3": 8352
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "New Jersey",
+    "%22sort%22:%22asc%22%7D": 1862,
+    "col_2": 7257,
+    "col_3": 9119
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "New Mexico",
+    "%22sort%22:%22asc%22%7D": 1691,
+    "col_2": 6895,
+    "col_3": 8586
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "New York",
+    "%22sort%22:%22asc%22%7D": 1953,
+    "col_2": 7636,
+    "col_3": 9589
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "North Carolina",
+    "%22sort%22:%22asc%22%7D": 1810,
+    "col_2": 6235,
+    "col_3": 8045
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "North Dakota",
+    "%22sort%22:%22asc%22%7D": 1669,
+    "col_2": 6700,
+    "col_3": 8369
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Ohio",
+    "%22sort%22:%22asc%22%7D": 1797,
+    "col_2": 6518,
+    "col_3": 8315
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Oklahoma",
+    "%22sort%22:%22asc%22%7D": 1974,
+    "col_2": 5785,
+    "col_3": 7759
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Oregon",
+    "%22sort%22:%22asc%22%7D": 1233,
+    "col_2": 7149,
+    "col_3": 8382
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Pennsylvania",
+    "%22sort%22:%22asc%22%7D": 1970,
+    "col_2": 6624,
+    "col_3": 8594
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Rhode Island",
+    "%22sort%22:%22asc%22%7D": 1973,
+    "col_2": 7331,
+    "col_3": 9304
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "South Carolina",
+    "%22sort%22:%22asc%22%7D": 1828,
+    "col_2": 6353,
+    "col_3": 8181
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "South Dakota",
+    "%22sort%22:%22asc%22%7D": 1947,
+    "col_2": 6393,
+    "col_3": 8340
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Tennessee",
+    "%22sort%22:%22asc%22%7D": 1577,
+    "col_2": 5933,
+    "col_3": 7510
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Texas",
+    "%22sort%22:%22asc%22%7D": 1515,
+    "col_2": 6318,
+    "col_3": 7833
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Utah",
+    "%22sort%22:%22asc%22%7D": 1513,
+    "col_2": 6248,
+    "col_3": 7761
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Vermont",
+    "%22sort%22:%22asc%22%7D": 1871,
+    "col_2": 6863,
+    "col_3": 8734
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Virginia",
+    "%22sort%22:%22asc%22%7D": 1862,
+    "col_2": 6320,
+    "col_3": 8182
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Washington",
+    "%22sort%22:%22asc%22%7D": 1446,
+    "col_2": 6904,
+    "col_3": 8350
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "West Virginia",
+    "%22sort%22:%22asc%22%7D": 1662,
+    "col_2": 7273,
+    "col_3": 8935
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Wisconsin",
+    "%22sort%22:%22asc%22%7D": 1946,
+    "col_2": 6278,
+    "col_3": 8224
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Wyoming",
+    "%22sort%22:%22asc%22%7D": 1697,
+    "col_2": 7266,
+    "col_3": 8963
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Notes",
+    "%22sort%22:%22asc%22%7D": null,
+    "col_2": null,
+    "col_3": null
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "The Medical Expenditure Panel Survey (MEPS) Insurance Component is an annual survey of establishments that collects information about employer-sponsored health insurance offerings in the United States.",
+    "%22sort%22:%22asc%22%7D": null,
+    "col_2": null,
+    "col_3": null
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Figures may not sum to totals due to rounding.",
+    "%22sort%22:%22asc%22%7D": null,
+    "col_2": null,
+    "col_3": null
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Sources",
+    "%22sort%22:%22asc%22%7D": null,
+    "col_2": null,
+    "col_3": null
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Agency for Healthcare Research and Quality, Center for Financing, Access and Cost Trends. Medical Expenditure Panel Survey Insurance Component. Data tool can be found [here.](https://datatools.ahrq.gov/meps-ic)",
+    "%22sort%22:%22asc%22%7D": null,
+    "col_2": null,
+    "col_3": null
+  },
+  {
+    "https://www.kff.org/private-insurance/state-indicator/single-coverage/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22": "Definitions and descriptions of the methods used for this survey can be found in the [Technical Appendix](http://meps.ahrq.gov/mepsweb/survey_comp/ic_technical_notes.shtml).",
+    "%22sort%22:%22asc%22%7D": null,
+    "col_2": null,
+    "col_3": null
+  }
+]

@@ -2,7 +2,9 @@ import pandas
 import pandas as pd
 import os
 from os.path import dirname
-from sqlalchemy.engine import Engine
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from sqlalchemy.engine import Engine
 
 
 CACHE={}
@@ -34,7 +36,7 @@ def load_cache_csv(file:str):
     df=pandas.read_csv(path)
     return df
 
-def load_from_sql_or_get_from_cache(engine:Engine,table:str,copy:bool=True,**pandas_kwargs)->pd.DataFrame:
+def load_from_sql_or_get_from_cache(engine,table:str,copy:bool=True,**pandas_kwargs)->pd.DataFrame:
 
     #if the table list is not in CACHE, we want to create a new direction for file with json extension. After that we can ask if the file already exists in the system, if that is true
     # then we are going to read that file

@@ -1,0 +1,480 @@
+{
+  "rates": [
+    {
+      "State": "Alabama",
+      "State Tax Rate": 0.04,
+      "Rank": 47,
+      "Avg. Local Tax Rate": 0.0529,
+      "Combined S&L Rate": 0.09290000000000001,
+      "Max Local Tax Rate": null,
+      "State to use": "Alabama"
+    },
+    {
+      "State": "Alaska",
+      "State Tax Rate": 0,
+      "Rank": 5,
+      "Avg. Local Tax Rate": 0.0182,
+      "Combined S&L Rate": 0.0182,
+      "Max Local Tax Rate": null,
+      "State to use": "Alaska"
+    },
+    {
+      "State": "Arizona",
+      "State Tax Rate": 0.056,
+      "Rank": 40,
+      "Avg. Local Tax Rate": 0.0278,
+      "Combined S&L Rate": 0.0838,
+      "Max Local Tax Rate": null,
+      "State to use": "Arizona"
+    },
+    {
+      "State": "Arkansas",
+      "State Tax Rate": 0.065,
+      "Rank": 49,
+      "Avg. Local Tax Rate": 0.0295,
+      "Combined S&L Rate": 0.0945,
+      "Max Local Tax Rate": null,
+      "State to use": "Arkansas"
+    },
+    {
+      "State": "California (b)",
+      "State Tax Rate": 0.0725,
+      "Rank": 44,
+      "Avg. Local Tax Rate": 0.016,
+      "Combined S&L Rate": 0.0885,
+      "Max Local Tax Rate": null,
+      "State to use": "California"
+    },
+    {
+      "State": "Colorado",
+      "State Tax Rate": 0.029,
+      "Rank": 36,
+      "Avg. Local Tax Rate": 0.0491,
+      "Combined S&L Rate": 0.0781,
+      "Max Local Tax Rate": null,
+      "State to use": "Colorado"
+    },
+    {
+      "State": "Connecticut",
+      "State Tax Rate": 0.0635,
+      "Rank": 19,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0.0635,
+      "Max Local Tax Rate": null,
+      "State to use": "Connecticut"
+    },
+    {
+      "State": "D.C.",
+      "State Tax Rate": 0.06,
+      "Rank": 11,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0.06,
+      "Max Local Tax Rate": null,
+      "State to use": "D.C."
+    },
+    {
+      "State": "Delaware",
+      "State Tax Rate": 0,
+      "Rank": 1,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0,
+      "Max Local Tax Rate": null,
+      "State to use": "Delaware"
+    },
+    {
+      "State": "Florida",
+      "State Tax Rate": 0.06,
+      "Rank": 25,
+      "Avg. Local Tax Rate": 0.01,
+      "Combined S&L Rate": 0.06999999999999999,
+      "Max Local Tax Rate": null,
+      "State to use": "Florida"
+    },
+    {
+      "State": "Georgia",
+      "State Tax Rate": 0.04,
+      "Rank": 33,
+      "Avg. Local Tax Rate": 0.0338,
+      "Combined S&L Rate": 0.0738,
+      "Max Local Tax Rate": null,
+      "State to use": "Georgia"
+    },
+    {
+      "State": "Hawaii (c)",
+      "State Tax Rate": 0.04,
+      "Rank": 6,
+      "Avg. Local Tax Rate": 0.005,
+      "Combined S&L Rate": 0.045,
+      "Max Local Tax Rate": null,
+      "State to use": "Hawaii"
+    },
+    {
+      "State": "Idaho",
+      "State Tax Rate": 0.06,
+      "Rank": 15,
+      "Avg. Local Tax Rate": 0.0003,
+      "Combined S&L Rate": 0.0603,
+      "Max Local Tax Rate": null,
+      "State to use": "Idaho"
+    },
+    {
+      "State": "Illinois",
+      "State Tax Rate": 0.0625,
+      "Rank": 45,
+      "Avg. Local Tax Rate": 0.0261,
+      "Combined S&L Rate": 0.0886,
+      "Max Local Tax Rate": null,
+      "State to use": "Illinois"
+    },
+    {
+      "State": "Indiana",
+      "State Tax Rate": 0.07,
+      "Rank": 26,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0.07,
+      "Max Local Tax Rate": null,
+      "State to use": "Indiana"
+    },
+    {
+      "State": "Iowa",
+      "State Tax Rate": 0.06,
+      "Rank": 23,
+      "Avg. Local Tax Rate": 0.0094,
+      "Combined S&L Rate": 0.0694,
+      "Max Local Tax Rate": null,
+      "State to use": "Iowa"
+    },
+    {
+      "State": "Kansas",
+      "State Tax Rate": 0.065,
+      "Rank": 43,
+      "Avg. Local Tax Rate": 0.0215,
+      "Combined S&L Rate": 0.0865,
+      "Max Local Tax Rate": null,
+      "State to use": "Kansas"
+    },
+    {
+      "State": "Kentucky",
+      "State Tax Rate": 0.06,
+      "Rank": 11,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0.06,
+      "Max Local Tax Rate": null,
+      "State to use": "Kentucky"
+    },
+    {
+      "State": "Louisiana",
+      "State Tax Rate": 0.0445,
+      "Rank": 51,
+      "Avg. Local Tax Rate": 0.0511,
+      "Combined S&L Rate": 0.09559999999999999,
+      "Max Local Tax Rate": null,
+      "State to use": "Louisiana"
+    },
+    {
+      "State": "Maine",
+      "State Tax Rate": 0.055,
+      "Rank": 8,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0.055,
+      "Max Local Tax Rate": null,
+      "State to use": "Maine"
+    },
+    {
+      "State": "Massachusetts",
+      "State Tax Rate": 0.0625,
+      "Rank": 17,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0.0625,
+      "Max Local Tax Rate": null,
+      "State to use": "Massachusetts"
+    },
+    {
+      "State": "Maryland",
+      "State Tax Rate": 0.06,
+      "Rank": 11,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0.06,
+      "Max Local Tax Rate": null,
+      "State to use": "Maryland"
+    },
+    {
+      "State": "Michigan",
+      "State Tax Rate": 0.06,
+      "Rank": 11,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0.06,
+      "Max Local Tax Rate": null,
+      "State to use": "Michigan"
+    },
+    {
+      "State": "Minnesota",
+      "State Tax Rate": 0.06875,
+      "Rank": 37,
+      "Avg. Local Tax Rate": 0.0116,
+      "Combined S&L Rate": 0.08035,
+      "Max Local Tax Rate": null,
+      "State to use": "Minnesota"
+    },
+    {
+      "State": "Mississippi",
+      "State Tax Rate": 0.07,
+      "Rank": 30,
+      "Avg. Local Tax Rate": 0.0006,
+      "Combined S&L Rate": 0.07060000000000001,
+      "Max Local Tax Rate": null,
+      "State to use": "Mississippi"
+    },
+    {
+      "State": "Missouri",
+      "State Tax Rate": 0.04225,
+      "Rank": 41,
+      "Avg. Local Tax Rate": 0.0416,
+      "Combined S&L Rate": 0.08385000000000001,
+      "Max Local Tax Rate": null,
+      "State to use": "Missouri"
+    },
+    {
+      "State": "Montana (d)",
+      "State Tax Rate": 0,
+      "Rank": 1,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0,
+      "Max Local Tax Rate": null,
+      "State to use": "Montana"
+    },
+    {
+      "State": "North Carolina",
+      "State Tax Rate": 0.0475,
+      "Rank": 26,
+      "Avg. Local Tax Rate": 0.0225,
+      "Combined S&L Rate": 0.07,
+      "Max Local Tax Rate": null,
+      "State to use": "North Carolina"
+    },
+    {
+      "State": "North Dakota",
+      "State Tax Rate": 0.05,
+      "Rank": 29,
+      "Avg. Local Tax Rate": 0.0204,
+      "Combined S&L Rate": 0.0704,
+      "Max Local Tax Rate": null,
+      "State to use": "North Dakota"
+    },
+    {
+      "State": "New Hampshire",
+      "State Tax Rate": 0,
+      "Rank": 1,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0,
+      "Max Local Tax Rate": null,
+      "State to use": "New Hampshire"
+    },
+    {
+      "State": "New Jersey (e)",
+      "State Tax Rate": 0.06625,
+      "Rank": 22,
+      "Avg. Local Tax Rate": -0.0002,
+      "Combined S&L Rate": 0.06605,
+      "Max Local Tax Rate": null,
+      "State to use": "New Jersey"
+    },
+    {
+      "State": "New Mexico (c)",
+      "State Tax Rate": 0.0488,
+      "Rank": 35,
+      "Avg. Local Tax Rate": 0.0274,
+      "Combined S&L Rate": 0.0762,
+      "Max Local Tax Rate": null,
+      "State to use": "New Mexico"
+    },
+    {
+      "State": "New York",
+      "State Tax Rate": 0.04,
+      "Rank": 42,
+      "Avg. Local Tax Rate": 0.0453,
+      "Combined S&L Rate": 0.0853,
+      "Max Local Tax Rate": null,
+      "State to use": "New York"
+    },
+    {
+      "State": "Nebraska",
+      "State Tax Rate": 0.055,
+      "Rank": 24,
+      "Avg. Local Tax Rate": 0.0147,
+      "Combined S&L Rate": 0.0697,
+      "Max Local Tax Rate": null,
+      "State to use": "Nebraska"
+    },
+    {
+      "State": "Nevada",
+      "State Tax Rate": 0.0685,
+      "Rank": 39,
+      "Avg. Local Tax Rate": 0.0139,
+      "Combined S&L Rate": 0.0824,
+      "Max Local Tax Rate": null,
+      "State to use": "Nevada"
+    },
+    {
+      "State": "Ohio",
+      "State Tax Rate": 0.0575,
+      "Rank": 31,
+      "Avg. Local Tax Rate": 0.0149,
+      "Combined S&L Rate": 0.0724,
+      "Max Local Tax Rate": null,
+      "State to use": "Ohio"
+    },
+    {
+      "State": "Oklahoma",
+      "State Tax Rate": 0.045,
+      "Rank": 46,
+      "Avg. Local Tax Rate": 0.0449,
+      "Combined S&L Rate": 0.08990000000000001,
+      "Max Local Tax Rate": null,
+      "State to use": "Oklahoma"
+    },
+    {
+      "State": "Oregon",
+      "State Tax Rate": 0,
+      "Rank": 1,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0,
+      "Max Local Tax Rate": null,
+      "State to use": "Oregon"
+    },
+    {
+      "State": "Pennsylvania",
+      "State Tax Rate": 0.06,
+      "Rank": 18,
+      "Avg. Local Tax Rate": 0.0034,
+      "Combined S&L Rate": 0.0634,
+      "Max Local Tax Rate": null,
+      "State to use": "Pennsylvania"
+    },
+    {
+      "State": "Rhode Island",
+      "State Tax Rate": 0.07,
+      "Rank": 26,
+      "Avg. Local Tax Rate": 0,
+      "Combined S&L Rate": 0.07,
+      "Max Local Tax Rate": null,
+      "State to use": "Rhode Island"
+    },
+    {
+      "State": "South Carolina",
+      "State Tax Rate": 0.06,
+      "Rank": 34,
+      "Avg. Local Tax Rate": 0.015,
+      "Combined S&L Rate": 0.075,
+      "Max Local Tax Rate": null,
+      "State to use": "South Carolina"
+    },
+    {
+      "State": "South Dakota (c)",
+      "State Tax Rate": 0.042,
+      "Rank": 16,
+      "Avg. Local Tax Rate": 0.0191,
+      "Combined S&L Rate": 0.0611,
+      "Max Local Tax Rate": null,
+      "State to use": "South Dakota"
+    },
+    {
+      "State": "Tennessee",
+      "State Tax Rate": 0.07,
+      "Rank": 50,
+      "Avg. Local Tax Rate": 0.0255,
+      "Combined S&L Rate": 0.0955,
+      "Max Local Tax Rate": null,
+      "State to use": "Tennessee"
+    },
+    {
+      "State": "Texas",
+      "State Tax Rate": 0.0625,
+      "Rank": 38,
+      "Avg. Local Tax Rate": 0.0195,
+      "Combined S&L Rate": 0.082,
+      "Max Local Tax Rate": null,
+      "State to use": "Texas"
+    },
+    {
+      "State": "Utah (b)",
+      "State Tax Rate": 0.061,
+      "Rank": 32,
+      "Avg. Local Tax Rate": 0.0115,
+      "Combined S&L Rate": 0.0725,
+      "Max Local Tax Rate": null,
+      "State to use": "Utah"
+    },
+    {
+      "State": "Virginia (b)",
+      "State Tax Rate": 0.053,
+      "Rank": 10,
+      "Avg. Local Tax Rate": 0.0047,
+      "Combined S&L Rate": 0.0577,
+      "Max Local Tax Rate": null,
+      "State to use": "Virginia"
+    },
+    {
+      "State": "Vermont",
+      "State Tax Rate": 0.06,
+      "Rank": 20,
+      "Avg. Local Tax Rate": 0.0036,
+      "Combined S&L Rate": 0.0636,
+      "Max Local Tax Rate": null,
+      "State to use": "Vermont"
+    },
+    {
+      "State": "West Virginia",
+      "State Tax Rate": 0.06,
+      "Rank": 21,
+      "Avg. Local Tax Rate": 0.0057,
+      "Combined S&L Rate": 0.0657,
+      "Max Local Tax Rate": null,
+      "State to use": "West Virginia"
+    },
+    {
+      "State": "Washington",
+      "State Tax Rate": 0.065,
+      "Rank": 48,
+      "Avg. Local Tax Rate": 0.0288,
+      "Combined S&L Rate": 0.0938,
+      "Max Local Tax Rate": null,
+      "State to use": "Washington"
+    },
+    {
+      "State": "Wisconsin",
+      "State Tax Rate": 0.05,
+      "Rank": 9,
+      "Avg. Local Tax Rate": 0.007,
+      "Combined S&L Rate": 0.057,
+      "Max Local Tax Rate": null,
+      "State to use": "Wisconsin"
+    },
+    {
+      "State": "Wyoming",
+      "State Tax Rate": 0.04,
+      "Rank": 7,
+      "Avg. Local Tax Rate": 0.0144,
+      "Combined S&L Rate": 0.054400000000000004,
+      "Max Local Tax Rate": null,
+      "State to use": "Wyoming"
+    }
+  ],
+  "source": "Tax Foundation State and Local Sales Tax Rates, Jan 2024",
+  "vintage": "2024",
+  "fields": [
+    "State",
+    "State Tax Rate",
+    "Rank",
+    "Avg. Local Tax Rate",
+    "Combined S&L Rate",
+    "Rank",
+    "Max Local Tax Rate",
+    "State to use",
+    null,
+    null,
+    null,
+    null,
+    null
+  ]
+}

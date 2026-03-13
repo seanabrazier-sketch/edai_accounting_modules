@@ -1,0 +1,1299 @@
+{
+  "city_metro_rollup": [
+    {
+      "city_state": "Portland, Oregon",
+      "emsi_area": "Portland-Vancouver-Hillsboro, OR-WA Metro Area"
+    },
+    {
+      "city_state": "Orlando, Florida",
+      "emsi_area": "Orlando-Kissimmee-Sanford, FL Metro Area"
+    },
+    {
+      "city_state": "Miami, Florida",
+      "emsi_area": "Miami-Fort Lauderdale-Pompano Beach, FL Metro Area"
+    },
+    {
+      "city_state": "San Francisco, California",
+      "emsi_area": "San Francisco-Oakland-Berkeley, CA Metro Area"
+    },
+    {
+      "city_state": "Austin, Texas",
+      "emsi_area": "Austin-Round Rock-Georgetown, TX Metro Area"
+    },
+    {
+      "city_state": "Sacramento, California",
+      "emsi_area": "Sacramento-Roseville-Folsom, CA Metro Area"
+    },
+    {
+      "city_state": "Denver, Colorado",
+      "emsi_area": "Denver-Aurora-Lakewood, CO Metro Area"
+    },
+    {
+      "city_state": "Las Vegas, Nevada",
+      "emsi_area": "Las Vegas-Henderson-Paradise, NV Metro Area"
+    },
+    {
+      "city_state": "Seattle, Washington",
+      "emsi_area": "Seattle-Tacoma-Bellevue, WA Metro Area"
+    },
+    {
+      "city_state": "Tampa, Florida",
+      "emsi_area": "Tampa-St. Petersburg-Clearwater, FL Metro Area"
+    },
+    {
+      "city_state": "Los Angeles, California",
+      "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area"
+    },
+    {
+      "city_state": "San Diego, California",
+      "emsi_area": "San Diego-Chula Vista-Carlsbad, CA Metro Area"
+    },
+    {
+      "city_state": "Portland, Maine",
+      "emsi_area": "Portland-South Portland, ME Metro Area"
+    },
+    {
+      "city_state": "Oakland, California",
+      "emsi_area": "San Francisco-Oakland-Berkeley, CA Metro Area"
+    },
+    {
+      "city_state": "Washington, District of Columbia",
+      "emsi_area": "Washington-Arlington-Alexandria, DC-VA-MD-WV Metro Area"
+    },
+    {
+      "city_state": "St. Louis, Missouri",
+      "emsi_area": "St. Louis, MO-IL Metro Area"
+    },
+    {
+      "city_state": "Grand Rapids, Michigan",
+      "emsi_area": "Grand Rapids-Kentwood, MI Metro Area"
+    },
+    {
+      "city_state": "Chicago, Illinois",
+      "emsi_area": "Chicago-Naperville-Elgin, IL-IN-WI Metro Area"
+    },
+    {
+      "city_state": "Atlanta, Georgia",
+      "emsi_area": "Atlanta-Sandy Springs-Alpharetta, GA Metro Area"
+    },
+    {
+      "city_state": "Houston, Texas",
+      "emsi_area": "Houston-The Woodlands-Sugar Land, TX Metro Area"
+    },
+    {
+      "city_state": "Cincinnati, Ohio",
+      "emsi_area": "Cincinnati, OH-KY-IN Metro Area"
+    },
+    {
+      "city_state": "Pittsburgh, Pennsylvania",
+      "emsi_area": "Pittsburgh, PA Metro Area"
+    },
+    {
+      "city_state": "New York, New York",
+      "emsi_area": "New York-Newark-Jersey City, NY-NJ-PA Metro Area"
+    },
+    {
+      "city_state": "Charleston, South Carolina",
+      "emsi_area": "Charleston-North Charleston, SC Metro Area"
+    },
+    {
+      "city_state": "Rochester, New York",
+      "emsi_area": "Rochester, NY Metro Area"
+    },
+    {
+      "city_state": "Buffalo, New York",
+      "emsi_area": "Buffalo-Cheektowaga, NY Metro Area"
+    },
+    {
+      "city_state": "Salt Lake City, Utah",
+      "emsi_area": "Salt Lake City, UT Metro Area"
+    },
+    {
+      "city_state": "Milwaukee, Wisconsin",
+      "emsi_area": "Milwaukee-Waukesha, WI Metro Area"
+    },
+    {
+      "city_state": "Louisville, Kentucky",
+      "emsi_area": "Louisville/Jefferson County, KY-IN Metro Area"
+    },
+    {
+      "city_state": "Albuquerque, New Mexico",
+      "emsi_area": "Albuquerque, NM Metro Area"
+    },
+    {
+      "city_state": "Minneapolis, Minnesota",
+      "emsi_area": "Minneapolis-St. Paul-Bloomington, MN-WI Metro Area"
+    },
+    {
+      "city_state": "Richmond, Virginia",
+      "emsi_area": "Richmond, VA Metro Area"
+    },
+    {
+      "city_state": "Indianapolis, Indiana",
+      "emsi_area": "Indianapolis-Carmel-Anderson, IN Metro Area"
+    },
+    {
+      "city_state": "Vancouver, Washington",
+      "emsi_area": "Portland-Vancouver-Hillsboro, OR-WA Metro Area"
+    },
+    {
+      "city_state": "San Jose, California",
+      "emsi_area": "San Jose-Sunnyvale-Santa Clara, CA Metro Area"
+    },
+    {
+      "city_state": "Philadelphia, Pennsylvania",
+      "emsi_area": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD Metro Area"
+    },
+    {
+      "city_state": "Fort Lauderdale, Florida",
+      "emsi_area": "Miami-Fort Lauderdale-Pompano Beach, FL Metro Area"
+    },
+    {
+      "city_state": "San Antonio, Texas",
+      "emsi_area": "San Antonio-New Braunfels, TX Metro Area"
+    },
+    {
+      "city_state": "Santa Ana, California",
+      "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area"
+    },
+    {
+      "city_state": "New Orleans, Louisiana",
+      "emsi_area": "New Orleans-Metairie, LA Metro Area"
+    },
+    {
+      "city_state": "Omaha, Nebraska",
+      "emsi_area": "Omaha-Council Bluffs, NE-IA Metro Area"
+    },
+    {
+      "city_state": "Raleigh, North Carolina",
+      "emsi_area": "Raleigh-Cary, NC Metro Area"
+    },
+    {
+      "city_state": "Fresno, California",
+      "emsi_area": "Fresno, CA Metro Area"
+    },
+    {
+      "city_state": "Honolulu, Hawaii",
+      "emsi_area": "Urban Honolulu, HI Metro Area"
+    },
+    {
+      "city_state": "Tucson, Arizona",
+      "emsi_area": "Tucson, AZ Metro Area"
+    },
+    {
+      "city_state": "Tempe, Arizona",
+      "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area"
+    },
+    {
+      "city_state": "Wilmington, Delaware",
+      "emsi_area": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD Metro Area"
+    },
+    {
+      "city_state": "Madison, Wisconsin",
+      "emsi_area": "Madison, WI Metro Area"
+    },
+    {
+      "city_state": "Scottsdale, Arizona",
+      "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area"
+    },
+    {
+      "city_state": "Boston, Massachusetts",
+      "emsi_area": "Boston-Cambridge-Newton, MA-NH Metro Area"
+    },
+    {
+      "city_state": "Des Moines, Iowa",
+      "emsi_area": "Des Moines-West Des Moines, IA Metro Area"
+    },
+    {
+      "city_state": "Providence, Rhode Island",
+      "emsi_area": "Providence-Warwick, RI-MA Metro Area"
+    },
+    {
+      "city_state": "Jersey City, New Jersey",
+      "emsi_area": "New York-Newark-Jersey City, NY-NJ-PA Metro Area"
+    },
+    {
+      "city_state": "Cleveland, Ohio",
+      "emsi_area": "Cleveland-Elyria, OH Metro Area"
+    },
+    {
+      "city_state": "Anaheim, California",
+      "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area"
+    },
+    {
+      "city_state": "Aurora, Colorado",
+      "emsi_area": "Denver-Aurora-Lakewood, CO Metro Area"
+    },
+    {
+      "city_state": "Manchester, New Hampshire",
+      "emsi_area": "Manchester-Nashua, NH Metro Area"
+    },
+    {
+      "city_state": "Charlotte, North Carolina",
+      "emsi_area": "Charlotte-Concord-Gastonia, NC-SC Metro Area"
+    },
+    {
+      "city_state": "St. Petersburg, Florida",
+      "emsi_area": "Tampa-St. Petersburg-Clearwater, FL Metro Area"
+    },
+    {
+      "city_state": "Columbus, Ohio",
+      "emsi_area": "Columbus, OH Metro Area"
+    },
+    {
+      "city_state": "Dallas, Texas",
+      "emsi_area": "Dallas-Fort Worth-Arlington, TX Metro Area"
+    },
+    {
+      "city_state": "Lexington-Fayette, Kentucky",
+      "emsi_area": "Lexington-Fayette, KY Metro Area"
+    },
+    {
+      "city_state": "Phoenix, Arizona",
+      "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area"
+    },
+    {
+      "city_state": "New Haven, Connecticut",
+      "emsi_area": "New Haven-Milford, CT Metro Area"
+    },
+    {
+      "city_state": "Colorado Springs, Colorado",
+      "emsi_area": "Colorado Springs, CO Metro Area"
+    },
+    {
+      "city_state": "Garden Grove, California",
+      "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area"
+    },
+    {
+      "city_state": "Spokane, Washington",
+      "emsi_area": "Spokane-Spokane Valley, WA Metro Area"
+    },
+    {
+      "city_state": "Jacksonville, Florida",
+      "emsi_area": "Jacksonville, FL Metro Area"
+    },
+    {
+      "city_state": "Baltimore, Maryland",
+      "emsi_area": "Baltimore-Columbia-Towson, MD Metro Area"
+    },
+    {
+      "city_state": "Virginia Beach, Virginia",
+      "emsi_area": "Virginia Beach-Norfolk-Newport News, VA-NC Metro Area"
+    },
+    {
+      "city_state": "Newark, New Jersey",
+      "emsi_area": "New York-Newark-Jersey City, NY-NJ-PA Metro Area"
+    },
+    {
+      "city_state": "Oklahoma City, Oklahoma",
+      "emsi_area": "Oklahoma City, OK Metro Area"
+    },
+    {
+      "city_state": "Reno, Nevada",
+      "emsi_area": "Reno, NV Metro Area"
+    },
+    {
+      "city_state": "Salem, Oregon",
+      "emsi_area": "Salem, OR Metro Area"
+    },
+    {
+      "city_state": "Mesa, Arizona",
+      "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area"
+    },
+    {
+      "city_state": "Nashville, Tennessee",
+      "emsi_area": "Nashville-Davidson--Murfreesboro--Franklin, TN Metro Area"
+    },
+    {
+      "city_state": "Santa Rosa, California",
+      "emsi_area": "Santa Rosa-Petaluma, CA Metro Area"
+    },
+    {
+      "city_state": "Knoxville, Tennessee",
+      "emsi_area": "Knoxville, TN Metro Area"
+    },
+    {
+      "city_state": "Gilbert, Arizona",
+      "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area"
+    },
+    {
+      "city_state": "Bridgeport, Connecticut",
+      "emsi_area": "Bridgeport-Stamford-Norwalk, CT Metro Area"
+    },
+    {
+      "city_state": "Bakersfield, California",
+      "emsi_area": "Bakersfield, CA Metro Area"
+    },
+    {
+      "city_state": "St. Paul, Minnesota",
+      "emsi_area": "Minneapolis-St. Paul-Bloomington, MN-WI Metro Area"
+    },
+    {
+      "city_state": "Casper, Wyoming",
+      "emsi_area": "Casper, WY Metro Area"
+    },
+    {
+      "city_state": "Plano, Texas",
+      "emsi_area": "Dallas-Fort Worth-Arlington, TX Metro Area"
+    },
+    {
+      "city_state": "Tulsa, Oklahoma",
+      "emsi_area": "Tulsa, OK Metro Area"
+    },
+    {
+      "city_state": "Long Beach, California",
+      "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area"
+    },
+    {
+      "city_state": "Billings, Montana",
+      "emsi_area": "Billings, MT Metro Area"
+    },
+    {
+      "city_state": "El Paso, Texas",
+      "emsi_area": "El Paso, TX Metro Area"
+    },
+    {
+      "city_state": "Tacoma, Washington",
+      "emsi_area": "Seattle-Tacoma-Bellevue, WA Metro Area"
+    },
+    {
+      "city_state": "Hialeah, Florida",
+      "emsi_area": "Miami-Fort Lauderdale-Pompano Beach, FL Metro Area"
+    },
+    {
+      "city_state": "Columbia, South Carolina",
+      "emsi_area": "Columbia, SC Metro Area"
+    },
+    {
+      "city_state": "Toledo, Ohio",
+      "emsi_area": "Toledo, OH Metro Area"
+    },
+    {
+      "city_state": "Fort Worth, Texas",
+      "emsi_area": "Dallas-Fort Worth-Arlington, TX Metro Area"
+    },
+    {
+      "city_state": "Chandler, Arizona",
+      "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area"
+    },
+    {
+      "city_state": "Boise, Idaho",
+      "emsi_area": "Boise City, ID Metro Area"
+    },
+    {
+      "city_state": "Baton Rouge, Louisiana",
+      "emsi_area": "Baton Rouge, LA Metro Area"
+    },
+    {
+      "city_state": "Stockton, California",
+      "emsi_area": "Stockton, CA Metro Area"
+    },
+    {
+      "city_state": "Glendale, California",
+      "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area"
+    },
+    {
+      "city_state": "Missoula, Montana",
+      "emsi_area": "Missoula, MT Metro Area"
+    },
+    {
+      "city_state": "Lincoln, Nebraska",
+      "emsi_area": "Lincoln, NE Metro Area"
+    },
+    {
+      "city_state": "Laredo, Texas",
+      "emsi_area": "Laredo, TX Metro Area"
+    },
+    {
+      "city_state": "Amarillo, Texas",
+      "emsi_area": "Amarillo, TX Metro Area"
+    },
+    {
+      "city_state": "Burlington, Vermont",
+      "emsi_area": "Burlington-South Burlington, VT Metro Area"
+    },
+    {
+      "city_state": "Fargo, North Dakota",
+      "emsi_area": "Fargo, ND-MN Metro Area"
+    },
+    {
+      "city_state": "Sioux Falls, South Dakota",
+      "emsi_area": "Sioux Falls, SD Metro Area"
+    },
+    {
+      "city_state": "Nashua, New Hampshire",
+      "emsi_area": "Manchester-Nashua, NH Metro Area"
+    },
+    {
+      "city_state": "Detroit, Michigan",
+      "emsi_area": "Detroit-Warren-Dearborn, MI Metro Area"
+    },
+    {
+      "city_state": "Overland Park, Kansas",
+      "emsi_area": "Kansas City, MO-KS Metro Area"
+    },
+    {
+      "city_state": "Irving, Texas",
+      "emsi_area": "Dallas-Fort Worth-Arlington, TX Metro Area"
+    },
+    {
+      "city_state": "Fort Wayne, Indiana",
+      "emsi_area": "Fort Wayne, IN Metro Area"
+    },
+    {
+      "city_state": "Durham, North Carolina",
+      "emsi_area": "Durham-Chapel Hill, NC Metro Area"
+    },
+    {
+      "city_state": "Kansas City, Missouri",
+      "emsi_area": "Kansas City, MO-KS Metro Area"
+    },
+    {
+      "city_state": "Glendale, Arizona",
+      "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area"
+    },
+    {
+      "city_state": "Port St. Lucie, Florida",
+      "emsi_area": "Port St. Lucie, FL Metro Area"
+    },
+    {
+      "city_state": "Norfolk, Virginia",
+      "emsi_area": "Virginia Beach-Norfolk-Newport News, VA-NC Metro Area"
+    },
+    {
+      "city_state": "Springfield, Missouri",
+      "emsi_area": "Springfield, MO Metro Area"
+    },
+    {
+      "city_state": "Greensboro, North Carolina",
+      "emsi_area": "Greensboro-High Point, NC Metro Area"
+    },
+    {
+      "city_state": "Huntington Beach, California",
+      "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area"
+    },
+    {
+      "city_state": "Warwick, Rhode Island",
+      "emsi_area": "Providence-Warwick, RI-MA Metro Area"
+    },
+    {
+      "city_state": "Riverside, California",
+      "emsi_area": "Riverside-San Bernardino-Ontario, CA Metro Area"
+    },
+    {
+      "city_state": "Irvine, California",
+      "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area"
+    },
+    {
+      "city_state": "Chula Vista, California",
+      "emsi_area": "San Diego-Chula Vista-Carlsbad, CA Metro Area"
+    },
+    {
+      "city_state": "Columbia, Maryland",
+      "emsi_area": "Baltimore-Columbia-Towson, MD Metro Area"
+    },
+    {
+      "city_state": "Corpus Christi, Texas",
+      "emsi_area": "Corpus Christi, TX Metro Area"
+    },
+    {
+      "city_state": "Cedar Rapids, Iowa",
+      "emsi_area": "Cedar Rapids, IA Metro Area"
+    },
+    {
+      "city_state": "Little Rock, Arkansas",
+      "emsi_area": "Little Rock-North Little Rock-Conway, AR Metro Area"
+    },
+    {
+      "city_state": "Arlington, Texas",
+      "emsi_area": "Dallas-Fort Worth-Arlington, TX Metro Area"
+    },
+    {
+      "city_state": "Newport News, Virginia",
+      "emsi_area": "Virginia Beach-Norfolk-Newport News, VA-NC Metro Area"
+    },
+    {
+      "city_state": "Pembroke Pines, Florida",
+      "emsi_area": "Miami-Fort Lauderdale-Pompano Beach, FL Metro Area"
+    },
+    {
+      "city_state": "Worcester, Massachusetts",
+      "emsi_area": "Worcester, MA-CT Metro Area"
+    },
+    {
+      "city_state": "Modesto, California",
+      "emsi_area": "Modesto, CA Metro Area"
+    },
+    {
+      "city_state": "Oceanside, California",
+      "emsi_area": "San Diego-Chula Vista-Carlsbad, CA Metro Area"
+    },
+    {
+      "city_state": "Dover, Delaware",
+      "emsi_area": "Dover, DE Metro Area"
+    },
+    {
+      "city_state": "Birmingham, Alabama",
+      "emsi_area": "Birmingham-Hoover, AL Metro Area"
+    },
+    {
+      "city_state": "Peoria, Arizona",
+      "emsi_area": "Phoenix-Mesa-Chandler, AZ Metro Area"
+    },
+    {
+      "city_state": "Lewiston, Maine",
+      "emsi_area": "Lewiston-Auburn, ME Metro Area"
+    },
+    {
+      "city_state": "Oxnard, California",
+      "emsi_area": "Oxnard-Thousand Oaks-Ventura, CA Metro Area"
+    },
+    {
+      "city_state": "Henderson, Nevada",
+      "emsi_area": "Las Vegas-Henderson-Paradise, NV Metro Area"
+    },
+    {
+      "city_state": "Rapid City, South Dakota",
+      "emsi_area": "Rapid City, SD Metro Area"
+    },
+    {
+      "city_state": "Cape Coral, Florida",
+      "emsi_area": "Cape Coral-Fort Myers, FL Metro Area"
+    },
+    {
+      "city_state": "Anchorage, Alaska",
+      "emsi_area": "Anchorage, AK Metro Area"
+    },
+    {
+      "city_state": "Santa Clarita, California",
+      "emsi_area": "Los Angeles-Long Beach-Anaheim, CA Metro Area"
+    },
+    {
+      "city_state": "Tallahassee, Florida",
+      "emsi_area": "Tallahassee, FL Metro Area"
+    },
+    {
+      "city_state": "Memphis, Tennessee",
+      "emsi_area": "Memphis, TN-MS-AR Metro Area"
+    },
+    {
+      "city_state": "Yonkers, New York",
+      "emsi_area": "New York-Newark-Jersey City, NY-NJ-PA Metro Area"
+    },
+    {
+      "city_state": "Chattanooga, Tennessee",
+      "emsi_area": "Chattanooga, TN-GA Metro Area"
+    },
+    {
+      "city_state": "Akron, Ohio",
+      "emsi_area": "Akron, OH Metro Area"
+    },
+    {
+      "city_state": "Charleston, West Virginia",
+      "emsi_area": "Charleston, WV Metro Area"
+    },
+    {
+      "city_state": "Fremont, California",
+      "emsi_area": "San Francisco-Oakland-Berkeley, CA Metro Area"
+    },
+    {
+      "city_state": "Lubbock, Texas",
+      "emsi_area": "Lubbock, TX Metro Area"
+    },
+    {
+      "city_state": "Fayetteville, North Carolina",
+      "emsi_area": "Fayetteville, NC Metro Area"
+    },
+    {
+      "city_state": "Aurora, Illinois",
+      "emsi_area": "Chicago-Naperville-Elgin, IL-IN-WI Metro Area"
+    },
+    {
+      "city_state": "Cheyenne, Wyoming",
+      "emsi_area": "Cheyenne, WY Metro Area"
+    },
+    {
+      "city_state": "South Burlington, Vermont",
+      "emsi_area": "Burlington-South Burlington, VT Metro Area"
+    },
+    {
+      "city_state": "Las Cruces, New Mexico",
+      "emsi_area": "Las Cruces, NM Metro Area"
+    },
+    {
+      "city_state": "Wichita, Kansas",
+      "emsi_area": "Wichita, KS Metro Area"
+    },
+    {
+      "city_state": "Winston-Salem, North Carolina",
+      "emsi_area": "Winston-Salem, NC Metro Area"
+    },
+    {
+      "city_state": "Brownsville, Texas",
+      "emsi_area": "Brownsville-Harlingen, TX Metro Area"
+    },
+    {
+      "city_state": "Garland, Texas",
+      "emsi_area": "Dallas-Fort Worth-Arlington, TX Metro Area"
+    },
+    {
+      "city_state": "Bismarck, North Dakota",
+      "emsi_area": "Bismarck, ND Metro Area"
+    },
+    {
+      "city_state": "Fort Smith, Arkansas",
+      "emsi_area": "Fort Smith, AR-OK Metro Area"
+    },
+    {
+      "city_state": "Huntington, West Virginia",
+      "emsi_area": "Huntington-Ashland, WV-KY-OH Metro Area"
+    },
+    {
+      "city_state": "San Bernardino, California",
+      "emsi_area": "Riverside-San Bernardino-Ontario, CA Metro Area"
+    },
+    {
+      "city_state": "Huntsville, Alabama",
+      "emsi_area": "Huntsville, AL Metro Area"
+    },
+    {
+      "city_state": "Mobile, Alabama",
+      "emsi_area": "Mobile, AL Metro Area"
+    },
+    {
+      "city_state": "Chesapeake, Virginia",
+      "emsi_area": "Virginia Beach-Norfolk-Newport News, VA-NC Metro Area"
+    },
+    {
+      "city_state": "Rancho Cucamonga, California",
+      "emsi_area": "Riverside-San Bernardino-Ontario, CA Metro Area"
+    },
+    {
+      "city_state": "North Las Vegas, Nevada",
+      "emsi_area": "Las Vegas-Henderson-Paradise, NV Metro Area"
+    },
+    {
+      "city_state": "Columbus, Georgia",
+      "emsi_area": "Columbus, GA-AL Metro Area"
+    },
+    {
+      "city_state": "West Valley City, Utah",
+      "emsi_area": "Salt Lake City, UT Metro Area"
+    },
+    {
+      "city_state": "Gulfport, Mississippi",
+      "emsi_area": "Gulfport-Biloxi, MS Metro Area"
+    },
+    {
+      "city_state": "Fontana, California",
+      "emsi_area": "Riverside-San Bernardino-Ontario, CA Metro Area"
+    },
+    {
+      "city_state": "Grand Prairie, Texas",
+      "emsi_area": "Dallas-Fort Worth-Arlington, TX Metro Area"
+    },
+    {
+      "city_state": "Nampa, Idaho",
+      "emsi_area": "Boise City, ID Metro Area"
+    },
+    {
+      "city_state": "Ontario, California",
+      "emsi_area": "Riverside-San Bernardino-Ontario, CA Metro Area"
+    },
+    {
+      "city_state": "Augusta, Georgia",
+      "emsi_area": "Augusta-Richmond County, GA-SC Metro Area"
+    },
+    {
+      "city_state": "Juneau, Alaska",
+      "emsi_area": "Juneau, AK Micro Area"
+    },
+    {
+      "city_state": "Shreveport, Louisiana",
+      "emsi_area": "Shreveport-Bossier City, LA Metro Area"
+    },
+    {
+      "city_state": "Jackson, Mississippi",
+      "emsi_area": "Jackson, MS Metro Area"
+    },
+    {
+      "city_state": "Montgomery, Alabama",
+      "emsi_area": "Montgomery, AL Metro Area"
+    },
+    {
+      "city_state": "Moreno Valley, California",
+      "emsi_area": "Riverside-San Bernardino-Ontario, CA Metro Area"
+    },
+    {
+      "city_state": "Pearl City, Hawaii",
+      "emsi_area": "Urban Honolulu, HI Metro Area"
+    }
+  ],
+  "focus_zips_sample_note": "Focus zips tab is ~50MB compressed and contains zip-level population data. Full extraction would be a separate ETL step. Sample headers captured below.",
+  "focus_zips_headers": [
+    "City_state",
+    "zip",
+    "2011 Population_All",
+    "2021 Population_All",
+    "2011 Population_20-24 yo",
+    "2021 Population_20-24 yo",
+    "2011 Population_25-34 yo",
+    "2021 Population_25-34 yo",
+    "2011 Population_35-44 yo",
+    "2021 Population_35-44 yo",
+    "2011 Population_45-49 yo",
+    "2021 Population_45-49 yo",
+    "2021_Total 20-44 yo",
+    "2021_25-49 share of pop",
+    "2011 Total Jobs",
+    "2020 Total Jobs",
+    "2021 Total Jobs",
+    "2011 Business Jobs",
+    "2021 Business Jobs",
+    "2011 STEM Jobs",
+    "2021 STEM Jobs",
+    "2011 Gig Jobs",
+    "2021 Gig Jobs",
+    "2011 Hotel Clerk Jobs",
+    "2021 Hotel Clerk Jobs",
+    "WeddingsCounts",
+    "WeddingsAvgSpend",
+    "WeddingPop",
+    "Total pop",
+    "WeddingPop by Pop",
+    "WeddingWtdAvg",
+    "WeddingsVenues",
+    "VenuesPerCapita10K",
+    "Wedding venues within 10 miles",
+    "Wed10miPop",
+    "Total pop",
+    "Wed10miByPop",
+    "Wed10miWtdAvg",
+    "Wedding venues within 25 miles",
+    "Wed25miPop",
+    "Total pop",
+    "Wed25miByPop",
+    "Wed25miWtdAvg",
+    "RealPageSubmarket",
+    "RealPageMarket",
+    "Submarket_2010Q3",
+    "Submarket_2011Q3",
+    "Submarket_2012Q3",
+    "Submarket_2013Q3",
+    "Submarket_2014Q3",
+    "Submarket_2015Q3",
+    "Submarket_2016Q3",
+    "Submarket_2017Q3",
+    "Submarket_2018Q3",
+    "Submarket_2019Q3",
+    "Submarket_2020Q3",
+    "Submarket_2021Q3",
+    "Submarket_2022Q3",
+    "Submarket_2023Q3",
+    "Submarket 2013-2020",
+    "Submarket avg 10 year",
+    "Market_2010Q3",
+    "Market_2011Q3",
+    "Market_2012Q3",
+    "Market_2013Q3",
+    "Market_2014Q3",
+    "Market_2015Q3",
+    "Market_2016Q3",
+    "Market_2017Q3",
+    "Market_2018Q3",
+    "Market_2019Q3",
+    "Market_2020Q3",
+    "Market_2021Q3",
+    "Market_2022Q3",
+    "Market_2023Q3",
+    "Market 2013-2020",
+    "Market avg 10 year",
+    "Total units",
+    "$50,000 to $74,999",
+    "$75,000 to $99,999",
+    "$100,000 to $149,999",
+    "$150,000 or more",
+    "Share_$50,000 to $74,999",
+    "Share_$75,000 to $99,999",
+    "Share_$100,000 to $149,999",
+    "Share_$150,000 or more",
+    "Total HHs",
+    "Total_Over $50K",
+    "Share_HH Over $50K",
+    "Total apartments",
+    "Total apts 15-34 yo",
+    "Share of apartments 15-34 year olds"
+  ],
+  "focus_zips_sample_rows": [
+    {
+      "0": "Akron, Ohio",
+      "1": "44301",
+      "2": 16025.5579372,
+      "3": 15223.0108119,
+      "4": 1126.20102216,
+      "5": 1049.20078953,
+      "6": 2435.45375705,
+      "7": 2533.0024027,
+      "8": 2025.63915143,
+      "9": 1915.67176224,
+      "10": 1034.7073337,
+      "11": 894.23629929,
+      "12": 5497.87495447,
+      "13": 0.3509759357231348,
+      "14": 4860.77660181,
+      "15": 4956.15728352,
+      "16": 5109.7648922,
+      "17": 152.889762045,
+      "18": 200.946844559,
+      "19": 131.058859734,
+      "20": 132.610520504,
+      "21": 925.094948669,
+      "22": 975.883583981,
+      "23": "<10",
+      "24": "<10",
+      "25": 37,
+      "26": 13098,
+      "27": 199390995.6142662,
+      "28": 277680.55999541,
+      "29": 718.0588933469527,
+      "30": 14295.742368133766,
+      "31": 23,
+      "32": 15.108706342125593,
+      "33": 963,
+      "34": 14659759.4118597,
+      "35": 277680.55999541,
+      "36": 52.79361080265044,
+      "37": 965.135929727439,
+      "38": 3477,
+      "39": 52930408.5929763,
+      "40": 277680.55999541,
+      "41": 190.6161835522488,
+      "42": 3740.9094041345315,
+      "43": null,
+      "44": null,
+      "45": 0,
+      "46": 0,
+      "47": 0,
+      "48": 0,
+      "49": 0,
+      "50": 0,
+      "51": 0,
+      "52": 0,
+      "53": 0,
+      "54": 0,
+      "55": 0,
+      "56": 0,
+      "57": 0,
+      "58": 0,
+      "59": null,
+      "60": 0,
+      "61": null,
+      "62": null,
+      "63": null,
+      "64": null,
+      "65": null,
+      "66": null,
+      "67": null,
+      "68": null,
+      "69": null,
+      "70": null,
+      "71": null,
+      "72": null,
+      "73": null,
+      "74": null,
+      "75": null,
+      "76": null,
+      "77": 6218,
+      "78": 1361,
+      "79": 595,
+      "80": 451,
+      "81": 222,
+      "82": 0.2188806690254101,
+      "83": 0.09568993245416532,
+      "84": 0.07253136056609842,
+      "85": 0.035702798327436475,
+      "86": 6218,
+      "87": 2629,
+      "88": 0.4228047603731103,
+      "89": 288,
+      "90": 136,
+      "91": 0.4722222222222222
+    },
+    {
+      "0": "Akron, Ohio",
+      "1": "44302",
+      "2": 6326.03502584,
+      "3": 5678.82397516,
+      "4": 736.067520824,
+      "5": 365.483270656,
+      "6": 1009.51999815,
+      "7": 1013.46097404,
+      "8": 759.554987792,
+      "9": 769.95526849,
+      "10": 387.952197301,
+      "11": 368.84028584,
+      "12": 2148.899513186,
+      "13": 0.37899687290613027,
+      "14": 1088.27820361,
+      "15": 1032.25621527,
+      "16": 1083.60311449,
+      "17": 40.9908397562,
+      "18": 41.4611985861,
+      "19": 38.7097039343,
+      "20": 39.670225823,
+      "21": 264.436815467,
+      "22": 289.744118402,
+      "23": 0,
+      "24": 0,
+      "25": 7,
+      "26": 8200,
+      "27": 46566356.596312,
+      "28": 277680.55999541,
+      "29": 167.69757521765922,
+      "30": 14295.742368133766,
+      "31": 3,
+      "32": 5.282783923436322,
+      "33": 1028,
+      "34": 5837831.04646448,
+      "35": 277680.55999541,
+      "36": 21.0235496736285,
+      "37": 965.135929727439,
+      "38": 3943,
+      "39": 22391602.93405588,
+      "40": 277680.55999541,
+      "41": 80.63799257112565,
+      "42": 3740.9094041345315,
+      "43": null,
+      "44": null,
+      "45": 0,
+      "46": 0,
+      "47": 0,
+      "48": 0,
+      "49": 0,
+      "50": 0,
+      "51": 0,
+      "52": 0,
+      "53": 0,
+      "54": 0,
+      "55": 0,
+      "56": 0,
+      "57": 0,
+      "58": 0,
+      "59": null,
+      "60": 0,
+      "61": null,
+      "62": null,
+      "63": null,
+      "64": null,
+      "65": null,
+      "66": null,
+      "67": null,
+      "68": null,
+      "69": null,
+      "70": null,
+      "71": null,
+      "72": null,
+      "73": null,
+      "74": null,
+      "75": null,
+      "76": null,
+      "77": 2557,
+      "78": 337,
+      "79": 249,
+      "80": 159,
+      "81": 59,
+      "82": 0.13179507235041063,
+      "83": 0.0973797418850215,
+      "84": 0.062182244818146264,
+      "85": 0.023073914743840438,
+      "86": 2557,
+      "87": 804,
+      "88": 0.31443097379741886,
+      "89": 620,
+      "90": 177,
+      "91": 0.2854838709677419
+    },
+    {
+      "0": "Akron, Ohio",
+      "1": "44303",
+      "2": 8120.23556932,
+      "3": 8672.83283648,
+      "4": 740.949256067,
+      "5": 559.510133231,
+      "6": 1058.07272001,
+      "7": 1558.2890186,
+      "8": 974.449229852,
+      "9": 1241.81550506,
+      "10": 494.396737387,
+      "11": 462.209930308,
+      "12": 3359.6146568910003,
+      "13": 0.37615327257847386,
+      "14": 3249.5685697,
+      "15": 3091.32588524,
+      "16": 3097.17860329,
+      "17": 148.060709003,
+      "18": 165.082506522,
+      "19": 89.8203141838,
+      "20": 105.789440695,
+      "21": 581.179649846,
+      "22": 530.046874285,
+      "23": "<10",
+      "24": "<10",
+      "25": 21,
+      "26": 16431,
+      "27": 142503316.3362029,
+      "28": 277680.55999541,
+      "29": 513.191547649423,
+      "30": 14295.742368133766,
+      "31": 16,
+      "32": 18.4484127639359,
+      "33": 1028,
+      "34": 8915672.15590144,
+      "35": 277680.55999541,
+      "36": 32.10765692797801,
+      "37": 965.135929727439,
+      "38": 4027,
+      "39": 34925497.83250496,
+      "40": 277680.55999541,
+      "41": 125.77581172078547,
+      "42": 3740.9094041345315,
+      "43": "South Summit County",
+      "44": "Akron, OH",
+      "45": 0.675,
+      "46": 0.707,
+      "47": 0.72,
+      "48": 0.733,
+      "49": 0.739,
+      "50": 0.756,
+      "51": 0.739,
+      "52": 0.726,
+      "53": 0.729,
+      "54": 0.742,
+      "55": 0.743,
+      "56": 0.746,
+      "57": 0.757,
+      "58": 0.772,
+      "59": 0.013642564802182733,
+      "60": 0.7280909090909091,
+      "61": 0.759,
+      "62": 0.788,
+      "63": 0.795,
+      "64": 0.795,
+      "65": 0.809,
+      "66": 0.817,
+      "67": 0.81,
+      "68": 0.817,
+      "69": 0.823,
+      "70": 0.828,
+      "71": 0.822,
+      "72": 0.829,
+      "73": 0.847,
+      "74": 0.851,
+      "75": 0.03396226415094339,
+      "76": 0.8057272727272727,
+      "77": 3883,
+      "78": 724,
+      "79": 483,
+      "80": 661,
+      "81": 486,
+      "82": 0.18645377285603915,
+      "83": 0.12438835951583826,
+      "84": 0.1702292042235385,
+      "85": 0.12516095802214783,
+      "86": 3883,
+      "87": 2354,
+      "88": 0.6062322946175638,
+      "89": 1048,
+      "90": 273,
+      "91": 0.26049618320610685
+    },
+    {
+      "0": "Akron, Ohio",
+      "1": "44304",
+      "2": 5746.16554732,
+      "3": 5606.68194583,
+      "4": 1756.79907156,
+      "5": 1684.56306367,
+      "6": 609.363427885,
+      "7": 1271.10381926,
+      "8": 371.134584501,
+      "9": 282.029179668,
+      "10": 198.647646101,
+      "11": 151.554978519,
+      "12": 3237.696062598,
+      "13": 0.30404577857584214,
+      "14": 8807.67782091,
+      "15": 9157.67121068,
+      "16": 9179.35580669,
+      "17": 279.424121189,
+      "18": 311.06513567,
+      "19": 200.43202118,
+      "20": 190.539709949,
+      "21": 523.793447876,
+      "22": 428.49129021,
+      "23": 0,
+      "24": 0,
+      "25": 36,
+      "26": 6664,
+      "27": 37362928.48701112,
+      "28": 277680.55999541,
+      "29": 134.55363417456635,
+      "30": 14295.742368133766,
+      "31": 12,
+      "32": 21.40303323059919,
+      "33": 1175,
+      "34": 6587851.286350249,
+      "35": 277680.55999541,
+      "36": 23.72456785040748,
+      "37": 965.135929727439,
+      "38": 3942,
+      "39": 22101540.23046186,
+      "40": 277680.55999541,
+      "41": 79.59340124792026,
+      "42": 3740.9094041345315,
+      "43": "South Summit County",
+      "44": "Akron, OH",
+      "45": 0.675,
+      "46": 0.707,
+      "47": 0.72,
+      "48": 0.733,
+      "49": 0.739,
+      "50": 0.756,
+      "51": 0.739,
+      "52": 0.726,
+      "53": 0.729,
+      "54": 0.742,
+      "55": 0.743,
+      "56": 0.746,
+      "57": 0.757,
+      "58": 0.772,
+      "59": 0.013642564802182733,
+      "60": 0.7280909090909091,
+      "61": 0.759,
+      "62": 0.788,
+      "63": 0.795,
+      "64": 0.795,
+      "65": 0.809,
+      "66": 0.817,
+      "67": 0.81,
+      "68": 0.817,
+      "69": 0.823,
+      "70": 0.828,
+      "71": 0.822,
+      "72": 0.829,
+      "73": 0.847,
+      "74": 0.851,
+      "75": 0.03396226415094339,
+      "76": 0.8057272727272727,
+      "77": 1382,
+      "78": 84,
+      "79": 48,
+      "80": 9,
+      "81": 36,
+      "82": 0.060781476121562955,
+      "83": 0.03473227206946455,
+      "84": 0.006512301013024602,
+      "85": 0.02604920405209841,
+      "86": 1382,
+      "87": 177,
+      "88": 0.12807525325615052,
+      "89": 624,
+      "90": 466,
+      "91": 0.7467948717948718
+    },
+    {
+      "0": "Akron, Ohio",
+      "1": "44305",
+      "2": 22626.6747551,
+      "3": 22573.754113,
+      "4": 1614.63356582,
+      "5": 1204.35914267,
+      "6": 3588.61424283,
+      "7": 3600.70700058,
+      "8": 2738.7806138,
+      "9": 2334.66963136,
+      "10": 1589.71168571,
+      "11": 1182.22564438,
+      "12": 7139.735774610001,
+      "13": 0.31530432380412277,
+      "14": 7387.63075569,
+      "15": 7213.31422815,
+      "16": 7435.88828691,
+      "17": 212.143062394,
+      "18": 296.269790927,
+      "19": 205.338316641,
+      "20": 216.650242232,
+      "21": 2060.81462451,
+      "22": 2009.5736594,
+      "23": "<10",
+      "24": "<10",
+      "25": 49,
+      "26": 12353,
+      "27": 278853584.557889,
+      "28": 277680.55999541,
+      "29": 1004.2243668858144,
+      "30": 14295.742368133766,
+      "31": 29,
+      "32": 12.846777658173918,
+      "33": 1063,
+      "34": 23995900.622119,
+      "35": 277680.55999541,
+      "36": 86.41548627860607,
+      "37": 965.135929727439,
+      "38": 3680,
+      "39": 83071415.13584,
+      "40": 277680.55999541,
+      "41": 299.16179633609624,
+      "42": 3740.9094041345315,
+      "43": null,
+      "44": null,
+      "45": 0,
+      "46": 0,
+      "47": 0,
+      "48": 0,
+      "49": 0,
+      "50": 0,
+      "51": 0,
+      "52": 0,
+      "53": 0,
+      "54": 0,
+      "55": 0,
+      "56": 0,
+      "57": 0,
+      "58": 0,
+      "59": null,
+      "60": 0,
+      "61": null,
+      "62": null,
+      "63": null,
+      "64": null,
+      "65": null,
+      "66": null,
+      "67": null,
+      "68": null,
+      "69": null,
+      "70": null,
+      "71": null,
+      "72": null,
+      "73": null,
+      "74": null,
+      "75": null,
+      "76": null,
+      "77": 9249,
+      "78": 1820,
+      "79": 1327,
+      "80": 665,
+      "81": 54,
+      "82": 0.1967780300573035,
+      "83": 0.14347497026705588,
+      "84": 0.07189966482863012,
+      "85": 0.005838469023678235,
+      "86": 9249,
+      "87": 3866,
+      "88": 0.4179911341766677,
+      "89": 466,
+      "90": 105,
+      "91": 0.22532188841201717
+    }
+  ]
+}

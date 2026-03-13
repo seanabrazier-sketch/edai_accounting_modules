@@ -1,0 +1,128 @@
+[
+  {
+    "metric": "$K",
+    "manufacturing": "Manufacturing",
+    "transportation_warehousing": "Transportation and warehousing",
+    "professional_services": "Professional, scientific, and technical services"
+  },
+  {
+    "metric": "COGS",
+    "manufacturing": 4379289086.0,
+    "transportation_warehousing": 232907935.0,
+    "professional_services": 426429162.0
+  },
+  {
+    "metric": "Inventory, beg of year",
+    "manufacturing": 684538950.0,
+    "transportation_warehousing": 3588062.0,
+    "professional_services": 13094398.0
+  },
+  {
+    "metric": "Purchases",
+    "manufacturing": 3117551569.0,
+    "transportation_warehousing": 101942229.0,
+    "professional_services": 137721059.0
+  },
+  {
+    "metric": "Cost of labor",
+    "manufacturing": 372723588.0,
+    "transportation_warehousing": 19885861.0,
+    "professional_services": 139689325.0
+  },
+  {
+    "metric": "Additional inventory costs",
+    "manufacturing": 62160146.0,
+    "transportation_warehousing": "d",
+    "professional_services": "d"
+  },
+  {
+    "metric": "Other costs",
+    "manufacturing": 856615795.0,
+    "transportation_warehousing": 109978919.0,
+    "professional_services": 147673849.0
+  },
+  {
+    "metric": "Less: inventory, end of year",
+    "manufacturing": -721182488.0,
+    "transportation_warehousing": -3684753.0,
+    "professional_services": -14036001.0
+  },
+  {
+    "metric": "Death benefits",
+    "manufacturing": null,
+    "transportation_warehousing": null,
+    "professional_services": 0.0
+  },
+  {
+    "metric": "Losses incurred",
+    "manufacturing": null,
+    "transportation_warehousing": null,
+    "professional_services": "d"
+  },
+  {
+    "metric": "Calculated COGS",
+    "manufacturing": 4372407560,
+    "transportation_warehousing": 231710318,
+    "professional_services": 424142630
+  },
+  {
+    "metric": "Labor as share of COGS_COGS file",
+    "manufacturing": 0.0851105238,
+    "transportation_warehousing": 0.08538077932,
+    "professional_services": 0.3275792029
+  },
+  {
+    "metric": "Business receipts_IRS Corporate returns",
+    "manufacturing": 897794934,
+    "transportation_warehousing": 283415460,
+    "professional_services": 643857616
+  },
+  {
+    "metric": "COGS_IRS Corporate returns",
+    "manufacturing": 603926684,
+    "transportation_warehousing": 115365941,
+    "professional_services": 193101993
+  },
+  {
+    "metric": "COGS share of receipts",
+    "manufacturing": 0.6726777587,
+    "transportation_warehousing": 0.4070559207,
+    "professional_services": 0.2999141242
+  },
+  {
+    "metric": "Non-labor share of COGS",
+    "manufacturing": 0.6154258023,
+    "transportation_warehousing": 0.3723011689,
+    "professional_services": 0.2016684944
+  },
+  {
+    "metric": "Salaries and wages share of business receipts",
+    "manufacturing": 0.083,
+    "transportation_warehousing": 0.137,
+    "professional_services": 0.211
+  },
+  {
+    "metric": "Labor as share of COGS_IRS Corporate returns",
+    "manufacturing": 0.0851105238,
+    "transportation_warehousing": 0.08538077932,
+    "professional_services": 0.3275792029
+  },
+  {
+    "metric": "Labor COGS figure",
+    "manufacturing": 51400516.41,
+    "transportation_warehousing": 9850033.95,
+    "professional_services": 63256196.95
+  },
+  {
+    "metric": "COGS share of business receipts",
+    "manufacturing": 0.0572519564,
+    "transportation_warehousing": 0.03475475173,
+    "professional_services": 0.09824562975
+  },
+  {
+    "metric": "Labor total share of receipts",
+    "manufacturing": 0.1423624802,
+    "transportation_warehousing": 0.1201355311,
+    "professional_services": 0.4258248327
+  }
+]

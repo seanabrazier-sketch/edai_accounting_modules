@@ -1,0 +1,262 @@
+[
+  {
+    "state": "Alabama",
+    "city": "Birmingham",
+    "commercial_prop_tax_rate": 0.01454
+  },
+  {
+    "state": "Alaska",
+    "city": "Anchorage",
+    "commercial_prop_tax_rate": 0.01213
+  },
+  {
+    "state": "Arizona",
+    "city": "Phoenix",
+    "commercial_prop_tax_rate": 0.0208
+  },
+  {
+    "state": "Arkansas",
+    "city": "Little Rock",
+    "commercial_prop_tax_rate": 0.01398
+  },
+  {
+    "state": "California",
+    "city": "Los Angeles",
+    "commercial_prop_tax_rate": 0.01174
+  },
+  {
+    "state": "Colorado",
+    "city": "Denver",
+    "commercial_prop_tax_rate": 0.02223
+  },
+  {
+    "state": "Connecticut",
+    "city": "Bridgeport",
+    "commercial_prop_tax_rate": 0.03301
+  },
+  {
+    "state": "DC",
+    "city": "Washington",
+    "commercial_prop_tax_rate": 0.01261
+  },
+  {
+    "state": "Delaware",
+    "city": "Wilmington",
+    "commercial_prop_tax_rate": 0.01062
+  },
+  {
+    "state": "Florida",
+    "city": "Jacksonville",
+    "commercial_prop_tax_rate": 0.01365
+  },
+  {
+    "state": "Georgia",
+    "city": "Atlanta",
+    "commercial_prop_tax_rate": 0.01508
+  },
+  {
+    "state": "Hawaii",
+    "city": "Honolulu",
+    "commercial_prop_tax_rate": 0.0102
+  },
+  {
+    "state": "Idaho",
+    "city": "Boise",
+    "commercial_prop_tax_rate": 0.01084
+  },
+  {
+    "state": "Illinois",
+    "city": "Aurora*",
+    "commercial_prop_tax_rate": 0.0301
+  },
+  {
+    "state": "Indiana",
+    "city": "Indianapolis",
+    "commercial_prop_tax_rate": 0.02907
+  },
+  {
+    "state": "Iowa",
+    "city": "Des Moines",
+    "commercial_prop_tax_rate": 0.023
+  },
+  {
+    "state": "Kansas",
+    "city": "Wichita",
+    "commercial_prop_tax_rate": 0.02562
+  },
+  {
+    "state": "Kentucky",
+    "city": "Louisville",
+    "commercial_prop_tax_rate": 0.01363
+  },
+  {
+    "state": "Louisiana",
+    "city": "New Orleans",
+    "commercial_prop_tax_rate": 0.0214
+  },
+  {
+    "state": "Maine",
+    "city": "Portland",
+    "commercial_prop_tax_rate": 0.0202
+  },
+  {
+    "state": "Maryland",
+    "city": "Baltimore",
+    "commercial_prop_tax_rate": 0.02795
+  },
+  {
+    "state": "Massachusetts",
+    "city": "Boston",
+    "commercial_prop_tax_rate": 0.01771
+  },
+  {
+    "state": "Michigan",
+    "city": "Detroit",
+    "commercial_prop_tax_rate": 0.03772
+  },
+  {
+    "state": "Minnesota",
+    "city": "Minneapolis",
+    "commercial_prop_tax_rate": 0.01734
+  },
+  {
+    "state": "Mississippi",
+    "city": "Jackson",
+    "commercial_prop_tax_rate": 0.02671
+  },
+  {
+    "state": "Missouri",
+    "city": "Kansas City",
+    "commercial_prop_tax_rate": 0.02822
+  },
+  {
+    "state": "Montana",
+    "city": "Billings",
+    "commercial_prop_tax_rate": 0.0098
+  },
+  {
+    "state": "Nebraska",
+    "city": "Omaha",
+    "commercial_prop_tax_rate": 0.01888
+  },
+  {
+    "state": "Nevada",
+    "city": "Las Vegas",
+    "commercial_prop_tax_rate": 0.0112
+  },
+  {
+    "state": "New Hampshire",
+    "city": "Hampshire",
+    "commercial_prop_tax_rate": 0.01694
+  },
+  {
+    "state": "New Jersey",
+    "city": "Jersey",
+    "commercial_prop_tax_rate": 0.0252
+  },
+  {
+    "state": "New Mexico",
+    "city": "Mexico",
+    "commercial_prop_tax_rate": 0.0144
+  },
+  {
+    "state": "New York",
+    "city": "York",
+    "commercial_prop_tax_rate": 0.02179
+  },
+  {
+    "state": "North Carolina",
+    "city": "Charlotte",
+    "commercial_prop_tax_rate": 0.00954
+  },
+  {
+    "state": "North Dakota",
+    "city": "Dakota",
+    "commercial_prop_tax_rate": 0.01077
+  },
+  {
+    "state": "Ohio",
+    "city": "Columbus",
+    "commercial_prop_tax_rate": 0.01933
+  },
+  {
+    "state": "Oklahoma",
+    "city": "Oklahoma City",
+    "commercial_prop_tax_rate": 0.01364
+  },
+  {
+    "state": "Oregon",
+    "city": "Portland",
+    "commercial_prop_tax_rate": 0.02456
+  },
+  {
+    "state": "Pennsylvania",
+    "city": "Philadelphia",
+    "commercial_prop_tax_rate": 0.01143
+  },
+  {
+    "state": "Rhode Island",
+    "city": "Providence",
+    "commercial_prop_tax_rate": 0.0361
+  },
+  {
+    "state": "South Carolina",
+    "city": "Charleston",
+    "commercial_prop_tax_rate": 0.01855
+  },
+  {
+    "state": "South Dakota",
+    "city": "Sioux Falls",
+    "commercial_prop_tax_rate": 0.01239
+  },
+  {
+    "state": "Tennessee",
+    "city": "Nashville",
+    "commercial_prop_tax_rate": 0.01049
+  },
+  {
+    "state": "Texas",
+    "city": "Houston",
+    "commercial_prop_tax_rate": 0.02286
+  },
+  {
+    "state": "Utah",
+    "city": "Salt Lake City",
+    "commercial_prop_tax_rate": 0.01265
+  },
+  {
+    "state": "Vermont",
+    "city": "Burlington",
+    "commercial_prop_tax_rate": 0.02541
+  },
+  {
+    "state": "Virginia",
+    "city": "Virginia Beach",
+    "commercial_prop_tax_rate": 0.00989
+  },
+  {
+    "state": "Washington",
+    "city": "Seattle",
+    "commercial_prop_tax_rate": 0.00769
+  },
+  {
+    "state": "West Virginia",
+    "city": "Charleston",
+    "commercial_prop_tax_rate": 0.01847
+  },
+  {
+    "state": "Wisconsin",
+    "city": "Milwaukee",
+    "commercial_prop_tax_rate": 0.02533
+  },
+  {
+    "state": "Wyoming",
+    "city": "Cheyenne",
+    "commercial_prop_tax_rate": 0.00686
+  },
+  {
+    "state": "AVERAGE",
+    "city": "",
+    "commercial_prop_tax_rate": 0.01854
+  }
+]

@@ -1,0 +1,737 @@
+{
+  "cit_brackets": [
+    {
+      "State": "Alabama",
+      "Rates": 0.065,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Alaska",
+      "Rates": 0,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Alaska",
+      "Rates": 0.02,
+      "Symbol": ">",
+      "Brackets": 25000
+    },
+    {
+      "State": "Alaska",
+      "Rates": 0.03,
+      "Symbol": ">",
+      "Brackets": 49000
+    },
+    {
+      "State": "Alaska",
+      "Rates": 0.04,
+      "Symbol": ">",
+      "Brackets": 74000
+    },
+    {
+      "State": "Alaska",
+      "Rates": 0.05,
+      "Symbol": ">",
+      "Brackets": 99000
+    },
+    {
+      "State": "Alaska",
+      "Rates": 0.06,
+      "Symbol": ">",
+      "Brackets": 124000
+    },
+    {
+      "State": "Alaska",
+      "Rates": 0.07,
+      "Symbol": ">",
+      "Brackets": 148000
+    },
+    {
+      "State": "Alaska",
+      "Rates": 0.08,
+      "Symbol": ">",
+      "Brackets": 173000
+    },
+    {
+      "State": "Alaska",
+      "Rates": 0.09,
+      "Symbol": ">",
+      "Brackets": 198000
+    },
+    {
+      "State": "Alaska",
+      "Rates": 0.094,
+      "Symbol": ">",
+      "Brackets": 222000
+    },
+    {
+      "State": "Arizona",
+      "Rates": 0.049,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Arkansas",
+      "Rates": 0.01,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Arkansas",
+      "Rates": 0.02,
+      "Symbol": ">",
+      "Brackets": 3000
+    },
+    {
+      "State": "Arkansas",
+      "Rates": 0.03,
+      "Symbol": ">",
+      "Brackets": 6000
+    },
+    {
+      "State": "Arkansas",
+      "Rates": 0.048,
+      "Symbol": ">",
+      "Brackets": 11000
+    },
+    {
+      "State": "California",
+      "Rates": 0.0884,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Colorado",
+      "Rates": 0.044,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Connecticut",
+      "Tax Foundation notes": "(a)",
+      "Rates": 0.075,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Delaware",
+      "Tax Foundation notes": "(b)",
+      "Rates": 0.087,
+      "Symbol": ">",
+      "Brackets": 0,
+      "SB notes": "Corporate income tax AND gross receipts tax",
+      "SB gross receipts notes": "GR rate 0.0945%-1.9914%"
+    },
+    {
+      "State": "Florida",
+      "Rates": 0.055,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Georgia",
+      "Tax Foundation notes": "(c )",
+      "Rates": 0.0575,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Hawaii",
+      "Rates": 0.044,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Hawaii",
+      "Rates": 0.054,
+      "Symbol": ">",
+      "Brackets": 25000
+    },
+    {
+      "State": "Hawaii",
+      "Rates": 0.064,
+      "Symbol": ">",
+      "Brackets": 100000
+    },
+    {
+      "State": "Idaho",
+      "Rates": 0.058,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Illinois",
+      "Tax Foundation notes": "(d)",
+      "Rates": 0.095,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Indiana",
+      "Rates": 0.049,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Iowa",
+      "Rates": 0.055,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Iowa",
+      "Rates": 0.071,
+      "Symbol": ">",
+      "Brackets": 100000
+    },
+    {
+      "State": "Kansas",
+      "Rates": 0.035,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Kansas",
+      "Rates": 0.065,
+      "Symbol": ">",
+      "Brackets": 50000
+    },
+    {
+      "State": "Kentucky",
+      "Rates": 0.05,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Louisiana",
+      "Rates": 0.035,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Louisiana",
+      "Rates": 0.055,
+      "Symbol": ">",
+      "Brackets": 50000
+    },
+    {
+      "State": "Louisiana",
+      "Rates": 0.075,
+      "Symbol": ">",
+      "Brackets": 150000
+    },
+    {
+      "State": "Maine",
+      "Rates": 0.035,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Maine",
+      "Rates": 0.0793,
+      "Symbol": ">",
+      "Brackets": 350000
+    },
+    {
+      "State": "Maine",
+      "Rates": 0.0833,
+      "Symbol": ">",
+      "Brackets": 1050000
+    },
+    {
+      "State": "Maine",
+      "Rates": 0.0893,
+      "Symbol": ">",
+      "Brackets": 3500000
+    },
+    {
+      "State": "Maryland",
+      "Rates": 0.0825,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Massachusetts",
+      "Rates": 0.08,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Michigan",
+      "Rates": 0.06,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Minnesota",
+      "Rates": 0.098,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Mississippi",
+      "Rates": 0.04,
+      "Symbol": ">",
+      "Brackets": 5000
+    },
+    {
+      "State": "Mississippi",
+      "Rates": 0.05,
+      "Symbol": ">",
+      "Brackets": 10000
+    },
+    {
+      "State": "Missouri",
+      "Rates": 0.04,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Montana",
+      "Rates": 0.0675,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Nebraska",
+      "Rates": 0.0558,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Nebraska",
+      "Rates": 0.0584,
+      "Symbol": ">",
+      "Brackets": 100000
+    },
+    {
+      "State": "Nevada",
+      "Tax Foundation notes": "(b)",
+      "Rates": 0,
+      "SB notes": "Gross receipts tax",
+      "SB gross receipts notes": "Rate 0.051%-0.331%; use average"
+    },
+    {
+      "State": "New Hampshire",
+      "Rates": 0.075,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "New Jersey",
+      "Tax Foundation notes": "(e )",
+      "Rates": 0.065,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "New Jersey",
+      "Rates": 0.075,
+      "Symbol": ">",
+      "Brackets": 50000
+    },
+    {
+      "State": "New Jersey",
+      "Rates": 0.09,
+      "Symbol": ">",
+      "Brackets": 100000
+    },
+    {
+      "State": "New Mexico",
+      "Rates": 0.048,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "New Mexico",
+      "Rates": 0.059,
+      "Symbol": ">",
+      "Brackets": 500000
+    },
+    {
+      "State": "New York",
+      "Rates": 0.065,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "New York",
+      "Rates": 0.0725,
+      "Symbol": ">",
+      "Brackets": 5000000
+    },
+    {
+      "State": "North Carolina",
+      "Rates": 0.025,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "North Dakota",
+      "Rates": 0.0141,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "North Dakota",
+      "Rates": 0.0355,
+      "Symbol": ">",
+      "Brackets": 25000
+    },
+    {
+      "State": "North Dakota",
+      "Rates": 0.0431,
+      "Symbol": ">",
+      "Brackets": 50000
+    },
+    {
+      "State": "Ohio",
+      "Tax Foundation notes": "(b)",
+      "Rates": 0,
+      "SB notes": "Gross receipts tax",
+      "SB gross receipts notes": "Rate 0.26%"
+    },
+    {
+      "State": "Oklahoma",
+      "Rates": 0.04,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Oregon",
+      "Tax Foundation notes": "(a)",
+      "Rates": 0.066,
+      "Symbol": ">",
+      "Brackets": 0,
+      "SB notes": "Corporate income tax AND gross receipts tax",
+      "SB gross receipts notes": "Rate 0.57%"
+    },
+    {
+      "State": "Oregon",
+      "Tax Foundation notes": "(a)",
+      "Rates": 0.076,
+      "Symbol": ">",
+      "Brackets": 1000000,
+      "SB notes": "Corporate income tax AND gross receipts tax",
+      "SB gross receipts notes": "Rate 0.57%"
+    },
+    {
+      "State": "Pennsylvania",
+      "Rates": 0.0849,
+      "Symbol": ">",
+      "Brackets": 0,
+      "SB notes": "Corporate income tax AND allows local gross receipts tax"
+    },
+    {
+      "State": "Rhode Island",
+      "Rates": 0.07,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "South Carolina",
+      "Rates": 0.05,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "South Dakota",
+      "Rates": 0
+    },
+    {
+      "State": "Tennessee",
+      "Rates": 0.065,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Texas",
+      "Tax Foundation notes": "(b)",
+      "Rates": 0,
+      "SB notes": "Gross receipts tax",
+      "SB gross receipts notes": "Rate 0.331%-0.75%; use average for now; go back later"
+    },
+    {
+      "State": "Utah",
+      "Rates": 0.0455,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Vermont",
+      "Rates": 0.06,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Vermont",
+      "Rates": 0.07,
+      "Symbol": ">",
+      "Brackets": 10000
+    },
+    {
+      "State": "Vermont",
+      "Rates": 0.085,
+      "Symbol": ">",
+      "Brackets": 25000
+    },
+    {
+      "State": "Virginia",
+      "Rates": 0.06,
+      "Symbol": ">",
+      "Brackets": 0,
+      "SB notes": "Corporate income tax AND allows local gross receipts tax"
+    },
+    {
+      "State": "Washington",
+      "Tax Foundation notes": "(b)",
+      "Rates": 0,
+      "SB notes": "Gross receipts tax",
+      "SB gross receipts notes": "Rate 0.13%-3.3%; use average for now; go back later"
+    },
+    {
+      "State": "West Virginia",
+      "Rates": 0.065,
+      "Symbol": ">",
+      "Brackets": 0,
+      "SB notes": "Corporate income tax AND allows local gross receipts tax"
+    },
+    {
+      "State": "Wisconsin",
+      "Rates": 0.079,
+      "Symbol": ">",
+      "Brackets": 0
+    },
+    {
+      "State": "Wyoming",
+      "Rates": 0
+    },
+    {
+      "State": "District of Columbia",
+      "Rates": 0.0825,
+      "Symbol": ">",
+      "Brackets": 0
+    }
+  ],
+  "grt_rates": [
+    {
+      "State": "Alabama",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Alaska",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Arizona",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Arkansas",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "California",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Colorado",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Connecticut",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Delaware",
+      "SB gross receipts notes": "GR rate 0.0945%-1.9914%",
+      "Rate to use": 0.010429500000000001
+    },
+    {
+      "State": "District of Columbia",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Florida",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Georgia",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Hawaii",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Idaho",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Illinois",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Indiana",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Iowa",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Kansas",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Kentucky",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Louisiana",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Maine",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Maryland",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Massachusetts",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Michigan",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Minnesota",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Mississippi",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Missouri",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Montana",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Nebraska",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Nevada",
+      "SB gross receipts notes": "Rate 0.051%-0.331%; use average",
+      "Rate to use": 0.00191
+    },
+    {
+      "State": "New Hampshire",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "New Jersey",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "New Mexico",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "New York",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "New York",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "North Carolina",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "North Dakota",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Ohio",
+      "SB gross receipts notes": "Rate 0.26%",
+      "Rate to use": 0.0026
+    },
+    {
+      "State": "Oklahoma",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Oregon",
+      "SB gross receipts notes": "Rate 0.57%",
+      "Rate to use": 0.0057
+    },
+    {
+      "State": "Pennsylvania",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Rhode Island",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "South Carolina",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "South Dakota",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Tennessee",
+      "SB gross receipts notes": "Rate 0.02%-0.1875%; use average for now",
+      "Rate to use": 0.0010375
+    },
+    {
+      "State": "Texas",
+      "SB gross receipts notes": "Rate 0.331%-0.75%; use average for now; franchise tax",
+      "Rate to use": 0.005405
+    },
+    {
+      "State": "Utah",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Vermont",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Virginia",
+      "SB gross receipts notes": "VA's BPOL tax included here but not including in model"
+    },
+    {
+      "State": "Washington",
+      "SB gross receipts notes": "Rate 0.138%-3.3%; use average for now; go back later",
+      "Rate to use": 0.01719
+    },
+    {
+      "State": "West Virginia",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Wisconsin",
+      "SB gross receipts notes": 0
+    },
+    {
+      "State": "Wyoming",
+      "SB gross receipts notes": 0
+    }
+  ],
+  "source": "Tax Foundation Corp Income Tax and Gross Receipts, 2024",
+  "vintage": "2024"
+}

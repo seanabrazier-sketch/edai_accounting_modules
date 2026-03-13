@@ -1,0 +1,210 @@
+[
+  {
+    "state": "United States",
+    "employer_single_premium": 6697.0
+  },
+  {
+    "state": "Alabama",
+    "employer_single_premium": 5931.0
+  },
+  {
+    "state": "Alaska",
+    "employer_single_premium": 7416.0
+  },
+  {
+    "state": "Arizona",
+    "employer_single_premium": 6772.0
+  },
+  {
+    "state": "Arkansas",
+    "employer_single_premium": 5789.0
+  },
+  {
+    "state": "California",
+    "employer_single_premium": 7018.0
+  },
+  {
+    "state": "Colorado",
+    "employer_single_premium": 6462.0
+  },
+  {
+    "state": "Connecticut",
+    "employer_single_premium": 7100.0
+  },
+  {
+    "state": "Delaware",
+    "employer_single_premium": 7334.0
+  },
+  {
+    "state": "District of Columbia",
+    "employer_single_premium": 6855.0
+  },
+  {
+    "state": "Florida",
+    "employer_single_premium": 7237.0
+  },
+  {
+    "state": "Georgia",
+    "employer_single_premium": 6248.0
+  },
+  {
+    "state": "Hawaii",
+    "employer_single_premium": 6705.0
+  },
+  {
+    "state": "Idaho",
+    "employer_single_premium": 6015.0
+  },
+  {
+    "state": "Illinois",
+    "employer_single_premium": 6884.0
+  },
+  {
+    "state": "Indiana",
+    "employer_single_premium": 6807.0
+  },
+  {
+    "state": "Iowa",
+    "employer_single_premium": 5857.0
+  },
+  {
+    "state": "Kansas",
+    "employer_single_premium": 6175.0
+  },
+  {
+    "state": "Kentucky",
+    "employer_single_premium": 6381.0
+  },
+  {
+    "state": "Louisiana",
+    "employer_single_premium": 6132.0
+  },
+  {
+    "state": "Maine",
+    "employer_single_premium": 7112.0
+  },
+  {
+    "state": "Maryland",
+    "employer_single_premium": 6049.0
+  },
+  {
+    "state": "Massachusetts",
+    "employer_single_premium": 7335.0
+  },
+  {
+    "state": "Michigan",
+    "employer_single_premium": 7060.0
+  },
+  {
+    "state": "Minnesota",
+    "employer_single_premium": 6153.0
+  },
+  {
+    "state": "Mississippi",
+    "employer_single_premium": 5712.0
+  },
+  {
+    "state": "Missouri",
+    "employer_single_premium": 6760.0
+  },
+  {
+    "state": "Montana",
+    "employer_single_premium": 6627.0
+  },
+  {
+    "state": "Nebraska",
+    "employer_single_premium": 6102.0
+  },
+  {
+    "state": "Nevada",
+    "employer_single_premium": 6035.0
+  },
+  {
+    "state": "New Hampshire",
+    "employer_single_premium": 6444.0
+  },
+  {
+    "state": "New Jersey",
+    "employer_single_premium": 7257.0
+  },
+  {
+    "state": "New Mexico",
+    "employer_single_premium": 6895.0
+  },
+  {
+    "state": "New York",
+    "employer_single_premium": 7636.0
+  },
+  {
+    "state": "North Carolina",
+    "employer_single_premium": 6235.0
+  },
+  {
+    "state": "North Dakota",
+    "employer_single_premium": 6700.0
+  },
+  {
+    "state": "Ohio",
+    "employer_single_premium": 6518.0
+  },
+  {
+    "state": "Oklahoma",
+    "employer_single_premium": 5785.0
+  },
+  {
+    "state": "Oregon",
+    "employer_single_premium": 7149.0
+  },
+  {
+    "state": "Pennsylvania",
+    "employer_single_premium": 6624.0
+  },
+  {
+    "state": "Rhode Island",
+    "employer_single_premium": 7331.0
+  },
+  {
+    "state": "South Carolina",
+    "employer_single_premium": 6353.0
+  },
+  {
+    "state": "South Dakota",
+    "employer_single_premium": 6393.0
+  },
+  {
+    "state": "Tennessee",
+    "employer_single_premium": 5933.0
+  },
+  {
+    "state": "Texas",
+    "employer_single_premium": 6318.0
+  },
+  {
+    "state": "Utah",
+    "employer_single_premium": 6248.0
+  },
+  {
+    "state": "Vermont",
+    "employer_single_premium": 6863.0
+  },
+  {
+    "state": "Virginia",
+    "employer_single_premium": 6320.0
+  },
+  {
+    "state": "Washington",
+    "employer_single_premium": 6904.0
+  },
+  {
+    "state": "West Virginia",
+    "employer_single_premium": 7273.0
+  },
+  {
+    "state": "Wisconsin",
+    "employer_single_premium": 6278.0
+  },
+  {
+    "state": "Wyoming",
+    "employer_single_premium": 7266.0
+  }
+]

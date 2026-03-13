@@ -1,0 +1,1506 @@
+[
+  {
+    "col_0": null,
+    "Category >>>": "Plain variable >>>",
+    "col_2": null,
+    "Real estate": "Industrial net rent rats",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": null,
+    "Category >>>": "Geographic level >>>",
+    "col_2": null,
+    "Real estate": "City",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": null,
+    "Category >>>": "Source >>>",
+    "col_2": null,
+    "Real estate": "Commercial Edge",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": null,
+    "Category >>>": "Notes >>>",
+    "col_2": null,
+    "Real estate": "Industrial, Class A and B",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": null,
+    "Category >>>": "Downloaded >>>",
+    "col_2": null,
+    "Real estate": "2023-01-21 00:00:00",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": "Index",
+    "Category >>>": "City_state",
+    "col_2": "x",
+    "Real estate": "Notes_industrial net rent",
+    "col_6": "x",
+    "col_9": "x"
+  },
+  {
+    "col_0": 1.0,
+    "Category >>>": "Houston, Texas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 2.0,
+    "Category >>>": "Chicago, Illinois",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 3.0,
+    "Category >>>": "Los Angeles, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 4.0,
+    "Category >>>": "San Antonio, Texas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 5.0,
+    "Category >>>": "Miami, Florida",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 6.0,
+    "Category >>>": "Las Vegas, Nevada",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 7.0,
+    "Category >>>": "New York, New York",
+    "col_2": null,
+    "Real estate": "Used Brooklyn 2/6/2022, average 10 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 8.0,
+    "Category >>>": "Philadelphia, Pennsylvania",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 9.0,
+    "Category >>>": "Phoenix, Arizona",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 10.0,
+    "Category >>>": "Dallas, Texas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 11.0,
+    "Category >>>": "San Diego, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 12.0,
+    "Category >>>": "Austin, Texas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 13.0,
+    "Category >>>": "Denver, Colorado",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 14.0,
+    "Category >>>": "Minneapolis, Minnesota",
+    "col_2": null,
+    "Real estate": "Minneapolis St Paul",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 15.0,
+    "Category >>>": "Orlando, Florida",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 16.0,
+    "Category >>>": "San Jose, California",
+    "col_2": null,
+    "Real estate": "Bay Area",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 17.0,
+    "Category >>>": "Fort Worth, Texas",
+    "col_2": null,
+    "Real estate": "Dallas Ft Worth",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 18.0,
+    "Category >>>": "Seattle, Washington",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 19.0,
+    "Category >>>": "Indianapolis, Indiana",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 20.0,
+    "Category >>>": "Charlotte, North Carolina",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 21.0,
+    "Category >>>": "Atlanta, Georgia",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 22.0,
+    "Category >>>": "Portland, Oregon",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 23.0,
+    "Category >>>": "Tucson, Arizona",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 24.0,
+    "Category >>>": "St. Louis, Missouri",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 25.0,
+    "Category >>>": "Jacksonville, Florida",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 26.0,
+    "Category >>>": "Columbus, Ohio",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 27.0,
+    "Category >>>": "San Francisco, California",
+    "col_2": null,
+    "Real estate": "Bay Area",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 28.0,
+    "Category >>>": "Tampa, Florida",
+    "col_2": null,
+    "Real estate": "Tampa St. Petersburg Clearwater",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 29.0,
+    "Category >>>": "Sacramento, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 30.0,
+    "Category >>>": "Fort Lauderdale, Florida",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 31.0,
+    "Category >>>": "St. Paul, Minnesota",
+    "col_2": null,
+    "Real estate": "Minneapolis St Paul",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 32.0,
+    "Category >>>": "Milwaukee, Wisconsin",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 33.0,
+    "Category >>>": "Cincinnati, Ohio",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 34.0,
+    "Category >>>": "El Paso, Texas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 35.0,
+    "Category >>>": "Cleveland, Ohio",
+    "col_2": null,
+    "Real estate": "Cleveland Akron; average of ~20 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 36.0,
+    "Category >>>": "Louisville, Kentucky",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 37.0,
+    "Category >>>": "Washington, District of Columbia",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 38.0,
+    "Category >>>": "Pittsburgh, Pennsylvania",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 39.0,
+    "Category >>>": "Memphis, Tennessee",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 40.0,
+    "Category >>>": "Oklahoma City, Oklahoma",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 41.0,
+    "Category >>>": "Albuquerque, New Mexico",
+    "col_2": null,
+    "Real estate": "Average of six properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 42.0,
+    "Category >>>": "Salt Lake City, Utah",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 43.0,
+    "Category >>>": "Detroit, Michigan",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 44.0,
+    "Category >>>": "Fresno, California",
+    "col_2": null,
+    "Real estate": "Central Valley",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 45.0,
+    "Category >>>": "Colorado Springs, Colorado",
+    "col_2": null,
+    "Real estate": "Denver market",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 46.0,
+    "Category >>>": "Kansas City, Missouri",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 47.0,
+    "Category >>>": "Raleigh, North Carolina",
+    "col_2": null,
+    "Real estate": "Raleigh Durham",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 48.0,
+    "Category >>>": "Bakersfield, California",
+    "col_2": null,
+    "Real estate": "Central Valley",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 49.0,
+    "Category >>>": "Mesa, Arizona",
+    "col_2": null,
+    "Real estate": "Phoenix, AZ market",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 50.0,
+    "Category >>>": "Baltimore, Maryland",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 51.0,
+    "Category >>>": "Buffalo, New York",
+    "col_2": null,
+    "Real estate": "Average of 15-20 properties, excluded outliers ($72 and 3,500 sf/yr)",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 52.0,
+    "Category >>>": "Omaha, Nebraska",
+    "col_2": null,
+    "Real estate": "Average of ~20 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 53.0,
+    "Category >>>": "Birmingham, Alabama",
+    "col_2": null,
+    "Real estate": "Average of 7 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 54.0,
+    "Category >>>": "Nashville, Tennessee",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 55.0,
+    "Category >>>": "Long Beach, California",
+    "col_2": null,
+    "Real estate": "Los Angeles market",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 56.0,
+    "Category >>>": "Rochester, New York",
+    "col_2": null,
+    "Real estate": "Average of ~10 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 57.0,
+    "Category >>>": "Riverside, California",
+    "col_2": null,
+    "Real estate": "Inland Empire",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 58.0,
+    "Category >>>": "Virginia Beach, Virginia",
+    "col_2": null,
+    "Real estate": "Richmond Tidewater",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 59.0,
+    "Category >>>": "Aurora, Colorado",
+    "col_2": null,
+    "Real estate": "Denver market",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 60.0,
+    "Category >>>": "Knoxville, Tennessee",
+    "col_2": null,
+    "Real estate": "Average of 3 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 61.0,
+    "Category >>>": "Wichita, Kansas",
+    "col_2": null,
+    "Real estate": "Average of ~15 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 62.0,
+    "Category >>>": "Arlington, Texas",
+    "col_2": null,
+    "Real estate": "Dallas Ft Worth",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 63.0,
+    "Category >>>": "New Orleans, Louisiana",
+    "col_2": null,
+    "Real estate": "Average of 4 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 64.0,
+    "Category >>>": "Tulsa, Oklahoma",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 65.0,
+    "Category >>>": "Oakland, California",
+    "col_2": null,
+    "Real estate": "Bay Area",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 66.0,
+    "Category >>>": "Honolulu, Hawaii",
+    "col_2": null,
+    "Real estate": "Average of 4 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 67.0,
+    "Category >>>": "Richmond, Virginia",
+    "col_2": null,
+    "Real estate": "Richmond Tidewater",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 68.0,
+    "Category >>>": "Stockton, California",
+    "col_2": null,
+    "Real estate": "Central Valley",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 69.0,
+    "Category >>>": "Grand Rapids, Michigan",
+    "col_2": null,
+    "Real estate": "Average of ~15 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 70.0,
+    "Category >>>": "Spokane, Washington",
+    "col_2": null,
+    "Real estate": "Average of ~10 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 71.0,
+    "Category >>>": "Tacoma, Washington",
+    "col_2": null,
+    "Real estate": "Seattle market",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 72.0,
+    "Category >>>": "Baton Rouge, Louisiana",
+    "col_2": null,
+    "Real estate": "Average of 7 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 73.0,
+    "Category >>>": "Plano, Texas",
+    "col_2": null,
+    "Real estate": "Dallas Ft Worth",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 74.0,
+    "Category >>>": "Anaheim, California",
+    "col_2": null,
+    "Real estate": "Orange County",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 75.0,
+    "Category >>>": "Hialeah, Florida",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 76.0,
+    "Category >>>": "St. Petersburg, Florida",
+    "col_2": null,
+    "Real estate": "Tampa St. Petersburg Clearwater",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 77.0,
+    "Category >>>": "Columbia, South Carolina",
+    "col_2": null,
+    "Real estate": "Average of ~10 properties, excluded outlier $81/sf/yr",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 78.0,
+    "Category >>>": "Vancouver, Washington",
+    "col_2": null,
+    "Real estate": "Portland, OR market",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 79.0,
+    "Category >>>": "Santa Ana, California",
+    "col_2": null,
+    "Real estate": "Orange County",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 80.0,
+    "Category >>>": "Greensboro, North Carolina",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 81.0,
+    "Category >>>": "Fort Wayne, Indiana",
+    "col_2": null,
+    "Real estate": "Average of ~15 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 82.0,
+    "Category >>>": "Henderson, Nevada",
+    "col_2": null,
+    "Real estate": "Las Vegas market",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 83.0,
+    "Category >>>": "Glendale, Arizona",
+    "col_2": null,
+    "Real estate": "Phoenix, AZ market",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 84.0,
+    "Category >>>": "Scottsdale, Arizona",
+    "col_2": null,
+    "Real estate": "Phoenix, AZ market",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 85.0,
+    "Category >>>": "Lexington-Fayette, Kentucky",
+    "col_2": null,
+    "Real estate": "Used Crexi average for 23 properties, 2/6/2022",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 86.0,
+    "Category >>>": "Madison, Wisconsin",
+    "col_2": null,
+    "Real estate": "Average of 5 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 87.0,
+    "Category >>>": "Corpus Christi, Texas",
+    "col_2": null,
+    "Real estate": "Average of 3 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 88.0,
+    "Category >>>": "Durham, North Carolina",
+    "col_2": null,
+    "Real estate": "Raleigh Durham",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 89.0,
+    "Category >>>": "Toledo, Ohio",
+    "col_2": null,
+    "Real estate": "Average of ~15 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 90.0,
+    "Category >>>": "Reno, Nevada",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 91.0,
+    "Category >>>": "Lincoln, Nebraska",
+    "col_2": null,
+    "Real estate": "Average of ~20 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 92.0,
+    "Category >>>": "Tallahassee, Florida",
+    "col_2": null,
+    "Real estate": "Average of ~10 properties; excluded outlier $180/sf/yr",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 93.0,
+    "Category >>>": "Chandler, Arizona",
+    "col_2": null,
+    "Real estate": "Phoenix, AZ market",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 94.0,
+    "Category >>>": "Lubbock, Texas",
+    "col_2": null,
+    "Real estate": "Average of ~5 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 95.0,
+    "Category >>>": "Akron, Ohio",
+    "col_2": null,
+    "Real estate": "Cleveland Akron; average of ~20 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 96.0,
+    "Category >>>": "Irvine, California",
+    "col_2": null,
+    "Real estate": "Orange County",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 97.0,
+    "Category >>>": "Newark, New Jersey",
+    "col_2": null,
+    "Real estate": "New Jersey market",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 98.0,
+    "Category >>>": "Salem, Oregon",
+    "col_2": null,
+    "Real estate": "Eugene market; average of ~15 properties",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 99.0,
+    "Category >>>": "Jersey City, New Jersey",
+    "col_2": null,
+    "Real estate": "New Jersey market",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 100.0,
+    "Category >>>": "Laredo, Texas",
+    "col_2": null,
+    "Real estate": "Used Corpus Christi",
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 101.0,
+    "Category >>>": "Modesto, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 102.0,
+    "Category >>>": "Boise, Idaho",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 103.0,
+    "Category >>>": "Chula Vista, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 104.0,
+    "Category >>>": "Mobile, Alabama",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 105.0,
+    "Category >>>": "North Las Vegas, Nevada",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 106.0,
+    "Category >>>": "Gilbert, Arizona",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 107.0,
+    "Category >>>": "Fayetteville, North Carolina",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 108.0,
+    "Category >>>": "Winston-Salem, North Carolina",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 109.0,
+    "Category >>>": "Fremont, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 110.0,
+    "Category >>>": "San Bernardino, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 111.0,
+    "Category >>>": "Chesapeake, Virginia",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 112.0,
+    "Category >>>": "Irving, Texas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 113.0,
+    "Category >>>": "Norfolk, Virginia",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 114.0,
+    "Category >>>": "Fontana, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 115.0,
+    "Category >>>": "Springfield, Missouri",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 116.0,
+    "Category >>>": "Garland, Texas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 117.0,
+    "Category >>>": "Boston, Massachusetts",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 118.0,
+    "Category >>>": "Des Moines, Iowa",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 119.0,
+    "Category >>>": "Amarillo, Texas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 120.0,
+    "Category >>>": "Wilmington, Delaware",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 121.0,
+    "Category >>>": "Anchorage, Alaska",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 122.0,
+    "Category >>>": "Oxnard, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 123.0,
+    "Category >>>": "Santa Rosa, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 124.0,
+    "Category >>>": "Chattanooga, Tennessee",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 125.0,
+    "Category >>>": "Charleston, South Carolina",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 126.0,
+    "Category >>>": "Little Rock, Arkansas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 127.0,
+    "Category >>>": "Moreno Valley, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 128.0,
+    "Category >>>": "Providence, Rhode Island",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 129.0,
+    "Category >>>": "Tempe, Arizona",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 130.0,
+    "Category >>>": "Huntsville, Alabama",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 131.0,
+    "Category >>>": "Brownsville, Texas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 132.0,
+    "Category >>>": "Shreveport, Louisiana",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 133.0,
+    "Category >>>": "Oceanside, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 134.0,
+    "Category >>>": "Montgomery, Alabama",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 135.0,
+    "Category >>>": "Huntington Beach, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 136.0,
+    "Category >>>": "Augusta, Georgia",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 137.0,
+    "Category >>>": "Aurora, Illinois",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 138.0,
+    "Category >>>": "Overland Park, Kansas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 139.0,
+    "Category >>>": "Cape Coral, Florida",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 140.0,
+    "Category >>>": "Worcester, Massachusetts",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 141.0,
+    "Category >>>": "Ontario, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 142.0,
+    "Category >>>": "Yonkers, New York",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 143.0,
+    "Category >>>": "Sioux Falls, South Dakota",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 144.0,
+    "Category >>>": "Peoria, Arizona",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 145.0,
+    "Category >>>": "Rancho Cucamonga, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 146.0,
+    "Category >>>": "Garden Grove, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 147.0,
+    "Category >>>": "Columbus, Georgia",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 148.0,
+    "Category >>>": "Newport News, Virginia",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 149.0,
+    "Category >>>": "Glendale, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 150.0,
+    "Category >>>": "Jackson, Mississippi",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 151.0,
+    "Category >>>": "Bridgeport, Connecticut",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 152.0,
+    "Category >>>": "Las Cruces, New Mexico",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 153.0,
+    "Category >>>": "Cedar Rapids, Iowa",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 154.0,
+    "Category >>>": "Billings, Montana",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 155.0,
+    "Category >>>": "Grand Prairie, Texas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 156.0,
+    "Category >>>": "Nampa, Idaho",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 157.0,
+    "Category >>>": "New Haven, Connecticut",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 158.0,
+    "Category >>>": "Fargo, North Dakota",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 159.0,
+    "Category >>>": "Port St. Lucie, Florida",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 160.0,
+    "Category >>>": "Manchester, New Hampshire",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 161.0,
+    "Category >>>": "Charleston, West Virginia",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 162.0,
+    "Category >>>": "Columbia, Maryland",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 163.0,
+    "Category >>>": "Missoula, Montana",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 164.0,
+    "Category >>>": "Rapid City, South Dakota",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 165.0,
+    "Category >>>": "Cheyenne, Wyoming",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 166.0,
+    "Category >>>": "Gulfport, Mississippi",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 167.0,
+    "Category >>>": "Bismarck, North Dakota",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 168.0,
+    "Category >>>": "Nashua, New Hampshire",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 169.0,
+    "Category >>>": "Fort Smith, Arkansas",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 170.0,
+    "Category >>>": "Dover, Delaware",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 171.0,
+    "Category >>>": "Warwick, Rhode Island",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 172.0,
+    "Category >>>": "Casper, Wyoming",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 173.0,
+    "Category >>>": "Huntington, West Virginia",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 174.0,
+    "Category >>>": "Portland, Maine",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 175.0,
+    "Category >>>": "Santa Clarita, California",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 176.0,
+    "Category >>>": "Burlington, Vermont",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 177.0,
+    "Category >>>": "Pearl City, Hawaii",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 178.0,
+    "Category >>>": "Lewiston, Maine",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 179.0,
+    "Category >>>": "Juneau, Alaska",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 180.0,
+    "Category >>>": "Pembroke Pines, Florida",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": 181.0,
+    "Category >>>": "South Burlington, Vermont",
+    "col_2": null,
+    "Real estate": null,
+    "col_6": null,
+    "col_9": null
+  },
+  {
+    "col_0": null,
+    "Category >>>": "Greenville, North Carolina",
+    "col_2": null,
+    "Real estate": "From Q2 2021 NAR report",
+    "col_6": null,
+    "col_9": null
+  }
+]

@@ -37,7 +37,11 @@ class IncentiveProgram(IncentiveProgramBase):
                         array_value.append("Base")
                         continue
 
-                    if k>year:
+                    # Use `year + start_year` (not bare `year`) so the returned
+                    # value array covers the same range as the NPV formula below.
+                    # With year=9, start_year=1: threshold is k>10, meaning Year 10
+                    # is included (not zeroed), matching the [1:11] NPV slice.
+                    if k > year + start_year:
                         array_value.append(0)
                     else:
 

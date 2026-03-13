@@ -13,10 +13,10 @@ from util.npv import excel_npv
 import numpy as np
 
 
-DEBUG = True
+DEBUG = False
 
-# TODO pull from DB
-federal_income_tax = 0.1323
+# Federal corporate statutory rate (21%)
+federal_income_tax = 0.21
 federal_minimum_wage = 7.25
 
 inputs_county_overrides = {
@@ -686,7 +686,7 @@ for state, programs in incentive_programs_by_state.items():
         incentive_adjusted_net_profit_by_year.append(pnl.npv_dicts['Net profit'][i] + total_incentives_by_year[i])
 
     incentive_adjusted_net_profit_npv = excel_npv(discount_rate, incentive_adjusted_net_profit_by_year)
-    incentive_adjusted_with_cf_net_profit_npv = excel_npv(discount_rate, incentive_adjusted_net_profit_by_year)
+    incentive_adjusted_with_cf_net_profit_npv = excel_npv(discount_rate, incentive_adjusted_with_cf_net_profit_by_year)
     cf_npv = excel_npv(discount_rate, cf_incentives)
     npv_sales = pnl.npv_sales
     print('sales: {}'.format(npv_sales))
