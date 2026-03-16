@@ -776,7 +776,7 @@ function buildEconPanel(r){
 
   // Sector rows
   const sectorRows=topSectors.slice(0,5).map(s=>{
-    const name=s.sector||s.industry||s.name||'—';
+    const name=s.sector_name||s.sector||s.industry||s.name||'—';
     const jobs=s.jobs||s.employment||0;
     const out=s.output||0;
     return`<div class="impact-row"><div class="ic lbl">${name}</div><div class="ic">${jobs.toFixed?jobs.toFixed(1):Math.round(jobs)}</div><div class="ic">${fmt(out)}</div><div class="ic">—</div></div>`;
