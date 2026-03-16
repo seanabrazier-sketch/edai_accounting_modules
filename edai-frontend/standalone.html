@@ -1005,6 +1005,73 @@ function buildBenchPanel(r){
 }
 
 // ── MEMO PANEL ───────────────────────────────────────────────────
+
+// Lightweight markdown-to-HTML renderer (tables, bold, headers, lists, HR)
+function parseMd(md){
+  function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function inlineFmt(s){
+    return esc(s)
+      .replace(/\*\*([^*\n]+)\*\*/g,'<strong>$1</strong>')
+      .replace(/\*([^*\n]+)\*/g,'<em>$1</em>')
+      .replace(/`([^`\n]+)`/g,'<code style="background:var(--bg);padding:1px 5px;border-radius:3px;font-size:12px;font-family:\'IBM Plex Mono\',monospace">$1</code>');
+  }
+  function parseRow(line){return line.replace(/^\||\|$/g,'').split('|').map(c=>c.trim());}
+  const lines=md.split('\n');
+  let html='',i=0;
+  while(i<lines.length){
+    const raw=lines[i],line=raw.trim();
+    if(!line){i++;continue;}
+    // Table: current line starts with | and next line is a separator row
+    if(line.startsWith('|')&&i+1<lines.length&&/^\|[\s\-:|]+\|/.test(lines[i+1].trim())){
+      const hdrs=parseRow(line);
+      i+=2; // skip header + separator
+      const rows=[];
+      while(i<lines.length&&lines[i].trim().startsWith('|')){rows.push(parseRow(lines[i]));i++;}
+      html+=`<table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:13px;border-radius:6px;overflow:hidden">`;
+      html+=`<thead><tr>${hdrs.map(h=>`<th style="background:var(--green);color:#fff;padding:9px 13px;text-align:left;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.5px">${inlineFmt(h)}</th>`).join('')}</tr></thead>`;
+      html+=`<tbody>${rows.map((row,ri)=>`<tr style="background:${ri%2===0?'var(--white)':'var(--bg)'}">${row.map(cell=>`<td style="padding:8px 13px;border-bottom:1px solid var(--border);color:var(--mid)">${inlineFmt(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+      continue;
+    }
+    // Header (## or ###)
+    const hm=line.match(/^(#{1,4})\s+(.*)/);
+    if(hm){
+      const lvl=hm[1].length,content=inlineFmt(hm[2].trim());
+      if(lvl<=2){if(html)html+='<hr class="memo-divider">';html+=`<div class="memo-section-title">${content}</div>`;}
+      else html+=`<div style="font-size:13px;font-weight:700;color:var(--dark);margin:14px 0 4px">${content}</div>`;
+      i++;continue;
+    }
+    // Horizontal rule
+    if(/^[\-\*_]{3,}$/.test(line)){html+='<hr class="memo-divider">';i++;continue;}
+    // Unordered list
+    if(/^[\-\*\+]\s/.test(line)){
+      html+='<ul style="margin:8px 0 12px 20px;padding:0">';
+      while(i<lines.length&&/^[\-\*\+]\s/.test(lines[i].trim())){
+        html+=`<li style="margin:4px 0;font-size:13.5px;line-height:1.65;color:var(--mid)">${inlineFmt(lines[i].trim().replace(/^[\-\*\+]\s/,''))}</li>`;
+        i++;
+      }
+      html+='</ul>';continue;
+    }
+    // Ordered list
+    if(/^\d+\.\s/.test(line)){
+      html+='<ol style="margin:8px 0 12px 20px;padding:0">';
+      while(i<lines.length&&/^\d+\.\s/.test(lines[i].trim())){
+        html+=`<li style="margin:4px 0;font-size:13.5px;line-height:1.65;color:var(--mid)">${inlineFmt(lines[i].trim().replace(/^\d+\.\s/,''))}</li>`;
+        i++;
+      }
+      html+='</ol>';continue;
+    }
+    // Paragraph — collect consecutive non-special lines
+    let para=line;i++;
+    while(i<lines.length){
+      const nxt=lines[i].trim();
+      if(!nxt||nxt.startsWith('|')||/^#{1,4}\s/.test(nxt)||/^[\-\*_]{3,}$/.test(nxt)||/^[\-\*\+]\s/.test(nxt)||/^\d+\.\s/.test(nxt))break;
+      para+=' '+nxt;i++;
+    }
+    html+=`<p style="margin:8px 0;font-size:13.5px;line-height:1.75;color:var(--mid)">${inlineFmt(para)}</p>`;
+  }
+  return html||'<p style="color:var(--muted);font-size:13px">No content returned.</p>';
+}
+
 function buildMemoPanel(r){
   const roleLabels={business_leader:'💼 Business Leader',site_selector:'📋 Site Selector',econ_developer:'🏛️ Economic Developer'};
   const role=G.formData?.user_role||'business_leader';
@@ -1014,28 +1081,31 @@ function buildMemoPanel(r){
     <div class="memo-wrap">
       <div class="memo-role-badge">${roleLabels[role]||role}</div>
       <div id="memo-body-area" style="padding:8px 0">
-        <p style="font-size:13px;color:var(--muted);margin-bottom:16px">
-          Click <strong>Generate memo</strong> to have Claude synthesize findings from all five engines
-          into a concise location decision brief tailored to your role.<br><br>
-          <span style="font-size:11px">Requires ANTHROPIC_API_KEY on the backend server.</span>
-        </p>
+        <div style="display:flex;align-items:center;gap:12px;padding:20px 0"><div class="spinner"></div><span style="font-size:13px;color:var(--muted)">Synthesizing findings… typically 8–12 seconds</span></div>
       </div>
       <div class="memo-actions" id="memo-actions">
-        <button class="memo-btn primary" onclick="generateMemo()">✦ Generate memo</button>
+        <button class="memo-btn secondary" disabled>Generating…</button>
       </div>
     </div>`;
+  // Auto-generate immediately in the background
+  setTimeout(generateMemo,50);
 }
 
 async function generateMemo(){
   const r=G.result;
   const memoCtx=r?.memo_context;
   const role=G.formData?.user_role||'business_leader';
-  if(!memoCtx){alert('No memo context available. Please re-run analysis.');return;}
-
+  if(!memoCtx){
+    document.getElementById('memo-body-area').innerHTML=
+      `<p style="font-size:13px;color:var(--muted)">No memo context available. Please re-run the analysis.</p>`;
+    document.getElementById('memo-actions').innerHTML=
+      `<button class="memo-btn primary" onclick="generateMemo()">✦ Retry</button>`;
+    return;
+  }
+  // Reset to generating state (covers both auto-trigger and manual regenerate)
   document.getElementById('memo-body-area').innerHTML=
     `<div style="display:flex;align-items:center;gap:12px;padding:20px 0"><div class="spinner"></div><span style="font-size:13px;color:var(--muted)">Synthesizing findings… typically 8–12 seconds</span></div>`;
   document.getElementById('memo-actions').innerHTML='<button class="memo-btn secondary" disabled>Generating…</button>';
-
   try{
     const resp=await fetch(`${API}/memo`,{
       method:'POST',
@@ -1045,33 +1115,12 @@ async function generateMemo(){
     if(!resp.ok)throw new Error(`API ${resp.status}: ${await resp.text()}`);
     const data=await resp.json();
     const memoText=data.memo||data.text||'';
-
-    // Render memo text with section detection
-    const sections=[];
-    let cur={title:null,body:[]};
-    for(const line of memoText.split('\n')){
-      const isHdr=/^#+\s/.test(line)||(/^[A-Z][A-Z\s&]{3,}:?\s*$/.test(line.trim())&&line.trim().length<80);
-      if(isHdr&&line.trim().length>2){
-        if(cur.body.length>0||cur.title)sections.push(cur);
-        cur={title:line.replace(/^#+\s/,'').trim(),body:[]};
-      } else cur.body.push(line);
-    }
-    if(cur.body.length>0||cur.title)sections.push(cur);
-
-    let html='';
-    sections.forEach((s,i)=>{
-      if(i>0)html+='<hr class="memo-divider">';
-      if(s.title)html+=`<div class="memo-section-title">${s.title}</div>`;
-      if(s.body.length)html+=`<div class="memo-body">${s.body.join('\n').trim()}</div>`;
-    });
-    if(!sections.length)html=`<div class="memo-body">${memoText}</div>`;
-
-    document.getElementById('memo-body-area').innerHTML=html;
+    document.getElementById('memo-body-area').innerHTML=parseMd(memoText);
     document.getElementById('memo-actions').innerHTML=`
       <button class="memo-btn primary" onclick="navigator.clipboard.writeText(document.getElementById('memo-body-area').innerText)">📋 Copy memo</button>
       <button class="memo-btn secondary" onclick="window.print()">⬇ Download PDF</button>
       <button class="memo-btn secondary" onclick="generateMemo()">🔄 Regenerate</button>`;
-  } catch(err){
+  }catch(err){
     document.getElementById('memo-body-area').innerHTML=
       `<div class="error-state"><div class="error-title">Memo generation failed</div><div class="error-msg">${err.message}</div></div>`;
     document.getElementById('memo-actions').innerHTML=
