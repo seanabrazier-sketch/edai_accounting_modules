@@ -248,7 +248,7 @@ def _run_location_scoring(request: AnalyzeRequest) -> Tuple[str, EngineResult]:
         data: Dict[str, Any] = {
             "archetype":       request.archetype,
             "cities_scored":   len(results),
-            "top_cities":      [_city_row(r) for r in results[:10]],
+            "top_cities":      [_city_row(r) for r in results],
             "bottom_cities":   [_city_row(r) for r in results[-5:]],
             "score_min":       round(min(scores), 4) if scores else None,
             "score_max":       round(max(scores), 4) if scores else None,
